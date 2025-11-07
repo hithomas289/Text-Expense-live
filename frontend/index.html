@@ -1,0 +1,2424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextExpense - Never Lose a Receipt Again | Digital Receipt Vault via WhatsApp</title>
+    <!-- Adding logo image and favicon -->
+
+    <link rel="icon" type="image/png" href="./te-logo.png">
+    <link rel="apple-touch-icon" href="./te-logo.png">
+    <link rel="shortcut icon" href="./te-logo.png">
+    <link rel="mask-icon" href="./te-logo.png" color="#25D366">
+    <meta name="msapplication-TileImage" content="./te-logo.png">
+    <meta name="msapplication-TileColor" content="#25D366">
+    <meta name="theme-color" content="#25D366">
+
+
+
+    <!-- Adding SEO meta tags -->
+    <meta name="description" content="TextExpense - The simplest way to manage receipts via WhatsApp. Never lose tax deductions, warranty claims, or reimbursements again. Start free today!">
+    <meta name="keywords" content="receipt management, expense tracking, WhatsApp receipts, tax deductions, business expenses, receipt organizer">
+    <meta name="author" content="TextExpense">
+    <meta property="og:title" content="TextExpense - Never Lose a Receipt Again">
+    <meta property="og:description" content="Manage receipts via WhatsApp. Get organized Excel files with clickable links to every original receipt. Perfect for tax deductions and business expenses.">
+    <meta property="og:image" content="https://hithomas289.github.io/textexpense/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TextExpense - Never Lose a Receipt Again">
+    <meta name="twitter:description" content="Manage receipts via WhatsApp. Get organized Excel files with clickable links to every original receipt.">
+    <meta name="twitter:image" content="https://hithomas289.github.io/textexpense/te-logo.png">
+
+    <!-- Adding structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "TextExpense",
+        "description": "Receipt management via WhatsApp - Never lose tax deductions, warranty claims, or reimbursements again",
+        "url": "https://textexpense.com",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free plan available"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --secondary: #075E54;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #fff;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 100%;
+            padding: 80px 0;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, var(--primary) 0%, var(--primary-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%2325D366" opacity="0.02"/><circle cx="75" cy="75" r="1" fill="%2325D366" opacity="0.02"/><circle cx="50" cy="10" r="1" fill="%2325D366" opacity="0.02"/><circle cx="10" cy="60" r="1" fill="%2325D366" opacity="0.02"/><circle cx="90" cy="40" r="1" fill="%2325D366" opacity="0.02"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            margin: 40px 0;
+        }
+
+        .whatsapp-number {
+            display: inline-flex;           /* button wraps content */
+            align-items: center;            /* vertical centering */
+            justify-content: center;        /* horizontal centering */
+            gap: 10px;                      /* space between 📱 and text */
+            background: var(--primary);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 60px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            white-space: nowrap;            /* prevent text wrapping */
+        }
+
+        .whatsapp-number:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(37, 211, 102, 0.3);
+        }
+
+        .copy-btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        /* Pain Points Section */
+        .pain-points {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .pain-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .pain-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .pain-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .pain-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            position: relative;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .pain-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .cost {
+            display: inline-block;
+            background: var(--danger);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .emoji {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .pain-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .pain-card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .total-cost-summary {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid #fca5a5;
+        }
+
+        .total-cost-summary h3 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--danger);
+            margin-bottom: 20px;
+        }
+
+        .current-system {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+
+        .total-cost-summary p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Solution Section */
+        .solution {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            padding: 100px 0;
+        }
+
+        .solution-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .solution h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .solution-steps {
+            margin-top: 40px;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+
+        .step-content p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .demo-excel {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        .excel-header {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            font-weight: 600;
+            color: var(--dark);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .excel-table {
+            overflow-x: auto;
+        }
+
+        .excel-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .excel-table th,
+        .excel-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .excel-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .excel-table td {
+            color: var(--gray);
+        }
+
+        .receipt-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: rgba(37, 211, 102, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .receipt-link:hover {
+            background: rgba(37, 211, 102, 0.2);
+        }
+
+        /* Added new sections: Use Cases, Testimonials, Guarantee, FAQ */
+        
+        /* Use Cases Section */
+        .use-cases {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .use-cases-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .use-cases-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .use-cases-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .use-case-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .use-case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .use-case-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .use-case-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .use-case-card p {
+            color: var(--gray);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .use-case-benefit {
+            background: rgba(37, 211, 102, 0.1);
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            padding: 100px 0;
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .testimonials-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--dark);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        .author-info p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Guarantee Section */
+        .guarantee {
+            background: var(--primary);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .guarantee h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .guarantee p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .guarantee-features {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .guarantee-feature {
+            text-align: center;
+        }
+
+        .guarantee-feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .guarantee-feature h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .faq-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+
+        .faq-question h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin: 0;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: 700;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 25px 30px;
+            /* Increased max-height for longer FAQ content */
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            color: var(--gray);
+            line-height: 1.6;
+            margin: 0 0 15px 0;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            padding: 100px 0;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .pricing-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .pricing-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border: 1px solid var(--border);
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        .pricing-card p {
+            color: var(--gray);
+            margin-bottom: 30px;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .pricing-card li {
+            padding: 8px 0;
+            color: var(--gray);
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .pricing-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Footer */
+        .footer-cta {
+            background: var(--primary);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-cta p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-cta-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-cta .cta-button {
+            font-size: 1.1rem;
+            padding: 15px 30px;
+            background: white;
+            color: var(--primary);
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .footer-cta .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .tax-warning {
+            background: rgba(239, 68, 68, 0.2);
+            color: #fecaca;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .footer-main {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .footer-contact {
+            margin-top: 20px;
+        }
+
+        .whatsapp-link {
+            color: var(--primary) !important;
+            font-weight: 600;
+        }
+
+        /* Improved footer button contrast and visibility */
+        .footer-cta-btn {
+            margin-top: 15px;
+            display: inline-block;
+            background: var(--primary);
+            color: white !important;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary);
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+        }
+
+        .footer-cta-btn:hover {
+            background: #059669;
+            color: white !important;
+            transform: translateY(-2px);
+            border-color: #059669;
+            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        /* Mobile responsive adjustments for footer */
+        @media (max-width: 768px) {
+            .footer-cta h2 {
+                font-size: 2rem;
+            }
+            
+            .footer-cta p {
+                font-size: 1rem;
+            }
+            
+            .footer-cta-actions {
+                gap: 15px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        /* ==================== ADD THIS MOBILE RESPONSIVE CSS ==================== */
+
+        /* Tablet and below */
+        @media (max-width: 1024px) {
+            .solution-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .demo-excel {
+                order: 2;
+            }
+            
+            .use-cases-grid,
+            .testimonials-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            /* General adjustments */
+            section {
+                padding: 60px 0;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            /* Mobile Navigation */
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                z-index: 999;
+                gap: 15px;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links .cta-button {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                font-size: 28px;
+                padding: 5px;
+            }
+            
+            header .cta-button {
+                display: none;
+            }
+            
+            /* Hero Section Mobile */
+            .hero {
+                padding: 100px 0 60px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+            
+            .whatsapp-number {
+                font-size: 16px;
+                padding: 15px 20px;
+                gap: 10px;
+            }
+            
+            .trust-indicators {
+                gap: 20px;
+                margin-top: 30px;
+            }
+            
+            .trust-item {
+                font-size: 14px;
+            }
+            
+            /* All Section Headers Mobile */
+            .pain-header h2,
+            .solution h2,
+            .use-cases-header h2,
+            .testimonials-header h2,
+            .guarantee h2,
+            .faq-header h2,
+            .pricing-header h2,
+            .footer-cta h2 {
+                font-size: 1.8rem;
+            }
+            
+            .pain-header p,
+            .use-cases-header p,
+            .pricing-header p {
+                font-size: 1rem;
+            }
+            
+            /* Pain Points Mobile */
+            .pain-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .pain-card {
+                padding: 25px;
+            }
+            
+            .total-cost-summary {
+                padding: 25px;
+            }
+            
+            .total-cost-summary h3 {
+                font-size: 1.5rem;
+            }
+            
+            /* Solution Section Mobile */
+            .solution {
+                padding: 60px 0;
+            }
+            
+            .solution p {
+                font-size: 16px;
+            }
+            
+            .step-item {
+                gap: 15px;
+            }
+            
+            .step-number {
+                width: 35px;
+                height: 35px;
+                font-size: 14px;
+            }
+            
+            .step-content h3 {
+                font-size: 1.1rem;
+            }
+            
+            .excel-header {
+                font-size: 14px;
+                padding: 12px 15px;
+            }
+            
+            .excel-table {
+                font-size: 12px;
+            }
+            
+            .excel-table th,
+            .excel-table td {
+                padding: 8px 10px;
+                white-space: nowrap;
+            }
+            
+            /* Use Cases Mobile */
+            .use-cases {
+                padding: 60px 0;
+            }
+            
+            .use-cases-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .use-case-card {
+                padding: 30px 20px;
+            }
+            
+            .use-case-card h3 {
+                font-size: 1.3rem;
+            }
+            
+            /* Testimonials Mobile */
+            .testimonials {
+                padding: 60px 0;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .testimonial-card {
+                padding: 30px 20px;
+            }
+            
+            .testimonial-quote {
+                font-size: 1rem;
+            }
+            
+            /* Guarantee Mobile */
+            .guarantee {
+                padding: 60px 0;
+            }
+            
+            .guarantee p {
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+            
+            .guarantee-features {
+                gap: 30px;
+            }
+            
+            .guarantee-feature-icon {
+                font-size: 2.5rem;
+            }
+            
+            .guarantee-feature h3 {
+                font-size: 1.1rem;
+            }
+            
+            /* Pricing Mobile */
+            .pricing {
+                padding: 60px 0;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .pricing-card {
+                padding: 30px 20px;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+            
+            .price {
+                font-size: 2.5rem;
+            }
+            
+            .pricing-card h3 {
+                font-size: 1.3rem;
+            }
+            
+            /* FAQ Mobile */
+            .faq {
+                padding: 60px 0;
+            }
+            
+            .faq-question {
+                padding: 20px 15px;
+            }
+            
+            .faq-question h3 {
+                font-size: 1rem;
+                flex: 1;
+                padding-right: 15px;
+            }
+            
+            .faq-toggle {
+                font-size: 1.2rem;
+                flex-shrink: 0;
+            }
+            
+            .faq-item.active .faq-answer {
+                padding: 20px 15px;
+                max-height: 800px;
+            }
+            
+            /* Footer already has mobile styles */
+        }
+
+        /* Small Mobile */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .hero-content > div:first-child {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+            
+            .whatsapp-number {
+                width: 100%;
+                font-size: 14px;
+                padding: 12px 15px;
+            }
+            
+            .emoji {
+                font-size: 2.5rem;
+            }
+            
+            .cost {
+                font-size: 12px;
+            }
+            
+            .total-cost-summary h3 {
+                font-size: 1.3rem;
+            }
+            
+            .current-system {
+                font-size: 1rem;
+            }
+            
+            .logo {
+                font-size: 24px;
+            }
+            
+            .logo img {
+                width: 32px;
+                height: 32px;
+            }
+            
+            .tax-warning {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+        }
+
+        /* Extra Small Mobile */
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .pain-header h2,
+            .solution h2,
+            .use-cases-header h2,
+            .testimonials-header h2,
+            .guarantee h2,
+            .faq-header h2,
+            .pricing-header h2,
+            .footer-cta h2 {
+                font-size: 1.5rem;
+            }
+            
+            .price {
+                font-size: 2rem;
+            }
+            
+            .use-case-icon,
+            .guarantee-feature-icon {
+                font-size: 2rem;
+            }
+            
+            .use-cases-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* ==================== EXTRA RESPONSIVE IMPROVEMENTS ==================== */
+
+        /* Hero headline scales smoothly */
+        .hero h1 {
+            font-size: clamp(1.8rem, 5vw, 3.5rem);
+        }
+
+        /* Keep CTA button away from screen edges */
+        .hero-cta {
+            padding: 0 10px;
+        }
+
+        /* WhatsApp CTA button responsiveness */
+        .whatsapp-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: var(--primary);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 60px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            white-space: nowrap;
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+            .whatsapp-number {
+                font-size: 16px;
+                padding: 12px 20px;
+                gap: 8px;
+            }
+        }
+
+        /* Small mobile */
+        @media (max-width: 480px) {
+            /* WhatsApp button */
+            .whatsapp-number {
+                font-size: 14px;
+                padding: 10px 18px;
+                gap: 6px;
+            }
+
+            /* Stack trust indicators vertically */
+            .trust-indicators {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            /* Slimmer pricing cards */
+            .pricing-card {
+                padding: 20px;
+            }
+
+            /* Footer CTA button */
+            .footer-cta .cta-button {
+                font-size: 14px;
+                padding: 12px 18px;
+                white-space: nowrap;
+            }
+
+            /* Container breathing room */
+            .container {
+                padding: 0 12px;
+            }
+        }
+
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HMSDHWE3BS');
+     </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <!-- Updated logo to use actual logo image -->
+                <a href="#" class="logo">
+                    <img src="./te-logo.png" 
+                    alt="TextExpense Logo" style="width: 40px; height: 40px;">
+                    TextExpense
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#problem">The Problem</a></li>
+                    <li><a href="#solution">How It Works</a></li>
+                    <li><a href="#use-cases">Use Cases</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <!-- Updated CTA to redirect to WhatsApp -->
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Now</a>
+                <button class="mobile-menu-btn">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div style="background: rgba(37, 211, 102, 0.1); color: var(--primary); padding: 8px 16px; border-radius: 25px; font-weight: 600; font-size: 14px; display: inline-block; margin-bottom: 20px;">
+                    🎯 The Average Person Loses $2,400/Year in Missing Receipts
+                </div>
+                <h1>Every Receipt You'll Ever Need.<br>Organized. Accessible. <span class="highlight">Forever.</span></h1>
+                <p>Text any receipt to WhatsApp. Get organized Excel files with clickable links to every original receipt. Never lose tax deductions, warranty claims, or reimbursements again.</p>
+                
+                <div class="hero-cta">
+                    <!-- Updated CTA to redirect to WhatsApp instead of showing number -->
+                    <a href="https://wa.me/17654792054?text=hi" class="whatsapp-number">
+                        📱 Start on WhatsApp - It's Free
+                    </a>
+                    <p style="color: var(--gray); font-size: 16px;">✓ No app download</p>
+                </div>
+
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <span>🔒</span>
+                        <span>Bank-level security</span>
+                    </div>
+                    <div class="trust-item">
+                        <span>⚡</span>
+                        <span>Instant processing</span>
+                    </div>
+                    <div class="trust-item">
+                        <span>📊</span>
+                        <span>Excel export ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero CTA Section -->
+    
+
+    <!-- Removed the Stop Losing Money section from here -->
+
+    <!-- Pain Points Section -->
+    <section id="problem" class="pain-points">
+        <div class="container">
+            <div class="pain-header">
+                <h2>The Hidden Cost of Lost Receipts</h2>
+                <p>Every year, you're losing money you don't even know about.</p>
+            </div>
+            
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <span class="cost">-$1,200/year</span>
+                    <div class="emoji">😰</div>
+                    <h3>Tax Deductions Missed</h3>
+                    <p>That business lunch? Home office supplies? Medical expenses? Without receipts, you can't claim them. The IRS requires proof.</p>
+                </div>
+                
+                <div class="pain-card">
+                    <span class="cost">-$800/year</span>
+                    <div class="emoji">💔</div>
+                    <h3>Warranty Claims Denied</h3>
+                    <p>Your laptop breaks 6 months after purchase. No receipt = no warranty. You buy a new one instead of getting it fixed for free.</p>
+                </div>
+                
+                <div class="pain-card">
+                    <span class="cost">-$400/year</span>
+                    <div class="emoji">😤</div>
+                    <h3>Reimbursements Lost</h3>
+                    <p>Company trips, client dinners, work expenses - without receipts, you eat the cost. Your money, gone.</p>
+                </div>
+                
+                <div class="pain-card">
+                    <span class="cost">-$600/year</span>
+                    <div class="emoji">🤬</div>
+                    <h3>Return Windows Missed</h3>
+                    <p>That jacket that doesn't fit? The gadget that doesn't work? Without receipts, no returns. It's sitting in your closet, money wasted.</p>
+                </div>
+            </div>
+            
+            <div class="total-cost-summary">
+                <h3>Total Lost: $3,000+ Every Year</h3>
+                <div class="current-system">Your Current "System"</div>
+                <p>Shoebox full of crumpled papers? Photos scattered across your phone? That "important" folder you never organize? <strong>It's not working.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h2>Turn WhatsApp Into Your <span class="highlight">Receipt Vault</span></h2>
+                    <p style="font-size: 20px; color: var(--gray); margin: 20px 0;">No apps. No accounts. No learning curve. Just text your receipts like you'd text a friend.</p>
+                    
+                    <div class="solution-steps">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Text Any Receipt</h3>
+                                <p>Photo, PDF, screenshot, forwarded document - we handle everything. Coffee receipt at 7am? Just text it.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Auto-Extraction Magic</h3>
+                                <p>Our AI reads everything: merchant, date, amount, tax, tip. Add your own description: "Client lunch - signed Johnson deal"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Excel Reports On-Demand</h3>
+                                <p>Generate "report" anytime. Get organized Excel with clickable links to every original receipt. Tax-ready, audit-proof.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-excel">
+                    <div class="excel-header">
+                        📊 Your Expense Report - January 2025.xlsx
+                    </div>
+                    <div class="excel-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Merchant</th>
+                                    <th>Category</th>
+                                    <th>Total</th>
+                                    <th>Receipt</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jan 15</td>
+                                    <td>Best Buy</td>
+                                    <td>Electronics - Laptop for work</td>
+                                    <td>$1,299</td>
+                                    <td><a href="#" class="receipt-link">🔎 View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jan 12</td>
+                                    <td>Olive Garden</td>
+                                    <td>Client dinner - Johnson account</td>
+                                    <td>$127.50</td>
+                                    <td><a href="#" class="receipt-link">🔎 View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jan 8</td>
+                                    <td>Shell Gas</td>
+                                    <td>Business travel - Chicago trip</td>
+                                    <td>$45.20</td>
+                                    <td><a href="#" class="receipt-link">🔎 View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jan 5</td>
+                                    <td>Office Depot</td>
+                                    <td>Office supplies - Q1 inventory</td>
+                                    <td>$89.99</td>
+                                    <td><a href="#" class="receipt-link">🔎 View</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" style="background: #f8fafc; padding: 80px 0;">
+        <div class="container">
+            <div class="use-cases-header">
+                <h2>Works For Everyone, Everywhere</h2>
+                <p>From freelancers to families, small businesses to travelers.</p>
+            </div>
+            
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">💼</div>
+                    <h3>Business Owners</h3>
+                    <p>Track every business expense. Maximize tax deductions. Simplify bookkeeping. Generate reports for your accountant in seconds.</p>
+                    <div class="use-case-benefit">Save $5,000+ in tax deductions</div>
+                </div>
+                
+                <div class="use-case-card">
+                    <div class="use-case-icon">✈️</div>
+                    <h3>Frequent Travelers</h3>
+                    <p>Hotel receipts, uber rides, client dinners - all organized by trip. Submit expense reports with one click. Get reimbursed faster.</p>
+                    <div class="use-case-benefit">Get reimbursed 3x faster</div>
+                </div>
+                
+                <div class="use-case-card">
+                    <div class="use-case-icon">🏠</div>
+                    <h3>Homeowners</h3>
+                    <p>Warranty claims, home improvements, appliance purchases - never lose important receipts again. Insurance claims become hassle-free.</p>
+                    <div class="use-case-benefit">Never miss a warranty claim</div>
+                </div>
+                
+                <div class="use-case-card">
+                    <div class="use-case-icon">👨‍⚕️</div>
+                    <h3>Healthcare Expenses</h3>
+                    <p>Track medical expenses, prescriptions, FSA/HSA purchases. Maximize insurance reimbursements and tax benefits.</p>
+                    <div class="use-case-benefit">Claim every medical deduction</div>
+                </div>
+                
+                <div class="use-case-card">
+                    <div class="use-case-icon">💻</div>
+                    <h3>Freelancers</h3>
+                    <p>Software subscriptions, equipment, client expenses - track everything. Professional expense reports for clients in minutes.</p>
+                    <div class="use-case-benefit">Save 10+ hours monthly</div>
+                </div>
+                
+                <div class="use-case-card">
+                    <div class="use-case-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Families</h3>
+                    <p>School supplies, kids' activities, household purchases - keep everything organized. Returns and exchanges become hassle-free.</p>
+                    <div class="use-case-benefit">Never miss a return window</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <h2>Real People, Real Results</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "I got $3,200 back in tax deductions I would have missed. This literally paid for itself 100x over in the first year."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <h4>John Martinez</h4>
+                            <p>Small Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "My accountant loves me now. Everything is organized, categorized, with original receipts. Tax season used to be a nightmare."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div class="author-info">
+                            <h4>Sarah Kim</h4>
+                            <p>Freelance Designer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "Submitted a warranty claim for my broken laptop with the receipt link. Got a replacement in a week. Would've cost me $1,500."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RP</div>
+                        <div class="author-info">
+                            <h4>Robert Park</h4>
+                            <p>IT Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Guarantee Section -->
+<!--
+    
+    <section class="guarantee">
+        <div class="container">
+            <h2>Zero Risk, All Reward</h2>
+            <p>Try TextExpense free for 7 days. If you don't save at least 10x what you pay, we'll refund every penny. No questions asked.</p>
+            
+            <div class="guarantee-features">
+                <div class="guarantee-feature">
+                    <div class="guarantee-feature-icon">🔒</div>
+                    <h3>Bank-Level Security</h3>
+                </div>
+                <div class="guarantee-feature">
+                    <div class="guarantee-feature-icon">💰</div>
+                    <h3>30-Day Money Back</h3>
+                </div>
+                <div class="guarantee-feature">
+                    <div class="guarantee-feature-icon">⚡</div>
+                    <h3>Cancel Anytime</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+-->    
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="pricing-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose your plan. Upgrade when you need more. Cancel anytime.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Trial Plan -->
+                <div class="pricing-card" data-plan="trial">
+                    <h3>Trial</h3>
+                    <div class="price">Free<span></span></div>
+                    <p>Try it first</p>
+                    <ul>
+                        <li>Limited receipts one-time</li>
+                        <li>Basic categorization</li>
+                        <li>Excel export</li>
+                        <li>WhatsApp support</li>
+                    </ul>
+                    <a href="https://wa.me/17654792054?text=hi" class="cta-button" style="width: 100%; text-align: center;">Get Started</a>
+                </div>
+
+                <!-- Lite Plan -->
+                <div class="pricing-card featured" data-plan="lite">
+                    <h3>Lite</h3>
+                    <div class="price">Loading...<span>/month</span></div>
+                    <p>Perfect to start</p>
+                    <ul>
+                        <li>Monthly receipt allowance</li>
+                        <li>Basic categorization</li>
+                        <li>Excel export</li>
+                        <li>WhatsApp support</li>
+                    </ul>
+                    <button class="cta-button stripe-button" data-plan="lite" style="width: 100%; text-align: center;">Get Lite</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card" data-plan="pro">
+                    <h3>Pro</h3>
+                    <div class="price">Loading...<span>/month</span></div>
+                    <p>Everything you need</p>
+                    <ul>
+                        <li>Generous monthly receipt limit</li>
+                        <li>Smart categorization</li>
+                        <li>Advanced Excel reports</li>
+                        <li>Priority support</li>
+                        <li>6 months receipt storage</li>
+                        <li>Custom categories</li>
+                    </ul>
+                    <button class="cta-button stripe-button" data-plan="pro" style="width: 100%; text-align: center;">Get Pro</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <!-- Replaced all FAQ content with new comprehensive FAQs -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does Text Expense work?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply text your receipt photo to our WhatsApp number and we'll instantly turn it into an organized Excel report. Here's how:</p>
+                        <ol style="margin: 15px 0; padding-left: 20px; color: var(--gray);">
+                            <li><strong>Send Receipt</strong> - Text us any receipt photo, PDF, or document (up to 20MB)</li>
+                            <li><strong>AI Processing</strong> - Our system extracts all details (merchant, date, amount, tax, etc.) in under 30 seconds</li>
+                            <li><strong>Choose Category</strong> - Select from preset categories like "Business Meal" or "Travel Expense" or write your own in custom</li>
+                            <li><strong>Get Excel Report</strong> - Download organized spreadsheets with all your expenses and direct links to original receipts</li>
+                        </ol>
+                        <p>No app downloads, no account setup, no learning curve. Just text and get results!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if I need the receipt later?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We keep the original photo forever. Download it anytime by generating reports for returns, warranty claims, or proof of purchase.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What file formats do you support?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We support all common document formats:</p>
+                        <ul style="margin: 15px 0; padding-left: 20px; color: var(--gray);">
+                            <li><strong>Photos</strong>: JPG, JPEG, PNG, WebP</li>
+                            <li><strong>Documents</strong>: PDF, DOCX, TIFF</li>
+                            <li><strong>File size</strong>: Up to 20MB per document</li>
+                        </ul>
+                        <p>Our AI works best with clear, well-lit photos on flat surfaces. For best results, ensure all text is visible and the image isn't blurry or shadowed.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How accurate is your receipt processing?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI achieves <strong>95%+ accuracy</strong> beside that we also allow you to <strong>EDIT</strong> details including CURRENCY, so it is truly flexible.</p>
+                        <ul style="margin: 15px 0; padding-left: 20px; color: var(--gray);">
+                            <li>Merchant name and location</li>
+                            <li>Date and invoice/bill number</li>
+                            <li>Subtotal, tax, tips, and total amount</li>
+                            <li>Individual line items (for detailed receipts)</li>
+                            <li>Currency detection based on your location</li>
+                        </ul>
+                        <p>If our confidence is below 85%, we'll ask you to retake the photo or help us with unclear details through simple WhatsApp messages.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are your pricing plans?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Lite Plan</strong>: Affordable monthly plan with receipt processing and short-term history - Perfect for light use</p>
+                        <p><strong>Pro Plan</strong>: Premium plan with generous receipt limit and extended history with priority processing</p>
+                        <p>All plans include unlimited Excel report downloads, receipt image storage with download links, and category organization. Upgrade or cancel anytime through WhatsApp.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my data secure and private?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Absolutely.</strong> Your privacy and security are our top priorities:</p>
+                        <ul style="margin: 15px 0; padding-left: 20px; color: var(--gray);">
+                            <li><strong>Encrypted Storage</strong>: All receipts and data are encrypted and stored securely on enterprise-grade AWS servers</li>
+                            <li><strong>GDPR Compliant</strong>: We follow strict European data protection standards</li>
+                            <li><strong>No Data Sharing</strong>: We never share your personal or financial information with third parties</li>
+                            <li><strong>Automatic Cleanup</strong>: Receipt download links expire after 7 days for security</li>
+                            <li><strong>WhatsApp Integration</strong>: We use official WhatsApp Business API with end-to-end encryption</li>
+                        </ul>
+                        <p>Your receipts are processed automatically and stored only for generating your reports. You can delete your data anytime by messaging us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <!-- Moved Stop Losing Money section to footer with consistent styling -->
+        <section class="footer-cta">
+            <div class="container">
+                <h2>Stop Losing Money Today</h2>
+                <p>Every day without TextExpense is money left on the table. Join thousands who've taken control of their receipts.</p>
+                
+                <div class="footer-cta-actions">
+                    <a href="https://wa.me/17654792054?text=hi" class="cta-button">📱 Get Started Now</a>
+                    <div class="tax-warning">
+                        🚨 Tax season is coming - Don't scramble for receipts again
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <img src="./te-logo.png" alt="TextExpense Logo" style="width: 32px; height: 32px;">
+                            <h3>TextExpense</h3>
+                        </div>
+                        <p>The simplest way to manage receipts via WhatsApp. Never lose a receipt again.</p>
+                        <div class="footer-contact">
+                            <p>Text your first receipt now:</p>
+                            <a href="https://wa.me/17654792054?text=hi" class="whatsapp-link">📱 Start on WhatsApp</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Product</h3>
+                        <ul>
+                            <li><a href="#solution">How It Works</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#use-cases">Use Cases</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <!-- Updated links to point to separate HTML pages -->
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="/terms">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Get Started</h3>
+                        <p>Text your first receipt now:</p>
+                        <a href="https://wa.me/17654792054?text=hi" class="cta-button footer-cta-btn">📱 Start Free</a>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 TextExpense. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.querySelector('.nav-links');
+            mobileMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        document.querySelectorAll('a[href="#faq"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const faqSection = document.getElementById('faq');
+                if (faqSection) {
+                    faqSection.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    </script>
+    <script>
+        // Track WhatsApp button clicks - Fixed for wa.me links
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('WhatsApp tracking script loaded');
+            
+            // Get all links that contain wa.me
+            const whatsappLinks = document.querySelectorAll('a[href*="wa.me"]');
+            console.log('Found WhatsApp links:', whatsappLinks.length);
+            
+            whatsappLinks.forEach(function(link, index) {
+                link.addEventListener('click', function(e) {
+                    console.log('WhatsApp button clicked:', index);
+                    
+                    // Get button details
+                    let buttonText = this.textContent.trim();
+                    let buttonLocation = 'unknown';
+                    
+                    // Identify which section based on your HTML structure
+                    if (this.closest('.hero')) {
+                        buttonLocation = 'hero';
+                    } else if (this.closest('.footer-cta')) {
+                        buttonLocation = 'footer_cta';
+                    } else if (this.closest('.footer-main')) {
+                        buttonLocation = 'footer_main';
+                    } else if (this.closest('header')) {
+                        buttonLocation = 'header';
+                    }
+                    
+                    console.log('Sending GA4 event - whatsapp_click:', {
+                        button_location: buttonLocation,
+                        button_text: buttonText
+                    });
+                    
+                    // Send to GA4
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'whatsapp_click', {
+                            'button_location': buttonLocation,
+                            'button_text': buttonText,
+                            'page_url': window.location.href
+                        });
+                    } else {
+                        console.log('gtag not found');
+                    }
+                });
+            });
+        });
+
+        // REMOVED: Duplicate loadDynamicPricing() function
+        // Now using unified loadDynamicConfig() that loads from /api/config
+
+        // Load dynamic WhatsApp bot number
+        async function loadWhatsAppNumber() {
+            try {
+                const response = await fetch('/api/config');
+                const data = await response.json();
+
+                if (data.success && data.config.whatsappBotNumber) {
+                    const botNumber = data.config.whatsappBotNumber;
+                    console.log('Loaded WhatsApp bot number:', botNumber);
+
+                    // Update all WhatsApp links
+                    const whatsappLinks = document.querySelectorAll('a[href*="wa.me/17654792054"]');
+                    whatsappLinks.forEach(link => {
+                        link.href = link.href.replace('17654792054', botNumber);
+                    });
+
+                    console.log('Updated', whatsappLinks.length, 'WhatsApp links');
+                }
+            } catch (error) {
+                console.log('Could not load WhatsApp number, using default');
+            }
+        }
+
+        // Load pricing when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadWhatsAppNumber();
+            // REMOVED: loadDynamicPricing() - now using loadDynamicConfig() below
+            setupPricingCardInteraction();
+
+            // Add a test button to verify functionality
+            setTimeout(() => {
+                console.log('Testing card selection...');
+                const cards = document.querySelectorAll('.pricing-card');
+                cards.forEach((card, i) => {
+                    console.log(`Card ${i}:`, card.getAttribute('data-plan'), 'has featured:', card.classList.contains('featured'));
+                });
+            }, 1000);
+        });
+
+        // Setup interactive pricing cards
+        function setupPricingCardInteraction() {
+            const pricingCards = document.querySelectorAll('.pricing-card');
+
+            console.log('Setting up pricing card interaction, found cards:', pricingCards.length);
+
+            pricingCards.forEach((card, index) => {
+                card.addEventListener('click', function(e) {
+                    // Check if the click is on a button or link inside the card
+                    if (e.target.tagName === 'BUTTON' || e.target.tagName === 'A') {
+                        return; // Let the button/link handle its own event
+                    }
+
+                    // Prevent any default behavior for card clicks
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    console.log('Card clicked:', index, 'Plan:', this.getAttribute('data-plan'));
+
+                    // Remove featured class from all cards
+                    pricingCards.forEach(c => {
+                        c.classList.remove('featured');
+                        console.log('Removed featured from:', c.getAttribute('data-plan'));
+                    });
+
+                    // Add featured class to clicked card
+                    this.classList.add('featured');
+                    console.log('Added featured to:', this.getAttribute('data-plan'));
+
+                    // Update the badge text based on selected plan
+                    const planType = this.getAttribute('data-plan');
+                    updatePopularBadgeText(planType);
+                });
+            });
+
+            // Setup WhatsApp redirect buttons for pricing plans
+            const stripeButtons = document.querySelectorAll('.stripe-button');
+            stripeButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // Redirect to WhatsApp with 'hi' message
+                    const whatsappNumber = '17654792054'; // Replace with your WhatsApp business number
+                    const message = 'hi';
+                    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
+                });
+            });
+        }
+
+        // Update the badge text based on selected plan
+        function updatePopularBadgeText(planType) {
+            let badgeText = 'MOST POPULAR';
+
+            switch(planType) {
+                case 'trial':
+                    badgeText = 'FREE TO TRY';
+                    break;
+                case 'lite':
+                    badgeText = 'BEST VALUE';
+                    break;
+                case 'pro':
+                    badgeText = 'MOST POPULAR';
+                    break;
+            }
+
+            // Update CSS with higher specificity
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .pricing-card.featured::before {
+                    content: '${badgeText}' !important;
+                }
+            `;
+
+            // Remove previous style if exists
+            const existingStyle = document.getElementById('dynamic-badge-style');
+            if (existingStyle) {
+                existingStyle.remove();
+            }
+
+            style.id = 'dynamic-badge-style';
+            document.head.appendChild(style);
+
+            console.log('Updated badge text to:', badgeText);
+        }
+
+        // Stripe Checkout Integration
+        async function createStripeCheckout(planType, buttonElement = null) {
+            try {
+                // Show loading state
+                let button = buttonElement;
+                if (!button) {
+                    // Find the button for this plan type
+                    button = document.querySelector(`.stripe-button[data-plan="${planType}"]`);
+                }
+
+                let originalText = '';
+                if (button) {
+                    originalText = button.textContent;
+                    button.textContent = 'Loading...';
+                    button.disabled = true;
+                }
+
+                // Get user's phone number (you might want to collect this differently)
+                let phoneNumber = localStorage.getItem('userPhoneNumber');
+                if (!phoneNumber) {
+                    phoneNumber = prompt('Please enter your phone number (with country code, e.g., +17654792054):');
+                    if (!phoneNumber) {
+                        if (button && originalText) {
+                            button.textContent = originalText;
+                            button.disabled = false;
+                        }
+                        return;
+                    }
+                    localStorage.setItem('userPhoneNumber', phoneNumber);
+                }
+
+                // Make request to your backend to create Stripe checkout session
+                const baseUrl = 'https://textexpense.com';
+                const response = await fetch(`${baseUrl}/payment/create-checkout-session`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        planType: planType,
+                        phoneNumber: phoneNumber
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Redirect to Stripe Checkout
+                    window.location.href = data.checkoutUrl;
+                } else {
+                    alert('Error creating checkout session: ' + data.error);
+                    if (button) {
+                        button.textContent = originalText;
+                        button.disabled = false;
+                    }
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+                if (button && originalText) {
+                    button.textContent = originalText;
+                    button.disabled = false;
+                }
+            }
+        }
+    </script>
+
+    <!-- Dynamic Config Loading -->
+    <script>
+        // Fetch plan configuration from backend and update ALL hardcoded values
+        async function loadDynamicConfig() {
+            try {
+                const response = await fetch('/api/config');
+                const data = await response.json();
+
+                if (data.success && data.plans) {
+                    const { trial, lite, pro } = data.plans;
+
+                    // Update Trial Plan pricing card
+                    const trialCard = document.querySelector('.pricing-card[data-plan="trial"]');
+                    if (trialCard) {
+                        const trialReceiptLi = trialCard.querySelector('li:first-child');
+                        if (trialReceiptLi) {
+                            trialReceiptLi.textContent = `${trial.receiptLimit} receipts one-time`;
+                        }
+                    }
+
+                    // Update Lite Plan pricing card
+                    const liteCard = document.querySelector('.pricing-card[data-plan="lite"]');
+                    if (liteCard) {
+                        const litePriceDiv = liteCard.querySelector('.price');
+                        const liteReceiptLi = liteCard.querySelector('li:first-child');
+                        if (litePriceDiv) {
+                            litePriceDiv.innerHTML = `${lite.priceFormatted}<span>/month</span>`;
+                        }
+                        if (liteReceiptLi) {
+                            liteReceiptLi.textContent = `${lite.receiptLimit} receipts per month`;
+                        }
+                    }
+
+                    // Update Pro Plan pricing card
+                    const proCard = document.querySelector('.pricing-card[data-plan="pro"]');
+                    if (proCard) {
+                        const proPriceDiv = proCard.querySelector('.price');
+                        const proReceiptLi = proCard.querySelector('li:first-child');
+                        if (proPriceDiv) {
+                            proPriceDiv.innerHTML = `${pro.priceFormatted}<span>/month</span>`;
+                        }
+                        if (proReceiptLi) {
+                            proReceiptLi.textContent = `${pro.receiptLimit} receipts per month`;
+                        }
+                    }
+
+                    // Update FAQ section - find the "What are your pricing plans?" FAQ item
+                    const faqItems = document.querySelectorAll('.faq-item');
+                    for (const item of faqItems) {
+                        const questionText = item.querySelector('.faq-question h3');
+                        if (questionText && questionText.textContent.includes('pricing plans')) {
+                            const faqAnswer = item.querySelector('.faq-answer');
+                            if (faqAnswer) {
+                                const paragraphs = faqAnswer.querySelectorAll('p');
+                                if (paragraphs.length >= 2) {
+                                    paragraphs[0].innerHTML = `<strong>Lite Plan</strong>: ${lite.priceFormatted}/month for ${lite.receiptLimit} receipts per month with ${lite.historyMonths}-month history - Perfect for light use`;
+                                    paragraphs[1].innerHTML = `<strong>Pro Plan</strong>: ${pro.priceFormatted}/month for ${pro.receiptLimit} receipts with ${pro.historyMonths}-month history and priority processing`;
+                                }
+                            }
+                            break;
+                        }
+                    }
+
+                    console.log('✅ Dynamic config loaded successfully:', data.plans);
+                }
+            } catch (error) {
+                console.error('❌ Failed to load dynamic config, using defaults:', error);
+            }
+        }
+
+        // Load config when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadDynamicConfig);
+        } else {
+            loadDynamicConfig();
+        }
+    </script>
+</body>
+</html>
