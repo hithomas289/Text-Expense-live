@@ -1,0 +1,37 @@
+# robots.txt for TextExpense
+# https://textexpense.com/robots.txt
+
+User-agent: *
+Allow: /
+Allow: /pages/
+Allow: /blog/
+
+# Disallow template files (not meant for indexing)
+Disallow: /pages/_template.html
+Disallow: /blog/_template.html
+
+# Disallow admin/API endpoints (if any)
+Disallow: /api/
+Disallow: /webhook
+Disallow: /payment/
+Disallow: /debug/
+
+# Disallow reports and downloads (dynamic content)
+Disallow: /reports/
+Disallow: /receipt-download/
+
+# Allow CSS, JS, and images
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+
+# Crawl delay (optional - adjust if needed)
+# Crawl-delay: 1
+
+# Sitemap location (when created)
+# Sitemap: https://textexpense.com/sitemap.xml
