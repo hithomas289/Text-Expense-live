@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags - PLACEHOLDERS -->
+    <title>Text Message Expense Tracker | Turn Receipts Into Excel Reports</title>
+    <meta name="description" content="Track expenses by text message. Send receipt photos via WhatsApp, get Excel reports instantly. No app download required. Try your first receipt free.">
+    <meta name="keywords" content="text message expense tracker, SMS expense tracking, WhatsApp expense management, receipt tracking by text, no app expense tracker">
+    <meta name="author" content="TextExpense">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Text Message Expense Tracker | Turn Receipts Into Excel Reports">
+    <meta property="og:description" content="Track expenses by text message. Send receipt photos via WhatsApp, get Excel reports instantly. No app download required.">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com/pages/text-message-expense-tracker">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Text Message Expense Tracker | TextExpense">
+    <meta name="twitter:description" content="Track expenses by text message. Send receipt photos via WhatsApp, get Excel reports instantly.">
+    <meta name="twitter:image" content="https://textexpense.com/te-logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://textexpense.com/pages/text-message-expense-tracker">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/te-logo.png">
+    <link rel="apple-touch-icon" href="/te-logo.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Text Message Expense Tracker",
+        "description": "Track expenses by text message. Send receipt photos via WhatsApp, get Excel reports instantly.",
+        "url": "https://textexpense.com/pages/text-message-expense-tracker"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --secondary: #075E54;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            padding: 80px 0;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, var(--primary) 0%, var(--primary-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            margin: 40px 0;
+        }
+
+        /* Content Section */
+        .content-section {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .content-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .content-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .content-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer-cta {
+            background: var(--primary);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-cta p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-cta .cta-button {
+            background: white;
+            color: var(--primary);
+        }
+
+        .footer-main {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .content-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HMSDHWE3BS');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">
+                    <img src="/te-logo.png" alt="TextExpense Logo" style="width: 40px; height: 40px;">
+                    TextExpense
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                </ul>
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Text Your Receipts, Get Excel Reports</h1>
+            <p>The expense tracker that lives in your pocket – literally. Stop downloading apps you'll never open. TextExpense turns any receipt into an organized Excel file through simple text messages.</p>
+            <div class="hero-cta">
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-header">
+                <h2>Why Text Messages Beat Apps</h2>
+                <p>You already use WhatsApp every day. Why add another app to your already-cluttered phone?</p>
+            </div>
+
+            <!-- CONTENT PLACEHOLDER - Agent inserts custom content here -->
+            
+    <div style="background: linear-gradient(135deg, #fff5f5 0%, #fee2e2 100%); border-left: 4px solid #EF4444; padding: 30px; border-radius: 15px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 15px; color: var(--dark);">The Problem</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">Remember that expense app you downloaded last month? Neither do we.</p>
+      <p style="color: var(--gray); margin-bottom: 15px;">Here's the thing about traditional expense trackers: they require you to download something new, create yet another account, remember another password, and actually <em>use</em> it consistently.</p>
+      <p style="color: var(--gray); margin-bottom: 15px;"><strong>Reality check:</strong> 75% of people spend over an hour monthly on manual expense tracking. That's 12+ hours a year doing something that should take seconds.</p>
+      <p style="color: var(--gray);"><strong>And those receipts stuffed in your wallet?</strong> 49% of them will be lost by tax season.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">How It Works (Simple 3-Step)</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">1</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Text Your Receipt</h3>
+          <p style="color: var(--gray);">Take a photo and send it via WhatsApp. That's it. No app download required.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">2</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">We Extract Everything</h3>
+          <p style="color: var(--gray);">Our AI reads your receipt and pulls out merchant name, date, amount, tax – all the details you need. You choose the category that makes sense for your tracking.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">3</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Get Your Excel File</h3>
+          <p style="color: var(--gray);">Request a report anytime and download a professional Excel spreadsheet with all your expenses organized by month and category. Filter by specific categories whenever you need them.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Why Text Messages Beat Apps</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ Zero friction</h3>
+          <p style="color: var(--gray);">No downloads, no accounts, no tutorials</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ Instant processing</h3>
+          <p style="color: var(--gray);">Receipt to Excel in under 60 seconds</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ Works everywhere</h3>
+          <p style="color: var(--gray);">3+ billion people already have WhatsApp</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ Actually simple</h3>
+          <p style="color: var(--gray);">If you can text, you can track expenses</p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 30px; font-size: 1.1rem; color: var(--gray);">Think about it: when was the last time you actually <em>enjoyed</em> using an expense tracker? Probably never, because you were too busy figuring out how to use it.</p>
+    </div>
+
+    <div style="background: white; border: 2px solid var(--border); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Real Talk</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">This isn't for everyone. If you love complex expense management systems with 47 features you'll never touch, this probably isn't your thing.</p>
+      <p style="font-size: 1.1rem; color: var(--gray);">But if you're a freelancer who just needs receipts organized for taxes... or a small business owner tracking your own expenses... or literally anyone who's ever lost a receipt and thought "there has to be a better way" – this is exactly what you need.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Pricing (Simple & Honest)</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>First Receipt</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">FREE</div>
+          <p>See how it works with zero commitment</p>
+        </div>
+
+        <div class="card" style="border: 2px solid var(--primary);">
+          <div style="background: var(--primary); color: white; padding: 6px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; display: inline-block; margin-bottom: 15px;">BEST VALUE</div>
+          <h3>Light Plan</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$2.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+          <p>6 receipts monthly – perfect for light users</p>
+        </div>
+
+        <div class="card">
+          <h3>Pro Plan</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$4.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+          <p>25 receipts monthly – best value for regular tracking</p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 30px; color: var(--gray);">No hidden fees. No surprise charges. Cancel anytime.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Frequently Asked Questions</h2>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Is this secure? How do I know my receipt data is safe?</h3>
+          <p style="color: var(--gray);">We use bank-level encryption and secure cloud storage. Your receipts are processed through WhatsApp's encrypted messaging, then stored on secure servers. We never share your data with third parties, and you can delete your data anytime.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">What happens if the receipt is unclear or damaged?</h3>
+          <p style="color: var(--gray);">If our AI can't read your receipt clearly, we'll ask you to retake the photo or manually enter the key details. You stay in control of what gets saved.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Can I edit the information after it's been extracted?</h3>
+          <p style="color: var(--gray);">Absolutely. You can edit any field – merchant name, amount, date, or category – right in the conversation. Just tell us what needs to be changed.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">What format are the Excel reports in?</h3>
+          <p style="color: var(--gray);">We generate standard .xlsx files that work with Excel, Google Sheets, and any spreadsheet software. Each report includes summary sheets and monthly breakdowns with links to download original receipt images.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Do I need to send receipts one at a time?</h3>
+          <p style="color: var(--gray);">Yes, we process one receipt per message to ensure accuracy. This takes just seconds per receipt and helps us extract the details correctly every time.</p>
+        </div>
+      </div>
+    </div>
+  
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Ready to stop losing receipts?</h2>
+            <p>Text your first receipt free – no credit card required. You'll see your Excel report in under a minute, and you can decide if it's worth $3/month to never manually track expenses again.</p>
+            <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TextExpense</h3>
+                    <p>The simplest way to manage receipts via WhatsApp.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <p><a href="/">Home</a></p>
+                    <p><a href="/blog/">Blog</a></p>
+                    <p><a href="/#pricing">Pricing</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <p><a href="/privacy">Privacy Policy</a></p>
+                    <p><a href="/terms">Terms & Conditions</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TextExpense. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
