@@ -483,8 +483,38 @@ This will verify:
 1. **Read this file COMPLETELY**
 2. **Copy exact structures from above**
 3. **Replace only content, NEVER structure**
-4. **Run validation script**
-5. **Manually test in browser**
-6. **Update CHANGELOG.md**
-7. **Commit with clear message**
-8. **Push to branch**
+4. **Run validation script: `./frontend/test-page.sh path/to/page.html`**
+5. **FINAL CHECK: `./frontend/check-no-existing-touched.sh`** ⚠️ CRITICAL
+6. **Manually test in browser**
+7. **Update CHANGELOG.md**
+8. **Commit with clear message**
+9. **Push to branch**
+
+---
+
+## FUNDAMENTAL RULE - NEVER VIOLATED
+
+**🚨 UNDER NO CIRCUMSTANCES MODIFY EXISTING FILES 🚨**
+
+**PROTECTED FILES (NEVER TOUCH):**
+- ❌ `frontend/index.html`
+- ❌ `frontend/privacy.html`
+- ❌ `frontend/terms.html`
+- ❌ `frontend/te-logo.png`
+- ❌ `server.js` (or ANY backend file)
+- ❌ `src/**/*.js` (ALL backend code)
+- ❌ `package.json`
+- ❌ `package-lock.json`
+
+**If a feature requires modifying existing code → DO NOT IMPLEMENT IT**
+
+Examples:
+- Clean URLs? ❌ Requires server.js changes → Keep .html extensions
+- Change navigation? ❌ Requires index.html changes → Don't do it
+- Backend changes? ❌ NEVER TOUCH BACKEND
+
+**FINAL VALIDATION:**
+```bash
+./frontend/check-no-existing-touched.sh
+```
+This script MUST pass before every commit.

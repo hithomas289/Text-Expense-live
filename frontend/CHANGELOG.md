@@ -174,6 +174,89 @@ rm -rf /home/user/Text-Expense-live/frontend/assets
 
 ---
 
+## [2025-01-08] - FINAL VALIDATION: No Existing Files Check + URL Decision
+
+### 🔒 FUNDAMENTAL RULE ENFORCEMENT
+
+**Decision:** Keep .html extensions in URLs (no clean URLs)
+- Clean URLs would require modifying server.js (backend)
+- This violates the FUNDAMENTAL RULE: Never touch existing code
+- URLs will remain: `/pages/page-name.html` (not `/pages/page-name`)
+
+### ✅ Added
+
+**`/frontend/check-no-existing-touched.sh`** (CRITICAL VALIDATION)
+- Final check before every commit
+- Verifies NO existing files have been modified
+- Checks git status for modifications to protected files
+- Protected files: index.html, privacy.html, terms.html, server.js, src/**, package.json
+- Exits with code 1 if any protected file is touched
+- MUST pass before git commit
+
+**Usage:**
+```bash
+./frontend/check-no-existing-touched.sh
+```
+
+### 🔧 Modified
+
+**`/frontend/STRUCTURE-REFERENCE.md`**
+- Added FUNDAMENTAL RULE section with list of protected files
+- Added check-no-existing-touched.sh to mandatory workflow (step 5)
+- Added examples of features we CANNOT implement (clean URLs, navigation changes)
+- Made it crystal clear: If it requires touching existing code → Don't do it
+
+### 📋 UPDATED MANDATORY WORKFLOW
+
+**BEFORE creating any page:**
+1. ✅ Read `/frontend/STRUCTURE-REFERENCE.md` COMPLETELY
+
+**DURING page creation:**
+2. ✅ Copy from index.html structure, only change content
+3. ✅ Never create new CSS classes
+4. ✅ Never touch existing files
+
+**AFTER page creation (MANDATORY):**
+5. ✅ Run `./frontend/test-page.sh path/to/page.html`
+6. ✅ **Run `./frontend/check-no-existing-touched.sh`** ⚠️ CRITICAL
+7. ✅ Manually test in browser (all breakpoints)
+8. ✅ Update CHANGELOG.md with changes
+9. ✅ Commit with clear message
+10. ✅ Push to branch
+
+**BOTH validation scripts MUST pass with 0 errors**
+
+### 🚨 PROTECTED FILES (NEVER TOUCH)
+
+These files are OFF-LIMITS forever:
+- ❌ `frontend/index.html`
+- ❌ `frontend/privacy.html`
+- ❌ `frontend/terms.html`
+- ❌ `frontend/te-logo.png`
+- ❌ `server.js`
+- ❌ `src/**/*.js` (ALL backend code)
+- ❌ `package.json`
+- ❌ `package-lock.json`
+
+**If a feature requires modifying any of these → DO NOT IMPLEMENT**
+
+### ✅ Testing Completed
+
+**Validation Script:**
+- ✅ Created check-no-existing-touched.sh
+- ✅ Made executable (chmod +x)
+- ✅ Tested detection of protected files
+- ✅ Returns correct exit codes
+- ✅ Clear error messages when violations detected
+
+**Process:**
+- ✅ Updated STRUCTURE-REFERENCE.md with fundamental rule
+- ✅ Added to mandatory workflow
+- ✅ Documented examples of forbidden features
+- ✅ Decision made: Keep .html extensions (no backend changes)
+
+---
+
 ## [2025-01-08] - CRITICAL FIX: Added Process Enforcement & Validation
 
 ### ⚠️ CRITICAL ISSUE RESOLVED
