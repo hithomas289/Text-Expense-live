@@ -319,6 +319,8 @@ node scripts/update-sitemap.js
 2. **Empty placeholders:** Leave as empty string `''`, not undefined
 3. **URL encoding:** Use `encodeURIComponent()` for sharing URLs
 4. **Related posts:** Must manually create HTML for each related post
+5. **Blog links need .html extension:** All links to static HTML files must include `.html` (e.g., `/blog/post.html`)
+6. **Mobile responsiveness requires CSS overrides:** Inline styles in MAIN_CONTENT need !important overrides in mobile breakpoints
 
 ---
 
@@ -373,6 +375,13 @@ node scripts/update-sitemap.js
 4. **Sitemap automation works** - Auto-discovery is reliable
 5. **Documentation is essential** - AGENT_GUIDE.md helps maintain consistency
 
+### Session 2 Learnings (Bug Fixes):
+1. **HTML validation ≠ deployment testing** - Validation script checks HTML structure but doesn't test actual routing or visual responsiveness in deployment
+2. **Express static requires .html extension** - Links must include `.html` extension (e.g., `/blog/post.html`) for Express static middleware to serve files
+3. **Mobile CSS needs inline style overrides** - Inline styles in MAIN_CONTENT need !important mobile breakpoints in template CSS
+4. **Test in actual deployment environment** - Local validation isn't enough; must verify routing, mobile responsiveness, and visual appearance in production
+5. **Template updates are critical** - When bugs are found in generated content, update the template immediately so future content doesn't have the same issue
+
 ---
 
 ## 📈 SUCCESS METRICS
@@ -416,7 +425,77 @@ node scripts/update-sitemap.js
 
 ---
 
-**End of Changelog - Session 1**
+---
+
+### Session 2: Bug Fixes & Mobile Responsiveness (2025-01-15)
+
+**Goal:** Fix deployment issues found in Session 1 content
+
+**Issues Identified:**
+1. Blog post returns 404 error when clicked from blog index
+2. Landing page not mobile responsive
+
+**Root Causes:**
+1. Blog index link missing `.html` extension (Express static middleware requirement)
+2. Inline styles in MAIN_CONTENT lack mobile CSS overrides
+
+**Changes Made:**
+
+#### 1. Fixed Blog Routing
+- **File:** `frontend/blog/index.html`
+  - Changed: Line 206
+  - Old: `href="/blog/receipt-management-tips-small-business"`
+  - New: `href="/blog/receipt-management-tips-small-business.html"`
+  - Reason: Express static middleware requires .html extension in URL
+
+#### 2. Fixed Mobile Responsiveness
+- **File:** `frontend/pages/text-message-expense-tracker.html`
+  - Added: Lines 344-391
+  - What: Mobile CSS overrides for inline-styled content
+  - Breakpoints: 768px (tablets/mobile), 375px (small mobile)
+  - Features:
+    - Reduced font sizes on mobile
+    - Reduced padding on mobile
+    - Force grids to single column
+    - Improved readability on small screens
+
+- **File:** `frontend/templates/landing-template.html`
+  - Added: Lines 344-391
+  - What: Same mobile CSS overrides for future pages
+  - Version: Still 1.0 (enhancement, not breaking change)
+  - Reason: Prevent future landing pages from having same issue
+
+#### 3. Updated Sitemap
+- Regenerated `frontend/sitemap.xml`
+- Now includes: 6 pages (was 5)
+- Added blog index to sitemap
+
+**Validation Results:**
+- Landing page: ✅ 23/23 checks passed
+- Blog post: ✅ 23/23 checks passed (unchanged)
+- Blog index: ✅ Valid HTML
+
+**Files NOT Touched (Verified):**
+- ✅ server.js - Unchanged
+- ✅ frontend/index.html - Unchanged
+- ✅ frontend/privacy.html - Unchanged
+- ✅ frontend/terms.html - Unchanged
+- ✅ /src/ directory - Unchanged
+
+**Key Takeaways:**
+1. Validation script needs enhancement to check link URLs (add .html check)
+2. Need actual browser testing workflow, not just HTML validation
+3. Mobile responsiveness must be tested visually, not just viewport meta tag
+4. Template updates are part of the evolution process
+
+**Template Evolution:**
+- Landing template: Still v1.0 (minor enhancement)
+- Observation: Inline styles need comprehensive mobile overrides
+- Next review: After 5 total landing pages (currently 1)
+
+---
+
+**End of Changelog - Session 2**
 
 ---
 

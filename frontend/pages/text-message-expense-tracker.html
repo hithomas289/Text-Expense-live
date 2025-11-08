@@ -340,6 +340,54 @@
             .nav-links {
                 display: none;
             }
+
+            /* Mobile overrides for inline-styled content */
+            .content-section h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section h3 {
+                font-size: 1.1rem !important;
+            }
+
+            .content-section [style*="padding: 40px"] {
+                padding: 20px !important;
+            }
+
+            .content-section [style*="padding: 30px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="font-size: 3rem"] {
+                font-size: 2rem !important;
+            }
+
+            .content-section [style*="font-size: 2rem"] {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section [style*="font-size: 1.5rem"] {
+                font-size: 1.2rem !important;
+            }
+
+            .content-section [style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* Extra small mobile (iPhone SE, etc.) */
+        @media (max-width: 375px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .content-section [style*="padding: 20px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="margin-bottom: 60px"] {
+                margin-bottom: 30px !important;
+            }
         }
     </style>
 
