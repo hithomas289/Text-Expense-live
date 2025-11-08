@@ -19,6 +19,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://textexpense.com/pages/expense-tracker-no-download</loc>
+    <lastmod>2025-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://textexpense.com/pages/sms-expense-tracker</loc>
+    <lastmod>2025-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://textexpense.com/pages/text-message-expense-tracker</loc>
     <lastmod>2025-11-08</lastmod>
     <changefreq>monthly</changefreq>

@@ -571,4 +571,126 @@ node scripts/update-sitemap.js
 
 ---
 
+### Session 4: Two New Landing Pages - SMS & No-Download Focus (2025-01-15)
+
+**Goal:** Generate two new SEO-optimized landing pages targeting different search intents
+
+**User Request:**
+Generated 2 new landing pages:
+1. SMS Expense Tracker (slug: sms-expense-tracker)
+2. Expense Tracker No Download (slug: expense-tracker-no-download)
+
+**Content Strategy:**
+
+**Page 1: SMS Expense Tracker**
+- **Target Keywords:** SMS expense tracker, text message receipt tracking, expense management by SMS, WhatsApp expense tracker, SMS receipt scanner
+- **Unique Angle:** Focuses on SMS/text messaging as the interface, positioning against traditional apps
+- **Content Sections:**
+  - The Frustration: App fatigue and unused expense trackers
+  - Why SMS Changes Everything: 4 key benefits (no app fatigue, instant adoption, zero training, actually gets used)
+  - How TextExpense Works: Simple send receipt → get Excel flow
+  - Built For Real People: Target audience personas
+  - Honest Pricing: FREE first receipt, $2.99 light, $4.99 pro
+  - 5 FAQs covering SMS workflow, security, personal/business use, corrections, processing time
+
+**Page 2: Expense Tracker No Download**
+- **Target Keywords:** expense tracker no download, no download expense management, WhatsApp expense tracking, receipt tracker without app, app-free expense tracking
+- **Unique Angle:** Emphasizes the "no download" benefit, targeting app-weary users
+- **Content Sections:**
+  - The App Download Problem: 80 apps on phone, only 9 used regularly
+  - The No-Download Advantage: 4 benefits (zero friction, nothing to remember, instant access, works for everyone)
+  - How It Actually Works: 3-step numbered process
+  - Perfect For: User personas (receipt hoarders, small business owners, app-droppers, freelancers)
+  - Simple Pricing: Comparison to traditional $5-18/month expense software
+  - 5 FAQs covering why no-download matters, bank access, multi-device, historical expenses, storage limits
+
+**Changes Made:**
+
+#### 1. Created Generation Scripts
+- **File:** `scripts/generate-sms-expense-tracker.js` (New file)
+  - 30 placeholders filled
+  - Comprehensive SEO tags (Title, Meta Description, OG, Twitter, Schema.org)
+  - Custom hero, section headers, main content, pricing, FAQs
+  - Size: Generated 21.89 KB HTML
+
+- **File:** `scripts/generate-expense-tracker-no-download.js` (New file)
+  - 30 placeholders filled
+  - Comprehensive SEO tags (Title, Meta Description, OG, Twitter, Schema.org)
+  - Custom hero, section headers, main content, pricing, FAQs
+  - Size: Generated 21.45 KB HTML
+
+#### 2. Generated Landing Pages
+- **File:** `frontend/pages/sms-expense-tracker.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "SMS Expense Tracker | Track Expenses by Text Message"
+  - H1: "Track Expenses By Text Message"
+
+- **File:** `frontend/pages/expense-tracker-no-download.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "Expense Tracker No Download | WhatsApp Receipt Management"
+  - H1: "Finally, An Expense Tracker That Doesn't Require An App"
+
+#### 3. Updated Sitemap
+- **File:** `frontend/sitemap.xml`
+  - Total pages: 8 (was 6, added 2)
+  - New entries:
+    - https://textexpense.com/pages/sms-expense-tracker (priority: 0.7)
+    - https://textexpense.com/pages/expense-tracker-no-download (priority: 0.7)
+
+**Validation Results:**
+- sms-expense-tracker.html: ✅ 23/23 checks passed
+- expense-tracker-no-download.html: ✅ 23/23 checks passed
+
+**Bug Fix During Generation:**
+- Issue: Initial generation had unreplaced {{FOOTER_CTA_SUBTITLE}} placeholder
+- Cause: Used FOOTER_CTA_DESCRIPTION instead of FOOTER_CTA_SUBTITLE in data object
+- Fix: Renamed to FOOTER_CTA_SUBTITLE in both generation scripts
+- Result: All 30 placeholders replaced successfully
+
+**Files NOT Touched (Verified):**
+- ✅ server.js - Unchanged
+- ✅ frontend/index.html - Unchanged
+- ✅ frontend/privacy.html - Unchanged
+- ✅ frontend/terms.html - Unchanged
+- ✅ /src/ directory - Unchanged
+
+**Content Inventory Update:**
+
+**Landing Pages (3 total):**
+1. text-message-expense-tracker.html - Original, general tracking focus
+2. sms-expense-tracker.html - NEW, SMS/text messaging angle
+3. expense-tracker-no-download.html - NEW, no-download benefit focus
+
+**Blog Posts (1 total):**
+1. receipt-management-tips-small-business.html
+
+**SEO Strategy Notes:**
+- All 3 landing pages target different keyword clusters and search intents
+- Pages cross-reference core value props (WhatsApp, Excel reports, no app download)
+- Consistent pricing messaging across all pages
+- Mobile-responsive from template (Session 3 fixes)
+
+**Template Status:**
+- Landing template: v1.0 (no changes this session)
+- Blog template: v1.0 (no changes this session)
+- Next template review: After 5 total landing pages (currently 3)
+
+**Project Statistics Update:**
+- Total Sessions: 4
+- Total Files Created: 16 (was 12, added 4)
+- Total Lines of Code: ~5,800 (estimated with new content)
+- Landing Pages: 3
+- Blog Posts: 1
+- Templates: 2
+- Automation Scripts: 4
+- Documentation: 3
+
+---
+
+**End of Changelog - Session 4**
+
+---
+
 *Next update: When new content is generated or templates are modified*
