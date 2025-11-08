@@ -693,4 +693,130 @@ Generated 2 new landing pages:
 
 ---
 
+### Session 5: Receipt Scanner Landing Pages - Warranty & Free Angles (2025-01-15)
+
+**Goal:** Generate two new SEO-optimized landing pages targeting receipt scanner search intent
+
+**User Request:**
+Generated 2 new landing pages:
+1. Receipt Scanner App (slug: receipt-scanner-app)
+2. Receipt Scanner App Free (slug: receipt-scanner-app-free)
+
+**Content Strategy:**
+
+**Page 1: Receipt Scanner App**
+- **Target Keywords:** receipt scanner app, scan receipts app, receipt scanning software, digital receipt scanner, OCR receipt app
+- **Unique Angle:** Focuses on receipt scanning for warranties, returns, insurance claims, and tax records
+- **Content Sections:**
+  - The Receipt Scanner Problem: Apps get downloaded once, then forgotten
+  - Receipt Scanner App That You'll Actually Use: No download, AI scanning, organized for real life
+  - How Our Receipt Scanner App Works: 4-step process (text photo → AI scans → choose category → download Excel)
+  - Why People Use This Receipt Scanner: Warranty claims, product returns, insurance reimbursements, tax prep, moving expenses, general organization
+  - Honest Pricing: FREE first receipt, $2.99 light, $4.99 pro
+  - 5 FAQs covering accuracy, warranty tracking, one-at-a-time scanning, storage security, faded receipts
+
+**Page 2: Receipt Scanner App Free**
+- **Target Keywords:** receipt scanner app free, free receipt scanning, receipt scanner no cost, free OCR receipt app, scan receipts free
+- **Unique Angle:** Emphasizes truly free first receipt with no credit card required
+- **Content Sections:**
+  - Why "Free Receipt Scanner" Matters: No paywalls, no credit card for trials, actual free scanning
+  - What You Get Free: 4 benefits (complete scan, full features, zero commitment, see if it works)
+  - How Free Receipt Scanner Works: 4-step process
+  - What People Use Free Receipt Scanner For: Test before committing, one-off expensive purchases, warranty tracking, accuracy check, medical expenses
+  - Pricing After Free Scan: FREE forever for first, $2.99 light, $4.99 pro
+  - 5 FAQs covering actually free confirmation, free vs paid differences, warranty tracking, credit card requirements, more than one free
+
+**Changes Made:**
+
+#### 1. Created Generation Scripts
+- **File:** `scripts/generate-receipt-scanner-app.js` (New file)
+  - 30 placeholders filled
+  - Comprehensive SEO tags (Title, Meta Description, OG, Twitter, Schema.org)
+  - Custom hero, section headers, main content with 4-step process, use cases, pricing, FAQs
+  - Size: Generated ~23 KB HTML
+
+- **File:** `scripts/generate-receipt-scanner-app-free.js` (New file)
+  - 30 placeholders filled
+  - Comprehensive SEO tags (Title, Meta Description, OG, Twitter, Schema.org)
+  - Custom hero, section headers, main content emphasizing free aspect
+  - Size: Generated ~22 KB HTML
+
+#### 2. Generated Landing Pages
+- **File:** `frontend/pages/receipt-scanner-app.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "Receipt Scanner App | Scan Receipts for Warranties Via WhatsApp"
+  - H1: "Receipt Scanner App Via WhatsApp"
+
+- **File:** `frontend/pages/receipt-scanner-app-free.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "Receipt Scanner App Free | Try WhatsApp Receipt Scanning Today"
+  - H1: "Free Receipt Scanner App"
+
+#### 3. Updated Sitemap
+- **File:** `frontend/sitemap.xml`
+  - Total pages: 10 (was 8, added 2)
+  - New entries:
+    - https://textexpense.com/pages/receipt-scanner-app (priority: 0.7)
+    - https://textexpense.com/pages/receipt-scanner-app-free (priority: 0.7)
+
+**Validation Results:**
+- receipt-scanner-app.html: ✅ 23/23 checks passed
+- receipt-scanner-app-free.html: ✅ 23/23 checks passed
+
+**Files NOT Touched (Verified):**
+- ✅ server.js - Unchanged
+- ✅ frontend/index.html - Unchanged
+- ✅ frontend/privacy.html - Unchanged
+- ✅ frontend/terms.html - Unchanged
+- ✅ /src/ directory - Unchanged
+
+**Content Inventory Update:**
+
+**Landing Pages (5 total):**
+1. text-message-expense-tracker.html - General text message tracking
+2. sms-expense-tracker.html - SMS/text messaging angle
+3. expense-tracker-no-download.html - No-download benefit focus
+4. receipt-scanner-app.html - NEW, receipt scanning for warranties/returns/taxes
+5. receipt-scanner-app-free.html - NEW, free receipt scanning emphasis
+
+**Blog Posts (1 total):**
+1. receipt-management-tips-small-business.html
+
+**SEO Strategy Notes:**
+- Now covering both "expense tracking" and "receipt scanning" search intents
+- Receipt scanner pages emphasize practical use cases: warranties, returns, insurance claims, taxes
+- Free page targets cost-conscious searchers looking for "free receipt scanner" keywords
+- All 5 landing pages target different keyword clusters and user intents
+- Consistent pricing and value props across all pages
+
+**Template Status:**
+- Landing template: v1.0 (no changes this session)
+- Blog template: v1.0 (no changes this session)
+- **Template review threshold reached:** 5 total landing pages generated
+- Next action: Review template after Session 6 or 7 for potential v1.1 updates based on patterns
+
+**Project Statistics Update:**
+- Total Sessions: 5
+- Total Files Created: 20 (was 16, added 4)
+- Total Lines of Code: ~7,400 (estimated with new content)
+- Landing Pages: 5
+- Blog Posts: 1
+- Templates: 2
+- Automation Scripts: 6
+- Documentation: 3
+
+**Key Insights:**
+- Receipt scanning is a specific use case resonating with warranty tracking and returns
+- Free tier messaging important for conversion funnel (first receipt free, then paid)
+- Practical use cases (warranties, returns, insurance) more compelling than generic "organization"
+- 4-step process visualization working well across all pages
+
+---
+
+**End of Changelog - Session 5**
+
+---
+
 *Next update: When new content is generated or templates are modified*
