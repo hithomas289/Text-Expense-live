@@ -61,28 +61,26 @@
 </head>
 <body>
     <!-- Header/Navigation -->
-    <header class="header">
+    <header>
         <div class="container">
-            <nav class="nav">
-                <div class="nav-logo">
-                    <a href="/">
-                        <img src="/te-logo.png" alt="TextExpense Logo">
-                        <span>TextExpense</span>
-                    </a>
-                </div>
+            <nav>
+                <a href="/" class="logo">
+                    <img src="/te-logo.png" alt="TextExpense Logo" style="width: 40px; height: 40px;">
+                    TextExpense
+                </a>
 
-                <div class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <ul class="nav-menu" id="navMenu">
+                <!-- Desktop Navigation -->
+                <ul class="nav-links">
                     <li><a href="/#solution">How It Works</a></li>
                     <li><a href="/#pricing">Pricing</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="https://wa.me/17654792054?text=hi" class="cta-button-small">Get Started Free</a></li>
+                    <li><a href="/blog/">Blog</a></li>
                 </ul>
+
+                <!-- CTA Button -->
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Now</a>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn">☰</button>
             </nav>
         </div>
     </header>
@@ -222,14 +220,14 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="pricing-section">
+    <section id="pricing" class="pricing">
         <div class="container">
-            <div class="section-header">
+            <div class="pricing-header">
                 <h2>Honest Pricing</h2>
                 <p>Simple plans for simple expense tracking</p>
             </div>
 
-            <div class="pricing-cards">
+            <div class="pricing-grid">
                 <!-- Trial Plan -->
                 <div class="pricing-card" data-plan="trial">
                     <h3>Trial</h3>
@@ -282,13 +280,13 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section class="faq">
         <div class="container">
-            <div class="section-header">
+            <div class="faq-header">
                 <h2>Frequently Asked Questions</h2>
             </div>
 
-            <div class="faq-list">
+            <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
                         <h3>How does SMS expense tracking work exactly?</h3>
