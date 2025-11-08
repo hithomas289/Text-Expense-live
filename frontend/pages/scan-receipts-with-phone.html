@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags - PLACEHOLDERS -->
+    <title>Scan Receipts With Phone | Use Your Camera via WhatsApp</title>
+    <meta name="description" content="Scan receipts with phone camera through WhatsApp. No app download - AI extracts all details instantly. Try scanning your first receipt free.">
+    <meta name="keywords" content="scan receipts with phone, phone receipt scanner, scan receipts with camera, mobile receipt scanning, scan receipts WhatsApp">
+    <meta name="author" content="TextExpense">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Scan Receipts With Phone | Use Your Camera via WhatsApp">
+    <meta property="og:description" content="Scan receipts with phone camera through WhatsApp. No app download - AI extracts all details instantly.">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com/pages/scan-receipts-with-phone">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Scan Receipts With Phone | TextExpense">
+    <meta name="twitter:description" content="Scan receipts with phone camera through WhatsApp. No app download - AI extracts all details.">
+    <meta name="twitter:image" content="https://textexpense.com/te-logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://textexpense.com/pages/scan-receipts-with-phone">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/te-logo.png">
+    <link rel="apple-touch-icon" href="/te-logo.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Scan Receipts With Phone",
+        "description": "Scan receipts with phone camera through WhatsApp. No app download - AI extracts all details instantly.",
+        "url": "https://textexpense.com/pages/scan-receipts-with-phone"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --secondary: #075E54;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            padding: 80px 0;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, var(--primary) 0%, var(--primary-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            margin: 40px 0;
+        }
+
+        /* Content Section */
+        .content-section {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .content-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .content-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .content-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer-cta {
+            background: var(--primary);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-cta p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-cta .cta-button {
+            background: white;
+            color: var(--primary);
+        }
+
+        .footer-main {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+
+            /* Fix header layout on mobile */
+            nav {
+                padding: 10px 0;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .logo img {
+                width: 32px !important;
+                height: 32px !important;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            header .cta-button {
+                padding: 8px 14px;
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
+
+            /* Fix hero visibility - increase top padding to account for fixed header */
+            .hero {
+                padding: 140px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .content-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Mobile overrides for inline-styled content */
+            .content-section h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section h3 {
+                font-size: 1.1rem !important;
+            }
+
+            .content-section [style*="padding: 40px"] {
+                padding: 20px !important;
+            }
+
+            .content-section [style*="padding: 30px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="font-size: 3rem"] {
+                font-size: 2rem !important;
+            }
+
+            .content-section [style*="font-size: 2rem"] {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section [style*="font-size: 1.5rem"] {
+                font-size: 1.2rem !important;
+            }
+
+            .content-section [style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* Extra small mobile (iPhone SE, etc.) */
+        @media (max-width: 375px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .logo img {
+                width: 28px !important;
+                height: 28px !important;
+            }
+
+            header .cta-button {
+                padding: 6px 10px;
+                font-size: 0.75rem;
+            }
+
+            .hero {
+                padding: 120px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .content-section [style*="padding: 20px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="margin-bottom: 60px"] {
+                margin-bottom: 30px !important;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HMSDHWE3BS');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">
+                    <img src="/te-logo.png" alt="TextExpense Logo" style="width: 40px; height: 40px;">
+                    TextExpense
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                </ul>
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Scan Receipts With Phone</h1>
+            <p>Your phone camera + WhatsApp = instant receipt scanning. You already have everything you need to scan receipts: your phone's camera and WhatsApp. No app download, no complicated setup.</p>
+            <div class="hero-cta">
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-header">
+                <h2>How To Scan Receipts With Phone</h2>
+                <p>Simple 5-step process from phone camera to organized Excel reports.</p>
+            </div>
+
+            <!-- CONTENT PLACEHOLDER - Agent inserts custom content here -->
+            
+    <div style="background: linear-gradient(135deg, #fff5f5 0%, #fee2e2 100%); border-left: 4px solid #EF4444; padding: 30px; border-radius: 15px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 15px; color: var(--dark);">Why Scan Receipts With Phone</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">Your phone camera is good enough to scan receipts. Actually, it's perfect for it.</p>
+      <p style="color: var(--gray); margin-bottom: 15px;">The problem with traditional receipt scanners? They require downloading yet another app that clutters your phone and gets forgotten after one use. You download it with good intentions, scan maybe three receipts, then never open it again.</p>
+      <p style="color: var(--gray);">When you can scan receipts with phone through WhatsApp instead, you'll actually use it. Because WhatsApp is already on your phone. You already check it multiple times daily. No new habit to form.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">How To Scan Receipts With Phone</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">1</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Take Photo With Phone Camera</h3>
+          <p style="color: var(--gray);">Use your regular camera app or WhatsApp camera - doesn't matter which. Just photograph the receipt like you normally would.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">2</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Send Via WhatsApp</h3>
+          <p style="color: var(--gray);">Text us the receipt photo. That's the entire scanning process on your end. Takes 10 seconds.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">3</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">AI Scans Everything</h3>
+          <p style="color: var(--gray);">Our system extracts merchant name, date, amount, tax - all the details from your phone-scanned receipt. Usually under 60 seconds.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">4</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Choose Category & Save</h3>
+          <p style="color: var(--gray);">Confirm the extracted details, pick a category, done. Your phone-scanned receipt is now organized and saved.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">5</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Get Excel Reports</h3>
+          <p style="color: var(--gray);">Request reports anytime. Download Excel files with all your receipts organized by month and category. Each receipt links to the original phone-scanned image.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Why This Beats Receipt Scanner Apps</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ Uses phone you already have</h3>
+          <p style="color: var(--gray);">Your phone camera is already excellent. Why download another app to access it?</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ Works through WhatsApp</h3>
+          <p style="color: var(--gray);">You already use WhatsApp daily. Scan receipts with phone through an app you actually open.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ No storage issues</h3>
+          <p style="color: var(--gray);">Phone-scanned receipt images compress after processing. Your phone storage stays clear.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ Actually simple</h3>
+          <p style="color: var(--gray);">Scan receipts with phone camera, send via WhatsApp, done. No tutorials, no account setup, no complexity.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: white; border: 2px solid var(--border); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Perfect For</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Business expenses</strong> - Scan receipts with phone after every business purchase</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Tax preparation</strong> - Keep all deductible receipts scanned throughout the year</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Reimbursements</strong> - Scan receipts with phone immediately, never lose proof</p>
+      <p style="font-size: 1.1rem; color: var(--gray);">Basically, if you have a phone and get receipts, you can use this.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Simple Pricing</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>First Receipt</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">FREE</div>
+          <p>Scan one receipt with phone to try it</p>
+        </div>
+
+        <div class="card" style="border: 2px solid var(--primary);">
+          <div style="background: var(--primary); color: white; padding: 6px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; display: inline-block; margin-bottom: 15px;">BEST VALUE</div>
+          <h3>Light</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$2.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+          <p>Scan 6 receipts monthly with phone</p>
+        </div>
+
+        <div class="card">
+          <h3>Pro</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$4.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+          <p>Scan 25 receipts monthly with phone</p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 30px; color: var(--gray);">No app download. No hidden fees.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Frequently Asked Questions</h2>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Do I need a special camera to scan receipts with phone?</h3>
+          <p style="color: var(--gray);">No. Your regular phone camera works perfectly. Any smartphone from the last 5 years has a camera good enough to scan receipts clearly.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">What if my phone-scanned receipt photo is blurry?</h3>
+          <p style="color: var(--gray);">We'll let you know if the scan quality is too low and ask you to retake it. For best results: good lighting, flat surface, hold phone steady.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Can I scan receipts with phone offline?</h3>
+          <p style="color: var(--gray);">You need internet to send the photo via WhatsApp and for our AI to process it. But the actual photo-taking works offline.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Does this work on both iPhone and Android?</h3>
+          <p style="color: var(--gray);">Yes. As long as you have WhatsApp on your phone, you can scan receipts with phone camera through our service.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">How long does it take to scan receipts with phone?</h3>
+          <p style="color: var(--gray);">Taking photo: 5 seconds. Sending via WhatsApp: 5 seconds. AI processing: under 60 seconds. Total time to scan receipts with phone and save them: about 70 seconds.</p>
+        </div>
+      </div>
+    </div>
+  
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Start scanning receipts with phone</h2>
+            <p>Try it free right now. Use your phone camera to photograph a receipt, send it via WhatsApp, and see how simple receipt scanning actually is.</p>
+            <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TextExpense</h3>
+                    <p>The simplest way to manage receipts via WhatsApp.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <p><a href="/">Home</a></p>
+                    <p><a href="/blog/">Blog</a></p>
+                    <p><a href="/#pricing">Pricing</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <p><a href="/privacy">Privacy Policy</a></p>
+                    <p><a href="/terms">Terms & Conditions</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TextExpense. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

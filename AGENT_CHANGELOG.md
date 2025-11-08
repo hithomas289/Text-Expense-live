@@ -571,4 +571,439 @@ node scripts/update-sitemap.js
 
 ---
 
+### Session 4: Two New Landing Pages - SMS & No-Download Focus (2025-01-15)
+
+**Goal:** Generate two new SEO-optimized landing pages targeting different search intents
+
+**User Request:**
+Generated 2 new landing pages:
+1. SMS Expense Tracker (slug: sms-expense-tracker)
+2. Expense Tracker No Download (slug: expense-tracker-no-download)
+
+**Content Strategy:**
+
+**Page 1: SMS Expense Tracker**
+- **Target Keywords:** SMS expense tracker, text message receipt tracking, expense management by SMS, WhatsApp expense tracker, SMS receipt scanner
+- **Unique Angle:** Focuses on SMS/text messaging as the interface, positioning against traditional apps
+- **Content Sections:**
+  - The Frustration: App fatigue and unused expense trackers
+  - Why SMS Changes Everything: 4 key benefits (no app fatigue, instant adoption, zero training, actually gets used)
+  - How TextExpense Works: Simple send receipt → get Excel flow
+  - Built For Real People: Target audience personas
+  - Honest Pricing: FREE first receipt, $2.99 light, $4.99 pro
+  - 5 FAQs covering SMS workflow, security, personal/business use, corrections, processing time
+
+**Page 2: Expense Tracker No Download**
+- **Target Keywords:** expense tracker no download, no download expense management, WhatsApp expense tracking, receipt tracker without app, app-free expense tracking
+- **Unique Angle:** Emphasizes the "no download" benefit, targeting app-weary users
+- **Content Sections:**
+  - The App Download Problem: 80 apps on phone, only 9 used regularly
+  - The No-Download Advantage: 4 benefits (zero friction, nothing to remember, instant access, works for everyone)
+  - How It Actually Works: 3-step numbered process
+  - Perfect For: User personas (receipt hoarders, small business owners, app-droppers, freelancers)
+  - Simple Pricing: Comparison to traditional $5-18/month expense software
+  - 5 FAQs covering why no-download matters, bank access, multi-device, historical expenses, storage limits
+
+**Changes Made:**
+
+#### 1. Created Generation Scripts
+- **File:** `scripts/generate-sms-expense-tracker.js` (New file)
+  - 30 placeholders filled
+  - Comprehensive SEO tags (Title, Meta Description, OG, Twitter, Schema.org)
+  - Custom hero, section headers, main content, pricing, FAQs
+  - Size: Generated 21.89 KB HTML
+
+- **File:** `scripts/generate-expense-tracker-no-download.js` (New file)
+  - 30 placeholders filled
+  - Comprehensive SEO tags (Title, Meta Description, OG, Twitter, Schema.org)
+  - Custom hero, section headers, main content, pricing, FAQs
+  - Size: Generated 21.45 KB HTML
+
+#### 2. Generated Landing Pages
+- **File:** `frontend/pages/sms-expense-tracker.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "SMS Expense Tracker | Track Expenses by Text Message"
+  - H1: "Track Expenses By Text Message"
+
+- **File:** `frontend/pages/expense-tracker-no-download.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "Expense Tracker No Download | WhatsApp Receipt Management"
+  - H1: "Finally, An Expense Tracker That Doesn't Require An App"
+
+#### 3. Updated Sitemap
+- **File:** `frontend/sitemap.xml`
+  - Total pages: 8 (was 6, added 2)
+  - New entries:
+    - https://textexpense.com/pages/sms-expense-tracker (priority: 0.7)
+    - https://textexpense.com/pages/expense-tracker-no-download (priority: 0.7)
+
+**Validation Results:**
+- sms-expense-tracker.html: ✅ 23/23 checks passed
+- expense-tracker-no-download.html: ✅ 23/23 checks passed
+
+**Bug Fix During Generation:**
+- Issue: Initial generation had unreplaced {{FOOTER_CTA_SUBTITLE}} placeholder
+- Cause: Used FOOTER_CTA_DESCRIPTION instead of FOOTER_CTA_SUBTITLE in data object
+- Fix: Renamed to FOOTER_CTA_SUBTITLE in both generation scripts
+- Result: All 30 placeholders replaced successfully
+
+**Files NOT Touched (Verified):**
+- ✅ server.js - Unchanged
+- ✅ frontend/index.html - Unchanged
+- ✅ frontend/privacy.html - Unchanged
+- ✅ frontend/terms.html - Unchanged
+- ✅ /src/ directory - Unchanged
+
+**Content Inventory Update:**
+
+**Landing Pages (3 total):**
+1. text-message-expense-tracker.html - Original, general tracking focus
+2. sms-expense-tracker.html - NEW, SMS/text messaging angle
+3. expense-tracker-no-download.html - NEW, no-download benefit focus
+
+**Blog Posts (1 total):**
+1. receipt-management-tips-small-business.html
+
+**SEO Strategy Notes:**
+- All 3 landing pages target different keyword clusters and search intents
+- Pages cross-reference core value props (WhatsApp, Excel reports, no app download)
+- Consistent pricing messaging across all pages
+- Mobile-responsive from template (Session 3 fixes)
+
+**Template Status:**
+- Landing template: v1.0 (no changes this session)
+- Blog template: v1.0 (no changes this session)
+- Next template review: After 5 total landing pages (currently 3)
+
+**Project Statistics Update:**
+- Total Sessions: 4
+- Total Files Created: 16 (was 12, added 4)
+- Total Lines of Code: ~5,800 (estimated with new content)
+- Landing Pages: 3
+- Blog Posts: 1
+- Templates: 2
+- Automation Scripts: 4
+- Documentation: 3
+
+---
+
+**End of Changelog - Session 4**
+
+---
+
+### Session 5: Receipt Scanner Landing Pages - Warranty & Free Angles (2025-01-15)
+
+**Goal:** Generate two new SEO-optimized landing pages targeting receipt scanner search intent
+
+**User Request:**
+Generated 2 new landing pages:
+1. Receipt Scanner App (slug: receipt-scanner-app)
+2. Receipt Scanner App Free (slug: receipt-scanner-app-free)
+
+**Content Strategy:**
+
+**Page 1: Receipt Scanner App**
+- **Target Keywords:** receipt scanner app, scan receipts app, receipt scanning software, digital receipt scanner, OCR receipt app
+- **Unique Angle:** Focuses on receipt scanning for warranties, returns, insurance claims, and tax records
+- **Content Sections:**
+  - The Receipt Scanner Problem: Apps get downloaded once, then forgotten
+  - Receipt Scanner App That You'll Actually Use: No download, AI scanning, organized for real life
+  - How Our Receipt Scanner App Works: 4-step process (text photo → AI scans → choose category → download Excel)
+  - Why People Use This Receipt Scanner: Warranty claims, product returns, insurance reimbursements, tax prep, moving expenses, general organization
+  - Honest Pricing: FREE first receipt, $2.99 light, $4.99 pro
+  - 5 FAQs covering accuracy, warranty tracking, one-at-a-time scanning, storage security, faded receipts
+
+**Page 2: Receipt Scanner App Free**
+- **Target Keywords:** receipt scanner app free, free receipt scanning, receipt scanner no cost, free OCR receipt app, scan receipts free
+- **Unique Angle:** Emphasizes truly free first receipt with no credit card required
+- **Content Sections:**
+  - Why "Free Receipt Scanner" Matters: No paywalls, no credit card for trials, actual free scanning
+  - What You Get Free: 4 benefits (complete scan, full features, zero commitment, see if it works)
+  - How Free Receipt Scanner Works: 4-step process
+  - What People Use Free Receipt Scanner For: Test before committing, one-off expensive purchases, warranty tracking, accuracy check, medical expenses
+  - Pricing After Free Scan: FREE forever for first, $2.99 light, $4.99 pro
+  - 5 FAQs covering actually free confirmation, free vs paid differences, warranty tracking, credit card requirements, more than one free
+
+**Changes Made:**
+
+#### 1. Created Generation Scripts
+- **File:** `scripts/generate-receipt-scanner-app.js` (New file)
+  - 30 placeholders filled
+  - Comprehensive SEO tags (Title, Meta Description, OG, Twitter, Schema.org)
+  - Custom hero, section headers, main content with 4-step process, use cases, pricing, FAQs
+  - Size: Generated ~23 KB HTML
+
+- **File:** `scripts/generate-receipt-scanner-app-free.js` (New file)
+  - 30 placeholders filled
+  - Comprehensive SEO tags (Title, Meta Description, OG, Twitter, Schema.org)
+  - Custom hero, section headers, main content emphasizing free aspect
+  - Size: Generated ~22 KB HTML
+
+#### 2. Generated Landing Pages
+- **File:** `frontend/pages/receipt-scanner-app.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "Receipt Scanner App | Scan Receipts for Warranties Via WhatsApp"
+  - H1: "Receipt Scanner App Via WhatsApp"
+
+- **File:** `frontend/pages/receipt-scanner-app-free.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "Receipt Scanner App Free | Try WhatsApp Receipt Scanning Today"
+  - H1: "Free Receipt Scanner App"
+
+#### 3. Updated Sitemap
+- **File:** `frontend/sitemap.xml`
+  - Total pages: 10 (was 8, added 2)
+  - New entries:
+    - https://textexpense.com/pages/receipt-scanner-app (priority: 0.7)
+    - https://textexpense.com/pages/receipt-scanner-app-free (priority: 0.7)
+
+**Validation Results:**
+- receipt-scanner-app.html: ✅ 23/23 checks passed
+- receipt-scanner-app-free.html: ✅ 23/23 checks passed
+
+**Files NOT Touched (Verified):**
+- ✅ server.js - Unchanged
+- ✅ frontend/index.html - Unchanged
+- ✅ frontend/privacy.html - Unchanged
+- ✅ frontend/terms.html - Unchanged
+- ✅ /src/ directory - Unchanged
+
+**Content Inventory Update:**
+
+**Landing Pages (5 total):**
+1. text-message-expense-tracker.html - General text message tracking
+2. sms-expense-tracker.html - SMS/text messaging angle
+3. expense-tracker-no-download.html - No-download benefit focus
+4. receipt-scanner-app.html - NEW, receipt scanning for warranties/returns/taxes
+5. receipt-scanner-app-free.html - NEW, free receipt scanning emphasis
+
+**Blog Posts (1 total):**
+1. receipt-management-tips-small-business.html
+
+**SEO Strategy Notes:**
+- Now covering both "expense tracking" and "receipt scanning" search intents
+- Receipt scanner pages emphasize practical use cases: warranties, returns, insurance claims, taxes
+- Free page targets cost-conscious searchers looking for "free receipt scanner" keywords
+- All 5 landing pages target different keyword clusters and user intents
+- Consistent pricing and value props across all pages
+
+**Template Status:**
+- Landing template: v1.0 (no changes this session)
+- Blog template: v1.0 (no changes this session)
+- **Template review threshold reached:** 5 total landing pages generated
+- Next action: Review template after Session 6 or 7 for potential v1.1 updates based on patterns
+
+**Project Statistics Update:**
+- Total Sessions: 5
+- Total Files Created: 20 (was 16, added 4)
+- Total Lines of Code: ~7,400 (estimated with new content)
+- Landing Pages: 5
+- Blog Posts: 1
+- Templates: 2
+- Automation Scripts: 6
+- Documentation: 3
+
+**Key Insights:**
+- Receipt scanning is a specific use case resonating with warranty tracking and returns
+- Free tier messaging important for conversion funnel (first receipt free, then paid)
+- Practical use cases (warranties, returns, insurance) more compelling than generic "organization"
+- 4-step process visualization working well across all pages
+
+---
+
+**End of Changelog - Session 5**
+
+---
+
+### Session 6: Four New Landing Pages - Phone Camera & Business Focus (2025-01-15)
+
+**Goal:** Generate four new SEO-optimized landing pages targeting phone scanning and business expense tracking intents
+
+**User Request:**
+Generated 4 new landing pages:
+1. Scan Receipts With Phone (slug: scan-receipts-with-phone)
+2. Photo Receipt Scanner (slug: photo-receipt-scanner)
+3. Expense Tracking Software (slug: expense-tracking-software)
+4. Small Business Expense Tracking (slug: small-business-expense-tracking)
+
+**Content Strategy:**
+
+**Page 1: Scan Receipts With Phone**
+- **Target Keywords:** scan receipts with phone, phone receipt scanner, scan receipts with camera, mobile receipt scanning, scan receipts WhatsApp
+- **Unique Angle:** Emphasizes using existing phone camera through WhatsApp, no app download needed
+- **Content Sections:**
+  - Why Scan Receipts With Phone: Phone camera already perfect, WhatsApp already on device
+  - How To Scan Receipts With Phone: 5-step process (take photo → send WhatsApp → AI scans → choose category → get Excel)
+  - Why This Beats Receipt Scanner Apps: Uses phone you have, works through WhatsApp, no storage issues, actually simple
+  - Perfect For: Business expenses, tax prep, reimbursements, general organization
+  - Simple Pricing: FREE first, $2.99 light, $4.99 pro
+  - 5 FAQs covering special camera requirements, blurry photos, offline scanning, iPhone/Android compatibility, processing time
+
+**Page 2: Photo Receipt Scanner**
+- **Target Keywords:** photo receipt scanner, receipt photo scanning, take photo of receipt, photograph receipt scanner, snap receipt photo
+- **Unique Angle:** Solves problem of receipt photos buried in camera roll
+- **Content Sections:**
+  - Why Photo Receipt Scanner: Receipt photos currently disorganized in camera roll
+  - How Photo Receipt Scanner Works: 5-step process (take photo → send via WhatsApp → AI reads → choose category → download Excel)
+  - Better Than Camera Roll: Actually organized, searchable data, original photos saved, accessible everywhere
+  - Use Photo Receipt Scanner For: Business expenses, reimbursements, personal budgeting, tax prep
+  - Pricing: FREE one photo, $2.99/$4.99 monthly
+  - 5 FAQs covering better than regular photos, photo quality requirements, multiple receipts at once, what happens to photos, WhatsApp requirement
+
+**Page 3: Expense Tracking Software**
+- **Target Keywords:** expense tracking software, expense management software, expense tracker, automated expense tracking, receipt expense software
+- **Unique Angle:** WhatsApp-based alternative to traditional expense software
+- **Content Sections:**
+  - The Expense Tracking Software Problem: Download programs, create accounts, learn interfaces, train employees
+  - Expense Tracking Software That Actually Gets Used: No download, AI automation, Excel reports, works immediately
+  - How This Expense Tracking Software Works: Receipt processing, data organization, Excel generation, report access
+  - Expense Tracking Software Features: 6 features (automated OCR, category organization, monthly Excel, receipt storage, multi-currency, instant processing)
+  - Who Uses This: Small businesses, freelancers, consultants, teams
+  - Pricing: FREE trial, $2.99/$4.99 monthly (vs $5-18/month per user for traditional)
+  - 5 FAQs covering real software vs scanner, team usage, accounting integration, advanced features, security
+
+**Page 4: Small Business Expense Tracking**
+- **Target Keywords:** small business expense tracking, SMB expense management, small business expense tracker, expense tracking for small business, business expense tracking
+- **Unique Angle:** Small business-specific solution emphasizing cost savings and simplicity
+- **Content Sections:**
+  - The Small Business Expense Tracking Problem: IRS expects it, accountants need it, but software is expensive/complicated
+  - Small Business Expense Tracking That Actually Works: Zero training, no IT setup, actual cost savings ($200-900 annually for 5-person team), gets used consistently
+  - How Small Business Expense Tracking Works: 4-step process (employees text → AI processes → owner gets reports → accountant gets clean data)
+  - Small Business Expense Tracking Benefits: Stop losing receipts (49% lost), maximize tax deductions, save admin time, better financial visibility, accountant-ready records
+  - Perfect Small Business Expense Tracking For: Restaurants, contractors, consulting firms, retail stores, service businesses
+  - Pricing (Total, Not Per User): FREE trial, $2.99/$4.99 total monthly cost
+  - 5 FAQs covering comparison to Expensify/QuickBooks, multiple employees, tax deductions, employee compliance, accountant compatibility
+
+**Changes Made:**
+
+#### 1. Created Generation Scripts
+- **File:** `scripts/generate-scan-receipts-with-phone.js` (New file)
+  - 30 placeholders filled
+  - Comprehensive SEO tags
+  - 5-step process visualization
+  - Size: Generated ~24 KB HTML
+
+- **File:** `scripts/generate-photo-receipt-scanner.js` (New file)
+  - 30 placeholders filled
+  - Comprehensive SEO tags
+  - Focus on camera roll problem
+  - Size: Generated ~23 KB HTML
+
+- **File:** `scripts/generate-expense-tracking-software.js` (New file)
+  - 30 placeholders filled
+  - Schema.org type: SoftwareApplication (different from WebPage)
+  - Comparison to traditional software
+  - Size: Generated ~22 KB HTML
+
+- **File:** `scripts/generate-small-business-expense-tracking.js` (New file)
+  - 30 placeholders filled
+  - Comprehensive SEO tags
+  - Cost savings calculations
+  - Size: Generated ~24 KB HTML
+
+#### 2. Generated Landing Pages
+- **File:** `frontend/pages/scan-receipts-with-phone.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "Scan Receipts With Phone | Use Your Camera via WhatsApp"
+  - H1: "Scan Receipts With Phone"
+
+- **File:** `frontend/pages/photo-receipt-scanner.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "Photo Receipt Scanner | Snap Photos, Get Excel Reports"
+  - H1: "Photo Receipt Scanner"
+
+- **File:** `frontend/pages/expense-tracking-software.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "Expense Tracking Software | WhatsApp-Based Solution"
+  - H1: "Expense Tracking Software"
+
+- **File:** `frontend/pages/small-business-expense-tracking.html` (New file)
+  - Validation: ✅ 23/23 checks passed
+  - Mobile responsive (inherits Session 3 template fixes)
+  - SEO Title: "Small Business Expense Tracking | Simple WhatsApp Solution"
+  - H1: "Small Business Expense Tracking"
+
+#### 3. Updated Sitemap
+- **File:** `frontend/sitemap.xml`
+  - Total pages: 14 (was 10, added 4)
+  - New entries:
+    - https://textexpense.com/pages/scan-receipts-with-phone (priority: 0.7)
+    - https://textexpense.com/pages/photo-receipt-scanner (priority: 0.7)
+    - https://textexpense.com/pages/expense-tracking-software (priority: 0.7)
+    - https://textexpense.com/pages/small-business-expense-tracking (priority: 0.7)
+
+**Validation Results:**
+- scan-receipts-with-phone.html: ✅ 23/23 checks passed
+- photo-receipt-scanner.html: ✅ 23/23 checks passed
+- expense-tracking-software.html: ✅ 23/23 checks passed
+- small-business-expense-tracking.html: ✅ 23/23 checks passed
+
+**Files NOT Touched (Verified):**
+- ✅ server.js - Unchanged
+- ✅ frontend/index.html - Unchanged
+- ✅ frontend/privacy.html - Unchanged
+- ✅ frontend/terms.html - Unchanged
+- ✅ /src/ directory - Unchanged
+
+**Content Inventory Update:**
+
+**Landing Pages (9 total):**
+1. text-message-expense-tracker.html - General text message tracking
+2. sms-expense-tracker.html - SMS/text messaging angle
+3. expense-tracker-no-download.html - No-download benefit focus
+4. receipt-scanner-app.html - Receipt scanning for warranties/returns/taxes
+5. receipt-scanner-app-free.html - Free receipt scanning emphasis
+6. scan-receipts-with-phone.html - NEW, phone camera scanning focus
+7. photo-receipt-scanner.html - NEW, photo organization solution
+8. expense-tracking-software.html - NEW, software alternative via WhatsApp
+9. small-business-expense-tracking.html - NEW, small business-specific solution
+
+**Blog Posts (1 total):**
+1. receipt-management-tips-small-business.html
+
+**SEO Strategy Notes:**
+- Now covering: expense tracking, receipt scanning, phone scanning, business expense management
+- Phone scanning pages (scan-receipts-with-phone, photo-receipt-scanner) target "how to scan" queries
+- Software page positions against traditional expense software (Expensify, QuickBooks)
+- Small business page emphasizes cost savings and simplicity vs enterprise solutions
+- All 9 landing pages target different keyword clusters and user search intents
+- Consistent pricing and value props across all pages
+
+**Template Status:**
+- Landing template: v1.0 (no changes this session)
+- Blog template: v1.0 (no changes this session)
+- **Note:** Now at 9 landing pages - significant evidence base for template evolution
+- Consider template review in Session 7 to identify common patterns for v1.1
+
+**Project Statistics Update:**
+- Total Sessions: 6
+- Total Files Created: 28 (was 20, added 8)
+- Total Lines of Code: ~10,500 (estimated with new content)
+- Landing Pages: 9
+- Blog Posts: 1
+- Templates: 2
+- Automation Scripts: 10
+- Documentation: 3
+
+**Key Insights:**
+- Phone camera terminology resonates ("scan receipts with phone" vs abstract "receipt scanner")
+- Photo receipt scanner solves specific pain point: disorganized camera roll
+- Business-focused pages need cost comparisons to traditional software
+- Small business angle emphasizes "total cost" vs "per user" pricing
+- 4-5 step process visualizations working consistently across all pages
+- Schema.org type can vary (WebPage vs SoftwareApplication) based on content focus
+
+---
+
+**End of Changelog - Session 6**
+
+---
+
 *Next update: When new content is generated or templates are modified*

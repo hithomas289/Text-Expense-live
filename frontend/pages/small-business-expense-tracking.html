@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags - PLACEHOLDERS -->
+    <title>Small Business Expense Tracking | Simple WhatsApp Solution</title>
+    <meta name="description" content="Small business expense tracking via WhatsApp. No app download, no training, no IT setup. Track expenses, get Excel reports. Try free.">
+    <meta name="keywords" content="small business expense tracking, SMB expense management, small business expense tracker, expense tracking for small business, business expense tracking">
+    <meta name="author" content="TextExpense">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Small Business Expense Tracking | Simple WhatsApp Solution">
+    <meta property="og:description" content="Small business expense tracking via WhatsApp. No app download, no training, no IT setup. Track expenses, get Excel reports.">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com/pages/small-business-expense-tracking">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Small Business Expense Tracking | TextExpense">
+    <meta name="twitter:description" content="Small business expense tracking via WhatsApp. No app download, no training, no IT setup.">
+    <meta name="twitter:image" content="https://textexpense.com/te-logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://textexpense.com/pages/small-business-expense-tracking">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/te-logo.png">
+    <link rel="apple-touch-icon" href="/te-logo.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Small Business Expense Tracking",
+        "description": "Small business expense tracking via WhatsApp. No app download, no training, no IT setup. Track expenses, get Excel reports.",
+        "url": "https://textexpense.com/pages/small-business-expense-tracking"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --secondary: #075E54;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            padding: 80px 0;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, var(--primary) 0%, var(--primary-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            margin: 40px 0;
+        }
+
+        /* Content Section */
+        .content-section {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .content-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .content-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .content-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer-cta {
+            background: var(--primary);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-cta p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-cta .cta-button {
+            background: white;
+            color: var(--primary);
+        }
+
+        .footer-main {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+
+            /* Fix header layout on mobile */
+            nav {
+                padding: 10px 0;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .logo img {
+                width: 32px !important;
+                height: 32px !important;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            header .cta-button {
+                padding: 8px 14px;
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
+
+            /* Fix hero visibility - increase top padding to account for fixed header */
+            .hero {
+                padding: 140px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .content-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Mobile overrides for inline-styled content */
+            .content-section h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section h3 {
+                font-size: 1.1rem !important;
+            }
+
+            .content-section [style*="padding: 40px"] {
+                padding: 20px !important;
+            }
+
+            .content-section [style*="padding: 30px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="font-size: 3rem"] {
+                font-size: 2rem !important;
+            }
+
+            .content-section [style*="font-size: 2rem"] {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section [style*="font-size: 1.5rem"] {
+                font-size: 1.2rem !important;
+            }
+
+            .content-section [style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* Extra small mobile (iPhone SE, etc.) */
+        @media (max-width: 375px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .logo img {
+                width: 28px !important;
+                height: 28px !important;
+            }
+
+            header .cta-button {
+                padding: 6px 10px;
+                font-size: 0.75rem;
+            }
+
+            .hero {
+                padding: 120px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .content-section [style*="padding: 20px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="margin-bottom: 60px"] {
+                margin-bottom: 30px !important;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HMSDHWE3BS');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">
+                    <img src="/te-logo.png" alt="TextExpense Logo" style="width: 40px; height: 40px;">
+                    TextExpense
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                </ul>
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Small Business Expense Tracking</h1>
+            <p>Track business expenses without the business software headache. TextExpense handles small business expense tracking through WhatsApp. No software to install. No employees to train. No IT department needed.</p>
+            <div class="hero-cta">
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-header">
+                <h2>Small Business Expense Tracking That Actually Works</h2>
+                <p>Zero training required. No IT setup. Actual cost savings. Gets used consistently.</p>
+            </div>
+
+            <!-- CONTENT PLACEHOLDER - Agent inserts custom content here -->
+            
+    <div style="background: linear-gradient(135deg, #fff5f5 0%, #fee2e2 100%); border-left: 4px solid #EF4444; padding: 30px; border-radius: 15px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 15px; color: var(--dark);">The Small Business Expense Tracking Problem</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">You know you should track business expenses properly. The IRS expects it. Your accountant begs for it. Tax deductions depend on it.</p>
+      <p style="color: var(--gray); margin-bottom: 15px;">But traditional small business expense tracking software? Expensive ($5-18/month per user). Complicated (weeks of training). Requires IT setup. Demands behavior change nobody sticks to.</p>
+      <p style="color: var(--gray);">Result: 64% of small businesses report expense leakage. Receipts get lost. Deductions get missed. Tax time becomes chaos.</p>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Small Business Expense Tracking That Actually Works</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ Zero training required</h3>
+          <p style="color: var(--gray);">Your team already uses WhatsApp. They already know how to text photos. That's the entire learning curve for this small business expense tracking solution.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ No IT setup</h3>
+          <p style="color: var(--gray);">Traditional small business expense tracking software needs: installation, account creation, permissions, integrations. This needs: a WhatsApp message. Done.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ Actual cost savings</h3>
+          <p style="color: var(--gray);">Small business expense tracking at $2.99-4.99/month total vs $5-18/month per user. For a 5-person team, save $200-900 annually.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--primary);">✓ Gets used consistently</h3>
+          <p style="color: var(--gray);">Small business expense tracking fails when nobody uses it. This works because it requires zero behavior change - just text receipts like you'd text anything else.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">How Small Business Expense Tracking Works</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">1</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Employees Text Receipts</h3>
+          <p style="color: var(--gray);">After any business purchase, text the receipt photo. Takes 10 seconds. That's their entire role in small business expense tracking.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">2</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">AI Processes Everything</h3>
+          <p style="color: var(--gray);">Small business expense tracking software extracts: merchant, date, amount, tax. Employees confirm details and choose category. Under 60 seconds.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">3</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Owner Gets Excel Reports</h3>
+          <p style="color: var(--gray);">Generate small business expense tracking reports whenever needed. All expenses organized by month, category, employee. Original receipts linked.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">4</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Accountant Gets Clean Data</h3>
+          <p style="color: var(--gray);">Hand your accountant Excel files instead of shoeboxes of receipts. Small business expense tracking that actually prepares you for tax time.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: white; border: 2px solid var(--border); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Small Business Expense Tracking Benefits</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Stop losing receipts</strong> - 49% of receipts get lost. Digital small business expense tracking prevents that entirely.</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Maximize tax deductions</strong> - Proper small business expense tracking captures every deductible expense. IRS gets receipts if audited.</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Save admin time</strong> - No more chasing employees for receipts or manually entering data. Small business expense tracking automation saves hours weekly.</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Better financial visibility</strong> - See what your small business actually spends. Category breakdowns show where money goes.</p>
+      <p style="font-size: 1.1rem; color: var(--gray);"><strong>Accountant-ready records</strong> - Small business expense tracking that generates reports your accountant can actually use. No more spreadsheet chaos.</p>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Perfect Small Business Expense Tracking For</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Restaurants</strong> - Track food costs, supplies, equipment purchases</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Contractors</strong> - Job expenses, materials, tools, vehicle costs</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Consulting firms</strong> - Client expenses, travel, office costs</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Retail stores</strong> - Inventory, supplies, operational expenses</p>
+      <p style="font-size: 1.1rem; color: var(--gray);">Any small business tired of spreadsheets and shoeboxes of receipts.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Pricing (Total, Not Per User)</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Free Trial</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">FREE</div>
+          <p>Try small business expense tracking with one receipt</p>
+        </div>
+
+        <div class="card" style="border: 2px solid var(--primary);">
+          <div style="background: var(--primary); color: white; padding: 6px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; display: inline-block; margin-bottom: 15px;">BEST VALUE</div>
+          <h3>Light</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$2.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+          <p>Small business expense tracking for 6 receipts monthly</p>
+        </div>
+
+        <div class="card">
+          <h3>Pro</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$4.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+          <p>Small business expense tracking for 25 receipts monthly</p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 30px; color: var(--gray);">Not per user. Total cost. Way cheaper than traditional small business expense tracking software.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Frequently Asked Questions</h2>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">How is this different from Expensify or QuickBooks for small business expense tracking?</h3>
+          <p style="color: var(--gray);">Those are comprehensive platforms with tons of features small businesses don't need. This focuses on core small business expense tracking: capture receipts, extract data, generate Excel reports. Through WhatsApp, not downloaded software.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Can multiple employees use this for small business expense tracking?</h3>
+          <p style="color: var(--gray);">Currently each person tracks through their own WhatsApp. For small business expense tracking consolidation, each person can send you their Excel reports to combine.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Does this small business expense tracking work for tax deductions?</h3>
+          <p style="color: var(--gray);">Yes. The small business expense tracking generates IRS-acceptable records: receipt images, extracted data, organized by date and category. Everything needed for tax preparation.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">What if employees forget to submit receipts in small business expense tracking?</h3>
+          <p style="color: var(--gray);">That's a behavior problem, not a software problem. But this small business expense tracking solution has the lowest friction possible - just text a photo. If employees can't do that, no software will help.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Can accountants work with data from this small business expense tracking system?</h3>
+          <p style="color: var(--gray);">Absolutely. Small business expense tracking generates standard Excel files. Any accountant can work with them. Import into accounting software or use directly.</p>
+        </div>
+      </div>
+    </div>
+  
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Start small business expense tracking</h2>
+            <p>Try small business expense tracking that your team will actually use. Text one receipt via WhatsApp - completely free, zero setup required.</p>
+            <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TextExpense</h3>
+                    <p>The simplest way to manage receipts via WhatsApp.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <p><a href="/">Home</a></p>
+                    <p><a href="/blog/">Blog</a></p>
+                    <p><a href="/#pricing">Pricing</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <p><a href="/privacy">Privacy Policy</a></p>
+                    <p><a href="/terms">Terms & Conditions</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TextExpense. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
