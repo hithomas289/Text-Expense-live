@@ -18,7 +18,7 @@ const data = {
   SCHEMA_DESCRIPTION: 'Free expense tracking trial. Text first receipt via WhatsApp completely free, see how automatic processing works. Then $2.99-4.99/month if you continue.',
   HERO_TITLE: 'Best Free Expense Tracker',
   HERO_SUBTITLE: 'Try it free, then decide if it\'s worth $2.99',
-  HERO_TEXT: 'Text your first receipt via WhatsApp completely free. See how automatic processing works, check if the output helps. Then $2.99/month if you want to keep using it.',
+  HERO_TEXT: 'Text your first 3 receipts via WhatsApp completely free. See how automatic processing works, check if the output helps. Then $2.99/month if you want to keep using it.',
   CTA_TEXT: 'Process first receipt free',
   CTA_URL: 'https://textexpense.com/#cta',
   SECTION_TITLE: 'Free Expense Tracker Trial',
@@ -39,7 +39,7 @@ const data = {
 
           <p style="margin-bottom: 20px;">Or they're actually free but terrible. Manual entry, no automation, essentially fancy spreadsheets you still have to maintain yourself.</p>
 
-          <p style="margin-bottom: 20px;">Here's different thinking: try it genuinely free with your first receipt. If the output is useful and tracking actually happens, $2.99 monthly is reasonable. If it's not useful, you paid nothing.</p>
+          <p style="margin-bottom: 20px;">Here's different thinking: try it genuinely free with your first 3 receipts. If the output is useful and tracking actually happens, $2.99 monthly is reasonable. If it's not useful, you paid nothing.</p>
         </div>
       </div>
     </section>
@@ -106,7 +106,7 @@ const data = {
         </div>
 
         <p style="font-size: 1.1em; line-height: 1.7; color: #555; text-align: center; margin-top: 40px;">
-          Everything the paid version does - just for one receipt. See actual functionality, not limited demo.
+          Everything the paid version does -for 3 receipts. See actual functionality, not limited demo.
         </p>
       </div>
     </section>
@@ -168,18 +168,8 @@ const data = {
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
           <div style="background: #f8f9fa; padding: 30px; border-radius: 12px;">
-            <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #10b981;">Free trial seekers</h3>
-            <p style="line-height: 1.7; color: #555;">Want to test before committing any money</p>
-          </div>
-
-          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px;">
             <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #10b981;">Budget-conscious users</h3>
             <p style="line-height: 1.7; color: #555;">Need professional tracking affordably</p>
-          </div>
-
-          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px;">
-            <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #10b981;">Free-tier abandoners</h3>
-            <p style="line-height: 1.7; color: #555;">Tried "free" systems that were useless</p>
           </div>
 
           <div style="background: #f8f9fa; padding: 30px; border-radius: 12px;">
@@ -187,10 +177,6 @@ const data = {
             <p style="line-height: 1.7; color: #555;">Will pay if functionality justifies cost</p>
           </div>
         </div>
-
-        <p style="font-size: 1.1em; line-height: 1.7; color: #555; text-align: center; margin-top: 40px;">
-          If you want free to mean "try risk-free" rather than "limited and annoying," this approach works.
-        </p>
       </div>
     </section>
 
