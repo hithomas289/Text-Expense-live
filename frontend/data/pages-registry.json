@@ -1,11 +1,11 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-14T10:58:47.354Z",
-  "totalPages": 1,
+  "lastUpdated": "2025-11-14T15:46:39.881Z",
+  "totalPages": 2,
   "categories": {
     "freelancer": 1,
     "receipt-scanner": 0,
-    "receipt-management": 0,
+    "receipt-management": 1,
     "text-sms": 0,
     "consultant": 0,
     "general": 0
@@ -28,6 +28,24 @@
         "write-off tracker"
       ],
       "targetAudience": "freelancers, self-employed"
+    },
+    {
+      "slug": "tax-receipt-organizer",
+      "title": "Tax Receipt Organizer",
+      "category": "receipt-management",
+      "url": "/pages/tax-receipt-organizer",
+      "createdDate": "2025-11-14",
+      "lastModified": "2025-11-14",
+      "templateVersion": "v2",
+      "status": "published",
+      "seoKeywords": [
+        "tax receipt organizer",
+        "organize receipts for taxes",
+        "receipt organization tax deductions",
+        "tax deduction organizer",
+        "IRS receipt documentation"
+      ],
+      "targetAudience": "self-employed, small business owners"
     }
   ]
 }

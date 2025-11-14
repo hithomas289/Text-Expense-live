@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags - PLACEHOLDERS -->
+    <title>Tax Receipt Organizer | Organize Receipts for Taxes Via WhatsApp</title>
+    <meta name="description" content="Organize tax receipts via WhatsApp. IRS-ready documentation, audit protection. Text receipts, get categorized reports. Try free.">
+    <meta name="keywords" content="tax receipt organizer, organize receipts for taxes, receipt organization tax deductions, tax deduction organizer, IRS receipt documentation">
+    <meta name="author" content="TextExpense">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Tax Receipt Organizer | Organize Receipts for Taxes Via WhatsApp">
+    <meta property="og:description" content="Organize tax receipts via WhatsApp. IRS-ready documentation, audit protection. Text receipts, get categorized reports.">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com/pages/tax-receipt-organizer">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tax Receipt Organizer | TextExpense">
+    <meta name="twitter:description" content="Organize tax receipts via WhatsApp. IRS-ready documentation, audit protection.">
+    <meta name="twitter:image" content="https://textexpense.com/te-logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://textexpense.com/pages/tax-receipt-organizer">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/te-logo.png">
+    <link rel="apple-touch-icon" href="/te-logo.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Tax Receipt Organizer",
+        "description": "Organize tax receipts via WhatsApp. IRS-ready documentation, audit protection. Text receipts, get categorized reports for tax filing.",
+        "url": "https://textexpense.com/pages/tax-receipt-organizer"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --secondary: #075E54;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            padding: 80px 0;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, var(--primary) 0%, var(--primary-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            margin: 40px 0;
+        }
+
+        /* Content Section */
+        .content-section {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .content-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .content-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .content-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer-cta {
+            background: var(--primary);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-cta p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-cta .cta-button {
+            background: white;
+            color: var(--primary);
+        }
+
+        .footer-main {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+
+            /* Fix header layout on mobile */
+            nav {
+                padding: 10px 0;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .logo img {
+                width: 32px !important;
+                height: 32px !important;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            header .cta-button {
+                padding: 8px 14px;
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
+
+            /* Fix hero visibility - increase top padding to account for fixed header */
+            .hero {
+                padding: 140px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .content-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Mobile overrides for inline-styled content */
+            .content-section h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section h3 {
+                font-size: 1.1rem !important;
+            }
+
+            .content-section [style*="padding: 40px"] {
+                padding: 20px !important;
+            }
+
+            .content-section [style*="padding: 30px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="font-size: 3rem"] {
+                font-size: 2rem !important;
+            }
+
+            .content-section [style*="font-size: 2rem"] {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section [style*="font-size: 1.5rem"] {
+                font-size: 1.2rem !important;
+            }
+
+            .content-section [style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* Extra small mobile (iPhone SE, etc.) */
+        @media (max-width: 375px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .logo img {
+                width: 28px !important;
+                height: 28px !important;
+            }
+
+            header .cta-button {
+                padding: 6px 10px;
+                font-size: 0.75rem;
+            }
+
+            .hero {
+                padding: 120px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .content-section [style*="padding: 20px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="margin-bottom: 60px"] {
+                margin-bottom: 30px !important;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">
+                    <img src="/te-logo.png" alt="TextExpense Logo" style="width: 40px; height: 40px;">
+                    TextExpense
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                </ul>
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Organize Receipt Free</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Tax Receipt Organizer</h1>
+            <p>Organize receipts for taxes without organizing receipts. Text receipt photos via WhatsApp, they get categorized for tax filing automatically. No shoeboxes, no folders, no spreadsheets. Just documented expenses organized by tax category.</p>
+            <div class="hero-cta">
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Organize Receipt Free</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-header">
+                <h2>How Tax Organization Works</h2>
+                <p>Receipt documentation, automatic categorization, audit-ready storage</p>
+            </div>
+
+            <!-- CONTENT PLACEHOLDER - Agent inserts custom content here -->
+            <div style="background: var(--light); border-left: 4px solid var(--danger); padding: 30px; border-radius: 15px; margin-bottom: 60px;">
+  <h2 style="font-size: 2rem; margin-bottom: 15px; color: var(--dark);">The Tax Receipt Problem</h2>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">April arrives. You need to prove $15,000 in business deductions to your accountant or tax software.</p>
+  <p style="color: var(--gray); margin-bottom: 15px;">Where are your receipts? Some in your wallet (faded). Some in your car (lost). Some in emails (scattered). Some you definitely had but can't find. Some you never saved because "I'll remember."</p>
+  <p style="color: var(--gray); margin-bottom: 15px;">Your accountant asks for documentation. You provide what you can find - maybe $8,000 worth. The rest? Missing receipts mean missing deductions. You pay taxes on $7,000 you actually spent but can't prove.</p>
+  <p style="color: var(--gray);"><strong>The IRS doesn't accept "I know I bought that." They want receipts, organized and categorized.</strong> Most people don't have systems until it's too late.</p>
+</div>
+
+<div style="margin-bottom: 60px;">
+  <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">How Tax Organization Works</h2>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
+    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+      <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">1</div>
+      <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Receipt Documentation</h3>
+      <p style="color: var(--gray);">Text receipt photos as expenses happen. Every purchase documented immediately before receipts get lost or fade.</p>
+    </div>
+
+    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+      <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">2</div>
+      <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Automatic Tax Categorization</h3>
+      <p style="color: var(--gray);">We organize by IRS expense categories: business meals (50% deductible), equipment (100%), supplies (100%), travel (100%), vehicle costs, home office.</p>
+    </div>
+
+    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+      <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">3</div>
+      <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Audit-Ready Storage</h3>
+      <p style="color: var(--gray);">Original receipt images stored securely with download links. IRS questions something? Every receipt is accessible, categorized, documented.</p>
+    </div>
+
+    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+      <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">4</div>
+      <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Tax-Time Reports</h3>
+      <p style="color: var(--gray);">Generate Excel files showing expenses by tax category. Exactly what your accountant needs for Schedule C. Clean data, proper categories, complete documentation.</p>
+    </div>
+  </div>
+</div>
+
+<div style="background: white; border: 2px solid var(--border); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+  <h2 style="font-size: 2rem; margin-bottom: 20px;">Tax Categories Organized</h2>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Business meals and entertainment</strong> - Client dinners, networking lunches (50% deductible)</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Office expenses</strong> - Supplies, furniture, equipment for business space</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Vehicle and mileage</strong> - Business driving, gas, maintenance, insurance</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Travel expenses</strong> - Transportation, hotels, 50% of meals during business trips</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Equipment purchases</strong> - Computers, phones, tools, machinery for business</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Professional services</strong> - Accountant fees, legal fees, consulting costs</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Marketing and advertising</strong> - Website, business cards, ads, promotions</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Home office</strong> - Portion of rent, utilities, internet for dedicated workspace</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Software and subscriptions</strong> - All business platforms and services</p>
+  <p style="font-size: 1.1rem; color: var(--gray);"><strong>Education and development</strong> - Courses, books, conferences improving skills</p>
+  <p style="color: var(--gray); margin-top: 20px; font-style: italic;">Every category matches Schedule C line items. Not generic labels - actual tax form categories.</p>
+</div>
+
+<div style="background: var(--light); border: 2px solid var(--primary); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+  <h2 style="font-size: 2rem; margin-bottom: 20px;">Why Tax Organization Matters</h2>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>IRS requires documentation</strong> - Claiming $10,000 in deductions? IRS might ask for proof. Without organized receipts, deductions get denied.</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Audit protection</strong> - If audited, you need every receipt accessible. Digital organization means documentation is ready, not scattered in boxes.</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Accountant efficiency</strong> - Organized receipts mean faster tax preparation. Lower accountant bills because they're not sorting your chaos.</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Deduction maximization</strong> - Proper organization ensures nothing gets missed. Small expenses add up - $4 coffee meetings, $15 subscriptions, $25 supplies.</p>
+  <p style="font-size: 1.1rem; color: var(--gray);"><strong>Time savings</strong> - April doesn't become panic scramble. Receipts are organized all year, tax filing is straightforward.</p>
+  <p style="color: var(--gray); margin-top: 20px; font-style: italic;">Average person with organized receipts claims $3,000-7,000 more in deductions than those with poor documentation.</p>
+</div>
+
+<div style="background: var(--light); border: 2px solid var(--success); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+  <h2 style="font-size: 2rem; margin-bottom: 20px;">What Makes This Tax-Ready</h2>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Real-time organization</strong> - Receipts categorized when they happen, not during tax panic in March.</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>IRS-compliant categories</strong> - Expenses sorted by actual Schedule C categories. Not custom labels that don't match tax forms.</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Original image backup</strong> - Every receipt stored with download links. Audit requests? Documentation is accessible instantly.</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Professional formatting</strong> - Excel reports formatted for accountants. Clean data, proper categories, complete information.</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Document vault</strong> - All receipts searchable in secure vault. Need that September expense? Find it in seconds.</p>
+  <p style="font-size: 1.1rem; color: var(--gray);"><strong>Personal receipts too</strong> - Text all receipts - work and personal. Tag during confirmation. Business goes to tax reports, personal stays in your vault for warranties, insurance claims, returns, or whatever you need.</p>
+</div>
+
+<div style="background: white; border: 2px solid var(--border); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+  <h2 style="font-size: 2rem; margin-bottom: 20px;">Who Needs Tax Organization</h2>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Self-employed professionals</strong> - Filing Schedule C, need deduction documentation</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Business owners</strong> - Claiming business expenses on tax returns</p>
+  <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Previous receipt losers</strong> - Already paid extra taxes due to missing documentation</p>
+  <p style="font-size: 1.1rem; color: var(--gray);"><strong>Audit-conscious filers</strong> - Want protection if IRS questions their return</p>
+  <p style="color: var(--gray); margin-top: 20px; font-style: italic;">If you claim business deductions, the IRS expects documentation. Organized receipts are required, not optional.</p>
+</div>
+
+<div style="margin-bottom: 60px;">
+  <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Pricing</h2>
+  <div class="cards-grid">
+    <div class="card">
+      <h3>First Receipt</h3>
+      <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">FREE</div>
+      <p>Organize one to see the system</p>
+    </div>
+
+    <div class="card" style="border: 2px solid var(--primary);">
+      <div style="background: var(--primary); color: white; padding: 6px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; display: inline-block; margin-bottom: 15px;">LIGHT USERS</div>
+      <h3>Light</h3>
+      <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$2.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+      <p>Organize 6 receipts monthly</p>
+    </div>
+
+    <div class="card">
+      <h3>Pro</h3>
+      <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$4.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+      <p>Organize 25 receipts monthly</p>
+    </div>
+  </div>
+  <p style="text-align: center; margin-top: 30px; color: var(--gray);">Invest $36-60 yearly in organization, save $1,000-3,000 in taxes through better documentation.</p>
+</div>
+
+<div style="margin-bottom: 60px;">
+  <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Common Questions</h2>
+
+  <div style="max-width: 800px; margin: 0 auto;">
+    <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+      <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Will this satisfy IRS audit requirements?</h3>
+      <p style="color: var(--gray);">TextExpense provides digital receipt backup with original images, dates, amounts, and merchant names - standard IRS documentation requirements. Your accountant can advise on your specific situation.</p>
+    </div>
+
+    <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+      <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Can my accountant use these reports?</h3>
+      <p style="color: var(--gray);">Yes. Standard Excel format with expenses organized by Schedule C categories. Most accountants prefer organized digital records over physical shoebox receipts.</p>
+    </div>
+
+    <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+      <h3 style="font-size: 1.2rem; margin-bottom: 15px;">What if I already lost receipts from this year?</h3>
+      <p style="color: var(--gray);">Start now with remaining months. Better partial documentation than none. For lost receipts, bank statements might provide some backup (consult your accountant).</p>
+    </div>
+
+    <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+      <h3 style="font-size: 1.2rem; margin-bottom: 15px;">How long should I keep tax receipts?</h3>
+      <p style="color: var(--gray);">IRS generally requires 3 years. TextExpense keeps receipts indefinitely in your vault unless you delete them. Always available when needed.</p>
+    </div>
+
+    <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+      <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Can I organize both business and personal receipts?</h3>
+      <p style="color: var(--gray);">Absolutely! Text all receipts - work and personal. Tag them during confirmation. Business expenses get categorized for taxes, personal receipts stay accessible in your document vault for insurance claims, warranties, or returns.</p>
+    </div>
+
+    <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px;">
+      <h3 style="font-size: 1.2rem; margin-bottom: 15px;">What about expenses without receipts like mileage?</h3>
+      <p style="color: var(--gray);">For mileage, home office, or other calculated deductions, you can manually enter them. But most expenses need receipt documentation which TextExpense handles.</p>
+    </div>
+  </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Start Organizing</h2>
+            <p>Text one receipt via WhatsApp, see how tax categorization works. Free, no credit card needed. Tax-ready organization that actually prevents April panic.</p>
+            <a href="https://wa.me/17654792054?text=hi" class="cta-button">Organize Receipt Free</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TextExpense</h3>
+                    <p>The simplest way to manage receipts via WhatsApp.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <p><a href="/">Home</a></p>
+                    <p><a href="/blog/">Blog</a></p>
+                    <p><a href="/#pricing">Pricing</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <p><a href="/privacy">Privacy Policy</a></p>
+                    <p><a href="/terms">Terms & Conditions</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TextExpense. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
