@@ -1,9 +1,11 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-14T16:02:08.575Z",
-  "totalPosts": 2,
+  "lastUpdated": "2025-11-14T16:26:12.187Z",
+  "totalPosts": 4,
   "categories": {
     "receipt-management": 1,
+    "small-business": 1,
+    "tax-preparation": 1,
     "Small Business Tips": 1
   },
   "posts": [
@@ -25,6 +27,50 @@
         "business expenses",
         "receipt tracking",
         "digital receipts"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "how-to-organize-receipts-small-business",
+      "title": "How to Organize Receipts for Small Business (Without Losing Your Mind)",
+      "category": "small-business",
+      "url": "/blog/how-to-organize-receipts-small-business",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-14",
+      "lastModified": "2025-11-14",
+      "readingTime": "9",
+      "excerpt": "Small business receipts piling up? Learn a dead-simple system that takes 30 seconds per receipt and saves thousands in tax deductions. 3 receipts free to try.",
+      "tags": [
+        "small business receipts",
+        "organize business receipts",
+        "tax deductions",
+        "expense tracking",
+        "business accounting",
+        "receipt management",
+        "IRS documentation"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "how-to-organize-receipts-for-taxes",
+      "title": "How to Organize Receipts for Taxes (And Actually Find Them When You Need Them)",
+      "category": "tax-preparation",
+      "url": "/blog/how-to-organize-receipts-for-taxes",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-14",
+      "lastModified": "2025-11-14",
+      "readingTime": "8",
+      "excerpt": "Don't let lost receipts cost you thousands in tax deductions. Simple system takes 30 seconds per receipt. Works for freelancers, business owners, everyone. Try ",
+      "tags": [
+        "tax receipts",
+        "organize receipts for taxes",
+        "tax deductions",
+        "IRS documentation",
+        "tax preparation",
+        "self-employed taxes",
+        "freelancer taxes"
       ],
       "status": "published",
       "templateVersion": "v2"
