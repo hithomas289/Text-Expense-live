@@ -27,221 +27,201 @@ const data = {
   FOOTER_CTA_SUBTITLE: 'Text one receipt via WhatsApp. Completely free, see how automatic processing works. No credit card, no commitment.',
   GA_MEASUREMENT_ID: 'G-5F3EMPRHFP',
   MAIN_CONTENT: `
-    <!-- Free Tracker Search Section -->
-    <section style="padding: 60px 20px; background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
+    <div style="background: linear-gradient(135deg, #fff5f5 0%, #fee2e2 100%); border-left: 4px solid var(--danger); padding: 30px; border-radius: 15px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 15px; color: var(--dark);">The Free Expense Tracker Search</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">
+        You're looking for free expense tracking. Understandable - why pay for something before knowing if it works?
+      </p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">
+        The problem with "free" expense trackers: they're free for a reason. Limited features, annoying ads, data selling, or they're loss leaders for expensive upgrades.
+      </p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">
+        Or they're actually free but terrible. Manual entry, no automation, essentially fancy spreadsheets you still have to maintain yourself.
+      </p>
+      <p style="font-size: 1.1rem; color: var(--gray);">
+        Here's different thinking: try it genuinely free with your first 3 receipts. If the output is useful and tracking actually happens, $2.99 monthly is reasonable. If it's not useful, you paid nothing.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">How Free Trial Works</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--dark);">First Receipt: Completely Free</h3>
+          <p style="color: var(--gray);">
+            Text any receipt photo. We process it, extract data, show you how categorization works. No credit card, no commitment, no catch.
+          </p>
+        </div>
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--dark);">See Actual Output</h3>
+          <p style="color: var(--gray);">
+            You get real results - extracted receipt data, category assignment, Excel format preview. Not a demo - actual processing.
+          </p>
+        </div>
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--dark);">Decide If Worth Continuing</h3>
+          <p style="color: var(--gray);">
+            Processing work? Output useful? Then $2.99 monthly for 6 more receipts or $4.99 for 25 receipts. Not useful? Stop there, paid nothing.
+          </p>
+        </div>
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--dark);">No Tricks</h3>
+          <p style="color: var(--gray);">
+            We don't auto-charge. No credit card capture during free trial. No "free but limited to 3 fields" restrictions. Genuine free first receipt.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 60px 30px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center; color: var(--dark);">What Free Trial Includes</h2>
       <div style="max-width: 800px; margin: 0 auto;">
-        <h2 style="font-size: 2.5em; margin-bottom: 30px; text-align: center; color: #1a1a1a;">The Free Expense Tracker Search</h2>
-
-        <div style="font-size: 1.1em; line-height: 1.8; color: #333; margin-bottom: 20px;">
-          <p style="margin-bottom: 20px;">You're looking for free expense tracking. Understandable - why pay for something before knowing if it works?</p>
-
-          <p style="margin-bottom: 20px;">The problem with "free" expense trackers: they're free for a reason. Limited features, annoying ads, data selling, or they're loss leaders for expensive upgrades.</p>
-
-          <p style="margin-bottom: 20px;">Or they're actually free but terrible. Manual entry, no automation, essentially fancy spreadsheets you still have to maintain yourself.</p>
-
-          <p style="margin-bottom: 20px;">Here's different thinking: try it genuinely free with your first 3 receipts. If the output is useful and tracking actually happens, $2.99 monthly is reasonable. If it's not useful, you paid nothing.</p>
+        <div style="margin-bottom: 25px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">Full OCR processing</h3>
+          <p style="color: var(--gray);">Complete text extraction from receipt photo</p>
+        </div>
+        <div style="margin-bottom: 25px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">Data structuring</h3>
+          <p style="color: var(--gray);">Merchant name, date, amount, tax automatically organized</p>
+        </div>
+        <div style="margin-bottom: 25px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">Category selection</h3>
+          <p style="color: var(--gray);">Choose expense type, see how organization works</p>
+        </div>
+        <div style="margin-bottom: 25px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">Excel preview</h3>
+          <p style="color: var(--gray);">View how expense appears in professional report format</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">Receipt backup</h3>
+          <p style="color: var(--gray);">Original image stored in document vault</p>
         </div>
       </div>
-    </section>
+      <p style="font-size: 1.1rem; color: var(--gray); text-align: center; margin-top: 30px;">
+        Everything the paid version does - for 3 receipts. See actual functionality, not limited demo.
+      </p>
+    </div>
 
-    <!-- How Free Trial Works Section -->
-    <section style="padding: 60px 20px; background: #ffffff;">
-      <div style="max-width: 1000px; margin: 0 auto;">
-        <h2 style="font-size: 2.5em; margin-bottom: 50px; text-align: center; color: #1a1a1a;">How Free Trial Works</h2>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
-          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 4px solid #10b981;">
-            <h3 style="font-size: 1.4em; margin-bottom: 15px; color: #1a1a1a;">First Receipt: Completely Free</h3>
-            <p style="line-height: 1.7; color: #555;">Text any receipt photo. We process it, extract data, show you how categorization works. No credit card, no commitment, no catch.</p>
-          </div>
-
-          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 4px solid #10b981;">
-            <h3 style="font-size: 1.4em; margin-bottom: 15px; color: #1a1a1a;">See Actual Output</h3>
-            <p style="line-height: 1.7; color: #555;">You get real results - extracted receipt data, category assignment, Excel format preview. Not a demo - actual processing.</p>
-          </div>
-
-          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 4px solid #10b981;">
-            <h3 style="font-size: 1.4em; margin-bottom: 15px; color: #1a1a1a;">Decide If Worth Continuing</h3>
-            <p style="line-height: 1.7; color: #555;">Processing work? Output useful? Then $2.99 monthly for 6 more receipts or $4.99 for 25 receipts. Not useful? Stop there, paid nothing.</p>
-          </div>
-
-          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 4px solid #10b981;">
-            <h3 style="font-size: 1.4em; margin-bottom: 15px; color: #1a1a1a;">No Tricks</h3>
-            <p style="line-height: 1.7; color: #555;">We don't auto-charge. No credit card capture during free trial. No "free but limited to 3 fields" restrictions. Genuine free first receipt.</p>
-          </div>
+    <div style="background: white; padding: 60px 30px; border-radius: 20px; box-shadow: var(--shadow); margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">After Free Trial</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); text-align: center; margin-bottom: 40px;">
+        If useful, continued tracking costs:
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 700px; margin: 0 auto 40px auto;">
+        <div style="background: linear-gradient(135deg, var(--success) 0%, #059669 100%); color: white; padding: 30px; border-radius: 15px; text-align: center;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 10px;">$2.99/month</h3>
+          <p style="font-size: 1.1rem;">Process 6 additional receipts monthly</p>
+        </div>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 15px; text-align: center;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 10px;">$4.99/month</h3>
+          <p style="font-size: 1.1rem;">Process 25 additional receipts monthly</p>
         </div>
       </div>
-    </section>
+      <p style="font-size: 1.1rem; color: var(--gray); text-align: center;">
+        That's $0.50-0.20 per receipt for automatic processing, categorization, Excel generation, backup storage.
+      </p>
+      <p style="font-size: 1.1rem; color: var(--gray); font-style: italic; text-align: center; margin-top: 20px;">
+        Compare: Your time manually entering receipts, organizing by category, creating spreadsheets. How much is your time worth?
+      </p>
+    </div>
 
-    <!-- What Free Trial Includes Section -->
-    <section style="padding: 60px 20px; background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
+    <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 60px 30px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px; text-align: center; color: var(--dark);">Why Not Permanently Free?</h2>
       <div style="max-width: 800px; margin: 0 auto;">
-        <h2 style="font-size: 2.5em; margin-bottom: 40px; text-align: center; color: #1a1a1a;">What Free Trial Includes</h2>
-
-        <div style="font-size: 1.1em; line-height: 1.8; color: #333;">
-          <div style="margin-bottom: 25px; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-            <h3 style="font-size: 1.3em; margin-bottom: 10px; color: #10b981;">Full OCR processing</h3>
-            <p>Complete text extraction from receipt photo</p>
-          </div>
-
-          <div style="margin-bottom: 25px; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-            <h3 style="font-size: 1.3em; margin-bottom: 10px; color: #10b981;">Data structuring</h3>
-            <p>Merchant name, date, amount, tax automatically organized</p>
-          </div>
-
-          <div style="margin-bottom: 25px; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-            <h3 style="font-size: 1.3em; margin-bottom: 10px; color: #10b981;">Category selection</h3>
-            <p>Choose expense type, see how organization works</p>
-          </div>
-
-          <div style="margin-bottom: 25px; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-            <h3 style="font-size: 1.3em; margin-bottom: 10px; color: #10b981;">Excel preview</h3>
-            <p>View how expense appears in professional report format</p>
-          </div>
-
-          <div style="margin-bottom: 0; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-            <h3 style="font-size: 1.3em; margin-bottom: 10px; color: #10b981;">Receipt backup</h3>
-            <p>Original image stored in document vault</p>
-          </div>
-        </div>
-
-        <p style="font-size: 1.1em; line-height: 1.7; color: #555; text-align: center; margin-top: 40px;">
-          Everything the paid version does -for 3 receipts. See actual functionality, not limited demo.
+        <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">
+          Real answer: Processing costs money. OCR isn't free. AI categorization isn't free. Cloud storage isn't free. Server time isn't free.
+        </p>
+        <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">
+          "Free" expense trackers either:
+        </p>
+        <ul style="margin-left: 30px; margin-bottom: 15px;">
+          <li style="font-size: 1.1rem; color: var(--gray); margin-bottom: 10px;">Limit features severely (defeats the purpose)</li>
+          <li style="font-size: 1.1rem; color: var(--gray); margin-bottom: 10px;">Sell your data (not happening here)</li>
+          <li style="font-size: 1.1rem; color: var(--gray); margin-bottom: 10px;">Show annoying ads (also not happening)</li>
+          <li style="font-size: 1.1rem; color: var(--gray); margin-bottom: 10px;">Are terrible and you abandon them anyway</li>
+        </ul>
+        <p style="font-size: 1.1rem; color: var(--gray);">
+          $2.99-4.99 monthly enables professional functionality without compromises. First receipt free lets you verify it's actually worth that before paying anything.
         </p>
       </div>
-    </section>
+    </div>
 
-    <!-- After Free Trial Section -->
-    <section style="padding: 60px 20px; background: #ffffff;">
-      <div style="max-width: 700px; margin: 0 auto;">
-        <h2 style="font-size: 2.5em; margin-bottom: 40px; text-align: center; color: #1a1a1a;">After Free Trial</h2>
-
-        <p style="font-size: 1.2em; line-height: 1.7; color: #555; text-align: center; margin-bottom: 40px;">
-          If useful, continued tracking costs:
-        </p>
-
-        <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 25px; text-align: center;">
-          <h3 style="font-size: 1.5em; margin-bottom: 10px;">$2.99/month</h3>
-          <p style="font-size: 1.1em;">Process 6 additional receipts monthly</p>
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Who This Helps</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; max-width: 800px; margin: 0 auto;">
+        <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow);">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">Budget-conscious users</h3>
+          <p style="color: var(--gray);">Need professional tracking affordably</p>
         </div>
-
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 40px; text-align: center;">
-          <h3 style="font-size: 1.5em; margin-bottom: 10px;">$4.99/month</h3>
-          <p style="font-size: 1.1em;">Process 25 additional receipts monthly</p>
+        <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow);">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">Value shoppers</h3>
+          <p style="color: var(--gray);">Will pay if functionality justifies cost</p>
         </div>
-
-        <p style="font-size: 1.1em; line-height: 1.7; color: #555; text-align: center;">
-          That's $0.50-0.20 per receipt for automatic processing, categorization, Excel generation, backup storage.
-        </p>
-
-        <p style="font-size: 1.1em; line-height: 1.7; color: #555; text-align: center; margin-top: 30px; font-style: italic;">
-          Compare: Your time manually entering receipts, organizing by category, creating spreadsheets. How much is your time worth?
-        </p>
       </div>
-    </section>
+    </div>
 
-    <!-- Why Not Permanently Free Section -->
-    <section style="padding: 60px 20px; background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
+    <div style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); padding: 60px 30px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center; color: var(--dark);">Pricing</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; max-width: 900px; margin: 0 auto;">
+        <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow); text-align: center;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: var(--dark);">First receipt: FREE</h3>
+          <p style="color: var(--gray);">Process one completely free, no card needed</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: var(--dark);">Light: $2.99/month</h3>
+          <p style="color: var(--gray);">Continue with 6 receipts monthly</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: var(--dark);">Pro: $4.99/month</h3>
+          <p style="color: var(--gray);">Continue with 25 receipts monthly</p>
+        </div>
+      </div>
+      <p style="font-size: 1.1rem; color: var(--gray); text-align: center; font-style: italic; margin-top: 30px;">
+        Try free, pay only if valuable enough to continue.
+      </p>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 60px 30px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center; color: var(--dark);">Common Questions</h2>
       <div style="max-width: 800px; margin: 0 auto;">
-        <h2 style="font-size: 2.5em; margin-bottom: 30px; text-align: center; color: #1a1a1a;">Why Not Permanently Free?</h2>
-
-        <div style="font-size: 1.1em; line-height: 1.8; color: #333; margin-bottom: 30px;">
-          <p style="margin-bottom: 20px;">Real answer: Processing costs money. OCR isn't free. AI categorization isn't free. Cloud storage isn't free. Server time isn't free.</p>
-
-          <p style="margin-bottom: 20px;">"Free" expense trackers either:</p>
-          <ul style="margin-left: 30px; margin-bottom: 20px;">
-            <li style="margin-bottom: 10px;">Limit features severely (defeats the purpose)</li>
-            <li style="margin-bottom: 10px;">Sell your data (not happening here)</li>
-            <li style="margin-bottom: 10px;">Show annoying ads (also not happening)</li>
-            <li style="margin-bottom: 10px;">Are terrible and you abandon them anyway</li>
-          </ul>
-
-          <p style="margin-bottom: 20px;">$2.99-4.99 monthly enables professional functionality without compromises. First receipt free lets you verify it's actually worth that before paying anything.</p>
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">Is the free receipt actually free?</h3>
+          <p style="color: var(--gray);">
+            Yes. No credit card required, no automatic billing, no hidden charges. Process one receipt to see how it works. If you don't continue, you paid nothing.
+          </p>
+        </div>
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">What happens after the free receipt?</h3>
+          <p style="color: var(--gray);">
+            Nothing automatic. To process more receipts, you choose a paid plan. We don't auto-charge or require payment upfront.
+          </p>
+        </div>
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">Why offer free trial if product is good?</h3>
+          <p style="color: var(--gray);">
+            Because "good" is subjective. Maybe you find manual tracking easier. Maybe you need different features. Free trial lets you decide if this specific solution works for you.
+          </p>
+        </div>
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">Is this truly complete, not just a limited free plan?</h3>
+          <p style="color: var(--gray);">
+            The free receipt gets full processing - OCR, categorization, Excel formatting, vault storage. Same quality as paid version. Just limited to one receipt to test functionality.
+          </p>
+        </div>
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">Can I track both business and personal receipts?</h3>
+          <p style="color: var(--gray);">
+            Yes! Text all receipts - work and personal. Tag during confirmation. Business expenses get organized for taxes, personal receipts stay in your searchable document vault for warranties, returns, or whatever you need.
+          </p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dark);">What if I only process 2-3 receipts monthly?</h3>
+          <p style="color: var(--gray);">
+            $2.99 for 6 receipts means $0.50 per receipt if you use all 6. Even using just 3 receipts, that's $1 per receipt for automatic processing versus manual entry time.
+          </p>
         </div>
       </div>
-    </section>
-
-    <!-- Target Audience Section -->
-    <section style="padding: 60px 20px; background: #ffffff;">
-      <div style="max-width: 900px; margin: 0 auto;">
-        <h2 style="font-size: 2.5em; margin-bottom: 40px; text-align: center; color: #1a1a1a;">Who This Helps</h2>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
-          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px;">
-            <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #10b981;">Budget-conscious users</h3>
-            <p style="line-height: 1.7; color: #555;">Need professional tracking affordably</p>
-          </div>
-
-          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px;">
-            <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #10b981;">Value shoppers</h3>
-            <p style="line-height: 1.7; color: #555;">Will pay if functionality justifies cost</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section style="padding: 60px 20px; background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
-      <div style="max-width: 700px; margin: 0 auto; text-align: center;">
-        <h2 style="font-size: 2.5em; margin-bottom: 50px; color: #1a1a1a;">Pricing</h2>
-
-        <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 25px;">
-          <h3 style="font-size: 1.6em; margin-bottom: 10px;">First receipt: FREE</h3>
-          <p style="font-size: 1.1em;">Process one completely free, no card needed</p>
-        </div>
-
-        <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); margin-bottom: 25px;">
-          <h3 style="font-size: 1.4em; margin-bottom: 10px; color: #1a1a1a;">Light: $2.99/month</h3>
-          <p style="color: #666; font-size: 1.05em;">Continue with 6 receipts monthly</p>
-        </div>
-
-        <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
-          <h3 style="font-size: 1.4em; margin-bottom: 10px; color: #1a1a1a;">Pro: $4.99/month</h3>
-          <p style="color: #666; font-size: 1.05em;">Continue with 25 receipts monthly</p>
-        </div>
-
-        <p style="font-size: 1.1em; line-height: 1.7; color: #555; margin-top: 40px;">
-          Try free, pay only if valuable enough to continue.
-        </p>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section style="padding: 60px 20px; background: #ffffff;">
-      <div style="max-width: 800px; margin: 0 auto;">
-        <h2 style="font-size: 2.5em; margin-bottom: 50px; text-align: center; color: #1a1a1a;">Common Questions</h2>
-
-        <div style="margin-bottom: 35px;">
-          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">Is the free receipt actually free?</h3>
-          <p style="line-height: 1.7; color: #555;">Yes. No credit card required, no automatic billing, no hidden charges. Process one receipt to see how it works. If you don't continue, you paid nothing.</p>
-        </div>
-
-        <div style="margin-bottom: 35px;">
-          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">What happens after the free receipt?</h3>
-          <p style="line-height: 1.7; color: #555;">Nothing automatic. To process more receipts, you choose a paid plan. We don't auto-charge or require payment upfront.</p>
-        </div>
-
-        <div style="margin-bottom: 35px;">
-          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">Why offer free trial if product is good?</h3>
-          <p style="line-height: 1.7; color: #555;">Because "good" is subjective. Maybe you find manual tracking easier. Maybe you need different features. Free trial lets you decide if this specific solution works for you.</p>
-        </div>
-
-        <div style="margin-bottom: 35px;">
-          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">Is this truly complete, not just a limited free plan?</h3>
-          <p style="line-height: 1.7; color: #555;">The free receipt gets full processing - OCR, categorization, Excel formatting, vault storage. Same quality as paid version. Just limited to one receipt to test functionality.</p>
-        </div>
-
-        <div style="margin-bottom: 35px;">
-          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">Can I track both business and personal receipts?</h3>
-          <p style="line-height: 1.7; color: #555;">Yes! Text all receipts - work and personal. Tag during confirmation. Business expenses get organized for taxes, personal receipts stay in your searchable document vault for warranties, returns, or whatever you need.</p>
-        </div>
-
-        <div style="margin-bottom: 0;">
-          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">What if I only process 2-3 receipts monthly?</h3>
-          <p style="line-height: 1.7; color: #555;">$2.99 for 6 receipts means $0.50 per receipt if you use all 6. Even using just 3 receipts, that's $1 per receipt for automatic processing versus manual entry time.</p>
-        </div>
-      </div>
-    </section>
+    </div>
   `
 };
 
