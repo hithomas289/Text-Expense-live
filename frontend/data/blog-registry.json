@@ -1,11 +1,13 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-14T16:26:12.187Z",
-  "totalPosts": 4,
+  "lastUpdated": "2025-11-14T17:01:49.040Z",
+  "totalPosts": 6,
   "categories": {
     "receipt-management": 1,
     "small-business": 1,
     "tax-preparation": 1,
+    "expense-tracking": 1,
+    "business-expenses": 1,
     "Small Business Tips": 1
   },
   "posts": [
@@ -71,6 +73,49 @@
         "tax preparation",
         "self-employed taxes",
         "freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "how-to-track-expenses",
+      "title": "How to Track Expenses (Without Spreadsheets or Stress)",
+      "category": "expense-tracking",
+      "url": "/blog/how-to-track-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-14",
+      "lastModified": "2025-11-14",
+      "readingTime": "7",
+      "excerpt": "Spending hours on expense tracking? There's a simpler way. 30 seconds per expense, zero manual typing. Try 3 free, then $2.99/month.",
+      "tags": [
+        "expense tracking",
+        "track expenses",
+        "personal finance",
+        "business expenses",
+        "budgeting",
+        "expense management",
+        "bookkeeping"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "how-to-track-business-expenses",
+      "title": "How to Track Business Expenses (The Simple Way)",
+      "category": "business-expenses",
+      "url": "/blog/how-to-track-business-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-14",
+      "lastModified": "2025-11-14",
+      "readingTime": "6",
+      "excerpt": "Business expenses eating up your time? Track them in 30 seconds each. No spreadsheets, no apps to remember. Try 3 free.",
+      "tags": [
+        "business expenses",
+        "expense tracking",
+        "small business accounting",
+        "business bookkeeping",
+        "tax deductions",
+        "expense management"
       ],
       "status": "published",
       "templateVersion": "v2"

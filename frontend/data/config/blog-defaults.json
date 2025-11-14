@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "description": "Shared defaults for all blog posts. Individual blogs can override these values.",
+
+  "defaults": {
+    "AUTHOR_NAME": "TextExpense Team",
+    "AUTHOR_INITIALS": "TE",
+
+    "OG_IMAGE": "https://textexpense.com/te-logo.png",
+    "TWITTER_IMAGE": "https://textexpense.com/te-logo.png",
+
+    "GA_MEASUREMENT_ID": "G-HMSDHWE3BS",
+
+    "CTA_URL": "https://wa.me/17654792054?text=hi",
+    "CTA_TEXT": "Try 3 Free",
+    "CTA_TITLE": "Try 3 Free - No Credit Card",
+    "CTA_DESCRIPTION": "See how simple it is in 30 seconds.",
+
+    "FOOTER_CTA_URL": "https://wa.me/17654792054?text=hi",
+    "FOOTER_CTA_TEXT": "Start Free on WhatsApp",
+    "FOOTER_CTA_TITLE": "Ready to Get Started?",
+    "FOOTER_CTA_SUBTITLE": "Text receipts to WhatsApp. Get organized instantly.",
+    "FOOTER_CTA_DESCRIPTION": "Text receipts to WhatsApp. Get organized instantly.",
+
+    "FEATURED_IMAGE": "",
+
+    "status": "published",
+    "templateVersion": "v2"
+  }
+}
