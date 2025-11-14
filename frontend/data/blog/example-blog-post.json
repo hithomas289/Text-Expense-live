@@ -1,0 +1,51 @@
+{
+  "slug": "example-blog-post",
+  "category": "general",
+  "status": "draft",
+  "templateVersion": "v2",
+
+  "TITLE": "Example Blog Post Title | TextExpense Blog",
+  "META_DESCRIPTION": "This is an example blog post showing the V2 data-driven blog generation system. Use this as a template for creating new blog posts.",
+  "KEYWORDS": "example, blog post, v2 system, content marketing",
+
+  "AUTHOR_NAME": "Your Name",
+  "AUTHOR_INITIALS": "YN",
+
+  "CANONICAL_URL": "https://textexpense.com/blog/example-blog-post",
+  "CANONICAL_URL_ENCODED": "https%3A%2F%2Ftextexpense.com%2Fblog%2Fexample-blog-post",
+
+  "OG_TITLE": "Example Blog Post Title",
+  "OG_DESCRIPTION": "This is an example blog post showing the V2 blog generation system.",
+  "OG_IMAGE": "https://textexpense.com/te-logo.png",
+
+  "TWITTER_TITLE": "Example Blog Post Title",
+  "TWITTER_DESCRIPTION": "This is an example blog post showing the V2 blog generation system.",
+  "TWITTER_IMAGE": "https://textexpense.com/te-logo.png",
+  "TWITTER_SHARE_TEXT": "Check out this blog post from TextExpense!",
+
+  "PUBLISH_DATE_ISO": "2025-11-14T10:00:00Z",
+  "MODIFIED_DATE_ISO": "2025-11-14T10:00:00Z",
+  "PUBLISH_DATE": "November 14, 2025",
+  "publishDate": "2025-11-14",
+
+  "GA_MEASUREMENT_ID": "G-XXXXXXXXXX",
+
+  "CATEGORY": "General",
+  "ARTICLE_TITLE": "Example Blog Post: How to Use the V2 System",
+  "READING_TIME": "5",
+
+  "FEATURED_IMAGE": "",
+
+  "ARTICLE_CONTENT": "<p>This is the main content of your blog post. Write your article here using HTML.</p>\n\n<h2>First Major Section</h2>\n\n<p>This is where you write the first section of your blog post. You can include:</p>\n\n<ul>\n  <li>Bullet points for easy scanning</li>\n  <li>Multiple paragraphs for detailed explanations</li>\n  <li>Examples and use cases</li>\n</ul>\n\n<blockquote>\n  Pro tip: Use blockquotes to highlight important insights or quotes.\n</blockquote>\n\n<h2>Second Major Section</h2>\n\n<p>Continue your article with additional sections. Structure your content with clear headings for better readability.</p>\n\n<h3>Subsection Example</h3>\n\n<p>You can use h3 tags for subsections within your main sections.</p>\n\n<ol>\n  <li>Numbered lists work great for step-by-step instructions</li>\n  <li>They help readers follow a sequence</li>\n  <li>And make your content more actionable</li>\n</ol>\n\n<h2>Conclusion</h2>\n\n<p><strong>Wrap up your post with key takeaways and a call to action.</strong></p>\n\n<p>Remember to keep your paragraphs concise and your language clear.</p>",
+
+  "TAGS": "example, blog, tutorial, v2 system",
+
+  "CTA_URL": "https://wa.me/17654792054?text=hi",
+  "CTA_TITLE": "Ready to Get Started?",
+  "CTA_DESCRIPTION": "Try TextExpense free today. Track expenses via WhatsApp.",
+
+  "FOOTER_CTA_TITLE": "Start Tracking Expenses Today",
+  "FOOTER_CTA_SUBTITLE": "Join thousands using TextExpense for receipt management.",
+
+  "RELATED_POSTS": "<div class=\"related-post\">\n  <h3>Related Article Title</h3>\n  <p>Brief description of related post...</p>\n  <a href=\"/blog/related-post-slug\">Read more →</a>\n</div>"
+}

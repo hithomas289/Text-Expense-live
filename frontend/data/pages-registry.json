@@ -1,0 +1,33 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2025-11-14T10:58:47.354Z",
+  "totalPages": 1,
+  "categories": {
+    "freelancer": 1,
+    "receipt-scanner": 0,
+    "receipt-management": 0,
+    "text-sms": 0,
+    "consultant": 0,
+    "general": 0
+  },
+  "pages": [
+    {
+      "slug": "freelance-tax-deduction-tracker",
+      "title": "Freelance Tax Deduction Tracker",
+      "category": "freelancer",
+      "url": "/pages/freelance-tax-deduction-tracker",
+      "createdDate": "2025-11-14",
+      "lastModified": "2025-11-14",
+      "templateVersion": "v2",
+      "status": "published",
+      "seoKeywords": [
+        "freelance tax deduction tracker",
+        "tax deduction tracker",
+        "track tax deductions freelance",
+        "business deduction tracker",
+        "write-off tracker"
+      ],
+      "targetAudience": "freelancers, self-employed"
+    }
+  ]
+}
