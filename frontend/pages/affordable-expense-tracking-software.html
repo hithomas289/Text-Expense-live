@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags - PLACEHOLDERS -->
+    <title>Affordable Expense Tracking Software | $2.99/Month Via WhatsApp</title>
+    <meta name="description" content="Affordable expense tracking at $2.99/month. Text receipts via WhatsApp, get Excel reports. No per-user fees. Try free.">
+    <meta name="keywords" content="affordable expense tracking software, cheap expense tracking, low cost expense tracker, inexpensive expense tracker, budget expense software">
+    <meta name="author" content="TextExpense">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Affordable Expense Tracking Software | $2.99/Month">
+    <meta property="og:description" content="Professional expense tracking without professional pricing. Text receipts via WhatsApp, get Excel reports. $2.99-4.99/month total cost.">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com/pages/affordable-expense-tracking-software">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Affordable Expense Tracking Software | $2.99/Month">
+    <meta name="twitter:description" content="Professional tracking without professional pricing. Text receipts via WhatsApp. $2.99-4.99/month total.">
+    <meta name="twitter:image" content="https://textexpense.com/te-logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://textexpense.com/pages/affordable-expense-tracking-software">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/te-logo.png">
+    <link rel="apple-touch-icon" href="/te-logo.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Affordable Expense Tracking Software",
+        "description": "Affordable expense tracking at $2.99-4.99/month. Text receipts via WhatsApp, get Excel reports. No per-user fees, no enterprise pricing.",
+        "url": "https://textexpense.com/pages/affordable-expense-tracking-software"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --secondary: #075E54;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            padding: 80px 0;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, var(--primary) 0%, var(--primary-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            margin: 40px 0;
+        }
+
+        /* Content Section */
+        .content-section {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .content-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .content-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .content-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer-cta {
+            background: var(--primary);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-cta p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-cta .cta-button {
+            background: white;
+            color: var(--primary);
+        }
+
+        .footer-main {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+
+            /* Fix header layout on mobile */
+            nav {
+                padding: 10px 0;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .logo img {
+                width: 32px !important;
+                height: 32px !important;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            header .cta-button {
+                padding: 8px 14px;
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
+
+            /* Fix hero visibility - increase top padding to account for fixed header */
+            .hero {
+                padding: 140px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .content-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Mobile overrides for inline-styled content */
+            .content-section h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section h3 {
+                font-size: 1.1rem !important;
+            }
+
+            .content-section [style*="padding: 40px"] {
+                padding: 20px !important;
+            }
+
+            .content-section [style*="padding: 30px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="font-size: 3rem"] {
+                font-size: 2rem !important;
+            }
+
+            .content-section [style*="font-size: 2rem"] {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section [style*="font-size: 1.5rem"] {
+                font-size: 1.2rem !important;
+            }
+
+            .content-section [style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* Extra small mobile (iPhone SE, etc.) */
+        @media (max-width: 375px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .logo img {
+                width: 28px !important;
+                height: 28px !important;
+            }
+
+            header .cta-button {
+                padding: 6px 10px;
+                font-size: 0.75rem;
+            }
+
+            .hero {
+                padding: 120px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .content-section [style*="padding: 20px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="margin-bottom: 60px"] {
+                margin-bottom: 30px !important;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5F3EMPRHFP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5F3EMPRHFP');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">
+                    <img src="/te-logo.png" alt="TextExpense Logo" style="width: 40px; height: 40px;">
+                    TextExpense
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                </ul>
+                <a href="https://textexpense.com/#cta" class="cta-button">Track first receipt free</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Affordable Expense Tracking Software</h1>
+            <p>Professional tracking without professional pricing</p>
+            <div class="hero-cta">
+                <a href="https://textexpense.com/#cta" class="cta-button">Track first receipt free</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-header">
+                <h2>Affordable Expense Tracking</h2>
+                <p>Professional features at budget-friendly prices</p>
+            </div>
+
+            <!-- CONTENT PLACEHOLDER - Agent inserts custom content here -->
+            
+    <!-- Pricing Problem Section -->
+    <section style="padding: 60px 20px; background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 2.5em; margin-bottom: 30px; text-align: center; color: #1a1a1a;">The Pricing Problem</h2>
+
+        <div style="font-size: 1.1em; line-height: 1.8; color: #333; margin-bottom: 20px;">
+          <p style="margin-bottom: 20px;">You checked expense software prices. Most want $5-15 per user monthly. You have 3 employees. That's $180-540 annually for basic receipt organization.</p>
+
+          <p style="margin-bottom: 20px;">Or they hide pricing behind "contact sales." Translation: expensive enough they won't tell you upfront.</p>
+
+          <p style="margin-bottom: 20px;">Or they bundle tracking with invoicing, time tracking, project management you don't need. Pay for full accounting suite to get simple expense capture.</p>
+
+          <p style="margin-bottom: 20px;">Meanwhile, you just need receipts organized for tax time. Professional system, affordable price. That option barely exists.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section style="padding: 60px 20px; background: #ffffff;">
+      <div style="max-width: 1000px; margin: 0 auto;">
+        <h2 style="font-size: 2.5em; margin-bottom: 50px; text-align: center; color: #1a1a1a;">How Affordable Tracking Works</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
+          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 4px solid #10b981;">
+            <h3 style="font-size: 1.4em; margin-bottom: 15px; color: #1a1a1a;">Simple Pricing</h3>
+            <p style="line-height: 1.7; color: #555;">$2.99 or $4.99 monthly. Not per user - total cost. Three employees? Still $2.99-4.99. No scaling fees, no surprise charges.</p>
+          </div>
+
+          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 4px solid #10b981;">
+            <h3 style="font-size: 1.4em; margin-bottom: 15px; color: #1a1a1a;">Text-Based System</h3>
+            <p style="line-height: 1.7; color: #555;">Works through WhatsApp everyone already has. No software licenses to buy, no accounts to create, no subscriptions per person.</p>
+          </div>
+
+          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 4px solid #10b981;">
+            <h3 style="font-size: 1.4em; margin-bottom: 15px; color: #1a1a1a;">Professional Output</h3>
+            <p style="line-height: 1.7; color: #555;">Excel reports with expenses organized by month and category. Original receipts linked. Same quality output as expensive systems.</p>
+          </div>
+
+          <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 4px solid #10b981;">
+            <h3 style="font-size: 1.4em; margin-bottom: 15px; color: #1a1a1a;">Complete Solution</h3>
+            <p style="line-height: 1.7; color: #555;">OCR extraction, automatic categorization, searchable vault, Excel generation. Not limited features at low price - complete system affordably priced.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Makes It Affordable Section -->
+    <section style="padding: 60px 20px; background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 2.5em; margin-bottom: 40px; text-align: center; color: #1a1a1a;">What Makes This Affordable</h2>
+
+        <div style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          <div style="margin-bottom: 30px; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+            <h3 style="font-size: 1.3em; margin-bottom: 10px; color: #10b981;">No per-user licensing</h3>
+            <p>Traditional software charges per person. TextExpense charges per account. $4.99 for 25 receipts whether one person or five use it.</p>
+          </div>
+
+          <div style="margin-bottom: 30px; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+            <h3 style="font-size: 1.3em; margin-bottom: 10px; color: #10b981;">No infrastructure costs</h3>
+            <p>Runs on WhatsApp infrastructure you're already using. No servers to maintain, no apps to update, no hosting fees passed to you.</p>
+          </div>
+
+          <div style="margin-bottom: 30px; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+            <h3 style="font-size: 1.3em; margin-bottom: 10px; color: #10b981;">No bundled complexity</h3>
+            <p>Just expense tracking. No forced invoicing, payroll, inventory, project management. Pay for what you need, not unwanted features.</p>
+          </div>
+
+          <div style="margin-bottom: 0; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+            <h3 style="font-size: 1.3em; margin-bottom: 10px; color: #10b981;">Minimal overhead</h3>
+            <p>Automated processing reduces operational costs. Savings passed to users through lower pricing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section style="padding: 60px 20px; background: #ffffff;">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="font-size: 2.5em; margin-bottom: 30px; text-align: center; color: #1a1a1a;">Affordable vs Expensive Features</h2>
+
+        <p style="font-size: 1.2em; line-height: 1.7; color: #555; text-align: center; margin-bottom: 40px;">
+          TextExpense provides professional capabilities affordably:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+          <div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <h3 style="font-size: 1.2em; margin-bottom: 10px; color: #1a1a1a;">Receipt OCR</h3>
+            <p style="color: #666; line-height: 1.6;">Automatic text extraction from photos</p>
+          </div>
+
+          <div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <h3 style="font-size: 1.2em; margin-bottom: 10px; color: #1a1a1a;">Smart categorization</h3>
+            <p style="color: #666; line-height: 1.6;">AI-powered expense sorting</p>
+          </div>
+
+          <div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <h3 style="font-size: 1.2em; margin-bottom: 10px; color: #1a1a1a;">Excel reports</h3>
+            <p style="color: #666; line-height: 1.6;">Professional formatting, monthly organization</p>
+          </div>
+
+          <div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <h3 style="font-size: 1.2em; margin-bottom: 10px; color: #1a1a1a;">Receipt backup</h3>
+            <p style="color: #666; line-height: 1.6;">Cloud storage with download links</p>
+          </div>
+
+          <div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <h3 style="font-size: 1.2em; margin-bottom: 10px; color: #1a1a1a;">Search functionality</h3>
+            <p style="color: #666; line-height: 1.6;">Find specific expenses instantly</p>
+          </div>
+
+          <div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <h3 style="font-size: 1.2em; margin-bottom: 10px; color: #1a1a1a;">Multi-device access</h3>
+            <p style="color: #666; line-height: 1.6;">Phone, computer, tablet compatible</p>
+          </div>
+
+          <div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <h3 style="font-size: 1.2em; margin-bottom: 10px; color: #1a1a1a;">Document vault</h3>
+            <p style="color: #666; line-height: 1.6;">Secure storage for all receipts</p>
+          </div>
+        </div>
+
+        <p style="font-size: 1.1em; line-height: 1.7; color: #555; text-align: center; margin-top: 40px;">
+          Same core features expensive systems offer. Different delivery model, different price.
+        </p>
+      </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section style="padding: 60px 20px; background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="font-size: 2.5em; margin-bottom: 40px; text-align: center; color: #1a1a1a;">Who Needs Affordable Tracking</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+          <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+            <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #10b981;">Small businesses</h3>
+            <p style="line-height: 1.7; color: #555;">Limited budgets, need professional expense organization</p>
+          </div>
+
+          <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+            <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #10b981;">Solo entrepreneurs</h3>
+            <p style="line-height: 1.7; color: #555;">Can't justify $15-20/month for basic receipt capture</p>
+          </div>
+
+          <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+            <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #10b981;">Startups</h3>
+            <p style="line-height: 1.7; color: #555;">Every dollar counts, need affordable infrastructure</p>
+          </div>
+
+          <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+            <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #10b981;">Side businesses</h3>
+            <p style="line-height: 1.7; color: #555;">Part-time income doesn't support expensive subscriptions</p>
+          </div>
+        </div>
+
+        <p style="font-size: 1.1em; line-height: 1.7; color: #555; text-align: center; margin-top: 40px;">
+          If you know expense tracking matters but premium pricing feels excessive for your actual needs, affordable solutions exist.
+        </p>
+      </div>
+    </section>
+
+    <!-- Cost Comparison Section -->
+    <section style="padding: 60px 20px; background: #ffffff;">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 2.5em; margin-bottom: 40px; text-align: center; color: #1a1a1a;">Cost Comparison</h2>
+
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 16px; margin-bottom: 30px;">
+          <h3 style="font-size: 1.5em; margin-bottom: 20px;">Traditional Software:</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 10px;">$5-15 per user monthly = $60-180 per user yearly</p>
+          <p style="font-size: 1.3em; font-weight: 600; margin-top: 15px;">= $180-900 for 3-person team</p>
+        </div>
+
+        <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 40px; border-radius: 16px;">
+          <h3 style="font-size: 1.5em; margin-bottom: 20px;">TextExpense:</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 10px;">$2.99-4.99 monthly total = $36-60 yearly regardless of users</p>
+          <p style="font-size: 1.3em; font-weight: 600; margin-top: 15px;">= $36-60 for entire team</p>
+        </div>
+
+        <p style="font-size: 1.3em; font-weight: 600; color: #10b981; text-align: center; margin-top: 40px;">
+          Save $144-840 annually while getting professional expense organization.
+        </p>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section style="padding: 60px 20px; background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
+      <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+        <h2 style="font-size: 2.5em; margin-bottom: 50px; color: #1a1a1a;">Pricing</h2>
+
+        <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); margin-bottom: 25px;">
+          <h3 style="font-size: 1.4em; margin-bottom: 10px; color: #1a1a1a;">First receipt free</h3>
+          <p style="color: #666; font-size: 1.05em;">Try without commitment</p>
+        </div>
+
+        <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); margin-bottom: 25px;">
+          <h3 style="font-size: 1.4em; margin-bottom: 10px; color: #1a1a1a;">$2.99/month</h3>
+          <p style="color: #666; font-size: 1.05em;">6 receipts monthly total (not per user)</p>
+        </div>
+
+        <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+          <h3 style="font-size: 1.4em; margin-bottom: 10px; color: #1a1a1a;">$4.99/month</h3>
+          <p style="color: #666; font-size: 1.05em;">25 receipts monthly total (not per user)</p>
+        </div>
+
+        <p style="font-size: 1.1em; line-height: 1.7; color: #555; margin-top: 40px;">
+          Simple, transparent, affordable pricing. No contracts, cancel anytime.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: 60px 20px; background: #ffffff;">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 2.5em; margin-bottom: 50px; text-align: center; color: #1a1a1a;">Common Questions</h2>
+
+        <div style="margin-bottom: 35px;">
+          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">Is this really enough for my business?</h3>
+          <p style="line-height: 1.7; color: #555;">TextExpense handles receipt capture, OCR processing, categorization, Excel report generation, and secure storage. Every receipt gets backed up in your searchable document vault with original images linked in reports. If you need expense organization, this provides complete functionality affordably.</p>
+        </div>
+
+        <div style="margin-bottom: 35px;">
+          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">Why is this cheaper than other software?</h3>
+          <p style="line-height: 1.7; color: #555;">No per-user licensing, uses WhatsApp infrastructure, focused on expense tracking instead of bundled features. Different business model enables affordable pricing.</p>
+        </div>
+
+        <div style="margin-bottom: 35px;">
+          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">Can multiple people use one account?</h3>
+          <p style="line-height: 1.7; color: #555;">Yes. Team members can text receipts to the same WhatsApp number. Category confirmation can happen collaboratively. Pricing doesn't scale per user.</p>
+        </div>
+
+        <div style="margin-bottom: 35px;">
+          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">Can I track both business and personal receipts?</h3>
+          <p style="line-height: 1.7; color: #555;">Absolutely! Text all receipts - work and personal. Tag them during confirmation. Business expenses get organized for taxes, personal receipts stay accessible in your document vault for whatever you need.</p>
+        </div>
+
+        <div style="margin-bottom: 35px;">
+          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">What if I need more than 25 receipts monthly?</h3>
+          <p style="line-height: 1.7; color: #555;">Most small businesses process under 25 expenses monthly. If you need more volume, you're likely big enough to afford enterprise solutions anyway.</p>
+        </div>
+
+        <div style="margin-bottom: 0;">
+          <h3 style="font-size: 1.3em; margin-bottom: 15px; color: #1a1a1a;">Are there hidden fees or upgrade requirements?</h3>
+          <p style="line-height: 1.7; color: #555;">No. $2.99 or $4.99 monthly is total cost. No per-user fees, no surprise charges, no forced upgrades.</p>
+        </div>
+      </div>
+    </section>
+  
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Start Tracking</h2>
+            <p>Try affordable expense tracking. Text one receipt via WhatsApp, see the system. Free, no credit card needed.</p>
+            <a href="https://textexpense.com/#cta" class="cta-button">Track first receipt free</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TextExpense</h3>
+                    <p>The simplest way to manage receipts via WhatsApp.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <p><a href="/">Home</a></p>
+                    <p><a href="/blog/">Blog</a></p>
+                    <p><a href="/#pricing">Pricing</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <p><a href="/privacy">Privacy Policy</a></p>
+                    <p><a href="/terms">Terms & Conditions</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TextExpense. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
