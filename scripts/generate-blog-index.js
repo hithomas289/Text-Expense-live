@@ -1,4 +1,85 @@
-<!DOCTYPE html>
+#!/usr/bin/env node
+/**
+ * Auto-generate Blog Index Page from Registry
+ *
+ * Usage: node scripts/generate-blog-index.js
+ *
+ * This script:
+ * 1. Reads blog-registry.json
+ * 2. Sorts posts by publishDate (newest first)
+ * 3. Generates frontend/blog/index.html with all post cards
+ * 4. Maintains consistent formatting and styling
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+console.log('📋 Generating blog index page...');
+
+// Load blog registry
+const registryPath = path.join(__dirname, '../frontend/data/blog-registry.json');
+if (!fs.existsSync(registryPath)) {
+  console.error('❌ Error: Blog registry not found');
+  console.error(`Expected: ${registryPath}`);
+  process.exit(1);
+}
+
+let registry;
+try {
+  registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'));
+} catch (error) {
+  console.error('❌ Error: Failed to parse blog registry');
+  console.error(error.message);
+  process.exit(1);
+}
+
+if (!registry.posts || !Array.isArray(registry.posts)) {
+  console.error('❌ Error: Invalid registry format (missing posts array)');
+  process.exit(1);
+}
+
+console.log(`📊 Found ${registry.posts.length} blog posts in registry`);
+
+// Sort posts by publishDate (newest first)
+const sortedPosts = [...registry.posts].sort((a, b) => {
+  const dateA = new Date(a.publishDate);
+  const dateB = new Date(b.publishDate);
+  return dateB - dateA; // Descending order (newest first)
+});
+
+console.log('📅 Sorted posts by publish date (newest first)');
+
+// Generate post cards HTML
+const postCardsHTML = sortedPosts.map(post => {
+  // Format reading time
+  const readingTime = post.readingTime ? `${post.readingTime} min read` : '6 min read';
+
+  // Format publish date (e.g., "November 14, 2025")
+  const date = new Date(post.publishDate);
+  const formattedDate = date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
+  // Use excerpt or fallback
+  const excerpt = post.excerpt || 'Read more about this topic on the TextExpense blog.';
+
+  // Generate alt text from title
+  const altText = post.title.replace(/[^\w\s]/g, '').trim();
+
+  return `            <a href="/blog/${post.slug}.html" class="post-card">
+                <img src="/te-logo.png" alt="${altText}">
+                <div class="post-content">
+                    <div class="post-meta">${formattedDate} · ${readingTime}</div>
+                    <h2 class="post-title">${post.title}</h2>
+                    <p class="post-excerpt">${excerpt}</p>
+                </div>
+            </a>`;
+}).join('\n\n');
+
+// Generate full index.html
+const indexHTML = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -203,59 +284,7 @@
         </div>
 
         <div class="posts-grid">
-            <a href="/blog/how-to-organize-receipts.html" class="post-card">
-                <img src="/te-logo.png" alt="How to Organize Receipts A Simple System That Actually Works">
-                <div class="post-content">
-                    <div class="post-meta">November 14, 2025 · 10 min read</div>
-                    <h2 class="post-title">How to Organize Receipts: A Simple System That Actually Works</h2>
-                    <p class="post-excerpt">Stop wasting 12+ hours yearly on receipt chaos. Learn how to organize receipts in 30 seconds with zero setup. 3 receipts free - no app downloads required.</p>
-                </div>
-            </a>
-
-            <a href="/blog/how-to-organize-receipts-small-business.html" class="post-card">
-                <img src="/te-logo.png" alt="How to Organize Receipts for Small Business Without Losing Your Mind">
-                <div class="post-content">
-                    <div class="post-meta">November 14, 2025 · 9 min read</div>
-                    <h2 class="post-title">How to Organize Receipts for Small Business (Without Losing Your Mind)</h2>
-                    <p class="post-excerpt">Small business receipts piling up? Learn a dead-simple system that takes 30 seconds per receipt and saves thousands in tax deductions. 3 receipts free to try.</p>
-                </div>
-            </a>
-
-            <a href="/blog/how-to-organize-receipts-for-taxes.html" class="post-card">
-                <img src="/te-logo.png" alt="How to Organize Receipts for Taxes And Actually Find Them When You Need Them">
-                <div class="post-content">
-                    <div class="post-meta">November 14, 2025 · 8 min read</div>
-                    <h2 class="post-title">How to Organize Receipts for Taxes (And Actually Find Them When You Need Them)</h2>
-                    <p class="post-excerpt">Don't let lost receipts cost you thousands in tax deductions. Simple system takes 30 seconds per receipt. Works for freelancers, business owners, everyone. Try </p>
-                </div>
-            </a>
-
-            <a href="/blog/how-to-track-expenses.html" class="post-card">
-                <img src="/te-logo.png" alt="How to Track Expenses Without Spreadsheets or Stress">
-                <div class="post-content">
-                    <div class="post-meta">November 14, 2025 · 7 min read</div>
-                    <h2 class="post-title">How to Track Expenses (Without Spreadsheets or Stress)</h2>
-                    <p class="post-excerpt">Spending hours on expense tracking? There's a simpler way. 30 seconds per expense, zero manual typing. Try 3 free, then $2.99/month.</p>
-                </div>
-            </a>
-
-            <a href="/blog/how-to-track-business-expenses.html" class="post-card">
-                <img src="/te-logo.png" alt="How to Track Business Expenses The Simple Way">
-                <div class="post-content">
-                    <div class="post-meta">November 14, 2025 · 6 min read</div>
-                    <h2 class="post-title">How to Track Business Expenses (The Simple Way)</h2>
-                    <p class="post-excerpt">Business expenses eating up your time? Track them in 30 seconds each. No spreadsheets, no apps to remember. Try 3 free.</p>
-                </div>
-            </a>
-
-            <a href="/blog/receipt-management-tips-small-business.html" class="post-card">
-                <img src="/te-logo.png" alt="7 Receipt Management Tips for Small Business Owners">
-                <div class="post-content">
-                    <div class="post-meta">January 15, 2025 · 6 min read</div>
-                    <h2 class="post-title">7 Receipt Management Tips for Small Business Owners</h2>
-                    <p class="post-excerpt">Master receipt organization with these 7 proven strategies. Save time, maximize tax deductions, and never lose an important receipt again.</p>
-                </div>
-            </a>
+${postCardsHTML}
         </div>
 
         <div style="text-align: center; margin-top: 60px;">
@@ -266,3 +295,17 @@
     </div>
 </body>
 </html>
+`;
+
+// Write index.html
+const outputPath = path.join(__dirname, '../frontend/blog/index.html');
+fs.writeFileSync(outputPath, indexHTML, 'utf-8');
+
+const sizeKB = (indexHTML.length / 1024).toFixed(2);
+console.log('');
+console.log('✅ Blog index generated successfully!');
+console.log(`📄 File: frontend/blog/index.html`);
+console.log(`📊 Size: ${sizeKB} KB`);
+console.log(`📝 Posts: ${sortedPosts.length}`);
+console.log('');
+console.log('🎉 Done! The blog index is now auto-generated from the registry.');

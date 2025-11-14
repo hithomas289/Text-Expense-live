@@ -37,6 +37,19 @@ if (!/^[a-z0-9-]+$/.test(slug)) {
   process.exit(1);
 }
 
+// Load blog defaults
+const defaultsPath = path.join(__dirname, '../frontend/data/config/blog-defaults.json');
+let defaults = {};
+if (fs.existsSync(defaultsPath)) {
+  try {
+    const defaultsData = JSON.parse(fs.readFileSync(defaultsPath, 'utf-8'));
+    defaults = defaultsData.defaults || {};
+    console.log('📋 Loaded blog defaults');
+  } catch (error) {
+    console.warn('⚠️  Warning: Failed to load blog defaults, continuing without them');
+  }
+}
+
 // Load blog data
 const dataPath = path.join(__dirname, '../frontend/data/blog', `${slug}.json`);
 if (!fs.existsSync(dataPath)) {
@@ -57,6 +70,9 @@ try {
   console.error(error.message);
   process.exit(1);
 }
+
+// Merge defaults with blog data (blog data takes precedence)
+blogData = { ...defaults, ...blogData };
 
 // Validate required fields
 const requiredFields = [
@@ -79,6 +95,30 @@ if (!fs.existsSync(templatePath)) {
 
 console.log(`📄 Loading template: ${templatePath}`);
 const template = fs.readFileSync(templatePath, 'utf-8');
+
+// Generate RELATED_POSTS HTML from relatedPosts array (if present)
+if (blogData.relatedPosts && Array.isArray(blogData.relatedPosts)) {
+  console.log(`🔗 Generating related posts HTML from array (${blogData.relatedPosts.length} posts)...`);
+
+  const relatedCardsHTML = blogData.relatedPosts.map(post => `
+    <div style="border: 1px solid var(--border); border-radius: 0.5rem; padding: 1.5rem;">
+      <h4 style="margin-bottom: 0.5rem;"><a href="/blog/${post.slug}.html" style="color: var(--primary); text-decoration: none;">${post.title}</a></h4>
+      <p style="color: var(--gray); margin-bottom: 0.75rem;">${post.excerpt}</p>
+      <a href="/blog/${post.slug}.html" style="color: var(--primary); text-decoration: none; font-weight: 600;">Read more →</a>
+    </div>`).join('\n');
+
+  blogData.RELATED_POSTS = `<div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+  <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Related Articles</h3>
+  <div style="display: grid; gap: 1.5rem;">
+${relatedCardsHTML}
+  </div>
+</div>`;
+
+  console.log('  ✓ Generated RELATED_POSTS HTML');
+} else if (!blogData.RELATED_POSTS) {
+  // No related posts at all, set empty string to avoid unreplaced placeholder
+  blogData.RELATED_POSTS = '';
+}
 
 // Replace placeholders
 console.log('🔄 Replacing placeholders...');
