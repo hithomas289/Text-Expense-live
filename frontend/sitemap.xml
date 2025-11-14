@@ -37,19 +37,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://textexpense.com/pages/freelance-expense-tracker</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://textexpense.com/pages/photo-receipt-scanner</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://textexpense.com/pages/receipt-organization-app</loc>
+    <loc>https://textexpense.com/pages/receipt-management-software</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://textexpense.com/pages/receipt-management-software</loc>
+    <loc>https://textexpense.com/pages/receipt-organization-app</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
