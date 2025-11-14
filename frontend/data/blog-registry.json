@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-14T17:18:28.849Z",
-  "totalPosts": 8,
+  "lastUpdated": "2025-11-14T17:21:50.612Z",
+  "totalPosts": 9,
   "categories": {
     "receipt-management": 1,
     "small-business": 1,
@@ -9,8 +9,9 @@
     "expense-tracking": 1,
     "business-expenses": 1,
     "freelance-expenses": 1,
+    "receipt-storage": 1,
     "Small Business Tips": 1,
-    "receipt-storage": 1
+    "receipt-retention": 1
   },
   "posts": [
     {
@@ -160,6 +161,27 @@
         "receipt filing",
         "receipt organization",
         "paperless receipts"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "how-long-to-keep-receipts",
+      "title": "How Long to Keep Receipts (IRS Requirements Explained Simply)",
+      "category": "receipt-retention",
+      "url": "/blog/how-long-to-keep-receipts",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-14",
+      "lastModified": "2025-11-14",
+      "readingTime": "7",
+      "excerpt": "Keep receipts 3 years minimum, 7 years safer. Digital storage solves the problem - never worry about tossing important receipts again. Try free.",
+      "tags": [
+        "receipt retention",
+        "IRS requirements",
+        "how long keep receipts",
+        "tax record retention",
+        "receipt storage rules",
+        "IRS audit requirements"
       ],
       "status": "published",
       "templateVersion": "v2"
