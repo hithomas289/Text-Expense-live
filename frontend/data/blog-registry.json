@@ -1,11 +1,34 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-14T11:34:07.939Z",
-  "totalPosts": 1,
+  "lastUpdated": "2025-11-14T16:02:08.575Z",
+  "totalPosts": 2,
   "categories": {
+    "receipt-management": 1,
     "Small Business Tips": 1
   },
   "posts": [
+    {
+      "slug": "how-to-organize-receipts",
+      "title": "How to Organize Receipts: A Simple System That Actually Works",
+      "category": "receipt-management",
+      "url": "/blog/how-to-organize-receipts",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-14",
+      "lastModified": "2025-11-14",
+      "readingTime": "10",
+      "excerpt": "Stop wasting 12+ hours yearly on receipt chaos. Learn how to organize receipts in 30 seconds with zero setup. 3 receipts free - no app downloads required.",
+      "tags": [
+        "receipt organization",
+        "organize receipts",
+        "tax preparation",
+        "expense reports",
+        "business expenses",
+        "receipt tracking",
+        "digital receipts"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
     {
       "slug": "receipt-management-tips-small-business",
       "title": "7 Receipt Management Tips for Small Business Owners",
