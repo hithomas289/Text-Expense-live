@@ -1,12 +1,13 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-14T16:42:07.573Z",
-  "totalPosts": 5,
+  "lastUpdated": "2025-11-14T16:49:33.927Z",
+  "totalPosts": 6,
   "categories": {
     "receipt-management": 1,
     "small-business": 1,
     "tax-preparation": 1,
     "expense-tracking": 1,
+    "business-expenses": 1,
     "Small Business Tips": 1
   },
   "posts": [
@@ -94,6 +95,27 @@
         "budgeting",
         "expense management",
         "bookkeeping"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "how-to-track-business-expenses",
+      "title": "How to Track Business Expenses (The Simple Way)",
+      "category": "business-expenses",
+      "url": "/blog/how-to-track-business-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-14",
+      "lastModified": "2025-11-14",
+      "readingTime": "6",
+      "excerpt": "Business expenses eating up your time? Track them in 30 seconds each. No spreadsheets, no apps to remember. Try 3 free.",
+      "tags": [
+        "business expenses",
+        "expense tracking",
+        "small business accounting",
+        "business bookkeeping",
+        "tax deductions",
+        "expense management"
       ],
       "status": "published",
       "templateVersion": "v2"
