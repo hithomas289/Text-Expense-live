@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags - PLACEHOLDERS -->
+    <title>1099 Expense Tracker | Track Contractor Expenses Via WhatsApp</title>
+    <meta name="description" content="Track 1099 contractor expenses via WhatsApp. Organize Schedule C deductions automatically. Text receipts, get tax-ready reports. Try free.">
+    <meta name="keywords" content="1099 expense tracker, track 1099 expenses, expense tracker 1099 contractors, Schedule C expense tracker, contractor expense tracking">
+    <meta name="author" content="TextExpense">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="1099 Expense Tracker | Track Contractor Expenses Via WhatsApp">
+    <meta property="og:description" content="Track 1099 contractor expenses via WhatsApp. Organize Schedule C deductions automatically. Text receipts, get tax-ready reports.">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com/pages/1099-expense-tracker">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="1099 Expense Tracker | TextExpense">
+    <meta name="twitter:description" content="Track 1099 contractor expenses via WhatsApp. Organized by Schedule C categories automatically.">
+    <meta name="twitter:image" content="https://textexpense.com/te-logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://textexpense.com/pages/1099-expense-tracker">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/te-logo.png">
+    <link rel="apple-touch-icon" href="/te-logo.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "1099 Expense Tracker",
+        "description": "Track 1099 contractor expenses via WhatsApp. Organize Schedule C deductions automatically by line item for tax filing.",
+        "url": "https://textexpense.com/pages/1099-expense-tracker"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --secondary: #075E54;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            padding: 80px 0;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, var(--primary) 0%, var(--primary-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            margin: 40px 0;
+        }
+
+        /* Content Section */
+        .content-section {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .content-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .content-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .content-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer-cta {
+            background: var(--primary);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-cta p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-cta .cta-button {
+            background: white;
+            color: var(--primary);
+        }
+
+        .footer-main {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+
+            /* Fix header layout on mobile */
+            nav {
+                padding: 10px 0;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .logo img {
+                width: 32px !important;
+                height: 32px !important;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            header .cta-button {
+                padding: 8px 14px;
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
+
+            /* Fix hero visibility - increase top padding to account for fixed header */
+            .hero {
+                padding: 140px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .content-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Mobile overrides for inline-styled content */
+            .content-section h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section h3 {
+                font-size: 1.1rem !important;
+            }
+
+            .content-section [style*="padding: 40px"] {
+                padding: 20px !important;
+            }
+
+            .content-section [style*="padding: 30px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="font-size: 3rem"] {
+                font-size: 2rem !important;
+            }
+
+            .content-section [style*="font-size: 2rem"] {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section [style*="font-size: 1.5rem"] {
+                font-size: 1.2rem !important;
+            }
+
+            .content-section [style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* Extra small mobile (iPhone SE, etc.) */
+        @media (max-width: 375px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .logo img {
+                width: 28px !important;
+                height: 28px !important;
+            }
+
+            header .cta-button {
+                padding: 6px 10px;
+                font-size: 0.75rem;
+            }
+
+            .hero {
+                padding: 120px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .content-section [style*="padding: 20px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="margin-bottom: 60px"] {
+                margin-bottom: 30px !important;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HMSDHWE3BS');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">
+                    <img src="/te-logo.png" alt="TextExpense Logo" style="width: 40px; height: 40px;">
+                    TextExpense
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                </ul>
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Track First Expense Free</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>1099 Expense Tracker</h1>
+            <p>Organize Schedule C expenses without accounting software. Text receipt photos via WhatsApp, get Excel reports organized by Schedule C categories. No accounting software to learn, no spreadsheets to maintain. Just documented expenses ready for tax filing.</p>
+            <div class="hero-cta">
+                <a href="https://wa.me/17654792054?text=hi" class="cta-button">Track First Expense Free</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-header">
+                <h2>How 1099 Tracking Works</h2>
+                <p>Document everything. Schedule C categories. Deduction calculations. Tax-ready reports.</p>
+            </div>
+
+            <!-- CONTENT PLACEHOLDER - Agent inserts custom content here -->
+            
+    <div style="background: linear-gradient(135deg, #fff5f5 0%, #fee2e2 100%); border-left: 4px solid #EF4444; padding: 30px; border-radius: 15px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 15px; color: var(--dark);">The 1099 Filing Problem</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">You got your 1099-NEC forms. They show what clients paid you. Box 1 has the total - that's your gross income reported to the IRS.</p>
+      <p style="color: var(--gray); margin-bottom: 15px;">But you didn't actually make that much. You spent thousands on equipment, software, travel, supplies. Legitimate business expenses that should reduce your taxable income on Schedule C.</p>
+      <p style="color: var(--gray); margin-bottom: 15px;">Problem: Can you prove what you spent? Do you have receipts organized by tax category? Numbers ready for Line 10, Line 11, Line 24a?</p>
+      <p style="color: var(--gray);"><strong>Most 1099 contractors can't.</strong> So they pay taxes on gross income instead of net profit. That's expensive.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">How 1099 Tracking Works</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">1</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Document Everything</h3>
+          <p style="color: var(--gray);">Every business expense gets texted as a receipt photo. Coffee meetings, software purchases, equipment, travel - all documented immediately.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">2</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Schedule C Categories</h3>
+          <p style="color: var(--gray);">We organize expenses by actual Schedule C line items: advertising, car and truck, commissions, contract labor, office expenses, supplies, travel, meals.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">3</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Deduction Calculations</h3>
+          <p style="color: var(--gray);">Business meals automatically flagged as 50% deductible. Equipment tracked for depreciation. Everything calculated correctly for filing.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">4</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Tax-Ready Reports</h3>
+          <p style="color: var(--gray);">Generate Excel files showing total expenses by Schedule C category. Your accountant gets exactly what they need to complete your return.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: white; border: 2px solid var(--border); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Schedule C Expenses Tracked</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Line 8: Advertising</strong> – Website costs, business cards, ads, promotional materials</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Line 9: Car and truck</strong> – Business mileage, parking, tolls (standard mileage rate or actual expenses)</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Line 10: Commissions and fees</strong> – Payments to sales reps, marketplace fees (Amazon, Etsy, eBay)</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Line 11: Contract labor</strong> – Other freelancers you hired (over $600 requires 1099-NEC)</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Line 18: Office expense</strong> – Supplies, equipment, furniture for business use</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Line 21: Repairs and maintenance</strong> – Computer repairs, equipment maintenance, space renovations</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Line 22: Supplies</strong> – Materials and supplies used in business operations</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Line 24a: Travel</strong> – Transportation, lodging, 50% of meals during business trips</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Line 24b: Meals</strong> – Business meals and entertainment (50% deductible)</p>
+      <p style="font-size: 1.1rem; color: var(--gray);"><strong>Line 27a: Other expenses</strong> – Professional development, insurance, licenses, subscriptions</p>
+      <p style="color: var(--gray); margin-top: 20px; font-style: italic;">Everything organized exactly how Schedule C expects it. Not generic expense categories - actual line item numbers.</p>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Why 1099 Contractors Need This</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Self-employment tax is 15.3%</strong> – You're paying both employer and employee portions of Social Security and Medicare. Every dollar in deductions saves roughly 30-40 cents in combined taxes.</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Quarterly estimated payments</strong> – Accurate expense tracking helps calculate what you actually owe quarterly. Underpay and face penalties. Overpay and lose cash flow.</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Audit protection</strong> – IRS audits 1099 contractors more than W2 employees. Having organized receipts and proper documentation protects you.</p>
+      <p style="font-size: 1.1rem; color: var(--gray);"><strong>Understanding profitability</strong> – Without tracking expenses, you don't know if client work is actually profitable. Some clients might be costing more than they're worth.</p>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">What Gets Missed Without Tracking</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Small recurring charges</strong> – $15/month subscriptions add up to $180 annually. Miss 5 subscriptions, that's $900 in deductions.</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Coffee and meal receipts</strong> – Those $4-8 expenses feel minor but 100+ client meetings is $400-800 in deductions.</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Equipment depreciation</strong> – That $2,000 laptop isn't just an expense - it's depreciable over multiple years if tracked properly.</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Home office costs</strong> – Portion of rent, utilities, internet based on dedicated workspace percentage.</p>
+      <p style="font-size: 1.1rem; color: var(--gray);"><strong>Mileage</strong> – Business driving at $0.67/mile (2024 rate). 5,000 business miles = $3,350 deduction.</p>
+      <p style="color: var(--gray); margin-top: 20px; font-style: italic;">Average 1099 contractors miss $3,000-8,000 in legitimate deductions annually just from poor documentation.</p>
+    </div>
+
+    <div style="background: white; border: 2px solid var(--border); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Who This Helps</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Independent contractors filing Schedule C</strong> – Organize business expenses properly for tax returns</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>1099-NEC recipients</strong> – Track deductible costs against reported income</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Gig economy workers</strong> – Uber, DoorDash, Upwork contractors with business expenses</p>
+      <p style="font-size: 1.1rem; color: var(--gray);"><strong>Consultants and freelancers</strong> – Anyone receiving 1099s instead of W2s</p>
+      <p style="color: var(--gray); margin-top: 20px; font-style: italic;">If you're responsible for your own quarterly taxes and Schedule C filing, you need organized expense tracking.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Pricing</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>First Expense</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">FREE</div>
+          <p>Process one receipt to see how it works</p>
+        </div>
+
+        <div class="card" style="border: 2px solid var(--primary);">
+          <div style="background: var(--primary); color: white; padding: 6px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; display: inline-block; margin-bottom: 15px;">BEST VALUE</div>
+          <h3>Light</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$2.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+          <p>6 expenses monthly</p>
+        </div>
+
+        <div class="card">
+          <h3>Pro</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$4.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+          <p>25 expenses monthly</p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 30px; color: var(--gray);">Spend $60-120 yearly to save $3,000+ in taxes through better deduction capture.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Common Questions</h2>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">What's the difference between 1099-NEC and 1099-MISC?</h3>
+          <p style="color: var(--gray);">1099-NEC reports nonemployee compensation (what most contractors receive). 1099-MISC is for other payment types. Both require filing Schedule C to report business income and deductions.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Do I need receipts for everything?</h3>
+          <p style="color: var(--gray);">IRS requires documentation for expenses. Receipts, invoices, bank statements - proof that costs were business-related. Without documentation, deductions get denied in audits.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Can I deduct expenses from before I started tracking?</h3>
+          <p style="color: var(--gray);">Yes. You can text old receipt photos from earlier in the tax year. Better to document late than never. But prospective tracking captures more consistently.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">How does this work with quarterly estimated taxes?</h3>
+          <p style="color: var(--gray);">Organized expense records help calculate actual quarterly tax liability. You can see year-to-date income vs expenses to estimate what you'll owe.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">What if I pay contractors myself?</h3>
+          <p style="color: var(--gray);">Track those payments as contract labor (Schedule C Line 11). Remember: pay someone $600+ in a year, you must file 1099-NEC for them.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Does this handle multiple 1099s from different clients?</h3>
+          <p style="color: var(--gray);">Yes. This tracks your business expenses regardless of how many clients you have. All expenses aggregate for your single Schedule C filing.</p>
+        </div>
+      </div>
+    </div>
+  
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Start Tracking</h2>
+            <p>Try it with one expense. Text a receipt photo via WhatsApp, see how Schedule C categorization works. Free, no credit card needed.</p>
+            <a href="https://wa.me/17654792054?text=hi" class="cta-button">Track First Expense Free</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TextExpense</h3>
+                    <p>The simplest way to manage receipts via WhatsApp.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <p><a href="/">Home</a></p>
+                    <p><a href="/blog/">Blog</a></p>
+                    <p><a href="/#pricing">Pricing</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <p><a href="/privacy">Privacy Policy</a></p>
+                    <p><a href="/terms">Terms & Conditions</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TextExpense. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

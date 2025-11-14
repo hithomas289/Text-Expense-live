@@ -1,0 +1,183 @@
+const ContentGenerator = require('./generate-content.js');
+
+const generator = new ContentGenerator();
+
+const data = {
+  // SEO Meta Tags
+  TITLE: 'Freelance Tax Deduction Tracker | Track Write-Offs Via WhatsApp',
+  META_DESCRIPTION: 'Track tax deductions via WhatsApp. Text receipts, capture write-offs automatically. Stop missing deductions. Try free.',
+  KEYWORDS: 'freelance tax deduction tracker, tax deduction tracker, track tax deductions freelance, business deduction tracker, write-off tracker',
+
+  // Open Graph Tags
+  OG_TITLE: 'Freelance Tax Deduction Tracker | Track Write-Offs Via WhatsApp',
+  OG_DESCRIPTION: 'Track tax deductions via WhatsApp. Text receipts, capture write-offs automatically. Average users find $5,600 in missed deductions.',
+  OG_IMAGE: 'https://textexpense.com/te-logo.png',
+
+  // Twitter Card Tags
+  TWITTER_TITLE: 'Freelance Tax Deduction Tracker | TextExpense',
+  TWITTER_DESCRIPTION: 'Track tax deductions via WhatsApp. Stop missing write-offs. Average $5,600 in additional deductions.',
+  TWITTER_IMAGE: 'https://textexpense.com/te-logo.png',
+
+  // Canonical URL
+  CANONICAL_URL: 'https://textexpense.com/pages/freelance-tax-deduction-tracker',
+
+  // Schema.org Data
+  SCHEMA_TYPE: 'SoftwareApplication',
+  SCHEMA_NAME: 'Freelance Tax Deduction Tracker',
+  SCHEMA_DESCRIPTION: 'Track tax deductions via WhatsApp. Text receipts, capture write-offs automatically by deduction type. Organized for Schedule C filing.',
+
+  // Hero Section
+  HERO_TITLE: 'Freelance Tax Deduction Tracker',
+  HERO_SUBTITLE: 'Stop missing write-offs you already paid for. Text receipt photos via WhatsApp, we categorize by deduction type automatically. Business meals, equipment, software, travel - everything organized for tax time. Average users find $5,600 in missed deductions.',
+
+  // Content Header
+  SECTION_TITLE: 'How Deduction Tracking Works',
+  SECTION_SUBTITLE: 'Capture as you spend. Automatic categorization. Tax category organization. Year-end summary.',
+
+  // CTA
+  CTA_TEXT: 'Track First Deduction Free',
+  CTA_URL: 'https://wa.me/17654792054?text=hi',
+
+  // Footer CTA
+  FOOTER_CTA_TITLE: 'Start Tracking Deductions',
+  FOOTER_CTA_SUBTITLE: 'Try it with one receipt. Text a photo via WhatsApp, see how categorization works, check if the output helps. Completely free, no credit card.',
+
+  // Google Analytics
+  GA_MEASUREMENT_ID: 'G-HMSDHWE3BS',
+
+  // Main Content
+  MAIN_CONTENT: `
+    <div style="background: linear-gradient(135deg, #fff5f5 0%, #fee2e2 100%); border-left: 4px solid #EF4444; padding: 30px; border-radius: 15px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 15px; color: var(--dark);">The Deduction Problem</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;">You spent $18,000 running your business last year. Coffee meetings, laptop upgrades, software subscriptions, conference tickets, client dinners, home office supplies.</p>
+      <p style="color: var(--gray); margin-bottom: 15px;">Can you prove any of it to the IRS? Do you even remember half of it?</p>
+      <p style="color: var(--gray); margin-bottom: 15px;">That $4 coffee shop receipt? Legitimate business meal deduction. The $15 domain renewal? Ordinary and necessary expense. The $800 conference ticket? Professional development write-off.</p>
+      <p style="color: var(--gray);"><strong>But without documentation, these aren't deductions.</strong> They're just money you spent that the IRS pretends doesn't exist. Every lost receipt is cash you can't get back at tax time.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">How Deduction Tracking Works</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">1</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Capture as You Spend</h3>
+          <p style="color: var(--gray);">Business lunch ends, you text the receipt photo. Meeting at a coffee shop, text the receipt. Buy software, text the receipt. Track deductions when they happen, not months later.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">2</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Automatic Categorization</h3>
+          <p style="color: var(--gray);">We read the receipt and you confirm the deduction type: business meal (50% deductible), equipment (100%), software (100%), travel (100%), supplies (100%).</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">3</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Tax Category Organization</h3>
+          <p style="color: var(--gray);">Everything sorted by IRS deduction types on Schedule C. Not generic "expenses" - actual tax categories that match your return.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);">
+          <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; margin-bottom: 20px;">4</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Year-End Summary</h3>
+          <p style="color: var(--gray);">Generate reports showing total deductions by category. Home office: $2,400. Business meals: $3,200. Equipment: $1,800. Numbers your accountant needs.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: white; border: 2px solid var(--border); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Common Deductions Tracked</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Business meals and coffee</strong> – Client meetings, networking lunches, working coffee shops (50% deductible)</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Home office expenses</strong> – Desk, chair, monitor, supplies for dedicated workspace</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Equipment purchases</strong> – Laptops, phones, cameras, tools you need for work</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Software and subscriptions</strong> – Every SaaS tool, platform, and service you pay for monthly</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Professional development</strong> – Courses, books, conferences, certifications that improve skills</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Marketing and advertising</strong> – Website hosting, ads, business cards, promotional materials</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Travel costs</strong> – Transportation, hotels, meals during business trips</p>
+      <p style="font-size: 1.1rem; color: var(--gray);"><strong>Contract labor</strong> – Paying other freelancers for services (over $600 requires 1099-NEC)</p>
+      <p style="color: var(--gray); margin-top: 20px; font-style: italic;">Most freelancers miss thousands because they're not tracking these consistently. The IRS doesn't care that you forgot - they just deny the deduction.</p>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Why This Captures More Deductions</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Nothing gets forgotten</strong> – Track in real-time instead of trying to remember everything in April. That conference from June? Already documented.</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Proper categorization</strong> – Expenses sorted by actual tax deduction types, not whatever label you made up. Categories match Schedule C requirements.</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Receipt backup</strong> – Original photos stored and linked in reports. IRS questions something? You have proof, not vague memories.</p>
+      <p style="font-size: 1.1rem; color: var(--gray);"><strong>Small expenses add up</strong> – $4 coffees seem minor. But 150 coffee meetings at $4 each is $600 in deductions - $200+ in tax savings. Those add up when you're tracking everything.</p>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%); padding: 40px; border-radius: 20px; margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Who Needs This</h2>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Freelancers filing Schedule C</strong> – Track ordinary and necessary business expenses properly</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Self-employed professionals</strong> – Writers, designers, consultants, developers with deductible costs</p>
+      <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 15px;"><strong>Anyone who lost receipts</strong> – Stop missing write-offs because documentation disappeared</p>
+      <p style="font-size: 1.1rem; color: var(--gray);"><strong>People with messy records</strong> – Get organized automatically instead of scrambling quarterly</p>
+      <p style="color: var(--gray); margin-top: 20px; font-style: italic;">If you've ever looked at your tax return and thought "I definitely spent more than that," you need deduction tracking.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Pricing</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>First Deduction</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">FREE</div>
+          <p>Track one receipt to see the system</p>
+        </div>
+
+        <div class="card" style="border: 2px solid var(--primary);">
+          <div style="background: var(--primary); color: white; padding: 6px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; display: inline-block; margin-bottom: 15px;">BEST VALUE</div>
+          <h3>Light</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$2.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+          <p>6 deductions monthly</p>
+        </div>
+
+        <div class="card">
+          <h3>Pro</h3>
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin: 20px 0;">$4.99<span style="font-size: 1rem; color: var(--gray); font-weight: 500;">/month</span></div>
+          <p>25 deductions monthly</p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 30px; color: var(--gray);">Invest $60-120 annually to capture $5,000+ in deductions. Simple math.</p>
+    </div>
+
+    <div style="margin-bottom: 60px;">
+      <h2 style="font-size: 2rem; margin-bottom: 30px; text-align: center;">Common Questions</h2>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">What qualifies as a deductible expense?</h3>
+          <p style="color: var(--gray);">IRS standard: "ordinary and necessary" for your business. If you wouldn't spend it without the business, it's probably deductible. Coffee meetings, equipment, software, supplies, travel - common write-offs. Your accountant can advise on your specific situation.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Can I track expenses without receipts?</h3>
+          <p style="color: var(--gray);">For things like mileage or home office calculations, you can manually enter them. But most deductions need documentation. IRS audits your return? They want receipts, not explanations.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">How does categorization work?</h3>
+          <p style="color: var(--gray);">We read the receipt details automatically. You confirm the deduction category based on what the expense was for. Takes 10 seconds. Everything gets sorted properly for tax filing.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">What if I forget to track something?</h3>
+          <p style="color: var(--gray);">Text it later. Even old receipts from earlier in the year can be processed and added. Better late than never - as long as you do it before filing.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Does this replace my accountant?</h3>
+          <p style="color: var(--gray);">No. This captures and organizes deductions. Your accountant still does the actual tax return. But organized records make their job easier and your bill smaller.</p>
+        </div>
+
+        <div style="background: white; border: 1px solid var(--border); border-radius: 15px; padding: 25px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Why not just use a shoebox?</h3>
+          <p style="color: var(--gray);">Physical receipts fade (thermal paper becomes unreadable within 2 years) and get lost. Digital tracking backs everything up automatically and organizes by tax category.</p>
+        </div>
+      </div>
+    </div>
+  `
+};
+
+generator.generate('landing', data, 'frontend/pages/freelance-tax-deduction-tracker.html');
+
+console.log('✅ Generated: freelance-tax-deduction-tracker.html');
