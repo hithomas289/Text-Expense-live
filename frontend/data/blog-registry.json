@@ -1,15 +1,16 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-14T17:12:32.647Z",
-  "totalPosts": 7,
+  "lastUpdated": "2025-11-14T17:18:28.849Z",
+  "totalPosts": 8,
   "categories": {
     "receipt-management": 1,
     "small-business": 1,
     "tax-preparation": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
+    "freelance-expenses": 1,
     "Small Business Tips": 1,
-    "freelance-expenses": 1
+    "receipt-storage": 1
   },
   "posts": [
     {
@@ -138,6 +139,27 @@
         "independent contractor",
         "freelancer tax tips",
         "expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "how-to-store-receipts",
+      "title": "How to Store Receipts (So You Can Actually Find Them Later)",
+      "category": "receipt-storage",
+      "url": "/blog/how-to-store-receipts",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-14",
+      "lastModified": "2025-11-14",
+      "readingTime": "6",
+      "excerpt": "Paper receipts fade, get lost, and take up space. Store them digitally in 30 seconds. Never lose another receipt. Try 3 free.",
+      "tags": [
+        "receipt storage",
+        "digital receipts",
+        "store receipts",
+        "receipt filing",
+        "receipt organization",
+        "paperless receipts"
       ],
       "status": "published",
       "templateVersion": "v2"
