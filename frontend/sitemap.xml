@@ -43,6 +43,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://textexpense.com/pages/expense-tracking-for-consultants</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://textexpense.com/pages/expense-tracking-for-freelancers</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -116,6 +122,12 @@
   </url>
   <url>
     <loc>https://textexpense.com/pages/self-employed-expense-tracker</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://textexpense.com/pages/self-employed-receipt-management</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
