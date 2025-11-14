@@ -2,85 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://textexpense.com/</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://textexpense.com/blog/</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://textexpense.com/blog/receipt-management-tips-small-business</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://textexpense.com/pages/expense-tracker-no-download</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://textexpense.com/pages/expense-tracking-software</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://textexpense.com/pages/photo-receipt-scanner</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://textexpense.com/pages/receipt-organization-app</loc>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://textexpense.com/pages/receipt-scanner-app-free</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://textexpense.com/pages/receipt-scanner-app</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://textexpense.com/pages/receipt-storage-app</loc>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://textexpense.com/pages/scan-receipts-with-phone</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://textexpense.com/pages/small-business-expense-tracking</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://textexpense.com/pages/sms-expense-tracker</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://textexpense.com/pages/text-message-expense-tracker</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://textexpense.com/privacy</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://textexpense.com/terms</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
