@@ -1,14 +1,15 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-14T17:01:49.040Z",
-  "totalPosts": 6,
+  "lastUpdated": "2025-11-14T17:12:32.647Z",
+  "totalPosts": 7,
   "categories": {
     "receipt-management": 1,
     "small-business": 1,
     "tax-preparation": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
-    "Small Business Tips": 1
+    "Small Business Tips": 1,
+    "freelance-expenses": 1
   },
   "posts": [
     {
@@ -116,6 +117,27 @@
         "business bookkeeping",
         "tax deductions",
         "expense management"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "how-to-track-freelance-expenses",
+      "title": "How to Track Freelance Expenses (Save Thousands on Taxes)",
+      "category": "freelance-expenses",
+      "url": "/blog/how-to-track-freelance-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-14",
+      "lastModified": "2025-11-14",
+      "readingTime": "7",
+      "excerpt": "Freelancers lose $1,500+ yearly in missed deductions. Track expenses in 30 seconds each. No spreadsheets. Try 3 free.",
+      "tags": [
+        "freelance expenses",
+        "1099 taxes",
+        "self-employed deductions",
+        "independent contractor",
+        "freelancer tax tips",
+        "expense tracking"
       ],
       "status": "published",
       "templateVersion": "v2"

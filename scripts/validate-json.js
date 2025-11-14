@@ -55,6 +55,22 @@ try {
   process.exit(1);
 }
 
+// Load and merge defaults for blog posts (V3 efficiency)
+if (type === 'blog') {
+  const defaultsPath = path.join(__dirname, '../frontend/data/config/blog-defaults.json');
+  if (fs.existsSync(defaultsPath)) {
+    try {
+      const defaultsData = JSON.parse(fs.readFileSync(defaultsPath, 'utf-8'));
+      const defaults = defaultsData.defaults || {};
+      // Merge defaults with blog data (blog data takes precedence)
+      data = { ...defaults, ...data };
+      console.log('📋 Merged blog defaults for validation\n');
+    } catch (error) {
+      console.warn('⚠️  Warning: Failed to load blog defaults, validating without them\n');
+    }
+  }
+}
+
 let errorCount = 0;
 let warningCount = 0;
 
