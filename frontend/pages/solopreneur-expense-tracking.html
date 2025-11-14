@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags - PLACEHOLDERS -->
+    <title>Solopreneur Expense Tracking | Track Solo Business Costs</title>
+    <meta name="description" content="Track solopreneur expenses via WhatsApp. You're doing everything yourself - make tracking automatic. Text receipts, get reports. Try free.">
+    <meta name="keywords" content="solopreneur expense tracking, expense tracking solopreneurs, track solopreneur expenses">
+    <meta name="author" content="TextExpense">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Solopreneur Expense Tracking | Track Solo Business Costs">
+    <meta property="og:description" content="Track solopreneur expenses via WhatsApp. You're doing everything yourself - make tracking automatic. Text receipts, get reports. Try free.">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com/pages/solopreneur-expense-tracking.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Solopreneur Expense Tracking | Track Solo Business Costs">
+    <meta name="twitter:description" content="Track solopreneur expenses via WhatsApp. You're doing everything yourself - make tracking automatic. Text receipts, get reports. Try free.">
+    <meta name="twitter:image" content="https://textexpense.com/te-logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://textexpense.com/pages/solopreneur-expense-tracking.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/te-logo.png">
+    <link rel="apple-touch-icon" href="/te-logo.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Solopreneur Expense Tracking",
+        "description": "Track solopreneur expenses via WhatsApp. Running everything solo - make expense tracking automatic. Text receipts, get organized reports.",
+        "url": "https://textexpense.com/pages/solopreneur-expense-tracking.html"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --secondary: #075E54;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            padding: 80px 0;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, var(--primary) 0%, var(--primary-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            margin: 40px 0;
+        }
+
+        /* Content Section */
+        .content-section {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .content-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .content-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .content-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer-cta {
+            background: var(--primary);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-cta p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-cta .cta-button {
+            background: white;
+            color: var(--primary);
+        }
+
+        .footer-main {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+
+            /* Fix header layout on mobile */
+            nav {
+                padding: 10px 0;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .logo img {
+                width: 32px !important;
+                height: 32px !important;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            header .cta-button {
+                padding: 8px 14px;
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
+
+            /* Fix hero visibility - increase top padding to account for fixed header */
+            .hero {
+                padding: 140px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .content-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Mobile overrides for inline-styled content */
+            .content-section h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section h3 {
+                font-size: 1.1rem !important;
+            }
+
+            .content-section [style*="padding: 40px"] {
+                padding: 20px !important;
+            }
+
+            .content-section [style*="padding: 30px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="font-size: 3rem"] {
+                font-size: 2rem !important;
+            }
+
+            .content-section [style*="font-size: 2rem"] {
+                font-size: 1.5rem !important;
+            }
+
+            .content-section [style*="font-size: 1.5rem"] {
+                font-size: 1.2rem !important;
+            }
+
+            .content-section [style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* Extra small mobile (iPhone SE, etc.) */
+        @media (max-width: 375px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .logo img {
+                width: 28px !important;
+                height: 28px !important;
+            }
+
+            header .cta-button {
+                padding: 6px 10px;
+                font-size: 0.75rem;
+            }
+
+            .hero {
+                padding: 120px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .content-section [style*="padding: 20px"] {
+                padding: 15px !important;
+            }
+
+            .content-section [style*="margin-bottom: 60px"] {
+                margin-bottom: 30px !important;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7MTLE4KSY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X7MTLE4KSY');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">
+                    <img src="/te-logo.png" alt="TextExpense Logo" style="width: 40px; height: 40px;">
+                    TextExpense
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                </ul>
+                <a href="https://wa.me/14155238886?text=Hi" class="cta-button">Track first expense free</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Solopreneur Expense Tracking</h1>
+            <p>Running everything solo - let this run automatically. Text receipt photos via WhatsApp, get organized reports. When you're the CEO, CFO, and janitor rolled into one, tracking expenses shouldn't add to the pile. Just send receipts, we handle the rest.</p>
+            <div class="hero-cta">
+                <a href="https://wa.me/14155238886?text=Hi" class="cta-button">Track first expense free</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-header">
+                <h2>Solopreneur Tracking</h2>
+                <p>Built for people doing everything themselves</p>
+            </div>
+
+            <!-- CONTENT PLACEHOLDER - Agent inserts custom content here -->
+            
+    <section style="padding: 60px 20px; max-width: 800px; margin: 0 auto;">
+      <h2 style="font-size: 2em; margin-bottom: 20px; color: #1a1a1a;">The Solopreneur Reality</h2>
+      <p style="font-size: 1.1em; line-height: 1.8; color: #333; margin-bottom: 15px;">
+        You're running an entire business by yourself. Customer service, product delivery, marketing, sales, bookkeeping, tax preparation - all you.
+      </p>
+      <p style="font-size: 1.1em; line-height: 1.8; color: #333; margin-bottom: 15px;">
+        There's no accounting department to handle expenses. No admin staff to organize receipts. No bookkeeper to maintain records. Just you, doing everything, trying to keep the business running.
+      </p>
+      <p style="font-size: 1.1em; line-height: 1.8; color: #333; margin-bottom: 15px;">
+        Meanwhile, expenses pile up. That domain renewal. The coworking membership. The software subscriptions. The client lunch. The conference ticket. The equipment upgrade.
+      </p>
+      <p style="font-size: 1.1em; line-height: 1.8; color: #333; margin-bottom: 15px;">
+        You know you should track these. They're legitimate business costs that reduce your tax bill. But tracking feels like one more task on an already impossible list.
+      </p>
+      <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+        So receipts accumulate. Some in your wallet, some in emails, some in your car, some lost entirely. Tax season arrives and you're scrambling, guessing, leaving money on the table.
+      </p>
+    </section>
+
+    <section style="padding: 60px 20px; background: #f8f9fa;">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 2em; margin-bottom: 40px; color: #1a1a1a; text-align: center;">How Solo Tracking Works</h2>
+
+        <div style="margin-bottom: 40px;">
+          <h3 style="font-size: 1.5em; color: #2c3e50; margin-bottom: 15px;">No Extra Systems</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            Text receipt photos via WhatsApp you already use. No new app to download, no software to learn, no system to maintain.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+          <h3 style="font-size: 1.5em; color: #2c3e50; margin-bottom: 15px;">Instant Processing</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            OCR reads merchant names, dates, amounts in about 30 seconds. You confirm the category - software, supplies, travel, meals, equipment.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+          <h3 style="font-size: 1.5em; color: #2c3e50; margin-bottom: 15px;">Organized Automatically</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            Everything sorted by month and category. Excel reports generated on demand. Original receipts backed up with download links.
+          </p>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.5em; color: #2c3e50; margin-bottom: 15px;">Zero Maintenance</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            No spreadsheets to update, no files to organize, no systems to maintain. Text receipts, get reports. That's the entire workflow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: 60px 20px; max-width: 800px; margin: 0 auto;">
+      <h2 style="font-size: 2em; margin-bottom: 30px; color: #1a1a1a; text-align: center;">Solo Business Expenses</h2>
+
+      <div style="margin-bottom: 15px;">
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          <strong>Software and tools</strong> - Every subscription enabling business operations
+        </p>
+      </div>
+      <div style="margin-bottom: 15px;">
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          <strong>Marketing</strong> - Website hosting, email service, ads, business cards
+        </p>
+      </div>
+      <div style="margin-bottom: 15px;">
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          <strong>Office setup</strong> - Desk, chair, monitor, supplies for workspace
+        </p>
+      </div>
+      <div style="margin-bottom: 15px;">
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          <strong>Equipment</strong> - Computer, phone, camera, tools for delivering service
+        </p>
+      </div>
+      <div style="margin-bottom: 15px;">
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          <strong>Professional development</strong> - Courses, books, conferences improving skills
+        </p>
+      </div>
+      <div style="margin-bottom: 15px;">
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          <strong>Business meals</strong> - Client meetings, networking events (50% deductible)
+        </p>
+      </div>
+      <div style="margin-bottom: 15px;">
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          <strong>Travel costs</strong> - Transportation, hotels, meals during business trips
+        </p>
+      </div>
+      <div style="margin-bottom: 15px;">
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          <strong>Contract help</strong> - Freelancers hired for tasks you can't do solo
+        </p>
+      </div>
+      <div style="margin-bottom: 15px;">
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          <strong>Insurance</strong> - Liability coverage, professional insurance for business
+        </p>
+      </div>
+      <div style="margin-bottom: 30px;">
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          <strong>Home office</strong> - Portion of rent, utilities, internet for dedicated space
+        </p>
+      </div>
+
+      <p style="font-size: 1.1em; line-height: 1.8; color: #333; font-style: italic; text-align: center;">
+        Solo businesses typically have $10,000-20,000 in annual expenses. That's $3,000-8,000 in tax savings when documented properly.
+      </p>
+    </section>
+
+    <section style="padding: 60px 20px; background: #f8f9fa;">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 2em; margin-bottom: 30px; color: #1a1a1a;">Why Solopreneurs Don't Track</h2>
+
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">Too many hats</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            You're doing ten jobs. Adding expense tracking feels impossible when you're already overwhelmed.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">No dedicated time</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            Employees have tasks. Solopreneurs have everything. Expense tracking gets perpetually postponed.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">System overwhelm</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            Most accounting software is built for companies with staff. You don't need payroll, invoicing, inventory - just expense organization.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">Unclear ROI</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            Until tax time, tracking feels like busywork. Then you realize you can't claim $8,000 in expenses because documentation is missing.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">Energy depletion</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            After a day of client work, product delivery, and marketing, you have nothing left for admin. Receipts pile up.
+          </p>
+        </div>
+
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333; font-style: italic;">
+          The problem isn't that you're disorganized. It's that tracking requires effort when you're already maxed out.
+        </p>
+      </div>
+    </section>
+
+    <section style="padding: 60px 20px; max-width: 800px; margin: 0 auto;">
+      <h2 style="font-size: 2em; margin-bottom: 30px; color: #1a1a1a; text-align: center;">What Makes This Work</h2>
+
+      <div style="margin-bottom: 30px;">
+        <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">Fits existing workflow</h3>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          Lives in WhatsApp you already check constantly. No context switching, no remembering to open apps, no new habits.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 30px;">
+        <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">Minimal time investment</h3>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          10 seconds per expense. Text photo, confirm category, done. Faster than filing physical receipts.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 30px;">
+        <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">Works from anywhere</h3>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          On site with client, text receipt. Working from coffee shop, text receipt. Buying equipment online, screenshot and text.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 30px;">
+        <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">No system maintenance</h3>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          Nothing to update, nothing to organize, nothing to maintain. The system runs automatically.
+        </p>
+      </div>
+
+      <div>
+        <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">Accountant-ready output</h3>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+          Standard Excel files. Your accountant gets clean data instead of chaos or "I think I spent around..."
+        </p>
+      </div>
+    </section>
+
+    <section style="padding: 60px 20px; background: #f8f9fa;">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 2em; margin-bottom: 20px; color: #1a1a1a; text-align: center;">Who This Helps</h2>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333; margin-bottom: 15px;">
+          <strong>Solo business owners</strong> - Running everything without employees or admin support
+        </p>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333; margin-bottom: 15px;">
+          <strong>Solo consultants</strong> - One-person professional services businesses
+        </p>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333; margin-bottom: 15px;">
+          <strong>Solo creators</strong> - Content creators, designers, writers operating independently
+        </p>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333; margin-bottom: 30px;">
+          <strong>Solo technical specialists</strong> - Developers, engineers, analysts working alone
+        </p>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333; font-style: italic; text-align: center;">
+          If you're the entire company and drowning in responsibilities, proper tracking shouldn't add to the burden.
+        </p>
+      </div>
+    </section>
+
+    <section style="padding: 60px 20px; max-width: 800px; margin: 0 auto;">
+      <h2 style="font-size: 2em; margin-bottom: 30px; color: #1a1a1a; text-align: center;">Pricing</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px;">
+        <div style="padding: 20px; background: #fff; border: 2px solid #e0e0e0; border-radius: 8px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">First expense free</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            Try with one receipt to see workflow
+          </p>
+        </div>
+
+        <div style="padding: 20px; background: #fff; border: 2px solid #e0e0e0; border-radius: 8px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">$2.99/month</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            6 expenses monthly
+          </p>
+        </div>
+
+        <div style="padding: 20px; background: #fff; border: 2px solid #e0e0e0; border-radius: 8px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">$4.99/month</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            25 expenses monthly
+          </p>
+        </div>
+      </div>
+
+      <p style="font-size: 1.1em; line-height: 1.8; color: #333; text-align: center; font-style: italic;">
+        Invest $60-120 per year, save $3,000-8,000 in taxes through better documentation.
+      </p>
+    </section>
+
+    <section style="padding: 60px 20px; background: #f8f9fa;">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 2em; margin-bottom: 30px; color: #1a1a1a; text-align: center;">Common Questions</h2>
+
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">Is this enough for my business?</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            Yes as a solopreneur, who is focussed on deductibles and taxes, this is all you need.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">What about expenses I already paid?</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            Text old receipt photos anytime. If you have physical receipts from earlier in the year, photograph and text them. Better documented late than never.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">Can I track both business and personal?</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            Absolutely, just tag them for you to identify them later.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">How does categorization work?</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            We read receipt details automatically. You confirm what the expense was for - supplies, software, meals, travel, etc. Takes 10 seconds.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">What if I forget to track something?</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            Text it when you remember. Even receipts from months ago can be processed and added to your records.
+          </p>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.3em; color: #2c3e50; margin-bottom: 10px;">Will my accountant understand the reports?</h3>
+          <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            Yes. Standard Excel format with expenses organized by month and category. Most accountants prefer this over scattered receipts or photo dumps.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: 80px 20px; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <h2 style="font-size: 2.2em; margin-bottom: 20px; color: white;">Start Tracking</h2>
+        <p style="font-size: 1.2em; line-height: 1.8; margin-bottom: 30px; color: white;">
+          Try it with one expense. Text a receipt photo via WhatsApp, see how automatic processing works. Free, no credit card needed.
+        </p>
+        <a href="https://wa.me/14155238886?text=Hi"
+           style="display: inline-block; background: white; color: #667eea; padding: 18px 40px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.1em; transition: transform 0.3s ease;">
+          Track Expense Free →
+        </a>
+        <p style="font-size: 1em; margin-top: 30px; color: rgba(255,255,255,0.9);">
+          Solopreneur-friendly tracking that doesn't add to your workload.
+        </p>
+      </div>
+    </section>
+  
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Start Tracking</h2>
+            <p>Try it with one expense. Text a receipt photo via WhatsApp, see how automatic processing works. Free, no credit card needed.</p>
+            <a href="https://wa.me/14155238886?text=Hi" class="cta-button">Track first expense free</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TextExpense</h3>
+                    <p>The simplest way to manage receipts via WhatsApp.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <p><a href="/">Home</a></p>
+                    <p><a href="/blog/">Blog</a></p>
+                    <p><a href="/#pricing">Pricing</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <p><a href="/privacy">Privacy Policy</a></p>
+                    <p><a href="/terms">Terms & Conditions</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TextExpense. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
