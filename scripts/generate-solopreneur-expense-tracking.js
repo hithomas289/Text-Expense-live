@@ -20,7 +20,7 @@ const data = {
   HERO_TITLE: 'Solopreneur Expense Tracking',
   HERO_SUBTITLE: 'Running everything solo - let this run automatically. Text receipt photos via WhatsApp, get organized reports. When you\'re the CEO, CFO, and janitor rolled into one, tracking expenses shouldn\'t add to the pile. Just send receipts, we handle the rest.',
   CTA_TEXT: 'Track first expense free',
-  CTA_URL: 'https://wa.me/14155238886?text=Hi',
+  CTA_URL: 'https://wa.me/17654792054?text=hi',
   SECTION_TITLE: 'Solopreneur Tracking',
   SECTION_SUBTITLE: 'Built for people doing everything themselves',
   FOOTER_CTA_TITLE: 'Start Tracking',

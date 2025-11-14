@@ -20,7 +20,7 @@ const data = {
   HERO_TITLE: 'Expense Tracking for Consultants',
   HERO_SUBTITLE: 'Track client costs without tracking software. Text receipt photos via WhatsApp, expenses get organized automatically. Client dinners, travel to meetings, project tools - everything documented and categorized. Excel reports ready when you need them.',
   CTA_TEXT: 'Track first expense free',
-  CTA_URL: 'https://wa.me/14155238886?text=Hi',
+  CTA_URL: 'https://wa.me/17654792054?text=hi',
   SECTION_TITLE: 'Consulting Expense Tracking',
   SECTION_SUBTITLE: 'Save expensive billable hours on admin work',
   FOOTER_CTA_TITLE: 'Start Tracking',

@@ -20,7 +20,7 @@ const data = {
   HERO_TITLE: 'Self Employed Receipt Management',
   HERO_SUBTITLE: 'Stop losing proof of what you spent. Text receipt photos via WhatsApp, we back them up and organize them. No filing cabinets, no shoebox chaos, no faded thermal paper. Just digital receipts accessible anytime.',
   CTA_TEXT: 'Process first receipt free',
-  CTA_URL: 'https://wa.me/14155238886?text=Hi',
+  CTA_URL: 'https://wa.me/17654792054?text=hi',
   SECTION_TITLE: 'Digital Receipt Management',
   SECTION_SUBTITLE: 'Never lose receipt documentation again',
   FOOTER_CTA_TITLE: 'Start Managing Receipts',

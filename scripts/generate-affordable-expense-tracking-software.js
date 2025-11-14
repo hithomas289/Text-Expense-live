@@ -20,7 +20,7 @@ const data = {
   HERO_SUBTITLE: 'Professional tracking without professional pricing',
   HERO_TEXT: 'Text receipt photos via WhatsApp, get organized Excel reports. $2.99-4.99/month total cost. No per-user fees, no enterprise pricing, no hidden charges. Just simple, affordable tracking.',
   CTA_TEXT: 'Track first receipt free',
-  CTA_URL: 'https://textexpense.com/#cta',
+  CTA_URL: 'https://wa.me/17654792054?text=hi',
   SECTION_TITLE: 'Affordable Expense Tracking',
   SECTION_SUBTITLE: 'Professional features at budget-friendly prices',
   FOOTER_CTA_TITLE: 'Start Tracking',

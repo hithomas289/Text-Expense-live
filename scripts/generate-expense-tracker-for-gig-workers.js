@@ -20,7 +20,7 @@ const data = {
   HERO_TITLE: 'Expense Tracker for Gig Workers',
   HERO_SUBTITLE: 'Track expenses across all your platforms. Text receipt photos via WhatsApp, expenses get organized automatically. Driving for Uber, delivering for DoorDash, working TaskRabbit - all costs documented. Every platform, one tracking system.',
   CTA_TEXT: 'Track first expense free',
-  CTA_URL: 'https://wa.me/14155238886?text=Hi',
+  CTA_URL: 'https://wa.me/17654792054?text=hi',
   SECTION_TITLE: 'Gig Worker Tracking',
   SECTION_SUBTITLE: 'One system for all your platforms',
   FOOTER_CTA_TITLE: 'Start Tracking',

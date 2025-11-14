@@ -20,7 +20,7 @@ const data = {
   HERO_SUBTITLE: 'Try it free, then decide if it\'s worth $2.99',
   HERO_TEXT: 'Text your first 3 receipts via WhatsApp completely free. See how automatic processing works, check if the output helps. Then $2.99/month if you want to keep using it.',
   CTA_TEXT: 'Process first receipt free',
-  CTA_URL: 'https://textexpense.com/#cta',
+  CTA_URL: 'https://wa.me/17654792054?text=hi',
   SECTION_TITLE: 'Free Expense Tracker Trial',
   SECTION_SUBTITLE: 'Try first receipt completely free',
   FOOTER_CTA_TITLE: 'Start Free Trial',

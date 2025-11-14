@@ -20,7 +20,7 @@ const data = {
   HERO_TITLE: 'Expense Tracking for Field Workers',
   HERO_SUBTITLE: 'Track expenses from anywhere you\'re working. Text receipt photos via WhatsApp, expenses get organized automatically. Construction sites, client locations, service calls, between jobs - document costs wherever work happens. No office required.',
   CTA_TEXT: 'Track first expense free',
-  CTA_URL: 'https://wa.me/14155238886?text=Hi',
+  CTA_URL: 'https://wa.me/17654792054?text=hi',
   SECTION_TITLE: 'Field Worker Tracking',
   SECTION_SUBTITLE: 'Built for workers who never see an office',
   FOOTER_CTA_TITLE: 'Start Tracking',
