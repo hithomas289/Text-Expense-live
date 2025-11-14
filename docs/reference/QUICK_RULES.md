@@ -34,10 +34,14 @@
 
 ---
 
-## Generation Command
+## Generation Commands
 
 ```bash
+# Landing pages
 node scripts/generate-page.js [slug]
+
+# Blog posts
+node scripts/generate-blog.js [slug]
 ```
 
 ---

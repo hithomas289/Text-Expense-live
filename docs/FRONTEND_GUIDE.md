@@ -33,6 +33,34 @@ git push -u origin claude/code-review-understanding-01NUxrVG2VwfufnKfbAk2cR5
 - ✅ Auto-updates the pages registry
 - ✅ Reports file size and stats
 
+### To Create a New Blog Post:
+
+```bash
+# 1. Create JSON data file
+cp frontend/data/blog/example-blog-post.json frontend/data/blog/your-post-slug.json
+
+# 2. Edit the JSON with your content
+#    - Set ARTICLE_TITLE, ARTICLE_CONTENT, AUTHOR_NAME
+#    - Add TAGS, READING_TIME, PUBLISH_DATE
+#    - Ensure CTA_URL is https://wa.me/17654792054?text=hi
+
+# 3. Generate the blog post
+node scripts/generate-blog.js your-post-slug
+
+# 4. Verify and commit
+git add frontend/data/blog/your-post-slug.json
+git add frontend/blog/your-post-slug.html
+git add frontend/data/blog-registry.json
+git commit -m "Add new blog post: your-post-slug"
+git push
+```
+
+**Blog system works the same way:**
+- ✅ One universal generator for all blog posts
+- ✅ JSON data files for content
+- ✅ Separate blog registry (`blog-registry.json`)
+- ✅ Auto-updates on generation
+
 ---
 
 ## The 7 Critical Rules

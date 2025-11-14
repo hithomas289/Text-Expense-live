@@ -67,18 +67,25 @@ As you add more pages, the agent kept running out of context because:
 ### Scripts Created:
 ```
 scripts/
-├── generate-page.js           # Universal generator (50 lines)
-└── update-registry.js         # Registry updater (auto-called)
+├── generate-page.js           # Universal page generator (50 lines)
+├── update-registry.js         # Page registry updater (auto-called)
+├── generate-blog.js           # Universal blog generator (50 lines)
+└── update-blog-registry.js    # Blog registry updater (auto-called)
 ```
 
 ### Data Structure Created:
 ```
 frontend/data/
-├── pages-registry.json        # Central manifest
+├── pages-registry.json        # Central page manifest
+├── blog-registry.json         # Central blog manifest
 ├── README.md                  # Data directory guide
-└── pages/
-    ├── example-new-page.json                   # Template
-    └── freelance-tax-deduction-tracker.json    # Real example
+├── pages/
+│   ├── example-new-page.json                   # Page template
+│   └── freelance-tax-deduction-tracker.json    # Real page example
+└── blog/
+    ├── README.md                               # Blog directory guide
+    ├── example-blog-post.json                  # Blog template
+    └── receipt-management-tips-small-business.json  # Real blog example
 ```
 
 ### Documentation Created:
@@ -92,10 +99,19 @@ docs/
 ```
 
 ### Test Results:
+
+**Landing Pages:**
 ✅ Generated test page: `freelance-tax-deduction-tracker.html`
-✅ Registry auto-updated with metadata
+✅ Page registry auto-updated with metadata
 ✅ 30 placeholders replaced successfully
 ✅ File size: 27.04 KB (expected range)
+✅ No warnings or errors
+
+**Blog Posts:**
+✅ Generated test blog: `receipt-management-tips-small-business.html`
+✅ Blog registry auto-updated with metadata
+✅ 45 placeholders replaced successfully
+✅ File size: 23.93 KB (expected range)
 ✅ No warnings or errors
 
 ---
@@ -129,6 +145,35 @@ node scripts/generate-page.js your-page-slug
 ```
 
 **That's it!** No script duplication, no manual registry updates.
+
+### Create a New Blog Post:
+
+```bash
+# 1. Create JSON data file
+cp frontend/data/blog/example-blog-post.json frontend/data/blog/your-post-slug.json
+
+# 2. Edit JSON with your content
+#    - Set ARTICLE_TITLE, ARTICLE_CONTENT, AUTHOR_NAME
+#    - Add TAGS, READING_TIME, PUBLISH_DATE
+#    - Ensure CTA_URL is https://wa.me/17654792054?text=hi
+
+# 3. Generate blog post
+node scripts/generate-blog.js your-post-slug
+
+# 4. Auto-magic happens:
+#    ✅ HTML file created in frontend/blog/
+#    ✅ Blog registry updated with metadata
+#    ✅ Stats displayed
+
+# 5. Validate & Deploy
+#    - Check in browser
+#    - Test mobile responsiveness
+#    - Verify CTAs and links
+#    - Update blog index if needed
+#    - Commit and push
+```
+
+**Same simplicity, same automation!**
 
 ---
 

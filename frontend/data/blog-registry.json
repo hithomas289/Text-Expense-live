@@ -1,0 +1,26 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2025-11-14T11:34:07.939Z",
+  "totalPosts": 1,
+  "categories": {
+    "Small Business Tips": 1
+  },
+  "posts": [
+    {
+      "slug": "receipt-management-tips-small-business",
+      "title": "7 Receipt Management Tips for Small Business Owners",
+      "category": "Small Business Tips",
+      "url": "/blog/receipt-management-tips-small-business",
+      "author": "Sarah Chen",
+      "publishDate": "2025-01-15",
+      "lastModified": "2025-11-14",
+      "readingTime": "6",
+      "excerpt": "Master receipt organization with these 7 proven strategies. Save time, maximize tax deductions, and never lose an important receipt again.",
+      "tags": [
+        "<a href=\"/blog/tag/small-business\" class=\"tag\">Small Business</a>\n<a href=\"/blog/tag/receipt-management\" class=\"tag\">Receipt Management</a>\n<a href=\"/blog/tag/tax-tips\" class=\"tag\">Tax Tips</a>\n<a href=\"/blog/tag/productivity\" class=\"tag\">Productivity</a>"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    }
+  ]
+}
