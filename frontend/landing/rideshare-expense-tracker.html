@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rideshare Expense Tracker: Rideshare Expense Tracker for Uber & Lyft | TextExpense</title>
+  <meta name="description" content="Rideshare Expense Tracker - Track vehicle costs and know your real earnings. Send receipt photos via WhatsApp and get organized Excel reports. Built for drivers and gig workers.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEMBHFSE8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VEMBHFSE8');
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #25D366;
+      --primary-dark: #128C7E;
+      --dark: #1a1a1a;
+      --gray: #6c757d;
+      --light-gray: #f9fafb;
+      --shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .hero .subtitle {
+      font-size: 24px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    .cta-primary {
+      background: var(--primary);
+      color: white;
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .cta-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .struggles-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .struggles-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .struggles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .struggle-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .struggle-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .why-apps-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .why-apps-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .why-apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .why-app-item {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .why-app-item h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .why-app-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .workflow-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .workflow-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .workflow-section .intro {
+      text-align: center;
+      font-size: 18px;
+      color: var(--gray);
+      margin-bottom: 50px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .workflow-timeline {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .workflow-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .workflow-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .workflow-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .scenarios-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .scenarios-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .scenarios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .scenario-item {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .scenario-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    .benefits-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .benefits-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .benefit-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .benefit-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .benefit-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .output-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .output-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .output-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .output-item {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .output-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    .faq-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .faq-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .faq-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .final-cta {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .final-cta p {
+      font-size: 20px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer .footer-links {
+      margin-bottom: 30px;
+    }
+
+    footer .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    footer .footer-links a:first-child {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    footer .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    footer .footer-cta {
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin-top: 30px;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero .subtitle {
+        font-size: 18px;
+      }
+
+      .struggles-section h2,
+      .why-apps-section h2,
+      .workflow-section h2,
+      .scenarios-section h2,
+      .benefits-section h2,
+      .output-section h2,
+      .faq-section h2,
+      .final-cta h2 {
+        font-size: 28px;
+      }
+
+      .benefits-grid,
+      .why-apps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Rideshare Expense Tracker for Uber & Lyft</h1>
+      <p class="subtitle">Track vehicle costs and know your real earnings</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+    </div>
+  </section>
+
+  <section class="struggles-section">
+    <div class="container">
+      <h2>You Know These Struggles</h2>
+      <div class="struggles-grid">
+        <div class="struggle-item">
+          <p>Driving 8+ hours a day - fuel and wear add up without tracking</p>
+        </div>
+        <div class="struggle-item">
+          <p>Can't tell if you're profitable after vehicle costs</p>
+        </div>
+        <div class="struggle-item">
+          <p>Car washes, snacks, water for passengers - losing track</p>
+        </div>
+        <div class="struggle-item">
+          <p>IRS wants detailed mileage logs you don't maintain</p>
+        </div>
+        <div class="struggle-item">
+          <p>Platform earnings look good but expenses eat into profit</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-apps-section">
+    <div class="container">
+      <h2>Why Other Apps Don't Work for You</h2>
+      <div class="why-apps-grid">
+        <div class="why-app-item">
+          <h3>Battery drain issue</h3>
+          <p>Automatic mileage trackers kill phone battery needed for rideshare app and navigation.</p>
+        </div>
+        <div class="why-app-item">
+          <h3>Complex categorization</h3>
+          <p>Apps don't understand online miles vs offline driving vs personal trips.</p>
+        </div>
+        <div class="why-app-item">
+          <h3>No earnings integration</h3>
+          <p>Apps don't help compare expenses to Uber/Lyft earnings for net profit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="workflow-section">
+    <div class="container">
+      <h2>How It Fits Your Day</h2>
+      <p class="intro">TextExpense works around your schedule, not the other way around.</p>
+      <div class="workflow-timeline">
+        <div class="workflow-item">
+          <h3>Online Start</h3>
+          <p>Fill tank before going online. Photo receipt with odometer and note "Uber shift start".</p>
+        </div>
+        <div class="workflow-item">
+          <h3>During Shift</h3>
+          <p>Car wash between rides? Water for passengers? Photo receipts, send instantly.</p>
+        </div>
+        <div class="workflow-item">
+          <h3>Shift End</h3>
+          <p>Top off gas. Photo receipt with ending odometer. Calculate shift fuel cost and miles.</p>
+        </div>
+        <div class="workflow-item">
+          <h3>Weekly Analysis</h3>
+          <p>Compare tracked expenses to Uber/Lyft earnings. See real profit after costs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scenarios-section">
+    <div class="container">
+      <h2>Real Scenarios You Face Daily</h2>
+      <div class="scenarios-grid">
+        <div class="scenario-item">
+          <p>Track fuel costs per online shift</p>
+        </div>
+        <div class="scenario-item">
+          <p>Document car washes and detailing</p>
+        </div>
+        <div class="scenario-item">
+          <p>Keep passenger amenity receipts (water, mints)</p>
+        </div>
+        <div class="scenario-item">
+          <p>Monitor oil changes and tune-ups</p>
+        </div>
+        <div class="scenario-item">
+          <p>Track phone mounts and chargers</p>
+        </div>
+        <div class="scenario-item">
+          <p>Organize commercial insurance costs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section">
+    <div class="container">
+      <h2>Built for How You Work</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3>True profit tracking</h3>
+          <p>Subtract real vehicle costs from platform earnings. Know actual take-home.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Platform comparison</h3>
+          <p>Drive Uber and Lyft? Track costs per platform to see which pays better net.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Online vs offline</h3>
+          <p>Tag business miles with "online" notes. Separate from personal driving.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>No battery drain</h3>
+          <p>Photo receipts instead of GPS tracking. Keep battery for rideshare work.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Passenger expenses</h3>
+          <p>Track water, mints, phone chargers. All rideshare costs are deductible.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>IRS compliance</h3>
+          <p>Complete mileage and expense documentation for audit protection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="output-section">
+    <div class="container">
+      <h2>What You Get</h2>
+      <div class="output-grid">
+        <div class="output-item">
+          <p>Shift expense vs earnings comparison</p>
+        </div>
+        <div class="output-item">
+          <p>Uber vs Lyft cost allocation</p>
+        </div>
+        <div class="output-item">
+          <p>Online mileage logs for tax deduction</p>
+        </div>
+        <div class="output-item">
+          <p>Vehicle maintenance tracking</p>
+        </div>
+        <div class="output-item">
+          <p>Passenger amenity expense documentation</p>
+        </div>
+        <div class="output-item">
+          <p>Annual rideshare tax deduction totals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <h2>Common Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>Can I track Uber and Lyft separately?</h3>
+          <p>Yes. Tag expenses with platform name. See costs for each rideshare app separately.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I calculate net earnings after expenses?</h3>
+          <p>Download weekly or monthly expenses. Subtract from platform earnings to see real profit.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What rideshare expenses are deductible?</h3>
+          <p>Fuel, maintenance, insurance, car washes, passenger amenities, phone - everything for rideshare work.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I track online miles vs personal driving?</h3>
+          <p>Yes. Only send fuel receipts from online shifts with odometer notes. Personal stays separate.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does it work for car rentals (Uber Rent)?</h3>
+          <p>Absolutely. Track rental costs, fuel, and all expenses for rented vehicle rideshare work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Get Organized?</h2>
+      <p>Start tracking receipts via WhatsApp today. First 3 receipts are free.</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://textexpense.com">Home</a>
+        <a href="https://textexpense.com/privacy">Privacy Policy</a>
+        <a href="https://textexpense.com/terms">Terms & Conditions</a>
+      </div>
+      <div class="footer-cta">
+        <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+      </div>
+      <p>&copy; 2025 TextExpense. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
