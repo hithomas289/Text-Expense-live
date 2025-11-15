@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T05:10:23.668Z",
-  "totalPosts": 19,
+  "lastUpdated": "2025-11-15T05:16:36.546Z",
+  "totalPosts": 20,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -11,13 +11,13 @@
     "consulting-expenses": 1,
     "tax-preparation": 2,
     "medical-expenses": 1,
+    "sales-expenses": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
-    "receipt-storage": 1,
+    "receipt-storage": 2,
     "receipt-retention": 1,
     "receipt-organization": 1,
-    "Small Business Tips": 1,
-    "sales-expenses": 1
+    "Small Business Tips": 1
   },
   "posts": [
     {
@@ -205,6 +205,27 @@
         "sales team expenses",
         "travel receipts sales",
         "reimbursement tracking sales"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "keep-digital-copies-of-receipts",
+      "title": "How to Keep Digital Copies of Receipts (The Right Way)",
+      "category": "receipt-storage",
+      "url": "/blog/keep-digital-copies-of-receipts",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "9",
+      "excerpt": "Don't lose receipts in your camera roll. Store digital copies in 30 seconds by texting them to WhatsApp—searchable, secure, and tax-ready.",
+      "tags": [
+        "digital receipt storage",
+        "save receipts digitally",
+        "digital copies of receipts",
+        "receipt organization digital",
+        "store receipts online",
+        "paperless receipt storage"
       ],
       "status": "published",
       "templateVersion": "v2"
