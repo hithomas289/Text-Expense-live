@@ -1,10 +1,11 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T06:11:39.325Z",
-  "totalPosts": 30,
+  "lastUpdated": "2025-11-15T06:17:12.526Z",
+  "totalPosts": 31,
   "categories": {
     "whatsapp-tracking": 1,
     "receipt-conversion": 1,
+    "sales-expenses": 2,
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
     "receipt-management": 2,
@@ -13,7 +14,6 @@
     "consulting-expenses": 1,
     "tax-preparation": 2,
     "medical-expenses": 1,
-    "sales-expenses": 2,
     "receipt-storage": 2,
     "expense-reporting": 3,
     "project-expenses": 1,
@@ -24,7 +24,8 @@
     "business-expenses": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
-    "Small Business Tips": 1
+    "Small Business Tips": 1,
+    "contractor-expenses": 1
   },
   "posts": [
     {
@@ -86,6 +87,27 @@
         "sales reimbursement",
         "track sales expenses",
         "sales expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "contractor-expense-tracking",
+      "title": "Contractor Expense Tracking Made Simple",
+      "category": "contractor-expenses",
+      "url": "/blog/contractor-expense-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "9",
+      "excerpt": "Contractors juggle tools, materials, and travel. Track receipts instantly through WhatsApp and stay tax-ready. Try 3 free.",
+      "tags": [
+        "contractor expenses",
+        "contractor expense tracking",
+        "contractor receipts",
+        "construction expense tracking",
+        "project expenses contractor",
+        "contractor tax deductions"
       ],
       "status": "published",
       "templateVersion": "v2"
