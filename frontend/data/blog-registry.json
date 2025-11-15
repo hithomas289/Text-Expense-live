@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T05:03:02.899Z",
-  "totalPosts": 17,
+  "lastUpdated": "2025-11-15T05:06:49.313Z",
+  "totalPosts": 18,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -15,7 +15,8 @@
     "receipt-storage": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
-    "Small Business Tips": 1
+    "Small Business Tips": 1,
+    "medical-expenses": 1
   },
   "posts": [
     {
@@ -161,6 +162,27 @@
         "IRS meal requirements",
         "tax deductible meals",
         "meal receipt tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "organize-medical-receipts-insurance-claims",
+      "title": "How to Organize Medical Receipts for Insurance Claims (Without Filing Systems)",
+      "category": "medical-expenses",
+      "url": "/blog/organize-medical-receipts-insurance-claims",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "10",
+      "excerpt": "Medical receipts get lost or damaged. Text them to WhatsApp for instant, safe, searchable storage. Perfect for insurance & FSA/HSA.",
+      "tags": [
+        "medical receipt organization",
+        "insurance claim receipts",
+        "FSA receipts",
+        "HSA documentation",
+        "healthcare expense tracking",
+        "medical expense organization"
       ],
       "status": "published",
       "templateVersion": "v2"
