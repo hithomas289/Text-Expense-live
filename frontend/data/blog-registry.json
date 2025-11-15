@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T05:16:36.546Z",
-  "totalPosts": 20,
+  "lastUpdated": "2025-11-15T05:22:06.164Z",
+  "totalPosts": 21,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -12,12 +12,13 @@
     "tax-preparation": 2,
     "medical-expenses": 1,
     "sales-expenses": 1,
+    "receipt-storage": 2,
     "expense-tracking": 1,
     "business-expenses": 1,
-    "receipt-storage": 2,
     "receipt-retention": 1,
     "receipt-organization": 1,
-    "Small Business Tips": 1
+    "Small Business Tips": 1,
+    "expense-reporting": 1
   },
   "posts": [
     {
@@ -226,6 +227,27 @@
         "receipt organization digital",
         "store receipts online",
         "paperless receipt storage"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "prepare-expense-report-fast",
+      "title": "How to Prepare an Expense Report in Minutes",
+      "category": "expense-reporting",
+      "url": "/blog/prepare-expense-report-fast",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Stop wasting hours on expense reports. Track receipts through WhatsApp and generate a clean report in minutes. Try 3 receipts free.",
+      "tags": [
+        "expense report preparation",
+        "quick expense reports",
+        "expense report format",
+        "create expense reports fast",
+        "expense reporting software",
+        "business expense reports"
       ],
       "status": "published",
       "templateVersion": "v2"
