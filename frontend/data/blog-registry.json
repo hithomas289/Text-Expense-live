@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T06:24:12.089Z",
-  "totalPosts": 32,
+  "lastUpdated": "2025-11-15T06:26:40.329Z",
+  "totalPosts": 33,
   "categories": {
     "whatsapp-tracking": 1,
     "receipt-conversion": 1,
@@ -16,7 +16,7 @@
     "tax-preparation": 2,
     "medical-expenses": 1,
     "receipt-storage": 2,
-    "expense-reporting": 3,
+    "expense-reporting": 4,
     "project-expenses": 1,
     "receipt-scanning": 1,
     "travel-expenses": 1,
@@ -108,6 +108,26 @@
         "construction expense tracking",
         "project expenses contractor",
         "contractor tax deductions"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "monthly-expense-report-template",
+      "title": "Monthly Expense Report Template (Automatically Generated)",
+      "category": "expense-reporting",
+      "url": "/blog/monthly-expense-report-template",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Stop building monthly expense reports manually. Track receipts through WhatsApp and download a clean monthly report instantly.",
+      "tags": [
+        "monthly expense report",
+        "expense report template",
+        "monthly expense excel",
+        "monthly receipts tracking",
+        "automatic expense report"
       ],
       "status": "published",
       "templateVersion": "v2"
