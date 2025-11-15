@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T05:47:27.133Z",
-  "totalPosts": 27,
+  "lastUpdated": "2025-11-15T06:03:23.198Z",
+  "totalPosts": 28,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -17,14 +17,36 @@
     "project-expenses": 1,
     "receipt-scanning": 1,
     "travel-expenses": 1,
+    "reimbursement": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
     "Small Business Tips": 1,
-    "reimbursement": 1
+    "whatsapp-tracking": 1
   },
   "posts": [
+    {
+      "slug": "track-expenses-through-whatsapp",
+      "title": "Track Expenses Through WhatsApp in 30 Seconds",
+      "category": "whatsapp-tracking",
+      "url": "/blog/track-expenses-through-whatsapp",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "The easiest way to track expenses is by texting receipt photos to WhatsApp. No apps, no typing — organized instantly. Try 3 free.",
+      "tags": [
+        "track expenses whatsapp",
+        "whatsapp expense tracker",
+        "expense tracking whatsapp",
+        "track receipts whatsapp",
+        "whatsapp expense report",
+        "whatsapp receipt tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
     {
       "slug": "best-way-to-track-expenses",
       "title": "Best Way to Track Expenses (Without the Spreadsheet Nightmare)",
