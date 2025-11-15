@@ -1,11 +1,11 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T04:28:51.082Z",
-  "totalPosts": 12,
+  "lastUpdated": "2025-11-15T04:33:49.061Z",
+  "totalPosts": 13,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
-    "receipt-management": 1,
+    "receipt-management": 2,
     "small-business": 1,
     "tax-preparation": 1,
     "expense-tracking": 1,
@@ -55,6 +55,27 @@
         "track expenses fast",
         "instant expense tracking",
         "30 second tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "simplest-way-to-manage-receipts",
+      "title": "The Simplest Way to Manage Receipts (Finally)",
+      "category": "receipt-management",
+      "url": "/blog/simplest-way-to-manage-receipts",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "11",
+      "excerpt": "Stop losing receipts in shoeboxes and wallets. Text receipt photos, get organized Excel files. Works through WhatsApp. Try 3 receipts free.",
+      "tags": [
+        "simplest receipt management",
+        "easy receipt organization",
+        "simple receipt system",
+        "manage receipts easily",
+        "receipt organization tips",
+        "no-app receipt management"
       ],
       "status": "published",
       "templateVersion": "v2"
