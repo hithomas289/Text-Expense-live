@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T05:43:38.776Z",
-  "totalPosts": 26,
+  "lastUpdated": "2025-11-15T05:47:27.133Z",
+  "totalPosts": 27,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -16,12 +16,13 @@
     "expense-reporting": 3,
     "project-expenses": 1,
     "receipt-scanning": 1,
+    "travel-expenses": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
     "Small Business Tips": 1,
-    "travel-expenses": 1
+    "reimbursement": 1
   },
   "posts": [
     {
@@ -356,6 +357,27 @@
         "travel reimbursement tracking",
         "on the go expense tracking",
         "business trip expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "how-to-create-a-reimbursement-report",
+      "title": "How to Create a Reimbursement Report (Fast & Error-Free)",
+      "category": "reimbursement",
+      "url": "/blog/how-to-create-a-reimbursement-report",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Need to submit expenses for reimbursement? Capture receipts through WhatsApp and generate a clean reimbursement report in minutes. Try 3 free.",
+      "tags": [
+        "reimbursement report",
+        "expense reimbursement",
+        "employee reimbursement",
+        "how to submit reimbursement",
+        "company expense report",
+        "reimbursement tracking"
       ],
       "status": "published",
       "templateVersion": "v2"
