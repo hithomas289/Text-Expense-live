@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Creator Tax Receipts: Tax Receipts for Digital Creators | TextExpense</title>
+  <meta name="description" content="Digital Creator Tax Receipts - Organize creator expenses for maximum tax deductions. Send receipt photos via WhatsApp and get organized Excel reports. Built for creators and influencers.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEMBHFSE8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VEMBHFSE8');
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #25D366;
+      --primary-dark: #128C7E;
+      --dark: #1a1a1a;
+      --gray: #6c757d;
+      --light-gray: #f9fafb;
+      --shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .hero .subtitle {
+      font-size: 24px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    .cta-primary {
+      background: var(--primary);
+      color: white;
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .cta-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .struggles-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .struggles-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .struggles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .struggle-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .struggle-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .why-apps-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .why-apps-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .why-apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .why-app-item {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .why-app-item h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .why-app-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .workflow-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .workflow-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .workflow-section .intro {
+      text-align: center;
+      font-size: 18px;
+      color: var(--gray);
+      margin-bottom: 50px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .workflow-timeline {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .workflow-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .workflow-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .workflow-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .scenarios-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .scenarios-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .scenarios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .scenario-item {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .scenario-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    .benefits-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .benefits-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .benefit-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .benefit-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .benefit-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .output-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .output-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .output-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .output-item {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .output-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    .faq-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .faq-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .faq-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .final-cta {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .final-cta p {
+      font-size: 20px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer .footer-links {
+      margin-bottom: 30px;
+    }
+
+    footer .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    footer .footer-links a:first-child {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    footer .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    footer .footer-cta {
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin-top: 30px;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero .subtitle {
+        font-size: 18px;
+      }
+
+      .struggles-section h2,
+      .why-apps-section h2,
+      .workflow-section h2,
+      .scenarios-section h2,
+      .benefits-section h2,
+      .output-section h2,
+      .faq-section h2,
+      .final-cta h2 {
+        font-size: 28px;
+      }
+
+      .benefits-grid,
+      .why-apps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Tax Receipts for Digital Creators</h1>
+      <p class="subtitle">Organize creator expenses for maximum tax deductions</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+    </div>
+  </section>
+
+  <section class="struggles-section">
+    <div class="container">
+      <h2>You Know These Struggles</h2>
+      <div class="struggles-grid">
+        <div class="struggle-item">
+          <p>Tax time panic - receipts from entire year of creating content scattered</p>
+        </div>
+        <div class="struggle-item">
+          <p>IRS questions creator expenses - hard to prove equipment was for business</p>
+        </div>
+        <div class="struggle-item">
+          <p>Don't know what's deductible in creator economy - missing thousands</p>
+        </div>
+        <div class="struggle-item">
+          <p>Accountant charges premium because creator expenses are disorganized</p>
+        </div>
+        <div class="struggle-item">
+          <p>Fear of audit because creator lifestyle and business expenses blur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-apps-section">
+    <div class="container">
+      <h2>Why Other Apps Don't Work for You</h2>
+      <div class="why-apps-grid">
+        <div class="why-app-item">
+          <h3>Not creator tax-focused</h3>
+          <p>Apps don't organize expenses by creator-specific IRS categories and deductions.</p>
+        </div>
+        <div class="why-app-item">
+          <h3>Missing proof of business purpose</h3>
+          <p>Apps don't help document that lifestyle-looking expenses were actually for content.</p>
+        </div>
+        <div class="why-app-item">
+          <h3>Complex for creatives</h3>
+          <p>Tax software too complicated. Creators need simple receipt organization for their accountant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="workflow-section">
+    <div class="container">
+      <h2>How It Fits Your Day</h2>
+      <p class="intro">TextExpense works around your schedule, not the other way around.</p>
+      <div class="workflow-timeline">
+        <div class="workflow-item">
+          <h3>Throughout Year</h3>
+          <p>Every creator expense - photo receipt, tag with category like "equipment", "software", "locations".</p>
+        </div>
+        <div class="workflow-item">
+          <h3>Add Business Purpose</h3>
+          <p>Note what expense was for: "camera for YouTube videos", "cafe for content creation".</p>
+        </div>
+        <div class="workflow-item">
+          <h3>Quarterly Check</h3>
+          <p>Download quarter's expenses. Prepare for estimated tax payment as self-employed creator.</p>
+        </div>
+        <div class="workflow-item">
+          <h3>Tax Season</h3>
+          <p>Complete year of receipts organized by tax category. Hand to accountant for Schedule C.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scenarios-section">
+    <div class="container">
+      <h2>Real Scenarios You Face Daily</h2>
+      <div class="scenarios-grid">
+        <div class="scenario-item">
+          <p>Track all creator equipment purchases</p>
+        </div>
+        <div class="scenario-item">
+          <p>Document software and platform costs</p>
+        </div>
+        <div class="scenario-item">
+          <p>Keep home studio expense receipts</p>
+        </div>
+        <div class="scenario-item">
+          <p>Monitor internet and phone bills</p>
+        </div>
+        <div class="scenario-item">
+          <p>Track education and skill development</p>
+        </div>
+        <div class="scenario-item">
+          <p>Organize travel for content creation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section">
+    <div class="container">
+      <h2>Built for How You Work</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3>Creator-specific categories</h3>
+          <p>Tag by creator tax categories: equipment, software, internet, education, promotion.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Business purpose proof</h3>
+          <p>Add notes explaining business purpose. Critical for IRS if lifestyle and work blur.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Quarterly tax planning</h3>
+          <p>Track expenses each quarter for accurate self-employment estimated tax payments.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Audit protection</h3>
+          <p>Receipt images plus business purpose notes. Strong defense if IRS questions creator deductions.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Deduction maximization</h3>
+          <p>Track every legitimate expense. Home studio, equipment, software, education - everything.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Accountant time saver</h3>
+          <p>Organized creator expenses mean lower tax prep fees. No sorting chaos at year end.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="output-section">
+    <div class="container">
+      <h2>What You Get</h2>
+      <div class="output-grid">
+        <div class="output-item">
+          <p>Schedule C category-organized expenses</p>
+        </div>
+        <div class="output-item">
+          <p>Business purpose documentation</p>
+        </div>
+        <div class="output-item">
+          <p>Quarterly estimated tax summaries</p>
+        </div>
+        <div class="output-item">
+          <p>Annual creator tax deduction totals</p>
+        </div>
+        <div class="output-item">
+          <p>Equipment depreciation documentation</p>
+        </div>
+        <div class="output-item">
+          <p>Home office deduction backup</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <h2>Common Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>What creator expenses are tax deductible?</h3>
+          <p>Equipment, software, internet, phone, home studio, education, props, travel for content - any ordinary business expense.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I deduct my home studio or apartment?</h3>
+          <p>Yes if you have dedicated space for content creation. Deduct that percentage of rent and utilities.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I prove expenses are business not personal?</h3>
+          <p>Document business purpose when sending receipts. Explain how expense relates to content creation.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if I started tracking mid-year?</h3>
+          <p>Start now. Better to have partial year documented than nothing. Gather old receipts if possible.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I deduct meals if I create food content?</h3>
+          <p>Yes if food is for content creation. Document with photos and note "for recipe video" or similar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Get Organized?</h2>
+      <p>Start tracking receipts via WhatsApp today. First 3 receipts are free.</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://textexpense.com">Home</a>
+        <a href="https://textexpense.com/privacy">Privacy Policy</a>
+        <a href="https://textexpense.com/terms">Terms & Conditions</a>
+      </div>
+      <div class="footer-cta">
+        <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+      </div>
+      <p>&copy; 2025 TextExpense. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
