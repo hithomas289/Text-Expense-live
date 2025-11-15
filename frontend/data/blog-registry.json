@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T09:53:25.628Z",
-  "totalPosts": 48,
+  "lastUpdated": "2025-11-15T10:25:27.993Z",
+  "totalPosts": 83,
   "categories": {
     "whatsapp-tracking": 1,
     "receipt-conversion": 1,
@@ -9,7 +9,7 @@
     "contractor-expenses": 1,
     "expense-reporting": 4,
     "expense-tracking": 2,
-    "freelance-expenses": 17,
+    "freelance-expenses": 52,
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
     "receipt-management": 2,
@@ -431,6 +431,706 @@
         "freelancer tax deductions AZ",
         "expense tracking Downtown",
         "Phoenix freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-portland-freelancers",
+      "title": "Best Way to Track Expenses in Portland for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-portland-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Portland freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Portland freelancer expenses",
+        "track expenses Portland",
+        "freelancer tax deductions OR",
+        "expense tracking Pearl District",
+        "Portland freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-san-diego-freelancers",
+      "title": "Best Way to Track Expenses in San Diego for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-san-diego-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "San Diego freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "San Diego freelancer expenses",
+        "track expenses San Diego",
+        "freelancer tax deductions CA",
+        "expense tracking Gaslamp Quarter",
+        "San Diego freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-nashville-freelancers",
+      "title": "Best Way to Track Expenses in Nashville for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-nashville-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Nashville freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Nashville freelancer expenses",
+        "track expenses Nashville",
+        "freelancer tax deductions TN",
+        "expense tracking The Gulch",
+        "Nashville freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-charlotte-freelancers",
+      "title": "Best Way to Track Expenses in Charlotte for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-charlotte-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Charlotte freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Charlotte freelancer expenses",
+        "track expenses Charlotte",
+        "freelancer tax deductions NC",
+        "expense tracking Uptown",
+        "Charlotte freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-tampa-freelancers",
+      "title": "Best Way to Track Expenses in Tampa for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-tampa-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Tampa freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Tampa freelancer expenses",
+        "track expenses Tampa",
+        "freelancer tax deductions FL",
+        "expense tracking Hyde Park",
+        "Tampa freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-orlando-freelancers",
+      "title": "Best Way to Track Expenses in Orlando for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-orlando-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Orlando freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Orlando freelancer expenses",
+        "track expenses Orlando",
+        "freelancer tax deductions FL",
+        "expense tracking Downtown",
+        "Orlando freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-raleigh-freelancers",
+      "title": "Best Way to Track Expenses in Raleigh for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-raleigh-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Raleigh freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Raleigh freelancer expenses",
+        "track expenses Raleigh",
+        "freelancer tax deductions NC",
+        "expense tracking Downtown",
+        "Raleigh freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-salt-lake-city-freelancers",
+      "title": "Best Way to Track Expenses in Salt Lake City for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-salt-lake-city-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Salt Lake City freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Salt Lake City freelancer expenses",
+        "track expenses Salt Lake City",
+        "freelancer tax deductions UT",
+        "expense tracking Sugar House",
+        "Salt Lake City freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-minneapolis-freelancers",
+      "title": "Best Way to Track Expenses in Minneapolis for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-minneapolis-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Minneapolis freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Minneapolis freelancer expenses",
+        "track expenses Minneapolis",
+        "freelancer tax deductions MN",
+        "expense tracking Uptown",
+        "Minneapolis freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-kansas-city-freelancers",
+      "title": "Best Way to Track Expenses in Kansas City for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-kansas-city-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Kansas City freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Kansas City freelancer expenses",
+        "track expenses Kansas City",
+        "freelancer tax deductions MO",
+        "expense tracking Crossroads",
+        "Kansas City freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-columbus-freelancers",
+      "title": "Best Way to Track Expenses in Columbus for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-columbus-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Columbus freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Columbus freelancer expenses",
+        "track expenses Columbus",
+        "freelancer tax deductions OH",
+        "expense tracking Short North",
+        "Columbus freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-cincinnati-freelancers",
+      "title": "Best Way to Track Expenses in Cincinnati for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-cincinnati-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Cincinnati freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Cincinnati freelancer expenses",
+        "track expenses Cincinnati",
+        "freelancer tax deductions OH",
+        "expense tracking Over-the-Rhine",
+        "Cincinnati freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-indianapolis-freelancers",
+      "title": "Best Way to Track Expenses in Indianapolis for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-indianapolis-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Indianapolis freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Indianapolis freelancer expenses",
+        "track expenses Indianapolis",
+        "freelancer tax deductions IN",
+        "expense tracking Mass Ave",
+        "Indianapolis freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-pittsburgh-freelancers",
+      "title": "Best Way to Track Expenses in Pittsburgh for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-pittsburgh-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Pittsburgh freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Pittsburgh freelancer expenses",
+        "track expenses Pittsburgh",
+        "freelancer tax deductions PA",
+        "expense tracking Lawrenceville",
+        "Pittsburgh freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-st-louis-freelancers",
+      "title": "Best Way to Track Expenses in St. Louis for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-st-louis-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "St. Louis freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "St. Louis freelancer expenses",
+        "track expenses St. Louis",
+        "freelancer tax deductions MO",
+        "expense tracking Central West End",
+        "St. Louis freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-las-vegas-freelancers",
+      "title": "Best Way to Track Expenses in Las Vegas for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-las-vegas-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Las Vegas freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Las Vegas freelancer expenses",
+        "track expenses Las Vegas",
+        "freelancer tax deductions NV",
+        "expense tracking Downtown",
+        "Las Vegas freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-san-antonio-freelancers",
+      "title": "Best Way to Track Expenses in San Antonio for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-san-antonio-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "San Antonio freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "San Antonio freelancer expenses",
+        "track expenses San Antonio",
+        "freelancer tax deductions TX",
+        "expense tracking Downtown",
+        "San Antonio freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-new-orleans-freelancers",
+      "title": "Best Way to Track Expenses in New Orleans for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-new-orleans-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "New Orleans freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "New Orleans freelancer expenses",
+        "track expenses New Orleans",
+        "freelancer tax deductions LA",
+        "expense tracking French Quarter",
+        "New Orleans freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-phoenix-scottsdale-freelancers",
+      "title": "Best Way to Track Expenses in Phoenix/Scottsdale for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-phoenix-scottsdale-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Phoenix/Scottsdale freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Phoenix/Scottsdale freelancer expenses",
+        "track expenses Phoenix/Scottsdale",
+        "freelancer tax deductions AZ",
+        "expense tracking Old Town Scottsdale",
+        "Phoenix/Scottsdale freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-anaheim-freelancers",
+      "title": "Best Way to Track Expenses in Anaheim for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-anaheim-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Anaheim freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Anaheim freelancer expenses",
+        "track expenses Anaheim",
+        "freelancer tax deductions CA",
+        "expense tracking Downtown",
+        "Anaheim freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-baltimore-freelancers",
+      "title": "Best Way to Track Expenses in Baltimore for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-baltimore-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Baltimore freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Baltimore freelancer expenses",
+        "track expenses Baltimore",
+        "freelancer tax deductions MD",
+        "expense tracking Inner Harbor",
+        "Baltimore freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-detroit-freelancers",
+      "title": "Best Way to Track Expenses in Detroit for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-detroit-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Detroit freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Detroit freelancer expenses",
+        "track expenses Detroit",
+        "freelancer tax deductions MI",
+        "expense tracking Midtown",
+        "Detroit freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-irvine-freelancers",
+      "title": "Best Way to Track Expenses in Irvine for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-irvine-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Irvine freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Irvine freelancer expenses",
+        "track expenses Irvine",
+        "freelancer tax deductions CA",
+        "expense tracking Irvine Spectrum",
+        "Irvine freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-sacramento-freelancers",
+      "title": "Best Way to Track Expenses in Sacramento for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-sacramento-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Sacramento freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Sacramento freelancer expenses",
+        "track expenses Sacramento",
+        "freelancer tax deductions CA",
+        "expense tracking Midtown",
+        "Sacramento freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-jacksonville-freelancers",
+      "title": "Best Way to Track Expenses in Jacksonville for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-jacksonville-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Jacksonville freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Jacksonville freelancer expenses",
+        "track expenses Jacksonville",
+        "freelancer tax deductions FL",
+        "expense tracking Riverside",
+        "Jacksonville freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-boulder-freelancers",
+      "title": "Best Way to Track Expenses in Boulder for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-boulder-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Boulder freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Boulder freelancer expenses",
+        "track expenses Boulder",
+        "freelancer tax deductions CO",
+        "expense tracking Pearl Street",
+        "Boulder freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-durham-freelancers",
+      "title": "Best Way to Track Expenses in Durham for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-durham-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Durham freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Durham freelancer expenses",
+        "track expenses Durham",
+        "freelancer tax deductions NC",
+        "expense tracking Downtown",
+        "Durham freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-madison-freelancers",
+      "title": "Best Way to Track Expenses in Madison for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-madison-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Madison freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Madison freelancer expenses",
+        "track expenses Madison",
+        "freelancer tax deductions WI",
+        "expense tracking Downtown",
+        "Madison freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-plano-freelancers",
+      "title": "Best Way to Track Expenses in Plano for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-plano-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Plano freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Plano freelancer expenses",
+        "track expenses Plano",
+        "freelancer tax deductions TX",
+        "expense tracking Legacy West",
+        "Plano freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-bellevue-freelancers",
+      "title": "Best Way to Track Expenses in Bellevue for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-bellevue-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Bellevue freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Bellevue freelancer expenses",
+        "track expenses Bellevue",
+        "freelancer tax deductions WA",
+        "expense tracking Downtown",
+        "Bellevue freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-santa-clara-freelancers",
+      "title": "Best Way to Track Expenses in Santa Clara for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-santa-clara-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Santa Clara freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Santa Clara freelancer expenses",
+        "track expenses Santa Clara",
+        "freelancer tax deductions CA",
+        "expense tracking Santana Row",
+        "Santa Clara freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-sunnyvale-freelancers",
+      "title": "Best Way to Track Expenses in Sunnyvale for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-sunnyvale-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Sunnyvale freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Sunnyvale freelancer expenses",
+        "track expenses Sunnyvale",
+        "freelancer tax deductions CA",
+        "expense tracking Downtown",
+        "Sunnyvale freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-san-jose-freelancers",
+      "title": "Best Way to Track Expenses in San Jose for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-san-jose-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "San Jose freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "San Jose freelancer expenses",
+        "track expenses San Jose",
+        "freelancer tax deductions CA",
+        "expense tracking Downtown",
+        "San Jose freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-arlington-freelancers",
+      "title": "Best Way to Track Expenses in Arlington for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-arlington-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Arlington freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Arlington freelancer expenses",
+        "track expenses Arlington",
+        "freelancer tax deductions VA",
+        "expense tracking Rosslyn",
+        "Arlington freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-reston-freelancers",
+      "title": "Best Way to Track Expenses in Reston for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-reston-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Reston freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "Reston freelancer expenses",
+        "track expenses Reston",
+        "freelancer tax deductions VA",
+        "expense tracking Reston Town Center",
+        "Reston freelancer taxes"
       ],
       "status": "published",
       "templateVersion": "v2"
