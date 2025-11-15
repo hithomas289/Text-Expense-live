@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T05:22:06.164Z",
-  "totalPosts": 21,
+  "lastUpdated": "2025-11-15T05:25:22.379Z",
+  "totalPosts": 22,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -13,12 +13,13 @@
     "medical-expenses": 1,
     "sales-expenses": 1,
     "receipt-storage": 2,
+    "expense-reporting": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
     "Small Business Tips": 1,
-    "expense-reporting": 1
+    "project-expenses": 1
   },
   "posts": [
     {
@@ -248,6 +249,27 @@
         "create expense reports fast",
         "expense reporting software",
         "business expense reports"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-project-expenses-for-clients",
+      "title": "How to Track Project Expenses for Clients (Without Spreadsheets)",
+      "category": "project-expenses",
+      "url": "/blog/track-project-expenses-for-clients",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "10",
+      "excerpt": "Track project expenses in real time without spreadsheets. Text receipts to WhatsApp and create client-ready reports in minutes. Try 3 receipts free.",
+      "tags": [
+        "project expense tracking",
+        "track client expenses",
+        "project cost tracking",
+        "consultant expense tracking",
+        "freelance project expenses",
+        "client expense reports"
       ],
       "status": "published",
       "templateVersion": "v2"
