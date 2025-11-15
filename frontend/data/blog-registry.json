@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T05:39:26.007Z",
-  "totalPosts": 25,
+  "lastUpdated": "2025-11-15T05:43:38.776Z",
+  "totalPosts": 26,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -15,12 +15,13 @@
     "receipt-storage": 2,
     "expense-reporting": 3,
     "project-expenses": 1,
+    "receipt-scanning": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
     "Small Business Tips": 1,
-    "receipt-scanning": 1
+    "travel-expenses": 1
   },
   "posts": [
     {
@@ -334,6 +335,27 @@
         "paperless receipts",
         "scan receipt photo",
         "mobile receipt scanning"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-while-traveling-for-work",
+      "title": "Track Expenses While Traveling for Work (The Zero-Stress Method)",
+      "category": "travel-expenses",
+      "url": "/blog/track-expenses-while-traveling-for-work",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "9",
+      "excerpt": "Traveling for work involves endless receipts. Track every expense instantly through WhatsApp and forget end-of-trip paperwork. Try 3 free.",
+      "tags": [
+        "track travel expenses",
+        "business travel expenses",
+        "work travel receipts",
+        "travel reimbursement tracking",
+        "on the go expense tracking",
+        "business trip expense tracking"
       ],
       "status": "published",
       "templateVersion": "v2"
