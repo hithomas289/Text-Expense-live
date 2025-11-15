@@ -1,12 +1,13 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T06:26:40.329Z",
-  "totalPosts": 33,
+  "lastUpdated": "2025-11-15T06:29:25.726Z",
+  "totalPosts": 34,
   "categories": {
     "whatsapp-tracking": 1,
     "receipt-conversion": 1,
     "sales-expenses": 2,
     "contractor-expenses": 1,
+    "expense-reporting": 4,
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
     "receipt-management": 2,
@@ -16,12 +17,11 @@
     "tax-preparation": 2,
     "medical-expenses": 1,
     "receipt-storage": 2,
-    "expense-reporting": 4,
     "project-expenses": 1,
     "receipt-scanning": 1,
     "travel-expenses": 1,
     "reimbursement": 1,
-    "expense-tracking": 1,
+    "expense-tracking": 2,
     "business-expenses": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
@@ -128,6 +128,26 @@
         "monthly expense excel",
         "monthly receipts tracking",
         "automatic expense report"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "free-expense-tracker-template",
+      "title": "Free Expense Tracker Template (Generated Automatically)",
+      "category": "expense-tracking",
+      "url": "/blog/free-expense-tracker-template",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "6",
+      "excerpt": "Download a free expense tracker template or create one automatically by texting receipts to WhatsApp. No spreadsheets needed.",
+      "tags": [
+        "free expense tracker template",
+        "expense tracker excel free",
+        "free expense sheet",
+        "simple expense tracker",
+        "automatic expense tracker"
       ],
       "status": "published",
       "templateVersion": "v2"
