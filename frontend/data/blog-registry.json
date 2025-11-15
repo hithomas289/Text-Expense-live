@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T04:53:17.309Z",
-  "totalPosts": 15,
+  "lastUpdated": "2025-11-15T04:59:05.320Z",
+  "totalPosts": 16,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -14,7 +14,8 @@
     "receipt-storage": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
-    "Small Business Tips": 1
+    "Small Business Tips": 1,
+    "consulting-expenses": 1
   },
   "posts": [
     {
@@ -118,6 +119,27 @@
         "small business receipts",
         "organize receipts Chicago",
         "Chicago business taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "how-consultants-manage-expenses",
+      "title": "How Consultants Manage Expenses (Without Losing Their Weekends)",
+      "category": "consulting-expenses",
+      "url": "/blog/how-consultants-manage-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "10",
+      "excerpt": "Consultants juggle travel, meals, and client expenses. Track every receipt through WhatsApp in 30 seconds — no more weekend admin work.",
+      "tags": [
+        "consultant expense management",
+        "consulting expenses",
+        "travel expenses consultant",
+        "consultant receipt tracking",
+        "billable expenses",
+        "client expenses consulting"
       ],
       "status": "published",
       "templateVersion": "v2"
