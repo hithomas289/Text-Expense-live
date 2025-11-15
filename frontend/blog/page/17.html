@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextExpense Blog - Page 17 | Receipt Management Tips</title>
+    <meta name="description" content="Expert tips on receipt management, expense tracking, and small business finances. Learn how to save money and time with TextExpense.">
+    <meta name="keywords" content="receipt management blog, expense tracking tips, small business finance">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TextExpense Blog">
+    <meta property="og:description" content="Expert tips on receipt management and expense tracking.">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com/blog/page/17">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/te-logo.png">
+    <link rel="canonical" href="https://textexpense.com/blog/page/17">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --dark: #1a1a1a;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #fff;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            padding: 20px 0;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .post-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--dark);
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .post-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .post-content {
+            padding: 30px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 10px;
+        }
+
+        .post-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .post-excerpt {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 60px 0 40px;
+            flex-wrap: wrap;
+        }
+
+        .pagination-numbers {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .pagination-btn, .pagination-number {
+            padding: 10px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: all 0.2s;
+            background: white;
+        }
+
+        .pagination-btn:hover, .pagination-number:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .pagination-number.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .pagination-btn.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .pagination-ellipsis {
+            padding: 10px 8px;
+            color: var(--gray);
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .posts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .pagination {
+                gap: 5px;
+            }
+
+            .pagination-btn, .pagination-number {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HMSDHWE3BS');
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="/te-logo.png" alt="TextExpense" style="width: 36px; height: 36px;">
+                TextExpense
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>📝 Receipt Management Blog</h1>
+            <p class="subtitle">Expert tips on expense tracking, receipt management, and business finances</p>
+        </div>
+
+        <div class="posts-grid">
+
+            <a href="/blog/expense-tracking-painters-raleigh.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Raleigh">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Raleigh</h2>
+                    <p class="post-excerpt">Raleigh painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-salt-lake-city.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Salt Lake City">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Salt Lake City</h2>
+                    <p class="post-excerpt">Salt Lake City painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-minneapolis.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Minneapolis">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Minneapolis</h2>
+                    <p class="post-excerpt">Minneapolis painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-kansas-city.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Kansas City">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Kansas City</h2>
+                    <p class="post-excerpt">Kansas City painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-columbus.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Columbus">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Columbus</h2>
+                    <p class="post-excerpt">Columbus painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-cincinnati.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Cincinnati">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Cincinnati</h2>
+                    <p class="post-excerpt">Cincinnati painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-indianapolis.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Indianapolis">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Indianapolis</h2>
+                    <p class="post-excerpt">Indianapolis painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-pittsburgh.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Pittsburgh">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Pittsburgh</h2>
+                    <p class="post-excerpt">Pittsburgh painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-st-louis.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in St. Louis">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in St. Louis</h2>
+                    <p class="post-excerpt">St. Louis painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-las-vegas.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Las Vegas">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Las Vegas</h2>
+                    <p class="post-excerpt">Las Vegas painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-san-antonio.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in San Antonio">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in San Antonio</h2>
+                    <p class="post-excerpt">San Antonio painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-new-orleans.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in New Orleans">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in New Orleans</h2>
+                    <p class="post-excerpt">New Orleans painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-anaheim.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Anaheim">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Anaheim</h2>
+                    <p class="post-excerpt">Anaheim painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-baltimore.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Baltimore">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Baltimore</h2>
+                    <p class="post-excerpt">Baltimore painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-detroit.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Detroit">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Detroit</h2>
+                    <p class="post-excerpt">Detroit painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-irvine.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Irvine">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Irvine</h2>
+                    <p class="post-excerpt">Irvine painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-sacramento.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Sacramento">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Sacramento</h2>
+                    <p class="post-excerpt">Sacramento painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-jacksonville.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Jacksonville">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Jacksonville</h2>
+                    <p class="post-excerpt">Jacksonville painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-boulder.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Boulder">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Boulder</h2>
+                    <p class="post-excerpt">Boulder painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-painters-durham.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for Painters in Durham">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for Painters in Durham</h2>
+                    <p class="post-excerpt">Durham painters track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+        </div>
+
+
+        <div class="pagination">
+            <a href="/blog/page/16" class="pagination-btn">← Previous</a>
+            <div class="pagination-numbers">
+                <a href="/blog/" class="pagination-number">1</a>
+                <span class="pagination-ellipsis">...</span>
+                <a href="/blog/page/15" class="pagination-number">15</a>
+                <a href="/blog/page/16" class="pagination-number">16</a>
+                <a href="/blog/page/17" class="pagination-number active">17</a>
+                <a href="/blog/page/18" class="pagination-number">18</a>
+                <a href="/blog/page/19" class="pagination-number">19</a>
+                <span class="pagination-ellipsis">...</span>
+                <a href="/blog/page/27" class="pagination-number">27</a>
+            </div>
+            <a href="/blog/page/18" class="pagination-btn">Next →</a>
+        </div>
+
+    </div>
+</body>
+</html>

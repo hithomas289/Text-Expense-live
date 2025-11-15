@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextExpense Blog - Page 25 | Receipt Management Tips</title>
+    <meta name="description" content="Expert tips on receipt management, expense tracking, and small business finances. Learn how to save money and time with TextExpense.">
+    <meta name="keywords" content="receipt management blog, expense tracking tips, small business finance">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TextExpense Blog">
+    <meta property="og:description" content="Expert tips on receipt management and expense tracking.">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com/blog/page/25">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/te-logo.png">
+    <link rel="canonical" href="https://textexpense.com/blog/page/25">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --dark: #1a1a1a;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #fff;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            padding: 20px 0;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .post-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--dark);
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .post-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .post-content {
+            padding: 30px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 10px;
+        }
+
+        .post-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .post-excerpt {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 60px 0 40px;
+            flex-wrap: wrap;
+        }
+
+        .pagination-numbers {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .pagination-btn, .pagination-number {
+            padding: 10px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: all 0.2s;
+            background: white;
+        }
+
+        .pagination-btn:hover, .pagination-number:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .pagination-number.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .pagination-btn.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .pagination-ellipsis {
+            padding: 10px 8px;
+            color: var(--gray);
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .posts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .pagination {
+                gap: 5px;
+            }
+
+            .pagination-btn, .pagination-number {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HMSDHWE3BS');
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="/te-logo.png" alt="TextExpense" style="width: 36px; height: 36px;">
+                TextExpense
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>📝 Receipt Management Blog</h1>
+            <p class="subtitle">Expert tips on expense tracking, receipt management, and business finances</p>
+        </div>
+
+        <div class="posts-grid">
+
+            <a href="/blog/expense-tracking-hvac-professionals-baltimore.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Baltimore">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Baltimore</h2>
+                    <p class="post-excerpt">Baltimore hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-detroit.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Detroit">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Detroit</h2>
+                    <p class="post-excerpt">Detroit hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-irvine.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Irvine">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Irvine</h2>
+                    <p class="post-excerpt">Irvine hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-sacramento.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Sacramento">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Sacramento</h2>
+                    <p class="post-excerpt">Sacramento hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-jacksonville.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Jacksonville">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Jacksonville</h2>
+                    <p class="post-excerpt">Jacksonville hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-boulder.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Boulder">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Boulder</h2>
+                    <p class="post-excerpt">Boulder hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-durham.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Durham">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Durham</h2>
+                    <p class="post-excerpt">Durham hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-madison.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Madison">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Madison</h2>
+                    <p class="post-excerpt">Madison hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-plano.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Plano">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Plano</h2>
+                    <p class="post-excerpt">Plano hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-bellevue.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Bellevue">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Bellevue</h2>
+                    <p class="post-excerpt">Bellevue hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-santa-clara.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Santa Clara">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Santa Clara</h2>
+                    <p class="post-excerpt">Santa Clara hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-sunnyvale.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Sunnyvale">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Sunnyvale</h2>
+                    <p class="post-excerpt">Sunnyvale hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-san-jose.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in San Jose">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in San Jose</h2>
+                    <p class="post-excerpt">San Jose hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-arlington.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Arlington">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Arlington</h2>
+                    <p class="post-excerpt">Arlington hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/expense-tracking-hvac-professionals-reston.html" class="post-card">
+                <img src="/te-logo.png" alt="Expense Tracking for HVAC Professionals in Reston">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-16 · 6 min read</div>
+                    <h2 class="post-title">Expense Tracking for HVAC Professionals in Reston</h2>
+                    <p class="post-excerpt">Reston hvac professionals track expenses instantly via WhatsApp. Project-based tracking for materials, tools, and more.</p>
+                </div>
+            </a>
+
+            <a href="/blog/best-way-to-track-expenses.html" class="post-card">
+                <img src="/te-logo.png" alt="Best Way to Track Expenses (Without the Spreadsheet Nightmare)">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-15 · 6 min read</div>
+                    <h2 class="post-title">Best Way to Track Expenses (Without the Spreadsheet Nightmare)</h2>
+                    <p class="post-excerpt">Spreadsheets, apps, manual entry - they all fail. Track expenses in 30 seconds each, zero typing. Try 3 free.</p>
+                </div>
+            </a>
+
+            <a href="/blog/fastest-way-to-track-expenses.html" class="post-card">
+                <img src="/te-logo.png" alt="The Fastest Way to Track Expenses Without Losing Your Mind">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-15 · 12 min read</div>
+                    <h2 class="post-title">The Fastest Way to Track Expenses Without Losing Your Mind</h2>
+                    <p class="post-excerpt">Stop spending hours on expense tracking. Text your receipt, get Excel report in 30 seconds. No app downloads, no manual entry. Try 3 receipts free.</p>
+                </div>
+            </a>
+
+            <a href="/blog/simplest-way-to-manage-receipts.html" class="post-card">
+                <img src="/te-logo.png" alt="The Simplest Way to Manage Receipts (Finally)">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-15 · 11 min read</div>
+                    <h2 class="post-title">The Simplest Way to Manage Receipts (Finally)</h2>
+                    <p class="post-excerpt">Stop losing receipts in shoeboxes and wallets. Text receipt photos, get organized Excel files. Works through WhatsApp. Try 3 receipts free.</p>
+                </div>
+            </a>
+
+            <a href="/blog/track-expenses-new-york-freelancers.html" class="post-card">
+                <img src="/te-logo.png" alt="Best Way to Track Expenses in New York for Freelancers (Without Getting Buried in Receipts)">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-15 · 8 min read</div>
+                    <h2 class="post-title">Best Way to Track Expenses in New York for Freelancers (Without Getting Buried in Receipts)</h2>
+                    <p class="post-excerpt">NYC freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.</p>
+                </div>
+            </a>
+
+            <a href="/blog/chicago-small-business-receipt-tracking.html" class="post-card">
+                <img src="/te-logo.png" alt="How Chicago Small Businesses Track Receipts Easily">
+                <div class="post-content">
+                    <div class="post-meta">2025-11-15 · 7 min read</div>
+                    <h2 class="post-title">How Chicago Small Businesses Track Receipts Easily</h2>
+                    <p class="post-excerpt">Chicago small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 second</p>
+                </div>
+            </a>
+
+        </div>
+
+
+        <div class="pagination">
+            <a href="/blog/page/24" class="pagination-btn">← Previous</a>
+            <div class="pagination-numbers">
+                <a href="/blog/" class="pagination-number">1</a>
+                <span class="pagination-ellipsis">...</span>
+                <a href="/blog/page/23" class="pagination-number">23</a>
+                <a href="/blog/page/24" class="pagination-number">24</a>
+                <a href="/blog/page/25" class="pagination-number active">25</a>
+                <a href="/blog/page/26" class="pagination-number">26</a>
+                <a href="/blog/page/27" class="pagination-number">27</a>
+            </div>
+            <a href="/blog/page/26" class="pagination-btn">Next →</a>
+        </div>
+
+    </div>
+</body>
+</html>
