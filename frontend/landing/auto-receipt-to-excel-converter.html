@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Receipt to Excel Converter: Turn Photos Into Spreadsheets | TextExpense</title>
+  <meta name="description" content="Auto Receipt to Excel Converter - No apps, no spreadsheets. Just send receipts on WhatsApp and get instant organization + Excel exports.">
+  <meta name="keywords" content="auto receipt to excel converter, whatsapp receipts, receipt tracking, expense tracking, excel automation">
+
+  <meta property="og:title" content="Auto Receipt to Excel Converter: Turn Photos Into Spreadsheets">
+  <meta property="og:description" content="No apps needed. Turn Photos Into Spreadsheets with WhatsApp and get organized Excel files instantly.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://textexpense.com/landing/auto-receipt-to-excel-converter">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Auto Receipt to Excel Converter">
+  <meta name="twitter:description" content="Turn Photos Into Spreadsheets - WhatsApp to Excel expense tracking">
+
+  <link rel="canonical" href="https://textexpense.com/landing/auto-receipt-to-excel-converter">
+  <link rel="icon" type="image/png" href="/te-logo.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HMSDHWE3BS');
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #25D366;
+      --primary-dark: #128C7E;
+      --dark: #1a1a1a;
+      --gray: #6c757d;
+      --light-gray: #f9fafb;
+      --border: #e0e0e0;
+      --shadow: 0 10px 40px rgba(0,0,0,0.08);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: #fff;
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 120px 20px 80px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      color: var(--dark);
+    }
+    .hero .subtitle {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: var(--gray);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero .supporting {
+      font-size: 18px;
+      color: var(--primary);
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    .hero .cta-primary {
+      background: var(--primary);
+      color: white;
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+    .hero .cta-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 15px 50px rgba(37, 211, 102, 0.3);
+    }
+
+    /* Section Styles */
+    section { padding: 80px 20px; }
+    section h2 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-align: center;
+      color: var(--dark);
+    }
+    section .subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: var(--gray);
+      margin-bottom: 50px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Pain Points */
+    .pain { background: white; }
+    .pain-list {
+      max-width: 800px;
+      margin: 0 auto;
+      list-style: none;
+    }
+    .pain-list li {
+      margin-bottom: 15px;
+      padding: 20px;
+      padding-left: 50px;
+      position: relative;
+      font-size: 17px;
+      line-height: 1.8;
+      background: var(--light-gray);
+      border-radius: 10px;
+    }
+    .pain-list li:before {
+      content: "❌";
+      position: absolute;
+      left: 20px;
+      font-size: 20px;
+    }
+
+    /* Feature Explanation */
+    .feature-explanation { background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%); }
+    .solution-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 40px auto 0;
+    }
+    .solution-step {
+      text-align: center;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+    }
+    .solution-step .number {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 60px;
+      margin-bottom: 20px;
+    }
+    .solution-step h3 { font-size: 20px; margin-bottom: 10px; color: var(--dark); }
+    .solution-step p { color: var(--gray); }
+
+    /* Benefits */
+    .benefits { background: white; }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 40px auto 0;
+    }
+    .benefit-item {
+      background: var(--light-gray);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid var(--primary);
+      text-align: center;
+    }
+    .benefit-item h3 {
+      font-size: 18px;
+      color: var(--dark);
+      font-weight: 600;
+    }
+
+    /* Output/Result */
+    .output { background: var(--light-gray); }
+    .output-list {
+      max-width: 800px;
+      margin: 0 auto;
+      list-style: none;
+    }
+    .output-list li {
+      margin-bottom: 15px;
+      padding: 20px;
+      padding-left: 50px;
+      position: relative;
+      font-size: 17px;
+      line-height: 1.8;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .output-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 20px;
+      font-size: 24px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* FAQ */
+    .faq { background: white; }
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      margin-bottom: 25px;
+      background: var(--light-gray);
+      padding: 25px;
+      border-radius: 10px;
+      border-left: 4px solid var(--primary);
+    }
+    .faq-item h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+    .faq-item p { color: var(--gray); line-height: 1.7; }
+
+    /* Final CTA */
+    .final-cta {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .final-cta h2 {
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      color: var(--dark);
+    }
+    .final-cta p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: var(--gray);
+    }
+
+    @media (max-width: 768px) {
+      .hero { padding: 80px 20px 60px; }
+      .hero h1 { font-size: 32px; }
+      section h2 { font-size: 28px; }
+      .final-cta h2 { font-size: 32px; }
+      .solution-steps { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Auto Receipt to Excel Converter: Turn Photos Into Spreadsheets</h1>
+    <p class="subtitle">No apps. No spreadsheets. Just send receipts on WhatsApp and get instant organization + clean Excel exports.</p>
+    <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+    <p class="supporting">WhatsApp → OCR → Organized → Excel</p>
+  </div>
+</section>
+
+<!-- Pain Section -->
+<section class="pain">
+  <div class="container">
+    <h2>The Problem</h2>
+    <p class="subtitle">Why tracking expenses is broken</p>
+    <ul class="pain-list">
+      <li>Photos of receipts aren't searchable or usable</li>
+      <li>Need receipt data in Excel for accounting</li>
+      <li>Converting manually is slow and error-prone</li>
+      <li>Multiple receipt photos need organizing</li>
+      <li>Accountants need Excel files, not images</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Feature Explanation -->
+<section class="feature-explanation">
+  <div class="container">
+    <h2>Auto Receipt to Excel Converter</h2>
+    <p class="subtitle">Simple. Fast. Automatic.</p>
+    <div class="solution-steps">
+      <div class="solution-step">
+        <div class="number">1</div>
+        <h3>Photo receipts</h3>
+        <p>Take pictures of all receipts</p>
+      </div>
+      <div class="solution-step">
+        <div class="number">2</div>
+        <h3>Send via WhatsApp</h3>
+        <p>Text them to our number</p>
+      </div>
+      <div class="solution-step">
+        <div class="number">3</div>
+        <h3>Auto-convert</h3>
+        <p>OCR extracts data to Excel</p>
+      </div>
+      <div class="solution-step">
+        <div class="number">4</div>
+        <h3>Download Excel</h3>
+        <p>Get organized spreadsheet</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits -->
+<section class="benefits">
+  <div class="container">
+    <h2>Why This Works</h2>
+    <p class="subtitle">The benefits that matter</p>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <h3>✔ Automatic photo to Excel conversion</h3>
+      </div>
+      <div class="benefit-item">
+        <h3>✔ No manual transcription</h3>
+      </div>
+      <div class="benefit-item">
+        <h3>✔ All receipts in one file</h3>
+      </div>
+      <div class="benefit-item">
+        <h3>✔ Data ready for accounting</h3>
+      </div>
+      <div class="benefit-item">
+        <h3>✔ Links to original photos</h3>
+      </div>
+      <div class="benefit-item">
+        <h3>✔ Works on any phone</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Output/Result -->
+<section class="output">
+  <div class="container">
+    <h2>What You Get</h2>
+    <p class="subtitle">Everything you need for expense tracking</p>
+    <ul class="output-list">
+      <li>Excel file with extracted data</li>
+      <li>Merchant names and dates</li>
+      <li>Purchase amounts</li>
+      <li>Receipt photo links</li>
+      <li>Sortable and searchable</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <h2>Common Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Does it work with phone photos?</h3>
+        <p>Yes. Take photos with any phone and send via WhatsApp for automatic conversion.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How accurate is the conversion?</h3>
+        <p>OCR technology is highly accurate. Verify against photos if needed.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I convert multiple receipts at once?</h3>
+        <p>Yes. Send as many receipt photos as you want, all get converted to one Excel file.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What if the photo is blurry?</h3>
+        <p>We'll extract what we can. Resend a clearer photo if needed.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I use the Excel file in accounting software?</h3>
+        <p>Yes. Export format is compatible with QuickBooks, Xero, and other tools.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Snap. Send. Organized.</h2>
+    <p>Start tracking for free today.</p>
+    <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background: var(--dark); color: white; padding: 40px 20px; text-align: center;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    <div style="margin-bottom: 30px;">
+      <a href="https://textexpense.com" style="color: var(--primary); text-decoration: none; font-size: 18px; font-weight: 600; margin: 0 15px;">Home</a>
+      <a href="https://textexpense.com/privacy" style="color: white; text-decoration: none; margin: 0 15px;">Privacy Policy</a>
+      <a href="https://textexpense.com/terms" style="color: white; text-decoration: none; margin: 0 15px;">Terms & Conditions</a>
+    </div>
+    <div style="margin-top: 20px;">
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary" style="background: var(--primary); color: white; padding: 15px 35px; font-size: 16px; font-weight: 600; border: none; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-block; box-shadow: var(--shadow); transition: all 0.3s ease;">Start Free - Track 3 Receipts</a>
+    </div>
+    <p style="margin-top: 30px; color: var(--gray); font-size: 14px;">&copy; 2025 TextExpense. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receipt to Spreadsheet Tool: Digitize Receipts Into Spreadsheets | TextExpense</title>
+  <meta name="description" content="Receipt to Spreadsheet Tool - No apps, no spreadsheets. Just send receipts on WhatsApp and get instant organization + Excel exports.">
+  <meta name="keywords" content="receipt to spreadsheet tool, whatsapp receipts, receipt tracking, expense tracking, excel automation">
+
+  <meta property="og:title" content="Receipt to Spreadsheet Tool: Digitize Receipts Into Spreadsheets">
+  <meta property="og:description" content="No apps needed. Digitize Receipts Into Spreadsheets with WhatsApp and get organized Excel files instantly.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://textexpense.com/landing/receipt-to-spreadsheet-tool">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Receipt to Spreadsheet Tool">
+  <meta name="twitter:description" content="Digitize Receipts Into Spreadsheets - WhatsApp to Excel expense tracking">
+
+  <link rel="canonical" href="https://textexpense.com/landing/receipt-to-spreadsheet-tool">
+  <link rel="icon" type="image/png" href="/te-logo.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HMSDHWE3BS');
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #25D366;
+      --primary-dark: #128C7E;
+      --dark: #1a1a1a;
+      --gray: #6c757d;
+      --light-gray: #f9fafb;
+      --border: #e0e0e0;
+      --shadow: 0 10px 40px rgba(0,0,0,0.08);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: #fff;
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 120px 20px 80px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      color: var(--dark);
+    }
+    .hero .subtitle {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: var(--gray);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero .supporting {
+      font-size: 18px;
+      color: var(--primary);
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    .hero .cta-primary {
+      background: var(--primary);
+      color: white;
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+    .hero .cta-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 15px 50px rgba(37, 211, 102, 0.3);
+    }
+
+    /* Section Styles */
+    section { padding: 80px 20px; }
+    section h2 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-align: center;
+      color: var(--dark);
+    }
+    section .subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: var(--gray);
+      margin-bottom: 50px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Pain Points */
+    .pain { background: white; }
+    .pain-list {
+      max-width: 800px;
+      margin: 0 auto;
+      list-style: none;
+    }
+    .pain-list li {
+      margin-bottom: 15px;
+      padding: 20px;
+      padding-left: 50px;
+      position: relative;
+      font-size: 17px;
+      line-height: 1.8;
+      background: var(--light-gray);
+      border-radius: 10px;
+    }
+    .pain-list li:before {
+      content: "❌";
+      position: absolute;
+      left: 20px;
+      font-size: 20px;
+    }
+
+    /* Feature Explanation */
+    .feature-explanation { background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%); }
+    .solution-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 40px auto 0;
+    }
+    .solution-step {
+      text-align: center;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+    }
+    .solution-step .number {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 60px;
+      margin-bottom: 20px;
+    }
+    .solution-step h3 { font-size: 20px; margin-bottom: 10px; color: var(--dark); }
+    .solution-step p { color: var(--gray); }
+
+    /* Benefits */
+    .benefits { background: white; }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 40px auto 0;
+    }
+    .benefit-item {
+      background: var(--light-gray);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid var(--primary);
+      text-align: center;
+    }
+    .benefit-item h3 {
+      font-size: 18px;
+      color: var(--dark);
+      font-weight: 600;
+    }
+
+    /* Output/Result */
+    .output { background: var(--light-gray); }
+    .output-list {
+      max-width: 800px;
+      margin: 0 auto;
+      list-style: none;
+    }
+    .output-list li {
+      margin-bottom: 15px;
+      padding: 20px;
+      padding-left: 50px;
+      position: relative;
+      font-size: 17px;
+      line-height: 1.8;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .output-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 20px;
+      font-size: 24px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* FAQ */
+    .faq { background: white; }
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      margin-bottom: 25px;
+      background: var(--light-gray);
+      padding: 25px;
+      border-radius: 10px;
+      border-left: 4px solid var(--primary);
+    }
+    .faq-item h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+    .faq-item p { color: var(--gray); line-height: 1.7; }
+
+    /* Final CTA */
+    .final-cta {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .final-cta h2 {
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      color: var(--dark);
+    }
+    .final-cta p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: var(--gray);
+    }
+
+    @media (max-width: 768px) {
+      .hero { padding: 80px 20px 60px; }
+      .hero h1 { font-size: 32px; }
+      section h2 { font-size: 28px; }
+      .final-cta h2 { font-size: 32px; }
+      .solution-steps { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Receipt to Spreadsheet Tool: Digitize Receipts Into Spreadsheets</h1>
+    <p class="subtitle">No apps. No spreadsheets. Just send receipts on WhatsApp and get instant organization + clean Excel exports.</p>
+    <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+    <p class="supporting">WhatsApp → OCR → Organized → Excel</p>
+  </div>
+</section>
+
+<!-- Pain Section -->
+<section class="pain">
+  <div class="container">
+    <h2>The Problem</h2>
+    <p class="subtitle">Why tracking expenses is broken</p>
+    <ul class="pain-list">
+      <li>Need digital records of paper receipts</li>
+      <li>Spreadsheet tools are complicated</li>
+      <li>Apps require learning new interfaces</li>
+      <li>Want simple receipt digitization</li>
+      <li>Accountant needs spreadsheet format</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Feature Explanation -->
+<section class="feature-explanation">
+  <div class="container">
+    <h2>Receipt to Spreadsheet Tool</h2>
+    <p class="subtitle">Simple. Fast. Automatic.</p>
+    <div class="solution-steps">
+      <div class="solution-step">
+        <div class="number">1</div>
+        <h3>Use WhatsApp</h3>
+        <p>No new tool to learn</p>
+      </div>
+      <div class="solution-step">
+        <div class="number">2</div>
+        <h3>Send receipt photos</h3>
+        <p>Text images like messages</p>
+      </div>
+      <div class="solution-step">
+        <div class="number">3</div>
+        <h3>Auto-digitization</h3>
+        <p>Converted to spreadsheet</p>
+      </div>
+      <div class="solution-step">
+        <div class="number">4</div>
+        <h3>Download spreadsheet</h3>
+        <p>Excel or Google Sheets compatible</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits -->
+<section class="benefits">
+  <div class="container">
+    <h2>Why This Works</h2>
+    <p class="subtitle">The benefits that matter</p>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <h3>✔ Simple tool - just WhatsApp</h3>
+      </div>
+      <div class="benefit-item">
+        <h3>✔ No learning curve</h3>
+      </div>
+      <div class="benefit-item">
+        <h3>✔ Automatic digitization</h3>
+      </div>
+      <div class="benefit-item">
+        <h3>✔ Universal spreadsheet format</h3>
+      </div>
+      <div class="benefit-item">
+        <h3>✔ Works on any device</h3>
+      </div>
+      <div class="benefit-item">
+        <h3>✔ Free for 3 receipts</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Output/Result -->
+<section class="output">
+  <div class="container">
+    <h2>What You Get</h2>
+    <p class="subtitle">Everything you need for expense tracking</p>
+    <ul class="output-list">
+      <li>Digital spreadsheet files</li>
+      <li>Excel or CSV format</li>
+      <li>All receipt data extracted</li>
+      <li>Original photos preserved</li>
+      <li>Organized and searchable</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <h2>Common Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Do I need special software?</h3>
+        <p>No. Just WhatsApp. We create the spreadsheet for you.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What spreadsheet format do you use?</h3>
+        <p>Standard Excel .xlsx format that works in Excel, Google Sheets, and Numbers.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I edit the spreadsheet?</h3>
+        <p>Yes. Download and edit freely in any spreadsheet software.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I access original receipts?</h3>
+        <p>Each spreadsheet row has a clickable link to the original receipt photo.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can my accountant use this?</h3>
+        <p>Yes. Standard spreadsheet format accountants can import into any software.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Snap. Send. Organized.</h2>
+    <p>Start tracking for free today.</p>
+    <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background: var(--dark); color: white; padding: 40px 20px; text-align: center;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    <div style="margin-bottom: 30px;">
+      <a href="https://textexpense.com" style="color: var(--primary); text-decoration: none; font-size: 18px; font-weight: 600; margin: 0 15px;">Home</a>
+      <a href="https://textexpense.com/privacy" style="color: white; text-decoration: none; margin: 0 15px;">Privacy Policy</a>
+      <a href="https://textexpense.com/terms" style="color: white; text-decoration: none; margin: 0 15px;">Terms & Conditions</a>
+    </div>
+    <div style="margin-top: 20px;">
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary" style="background: var(--primary); color: white; padding: 15px 35px; font-size: 16px; font-weight: 600; border: none; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-block; box-shadow: var(--shadow); transition: all 0.3s ease;">Start Free - Track 3 Receipts</a>
+    </div>
+    <p style="margin-top: 30px; color: var(--gray); font-size: 14px;">&copy; 2025 TextExpense. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
