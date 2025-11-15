@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T05:25:22.379Z",
-  "totalPosts": 22,
+  "lastUpdated": "2025-11-15T05:29:40.496Z",
+  "totalPosts": 23,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -13,13 +13,13 @@
     "medical-expenses": 1,
     "sales-expenses": 1,
     "receipt-storage": 2,
-    "expense-reporting": 1,
+    "expense-reporting": 2,
+    "project-expenses": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
-    "Small Business Tips": 1,
-    "project-expenses": 1
+    "Small Business Tips": 1
   },
   "posts": [
     {
@@ -270,6 +270,27 @@
         "consultant expense tracking",
         "freelance project expenses",
         "client expense reports"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "prepare-expense-report-in-excel",
+      "title": "How to Prepare an Expense Report in Excel (Without Manual Typing)",
+      "category": "expense-reporting",
+      "url": "/blog/prepare-expense-report-in-excel",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "9",
+      "excerpt": "Stop typing expenses manually into Excel. Track receipts through WhatsApp and download a clean Excel expense report instantly. Try 3 free.",
+      "tags": [
+        "excel expense report",
+        "expense report excel template",
+        "prepare expense report excel",
+        "business expense sheet excel",
+        "excel expense tracker",
+        "excel expense template"
       ],
       "status": "published",
       "templateVersion": "v2"
