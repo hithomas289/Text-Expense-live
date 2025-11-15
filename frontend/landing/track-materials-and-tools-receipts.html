@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Materials and Tools Receipts: Track Every Material and Tool Purchase | TextExpense</title>
+  <meta name="description" content="Track Materials and Tools Receipts - From nails to nail guns - never lose a receipt again. Send receipt photos via WhatsApp and get organized Excel reports. Built for contractors and tradespeople.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEMBHFSE8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VEMBHFSE8');
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #25D366;
+      --primary-dark: #128C7E;
+      --dark: #1a1a1a;
+      --gray: #6c757d;
+      --light-gray: #f9fafb;
+      --shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .hero .subtitle {
+      font-size: 24px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    .cta-primary {
+      background: var(--primary);
+      color: white;
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .cta-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Struggles Section */
+    .struggles-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .struggles-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .struggles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .struggle-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .struggle-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Why Apps Section */
+    .why-apps-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .why-apps-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .why-apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .why-app-item {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .why-app-item h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .why-app-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Workflow Section */
+    .workflow-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .workflow-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .workflow-section .intro {
+      text-align: center;
+      font-size: 18px;
+      color: var(--gray);
+      margin-bottom: 50px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .workflow-timeline {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .workflow-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .workflow-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .workflow-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Scenarios Section */
+    .scenarios-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .scenarios-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .scenarios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .scenario-item {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .scenario-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    /* Benefits Section */
+    .benefits-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .benefits-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .benefit-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .benefit-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .benefit-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Output Section */
+    .output-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .output-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .output-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .output-item {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .output-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .faq-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .faq-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Final CTA Section */
+    .final-cta {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .final-cta p {
+      font-size: 20px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer .footer-links {
+      margin-bottom: 30px;
+    }
+
+    footer .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    footer .footer-links a:first-child {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    footer .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    footer .footer-cta {
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin-top: 30px;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero .subtitle {
+        font-size: 18px;
+      }
+
+      .struggles-section h2,
+      .why-apps-section h2,
+      .workflow-section h2,
+      .scenarios-section h2,
+      .benefits-section h2,
+      .output-section h2,
+      .faq-section h2,
+      .final-cta h2 {
+        font-size: 28px;
+      }
+
+      .benefits-grid,
+      .why-apps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Track Every Material and Tool Purchase</h1>
+      <p class="subtitle">From nails to nail guns - never lose a receipt again</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+    </div>
+  </section>
+
+  <!-- Struggles Section -->
+  <section class="struggles-section">
+    <div class="container">
+      <h2>You Know These Struggles</h2>
+      <div class="struggles-grid">
+        <div class="struggle-item">
+          <p>Tool receipts lost when you need them for warranty claims</p>
+        </div>
+        <div class="struggle-item">
+          <p>Can't separate consumable materials from capital equipment for taxes</p>
+        </div>
+        <div class="struggle-item">
+          <p>Buying materials across multiple suppliers - no central tracking</p>
+        </div>
+        <div class="struggle-item">
+          <p>Missing tax deductions on thousands in tool purchases</p>
+        </div>
+        <div class="struggle-item">
+          <p>Can't prove material quality to clients without purchase documentation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Apps Don't Work Section -->
+  <section class="why-apps-section">
+    <div class="container">
+      <h2>Why Other Apps Don't Work for You</h2>
+      <div class="why-apps-grid">
+        <div class="why-app-item">
+          <h3>Don't categorize well</h3>
+          <p>Generic apps don't understand the difference between a box of screws and a $500 saw for tax purposes.</p>
+        </div>
+        <div class="why-app-item">
+          <h3>No warranty tracking</h3>
+          <p>Most trackers don't help you find tool purchase dates for warranty claims.</p>
+        </div>
+        <div class="why-app-item">
+          <h3>Too manual</h3>
+          <p>Typing "3/4 inch galvanized deck screws - box of 500" while standing in a parking lot? Not happening.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="workflow-section">
+    <div class="container">
+      <h2>How It Fits Your Day</h2>
+      <p class="intro">TextExpense works around your schedule, not the other way around.</p>
+      <div class="workflow-timeline">
+        <div class="workflow-item">
+          <h3>Supply Store</h3>
+          <p>Buying lumber, screws, paint? Photo receipt, send to WhatsApp with job name.</p>
+        </div>
+        <div class="workflow-item">
+          <h3>Tool Purchase</h3>
+          <p>New drill, saw, or equipment? Photo receipt, add "tools" note for tax tracking.</p>
+        </div>
+        <div class="workflow-item">
+          <h3>Specialty Materials</h3>
+          <p>Ordered custom materials? Forward delivery invoice via WhatsApp.</p>
+        </div>
+        <div class="workflow-item">
+          <h3>Tax Prep</h3>
+          <p>Download Excel with materials vs tools separated. Hand to accountant for deductions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scenarios Section -->
+  <section class="scenarios-section">
+    <div class="container">
+      <h2>Real Scenarios You Face Daily</h2>
+      <div class="scenarios-grid">
+        <div class="scenario-item">
+          <p>Track all consumable materials for project costing</p>
+        </div>
+        <div class="scenario-item">
+          <p>Document tool purchases for depreciation deductions</p>
+        </div>
+        <div class="scenario-item">
+          <p>Keep specialty material receipts for client billing</p>
+        </div>
+        <div class="scenario-item">
+          <p>Save equipment purchase proof for warranty claims</p>
+        </div>
+        <div class="scenario-item">
+          <p>Monitor material costs across different suppliers</p>
+        </div>
+        <div class="scenario-item">
+          <p>Track returns and exchanges with original receipts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits-section">
+    <div class="container">
+      <h2>Built for How You Work</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3>Tool warranty backup</h3>
+          <p>Find any tool purchase receipt instantly for warranty service.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Tax optimization</h3>
+          <p>Separate Section 179 tool deductions from job material costs.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Supplier price comparison</h3>
+          <p>Historical data shows which suppliers have best prices for what materials.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Theft documentation</h3>
+          <p>Tool stolen from job site? Have purchase receipt for insurance claim.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Quality proof</h3>
+          <p>Show clients you used specified materials with purchase receipts.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Instant tracking</h3>
+          <p>Photo and send. System categorizes and organizes automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Output Section -->
+  <section class="output-section">
+    <div class="container">
+      <h2>What You Get</h2>
+      <div class="output-grid">
+        <div class="output-item">
+          <p>Materials separated from tools in Excel</p>
+        </div>
+        <div class="output-item">
+          <p>Tool inventory with purchase dates and prices</p>
+        </div>
+        <div class="output-item">
+          <p>Material cost tracking per project</p>
+        </div>
+        <div class="output-item">
+          <p>Tax-ready categorization (Section 179 eligible tools)</p>
+        </div>
+        <div class="output-item">
+          <p>Warranty claim documentation</p>
+        </div>
+        <div class="output-item">
+          <p>Supplier spending analysis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>Common Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>How do I separate materials from tools for taxes?</h3>
+          <p>Add "materials" or "tools" notes when sending receipts. Filter by category when exporting for tax prep.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I track tool serial numbers?</h3>
+          <p>Yes. Add serial numbers as notes when sending tool purchase receipts for theft or warranty tracking.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if I return materials?</h3>
+          <p>Send the return receipt too. Note "return - [original purchase date]" to keep records accurate.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does it track tool depreciation?</h3>
+          <p>Send purchase receipts with costs. Your accountant can use the data for depreciation schedules.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I find receipts for warranty claims years later?</h3>
+          <p>Absolutely. All receipts stored permanently. Search by date range, amount, or supplier to find any purchase.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Get Organized?</h2>
+      <p>Start tracking receipts via WhatsApp today. First 3 receipts are free.</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://textexpense.com">Home</a>
+        <a href="https://textexpense.com/privacy">Privacy Policy</a>
+        <a href="https://textexpense.com/terms">Terms & Conditions</a>
+      </div>
+      <div class="footer-cta">
+        <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+      </div>
+      <p>&copy; 2025 TextExpense. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

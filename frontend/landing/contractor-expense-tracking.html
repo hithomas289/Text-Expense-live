@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contractor Expense Tracking: Expense Tracking Built for Contractors | TextExpense</title>
+  <meta name="description" content="Contractor Expense Tracking - Track job costs without the paperwork hassle. Send receipt photos via WhatsApp and get organized Excel reports. Built for contractors and tradespeople.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEMBHFSE8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VEMBHFSE8');
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #25D366;
+      --primary-dark: #128C7E;
+      --dark: #1a1a1a;
+      --gray: #6c757d;
+      --light-gray: #f9fafb;
+      --shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .hero .subtitle {
+      font-size: 24px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    .cta-primary {
+      background: var(--primary);
+      color: white;
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .cta-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Struggles Section */
+    .struggles-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .struggles-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .struggles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .struggle-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .struggle-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Why Apps Section */
+    .why-apps-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .why-apps-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .why-apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .why-app-item {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .why-app-item h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .why-app-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Workflow Section */
+    .workflow-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .workflow-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .workflow-section .intro {
+      text-align: center;
+      font-size: 18px;
+      color: var(--gray);
+      margin-bottom: 50px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .workflow-timeline {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .workflow-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .workflow-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .workflow-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Scenarios Section */
+    .scenarios-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .scenarios-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .scenarios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .scenario-item {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .scenario-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    /* Benefits Section */
+    .benefits-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .benefits-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .benefit-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .benefit-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .benefit-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Output Section */
+    .output-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .output-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .output-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .output-item {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .output-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .faq-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .faq-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Final CTA Section */
+    .final-cta {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .final-cta p {
+      font-size: 20px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer .footer-links {
+      margin-bottom: 30px;
+    }
+
+    footer .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    footer .footer-links a:first-child {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    footer .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    footer .footer-cta {
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin-top: 30px;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero .subtitle {
+        font-size: 18px;
+      }
+
+      .struggles-section h2,
+      .why-apps-section h2,
+      .workflow-section h2,
+      .scenarios-section h2,
+      .benefits-section h2,
+      .output-section h2,
+      .faq-section h2,
+      .final-cta h2 {
+        font-size: 28px;
+      }
+
+      .benefits-grid,
+      .why-apps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Expense Tracking Built for Contractors</h1>
+      <p class="subtitle">Track job costs without the paperwork hassle</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+    </div>
+  </section>
+
+  <!-- Struggles Section -->
+  <section class="struggles-section">
+    <div class="container">
+      <h2>You Know These Struggles</h2>
+      <div class="struggles-grid">
+        <div class="struggle-item">
+          <p>You're on job sites all day - no time to log into expense apps</p>
+        </div>
+        <div class="struggle-item">
+          <p>Receipts for materials, tools, and supplies pile up in your truck</p>
+        </div>
+        <div class="struggle-item">
+          <p>Can't remember which receipts belong to which client or job</p>
+        </div>
+        <div class="struggle-item">
+          <p>Tax season means scrambling through months of unorganized receipts</p>
+        </div>
+        <div class="struggle-item">
+          <p>Missing deductions because you lost receipts or forgot to track them</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Apps Don't Work Section -->
+  <section class="why-apps-section">
+    <div class="container">
+      <h2>Why Other Apps Don't Work for You</h2>
+      <div class="why-apps-grid">
+        <div class="why-app-item">
+          <h3>Too complicated</h3>
+          <p>Most expense apps require you to create accounts, categories, and projects before you even start. You need something that works instantly.</p>
+        </div>
+        <div class="why-app-item">
+          <h3>Too slow on job sites</h3>
+          <p>Opening an app, waiting for it to load, taking photos, filling forms - all while covered in dust or paint. Not practical.</p>
+        </div>
+        <div class="why-app-item">
+          <h3>Not built for contractors</h3>
+          <p>Generic expense trackers don't understand job costing, materials vs labor, or tracking by client and project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="workflow-section">
+    <div class="container">
+      <h2>How It Fits Your Day</h2>
+      <p class="intro">TextExpense works around your schedule, not the other way around.</p>
+      <div class="workflow-timeline">
+        <div class="workflow-item">
+          <h3>Morning - Supply Run</h3>
+          <p>Buy lumber, screws, paint at the store. Snap receipt photo. Send to WhatsApp before leaving parking lot.</p>
+        </div>
+        <div class="workflow-item">
+          <h3>Midday - Job Site</h3>
+          <p>Need more supplies mid-job? Photo the receipt, text it via WhatsApp. Takes 10 seconds, even with dirty hands.</p>
+        </div>
+        <div class="workflow-item">
+          <h3>End of Day - Tool Purchase</h3>
+          <p>Bought a new drill? Photo receipt, send to WhatsApp with note "tools - Johnson renovation".</p>
+        </div>
+        <div class="workflow-item">
+          <h3>End of Week - Get Organized</h3>
+          <p>Download Excel file with all receipts organized by date. Review job costs, prepare invoices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scenarios Section -->
+  <section class="scenarios-section">
+    <div class="container">
+      <h2>Real Scenarios You Face Daily</h2>
+      <div class="scenarios-grid">
+        <div class="scenario-item">
+          <p>Track materials for each renovation project separately</p>
+        </div>
+        <div class="scenario-item">
+          <p>Keep tool purchases organized for tax deductions</p>
+        </div>
+        <div class="scenario-item">
+          <p>Monitor job site expenses (permits, parking, etc.)</p>
+        </div>
+        <div class="scenario-item">
+          <p>Track subcontractor payments and receipts</p>
+        </div>
+        <div class="scenario-item">
+          <p>Organize fuel and vehicle expenses for work trucks</p>
+        </div>
+        <div class="scenario-item">
+          <p>Document supply purchases for client billing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits-section">
+    <div class="container">
+      <h2>Built for How You Work</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3>Works with dirty hands</h3>
+          <p>WhatsApp on your phone. No typing required. Just photo and send.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Track by job</h3>
+          <p>Add client or project names as notes. Organize expenses per job automatically.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Tax-ready records</h3>
+          <p>All receipts backed up and organized for your accountant at tax time.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>No monthly fees</h3>
+          <p>First 3 receipts free. No subscriptions or complicated pricing.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Works offline</h3>
+          <p>Take photos anywhere. Send when you have signal. Everything syncs.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Client billing made easy</h3>
+          <p>Export job costs to Excel. Show clients itemized material costs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Output Section -->
+  <section class="output-section">
+    <div class="container">
+      <h2>What You Get</h2>
+      <div class="output-grid">
+        <div class="output-item">
+          <p>Excel file organized by date and job</p>
+        </div>
+        <div class="output-item">
+          <p>All receipt images attached and accessible</p>
+        </div>
+        <div class="output-item">
+          <p>Material costs separated from tools and equipment</p>
+        </div>
+        <div class="output-item">
+          <p>Job costing reports for accurate client billing</p>
+        </div>
+        <div class="output-item">
+          <p>Tax-ready expense documentation</p>
+        </div>
+        <div class="output-item">
+          <p>Backup of every purchase for warranty claims</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>Common Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>Can I track expenses for multiple jobs at once?</h3>
+          <p>Yes. When sending receipts via WhatsApp, add the job name or client name as a note. Filter by job when downloading your Excel report.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if my hands are dirty or I'm wearing gloves?</h3>
+          <p>WhatsApp works with voice commands on most phones. Or take the photo quickly and text it when you're cleaned up - takes 10 seconds.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I separate materials from tools for taxes?</h3>
+          <p>Yes. Add notes like "materials" or "tools" when sending receipts. Organize them into categories when creating your tax report.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does it work for subcontractor payments?</h3>
+          <p>Absolutely. Photo any receipt or invoice from subcontractors and send it via WhatsApp. Keep everything documented.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I show clients itemized material costs?</h3>
+          <p>Yes. Download your Excel file filtered by that client's job. Shows every material purchase with dates, amounts, and receipt images.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Get Organized?</h2>
+      <p>Start tracking receipts via WhatsApp today. First 3 receipts are free.</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://textexpense.com">Home</a>
+        <a href="https://textexpense.com/privacy">Privacy Policy</a>
+        <a href="https://textexpense.com/terms">Terms & Conditions</a>
+      </div>
+      <div class="footer-cta">
+        <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+      </div>
+      <p>&copy; 2025 TextExpense. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
