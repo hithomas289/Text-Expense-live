@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T05:06:49.313Z",
-  "totalPosts": 18,
+  "lastUpdated": "2025-11-15T05:10:23.668Z",
+  "totalPosts": 19,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -10,13 +10,14 @@
     "small-business": 2,
     "consulting-expenses": 1,
     "tax-preparation": 2,
+    "medical-expenses": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
     "receipt-storage": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
     "Small Business Tips": 1,
-    "medical-expenses": 1
+    "sales-expenses": 1
   },
   "posts": [
     {
@@ -183,6 +184,27 @@
         "HSA documentation",
         "healthcare expense tracking",
         "medical expense organization"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "salespeople-track-travel-meal-expenses",
+      "title": "The Easiest Way for Salespeople to Track Travel & Meal Expenses",
+      "category": "sales-expenses",
+      "url": "/blog/salespeople-track-travel-meal-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "10",
+      "excerpt": "Salespeople lose receipts while traveling. Track travel & meal expenses instantly through WhatsApp in 30 seconds. No more reimbursement stress.",
+      "tags": [
+        "sales expense tracking",
+        "salesperson travel expenses",
+        "sales meal receipts",
+        "sales team expenses",
+        "travel receipts sales",
+        "reimbursement tracking sales"
       ],
       "status": "published",
       "templateVersion": "v2"
