@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Receipt Organizer: Keep All Flight Receipts Organized Automatically | TextExpense</title>
+  <meta name="description" content="Flight Receipt Organizer - Keep All Flight Receipts Organized Automatically. Send receipt photos via WhatsApp and get organized Excel reports instantly. No app downloads, no typing.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEM nonsense8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VEMBHFSE8');
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #25D366;
+      --primary-dark: #128C7E;
+      --dark: #1a1a1a;
+      --gray: #6c757d;
+      --light-gray: #f9fafb;
+      --shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .hero .subtitle {
+      font-size: 24px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    .cta-primary {
+      background: var(--primary);
+      color: white;
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .cta-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Pain Points Section */
+    .pain-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .pain-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .pain-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .pain-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Feature Steps Section */
+    .feature-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .feature-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .feature-section .intro {
+      text-align: center;
+      font-size: 18px;
+      color: var(--gray);
+      margin-bottom: 50px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .step-item {
+      text-align: center;
+    }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 auto 20px;
+    }
+
+    .step-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .step-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    /* Benefits Section */
+    .benefits-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .benefits-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .benefit-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .benefit-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    /* Output Section */
+    .output-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .output-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .output-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .output-item {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .output-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .faq-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .faq-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Final CTA Section */
+    .final-cta {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .final-cta p {
+      font-size: 20px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer .footer-links {
+      margin-bottom: 30px;
+    }
+
+    footer .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    footer .footer-links a:first-child {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    footer .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    footer .footer-cta {
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin-top: 30px;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero .subtitle {
+        font-size: 18px;
+      }
+
+      .pain-section h2,
+      .feature-section h2,
+      .benefits-section h2,
+      .output-section h2,
+      .faq-section h2,
+      .final-cta h2 {
+        font-size: 28px;
+      }
+
+      .steps-grid,
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Flight Receipt Organizer</h1>
+      <p class="subtitle">Keep All Flight Receipts Organized Automatically</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+    </div>
+  </section>
+
+  <!-- Pain Points Section -->
+  <section class="pain-section">
+    <div class="container">
+      <h2>The Problem You're Facing</h2>
+      <div class="pain-grid">
+        <div class="pain-item">
+          <p>Airline confirmation emails buried in hundreds of inbox messages</p>
+        </div>
+        <div class="pain-item">
+          <p>You need boarding passes and receipts for expense reports</p>
+        </div>
+        <div class="pain-item">
+          <p>Tracking flights for multiple trips gets confusing</p>
+        </div>
+        <div class="pain-item">
+          <p>Finance wants proof of travel dates and amounts</p>
+        </div>
+        <div class="pain-item">
+          <p>Screenshots and PDFs scattered across devices</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Steps Section -->
+  <section class="feature-section">
+    <div class="container">
+      <h2>How Flight Receipt Organizer Works</h2>
+      <p class="intro">Four simple steps. No app downloads, no typing, no complexity.</p>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <h3>Photo confirmation</h3>
+          <p>Boarding pass, email receipt, or itinerary</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <h3>Send to WhatsApp</h3>
+          <p>Text it with trip name or client</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <h3>Auto-captures data</h3>
+          <p>Flight dates, airline, cost extracted</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">4</div>
+          <h3>Export organized file</h3>
+          <p>Download Excel with all flights listed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits-section">
+    <div class="container">
+      <h2>Why Flight Receipt Organizer Changes Everything</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3>All flight receipts in one location</h3>
+        </div>
+        <div class="benefit-item">
+          <h3>No more email searching</h3>
+        </div>
+        <div class="benefit-item">
+          <h3>Organized by date and destination</h3>
+        </div>
+        <div class="benefit-item">
+          <h3>Expense report ready</h3>
+        </div>
+        <div class="benefit-item">
+          <h3>Track frequent flyer programs</h3>
+        </div>
+        <div class="benefit-item">
+          <h3>Backup if airline systems fail</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Output Section -->
+  <section class="output-section">
+    <div class="container">
+      <h2>What You Get</h2>
+      <div class="output-grid">
+        <div class="output-item">
+          <p>Excel file with complete flight history</p>
+        </div>
+        <div class="output-item">
+          <p>Dates, airlines, routes, amounts</p>
+        </div>
+        <div class="output-item">
+          <p>Organized by business trip</p>
+        </div>
+        <div class="output-item">
+          <p>Boarding pass images included</p>
+        </div>
+        <div class="output-item">
+          <p>Reimbursement-ready format</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>Common Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>Can I track frequent flyer miles earned?</h3>
+          <p>Yes. Add your frequent flyer number or miles earned as notes when sending flight receipts.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does it work with e-tickets and mobile boarding passes?</h3>
+          <p>Absolutely. Screenshot your mobile boarding pass or e-ticket and send via WhatsApp.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I separate round trips from one-way flights?</h3>
+          <p>Yes. Each flight receipt is tracked individually, making it easy to organize however you need.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if I have connecting flights?</h3>
+          <p>Send each boarding pass or combine them - TextExpense organizes all flights chronologically.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I track flight changes or cancellations?</h3>
+          <p>Yes. Send all confirmation emails to keep a complete record of original bookings and any changes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Flight Receipt Organizer?</h2>
+      <p>Start tracking receipts via WhatsApp today. First 3 receipts are free.</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://textexpense.com">Home</a>
+        <a href="https://textexpense.com/privacy">Privacy Policy</a>
+        <a href="https://textexpense.com/terms">Terms & Conditions</a>
+      </div>
+      <div class="footer-cta">
+        <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+      </div>
+      <p>&copy; 2025 TextExpense. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuel and Toll Receipt Tracker: Track Every Fuel Fill-Up and Toll Automatically | TextExpense</title>
+  <meta name="description" content="Fuel and Toll Receipt Tracker - Track Every Fuel Fill-Up and Toll Automatically. Send receipt photos via WhatsApp and get organized Excel reports instantly. No app downloads, no typing.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEM nonsense8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VEMBHFSE8');
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #25D366;
+      --primary-dark: #128C7E;
+      --dark: #1a1a1a;
+      --gray: #6c757d;
+      --light-gray: #f9fafb;
+      --shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .hero .subtitle {
+      font-size: 24px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    .cta-primary {
+      background: var(--primary);
+      color: white;
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .cta-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Pain Points Section */
+    .pain-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .pain-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .pain-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .pain-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Feature Steps Section */
+    .feature-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .feature-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .feature-section .intro {
+      text-align: center;
+      font-size: 18px;
+      color: var(--gray);
+      margin-bottom: 50px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .step-item {
+      text-align: center;
+    }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 auto 20px;
+    }
+
+    .step-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .step-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    /* Benefits Section */
+    .benefits-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .benefits-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .benefit-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .benefit-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    /* Output Section */
+    .output-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .output-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .output-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .output-item {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .output-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .faq-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .faq-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Final CTA Section */
+    .final-cta {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .final-cta p {
+      font-size: 20px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer .footer-links {
+      margin-bottom: 30px;
+    }
+
+    footer .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    footer .footer-links a:first-child {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    footer .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    footer .footer-cta {
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin-top: 30px;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero .subtitle {
+        font-size: 18px;
+      }
+
+      .pain-section h2,
+      .feature-section h2,
+      .benefits-section h2,
+      .output-section h2,
+      .faq-section h2,
+      .final-cta h2 {
+        font-size: 28px;
+      }
+
+      .steps-grid,
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Fuel and Toll Receipt Tracker</h1>
+      <p class="subtitle">Track Every Fuel Fill-Up and Toll Automatically</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+    </div>
+  </section>
+
+  <!-- Pain Points Section -->
+  <section class="pain-section">
+    <div class="container">
+      <h2>The Problem You're Facing</h2>
+      <div class="pain-grid">
+        <div class="pain-item">
+          <p>Gas receipts pile up in your car and get lost</p>
+        </div>
+        <div class="pain-item">
+          <p>Toll receipts are tiny and fade quickly</p>
+        </div>
+        <div class="pain-item">
+          <p>Calculating fuel costs for mileage reimbursement is tedious</p>
+        </div>
+        <div class="pain-item">
+          <p>You forget to track tolls and lose deduction money</p>
+        </div>
+        <div class="pain-item">
+          <p>Need to separate personal vs business fuel expenses</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Steps Section -->
+  <section class="feature-section">
+    <div class="container">
+      <h2>How Fuel and Toll Receipt Tracker Works</h2>
+      <p class="intro">Four simple steps. No app downloads, no typing, no complexity.</p>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <h3>Photo at the pump</h3>
+          <p>Snap gas receipt or toll ticket</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <h3>Send via WhatsApp</h3>
+          <p>Text it before you drive away</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <h3>Auto-captures data</h3>
+          <p>Date, amount, location extracted</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">4</div>
+          <h3>Download fuel log</h3>
+          <p>Get Excel with all fuel and toll expenses</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits-section">
+    <div class="container">
+      <h2>Why Fuel and Toll Receipt Tracker Changes Everything</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3>Never lose a gas receipt again</h3>
+        </div>
+        <div class="benefit-item">
+          <h3>Track tolls automatically</h3>
+        </div>
+        <div class="benefit-item">
+          <h3>Calculate fuel costs for reimbursement</h3>
+        </div>
+        <div class="benefit-item">
+          <h3>Separate business vs personal trips</h3>
+        </div>
+        <div class="benefit-item">
+          <h3>Tax-deductible fuel tracking</h3>
+        </div>
+        <div class="benefit-item">
+          <h3>Works for any vehicle</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Output Section -->
+  <section class="output-section">
+    <div class="container">
+      <h2>What You Get</h2>
+      <div class="output-grid">
+        <div class="output-item">
+          <p>Complete Excel log of fuel and tolls</p>
+        </div>
+        <div class="output-item">
+          <p>Dates, amounts, locations listed</p>
+        </div>
+        <div class="output-item">
+          <p>Business trip fuel costs totaled</p>
+        </div>
+        <div class="output-item">
+          <p>All receipt images backed up</p>
+        </div>
+        <div class="output-item">
+          <p>Mileage reimbursement ready</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>Common Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>Can I track fuel and tolls together?</h3>
+          <p>Yes. Send all driving-related receipts - fuel, tolls, parking - and organize them in one comprehensive report.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does it calculate miles per gallon or fuel efficiency?</h3>
+          <p>You can add odometer readings as notes when sending gas receipts to manually track fuel efficiency over time.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I separate business vs personal fuel fills?</h3>
+          <p>Yes. Add notes when sending receipts to categorize fills, making business expense reporting accurate.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if I have electronic toll receipts (E-ZPass)?</h3>
+          <p>Screenshot your toll statement or receipt and send via WhatsApp. Works perfectly with electronic tolling.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I track fuel costs by vehicle?</h3>
+          <p>Yes. Add vehicle info as notes when sending receipts if you manage multiple vehicles for business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Fuel and Toll Receipt Tracker?</h2>
+      <p>Start tracking receipts via WhatsApp today. First 3 receipts are free.</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://textexpense.com">Home</a>
+        <a href="https://textexpense.com/privacy">Privacy Policy</a>
+        <a href="https://textexpense.com/terms">Terms & Conditions</a>
+      </div>
+      <div class="footer-cta">
+        <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+      </div>
+      <p>&copy; 2025 TextExpense. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
