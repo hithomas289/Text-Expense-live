@@ -1,15 +1,16 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T06:17:12.526Z",
-  "totalPosts": 31,
+  "lastUpdated": "2025-11-15T06:24:12.089Z",
+  "totalPosts": 32,
   "categories": {
     "whatsapp-tracking": 1,
     "receipt-conversion": 1,
     "sales-expenses": 2,
+    "contractor-expenses": 1,
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
     "receipt-management": 2,
-    "freelance-expenses": 2,
+    "freelance-expenses": 3,
     "small-business": 2,
     "consulting-expenses": 1,
     "tax-preparation": 2,
@@ -24,8 +25,7 @@
     "business-expenses": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
-    "Small Business Tips": 1,
-    "contractor-expenses": 1
+    "Small Business Tips": 1
   },
   "posts": [
     {
@@ -465,6 +465,26 @@
         "how to submit reimbursement",
         "company expense report",
         "reimbursement tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "freelancer-expense-sheet",
+      "title": "The Ultimate Freelancer Expense Sheet (No Spreadsheet Needed)",
+      "category": "freelance-expenses",
+      "url": "/blog/freelancer-expense-sheet",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Freelancers need clean expense sheets for taxes. Capture receipts through WhatsApp and export a complete freelancer expense sheet anytime.",
+      "tags": [
+        "freelancer expense sheet",
+        "freelance expenses",
+        "track freelancer expenses",
+        "1099 expense sheet",
+        "freelance tax deductions"
       ],
       "status": "published",
       "templateVersion": "v2"
