@@ -1,12 +1,12 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T10:57:13.410Z",
-  "totalPosts": 131,
+  "lastUpdated": "2025-11-15T11:05:38.950Z",
+  "totalPosts": 132,
   "categories": {
     "whatsapp-tracking": 1,
     "receipt-conversion": 1,
     "sales-expenses": 2,
-    "contractor-expenses": 1,
+    "contractor-expenses": 2,
     "expense-reporting": 4,
     "expense-tracking": 2,
     "freelance-expenses": 52,
@@ -2091,6 +2091,27 @@
         "organize receipts Reston",
         "Reston bookkeeping tips",
         "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "contractor-expense-tracking-denver",
+      "title": "Expense Tracking for Contractors in Denver",
+      "category": "contractor-expenses",
+      "url": "/blog/contractor-expense-tracking-denver",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Denver contractors handle endless receipts for materials, tools, and travel. Track expenses instantly through WhatsApp and stay project-ready.",
+      "tags": [
+        "contractor expenses Denver",
+        "Denver contractor receipts",
+        "project expenses Denver",
+        "track contractor receipts",
+        "Denver construction expenses",
+        "contractor bookkeeping"
       ],
       "status": "published",
       "templateVersion": "v2"
