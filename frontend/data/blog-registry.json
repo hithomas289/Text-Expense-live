@@ -1,8 +1,9 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T04:15:48.964Z",
-  "totalPosts": 11,
+  "lastUpdated": "2025-11-15T04:19:08.295Z",
+  "totalPosts": 12,
   "categories": {
+    "expense-tracking-methods": 1,
     "receipt-management": 1,
     "small-business": 1,
     "tax-preparation": 1,
@@ -13,7 +14,7 @@
     "receipt-retention": 1,
     "receipt-organization": 1,
     "Small Business Tips": 1,
-    "expense-tracking-methods": 1
+    "fast-expense-tracking": 1
   },
   "posts": [
     {
@@ -33,6 +34,27 @@
         "best way track expenses",
         "expense tracking system",
         "track spending"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "fastest-way-to-track-expenses",
+      "title": "Fastest Way to Track Expenses (30 Seconds Per Receipt)",
+      "category": "fast-expense-tracking",
+      "url": "/blog/fastest-way-to-track-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "6",
+      "excerpt": "Stop wasting hours on expense tracking. 30 seconds per expense, zero typing, instant reports. Try 3 free.",
+      "tags": [
+        "fastest expense tracking",
+        "quick expense tracking",
+        "fast expense method",
+        "track expenses fast",
+        "instant expense tracking",
+        "30 second tracking"
       ],
       "status": "published",
       "templateVersion": "v2"
