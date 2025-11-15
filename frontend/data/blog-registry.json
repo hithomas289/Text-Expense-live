@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T05:29:40.496Z",
-  "totalPosts": 23,
+  "lastUpdated": "2025-11-15T05:34:38.545Z",
+  "totalPosts": 24,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -13,7 +13,7 @@
     "medical-expenses": 1,
     "sales-expenses": 1,
     "receipt-storage": 2,
-    "expense-reporting": 2,
+    "expense-reporting": 3,
     "project-expenses": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
@@ -291,6 +291,27 @@
         "business expense sheet excel",
         "excel expense tracker",
         "excel expense template"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "export-expenses-to-excel-automatically",
+      "title": "How to Export Expenses to Excel Automatically",
+      "category": "expense-reporting",
+      "url": "/blog/export-expenses-to-excel-automatically",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Stop building spreadsheets manually. Capture receipts in seconds and export a complete Excel expense file automatically. Try 3 free.",
+      "tags": [
+        "export expenses to excel",
+        "automatic excel export",
+        "auto expense tracking excel",
+        "excel expense automation",
+        "instant excel expense report",
+        "receipt to excel export"
       ],
       "status": "published",
       "templateVersion": "v2"
