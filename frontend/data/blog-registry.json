@@ -1,8 +1,9 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T06:03:23.198Z",
-  "totalPosts": 28,
+  "lastUpdated": "2025-11-15T06:07:44.158Z",
+  "totalPosts": 29,
   "categories": {
+    "whatsapp-tracking": 1,
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
     "receipt-management": 2,
@@ -23,7 +24,7 @@
     "receipt-retention": 1,
     "receipt-organization": 1,
     "Small Business Tips": 1,
-    "whatsapp-tracking": 1
+    "receipt-conversion": 1
   },
   "posts": [
     {
@@ -43,6 +44,27 @@
         "track receipts whatsapp",
         "whatsapp expense report",
         "whatsapp receipt tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "convert-receipts-into-excel-automatically",
+      "title": "Convert Receipts Into Excel Automatically (No Manual Entry)",
+      "category": "receipt-conversion",
+      "url": "/blog/convert-receipts-into-excel-automatically",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Stop typing receipts into spreadsheets. Convert receipts into a clean Excel file automatically by texting photos to WhatsApp. Try 3 free.",
+      "tags": [
+        "convert receipts to excel",
+        "automatic receipt to excel",
+        "receipt excel converter",
+        "export receipts excel",
+        "receipt to spreadsheet",
+        "receipt to excel conversion"
       ],
       "status": "published",
       "templateVersion": "v2"
