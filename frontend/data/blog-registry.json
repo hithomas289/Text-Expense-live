@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T05:34:38.545Z",
-  "totalPosts": 24,
+  "lastUpdated": "2025-11-15T05:39:26.007Z",
+  "totalPosts": 25,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
@@ -19,7 +19,8 @@
     "business-expenses": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
-    "Small Business Tips": 1
+    "Small Business Tips": 1,
+    "receipt-scanning": 1
   },
   "posts": [
     {
@@ -312,6 +313,27 @@
         "excel expense automation",
         "instant excel expense report",
         "receipt to excel export"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "scan-receipts-without-scanner",
+      "title": "How to Scan Receipts Without a Scanner",
+      "category": "receipt-scanning",
+      "url": "/blog/scan-receipts-without-scanner",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "No scanner? No problem. Scan receipts instantly by taking a photo and texting it to WhatsApp — searchable and tax-ready. Try 3 free.",
+      "tags": [
+        "scan receipts without scanner",
+        "digitize receipts",
+        "receipt scanning alternative",
+        "paperless receipts",
+        "scan receipt photo",
+        "mobile receipt scanning"
       ],
       "status": "published",
       "templateVersion": "v2"
