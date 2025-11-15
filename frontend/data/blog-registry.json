@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T10:53:38.512Z",
-  "totalPosts": 83,
+  "lastUpdated": "2025-11-15T10:57:13.410Z",
+  "totalPosts": 131,
   "categories": {
     "whatsapp-tracking": 1,
     "receipt-conversion": 1,
@@ -10,10 +10,10 @@
     "expense-reporting": 4,
     "expense-tracking": 2,
     "freelance-expenses": 52,
+    "small-business": 50,
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
     "receipt-management": 2,
-    "small-business": 2,
     "consulting-expenses": 1,
     "tax-preparation": 2,
     "medical-expenses": 1,
@@ -1131,6 +1131,966 @@
         "freelancer tax deductions VA",
         "expense tracking Reston Town Center",
         "Reston freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "new-york-small-business-receipt-tracking",
+      "title": "How New York Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/new-york-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "New York small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 secon",
+      "tags": [
+        "New York small business receipts",
+        "track receipts New York",
+        "organize receipts New York",
+        "New York bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "los-angeles-small-business-receipt-tracking",
+      "title": "How Los Angeles Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/los-angeles-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Los Angeles small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 se",
+      "tags": [
+        "Los Angeles small business receipts",
+        "track receipts Los Angeles",
+        "organize receipts Los Angeles",
+        "Los Angeles bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "san-francisco-small-business-receipt-tracking",
+      "title": "How San Francisco Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/san-francisco-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "San Francisco small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 ",
+      "tags": [
+        "San Francisco small business receipts",
+        "track receipts San Francisco",
+        "organize receipts San Francisco",
+        "San Francisco bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "boston-small-business-receipt-tracking",
+      "title": "How Boston Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/boston-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Boston small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seconds",
+      "tags": [
+        "Boston small business receipts",
+        "track receipts Boston",
+        "organize receipts Boston",
+        "Boston bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "seattle-small-business-receipt-tracking",
+      "title": "How Seattle Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/seattle-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Seattle small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 second",
+      "tags": [
+        "Seattle small business receipts",
+        "track receipts Seattle",
+        "organize receipts Seattle",
+        "Seattle bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "houston-small-business-receipt-tracking",
+      "title": "How Houston Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/houston-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Houston small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 second",
+      "tags": [
+        "Houston small business receipts",
+        "track receipts Houston",
+        "organize receipts Houston",
+        "Houston bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "dallas-small-business-receipt-tracking",
+      "title": "How Dallas Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/dallas-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Dallas small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seconds",
+      "tags": [
+        "Dallas small business receipts",
+        "track receipts Dallas",
+        "organize receipts Dallas",
+        "Dallas bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "miami-small-business-receipt-tracking",
+      "title": "How Miami Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/miami-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Miami small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seconds.",
+      "tags": [
+        "Miami small business receipts",
+        "track receipts Miami",
+        "organize receipts Miami",
+        "Miami bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "washington-dc-small-business-receipt-tracking",
+      "title": "How Washington Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/washington-dc-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Washington small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 sec",
+      "tags": [
+        "Washington small business receipts",
+        "track receipts Washington",
+        "organize receipts Washington",
+        "Washington bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "atlanta-small-business-receipt-tracking",
+      "title": "How Atlanta Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/atlanta-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Atlanta small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 second",
+      "tags": [
+        "Atlanta small business receipts",
+        "track receipts Atlanta",
+        "organize receipts Atlanta",
+        "Atlanta bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "austin-small-business-receipt-tracking",
+      "title": "How Austin Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/austin-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Austin small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seconds",
+      "tags": [
+        "Austin small business receipts",
+        "track receipts Austin",
+        "organize receipts Austin",
+        "Austin bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "denver-small-business-receipt-tracking",
+      "title": "How Denver Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/denver-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Denver small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seconds",
+      "tags": [
+        "Denver small business receipts",
+        "track receipts Denver",
+        "organize receipts Denver",
+        "Denver bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "philadelphia-small-business-receipt-tracking",
+      "title": "How Philadelphia Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/philadelphia-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Philadelphia small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 s",
+      "tags": [
+        "Philadelphia small business receipts",
+        "track receipts Philadelphia",
+        "organize receipts Philadelphia",
+        "Philadelphia bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "phoenix-small-business-receipt-tracking",
+      "title": "How Phoenix Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/phoenix-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Phoenix small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 second",
+      "tags": [
+        "Phoenix small business receipts",
+        "track receipts Phoenix",
+        "organize receipts Phoenix",
+        "Phoenix bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "portland-small-business-receipt-tracking",
+      "title": "How Portland Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/portland-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Portland small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 secon",
+      "tags": [
+        "Portland small business receipts",
+        "track receipts Portland",
+        "organize receipts Portland",
+        "Portland bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "san-diego-small-business-receipt-tracking",
+      "title": "How San Diego Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/san-diego-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "San Diego small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seco",
+      "tags": [
+        "San Diego small business receipts",
+        "track receipts San Diego",
+        "organize receipts San Diego",
+        "San Diego bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "nashville-small-business-receipt-tracking",
+      "title": "How Nashville Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/nashville-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Nashville small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seco",
+      "tags": [
+        "Nashville small business receipts",
+        "track receipts Nashville",
+        "organize receipts Nashville",
+        "Nashville bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "charlotte-small-business-receipt-tracking",
+      "title": "How Charlotte Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/charlotte-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Charlotte small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seco",
+      "tags": [
+        "Charlotte small business receipts",
+        "track receipts Charlotte",
+        "organize receipts Charlotte",
+        "Charlotte bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "tampa-small-business-receipt-tracking",
+      "title": "How Tampa Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/tampa-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Tampa small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seconds.",
+      "tags": [
+        "Tampa small business receipts",
+        "track receipts Tampa",
+        "organize receipts Tampa",
+        "Tampa bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "orlando-small-business-receipt-tracking",
+      "title": "How Orlando Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/orlando-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Orlando small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 second",
+      "tags": [
+        "Orlando small business receipts",
+        "track receipts Orlando",
+        "organize receipts Orlando",
+        "Orlando bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "raleigh-small-business-receipt-tracking",
+      "title": "How Raleigh Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/raleigh-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Raleigh small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 second",
+      "tags": [
+        "Raleigh small business receipts",
+        "track receipts Raleigh",
+        "organize receipts Raleigh",
+        "Raleigh bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "salt-lake-city-small-business-receipt-tracking",
+      "title": "How Salt Lake City Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/salt-lake-city-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Salt Lake City small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30",
+      "tags": [
+        "Salt Lake City small business receipts",
+        "track receipts Salt Lake City",
+        "organize receipts Salt Lake City",
+        "Salt Lake City bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "minneapolis-small-business-receipt-tracking",
+      "title": "How Minneapolis Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/minneapolis-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Minneapolis small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 se",
+      "tags": [
+        "Minneapolis small business receipts",
+        "track receipts Minneapolis",
+        "organize receipts Minneapolis",
+        "Minneapolis bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "kansas-city-small-business-receipt-tracking",
+      "title": "How Kansas City Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/kansas-city-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Kansas City small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 se",
+      "tags": [
+        "Kansas City small business receipts",
+        "track receipts Kansas City",
+        "organize receipts Kansas City",
+        "Kansas City bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "columbus-small-business-receipt-tracking",
+      "title": "How Columbus Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/columbus-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Columbus small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 secon",
+      "tags": [
+        "Columbus small business receipts",
+        "track receipts Columbus",
+        "organize receipts Columbus",
+        "Columbus bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "cincinnati-small-business-receipt-tracking",
+      "title": "How Cincinnati Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/cincinnati-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Cincinnati small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 sec",
+      "tags": [
+        "Cincinnati small business receipts",
+        "track receipts Cincinnati",
+        "organize receipts Cincinnati",
+        "Cincinnati bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "indianapolis-small-business-receipt-tracking",
+      "title": "How Indianapolis Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/indianapolis-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Indianapolis small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 s",
+      "tags": [
+        "Indianapolis small business receipts",
+        "track receipts Indianapolis",
+        "organize receipts Indianapolis",
+        "Indianapolis bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "pittsburgh-small-business-receipt-tracking",
+      "title": "How Pittsburgh Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/pittsburgh-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Pittsburgh small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 sec",
+      "tags": [
+        "Pittsburgh small business receipts",
+        "track receipts Pittsburgh",
+        "organize receipts Pittsburgh",
+        "Pittsburgh bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "st-louis-small-business-receipt-tracking",
+      "title": "How St. Louis Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/st-louis-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "St. Louis small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seco",
+      "tags": [
+        "St. Louis small business receipts",
+        "track receipts St. Louis",
+        "organize receipts St. Louis",
+        "St. Louis bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "las-vegas-small-business-receipt-tracking",
+      "title": "How Las Vegas Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/las-vegas-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Las Vegas small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seco",
+      "tags": [
+        "Las Vegas small business receipts",
+        "track receipts Las Vegas",
+        "organize receipts Las Vegas",
+        "Las Vegas bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "san-antonio-small-business-receipt-tracking",
+      "title": "How San Antonio Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/san-antonio-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "San Antonio small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 se",
+      "tags": [
+        "San Antonio small business receipts",
+        "track receipts San Antonio",
+        "organize receipts San Antonio",
+        "San Antonio bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "new-orleans-small-business-receipt-tracking",
+      "title": "How New Orleans Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/new-orleans-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "New Orleans small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 se",
+      "tags": [
+        "New Orleans small business receipts",
+        "track receipts New Orleans",
+        "organize receipts New Orleans",
+        "New Orleans bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "anaheim-small-business-receipt-tracking",
+      "title": "How Anaheim Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/anaheim-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Anaheim small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 second",
+      "tags": [
+        "Anaheim small business receipts",
+        "track receipts Anaheim",
+        "organize receipts Anaheim",
+        "Anaheim bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "baltimore-small-business-receipt-tracking",
+      "title": "How Baltimore Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/baltimore-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Baltimore small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seco",
+      "tags": [
+        "Baltimore small business receipts",
+        "track receipts Baltimore",
+        "organize receipts Baltimore",
+        "Baltimore bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "detroit-small-business-receipt-tracking",
+      "title": "How Detroit Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/detroit-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Detroit small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 second",
+      "tags": [
+        "Detroit small business receipts",
+        "track receipts Detroit",
+        "organize receipts Detroit",
+        "Detroit bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "irvine-small-business-receipt-tracking",
+      "title": "How Irvine Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/irvine-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Irvine small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seconds",
+      "tags": [
+        "Irvine small business receipts",
+        "track receipts Irvine",
+        "organize receipts Irvine",
+        "Irvine bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "sacramento-small-business-receipt-tracking",
+      "title": "How Sacramento Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/sacramento-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Sacramento small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 sec",
+      "tags": [
+        "Sacramento small business receipts",
+        "track receipts Sacramento",
+        "organize receipts Sacramento",
+        "Sacramento bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "jacksonville-small-business-receipt-tracking",
+      "title": "How Jacksonville Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/jacksonville-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Jacksonville small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 s",
+      "tags": [
+        "Jacksonville small business receipts",
+        "track receipts Jacksonville",
+        "organize receipts Jacksonville",
+        "Jacksonville bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "boulder-small-business-receipt-tracking",
+      "title": "How Boulder Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/boulder-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Boulder small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 second",
+      "tags": [
+        "Boulder small business receipts",
+        "track receipts Boulder",
+        "organize receipts Boulder",
+        "Boulder bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "durham-small-business-receipt-tracking",
+      "title": "How Durham Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/durham-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Durham small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seconds",
+      "tags": [
+        "Durham small business receipts",
+        "track receipts Durham",
+        "organize receipts Durham",
+        "Durham bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "madison-small-business-receipt-tracking",
+      "title": "How Madison Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/madison-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Madison small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 second",
+      "tags": [
+        "Madison small business receipts",
+        "track receipts Madison",
+        "organize receipts Madison",
+        "Madison bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "plano-small-business-receipt-tracking",
+      "title": "How Plano Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/plano-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Plano small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seconds.",
+      "tags": [
+        "Plano small business receipts",
+        "track receipts Plano",
+        "organize receipts Plano",
+        "Plano bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "bellevue-small-business-receipt-tracking",
+      "title": "How Bellevue Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/bellevue-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Bellevue small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 secon",
+      "tags": [
+        "Bellevue small business receipts",
+        "track receipts Bellevue",
+        "organize receipts Bellevue",
+        "Bellevue bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "santa-clara-small-business-receipt-tracking",
+      "title": "How Santa Clara Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/santa-clara-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Santa Clara small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 se",
+      "tags": [
+        "Santa Clara small business receipts",
+        "track receipts Santa Clara",
+        "organize receipts Santa Clara",
+        "Santa Clara bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "sunnyvale-small-business-receipt-tracking",
+      "title": "How Sunnyvale Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/sunnyvale-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Sunnyvale small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seco",
+      "tags": [
+        "Sunnyvale small business receipts",
+        "track receipts Sunnyvale",
+        "organize receipts Sunnyvale",
+        "Sunnyvale bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "san-jose-small-business-receipt-tracking",
+      "title": "How San Jose Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/san-jose-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "San Jose small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 secon",
+      "tags": [
+        "San Jose small business receipts",
+        "track receipts San Jose",
+        "organize receipts San Jose",
+        "San Jose bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "arlington-small-business-receipt-tracking",
+      "title": "How Arlington Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/arlington-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Arlington small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seco",
+      "tags": [
+        "Arlington small business receipts",
+        "track receipts Arlington",
+        "organize receipts Arlington",
+        "Arlington bookkeeping tips",
+        "small business expense tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "reston-small-business-receipt-tracking",
+      "title": "How Reston Small Businesses Track Receipts Easily",
+      "category": "small-business",
+      "url": "/blog/reston-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "7",
+      "excerpt": "Reston small businesses struggle with receipts during busy seasons. Track receipts instantly by texting photos to WhatsApp—organized automatically in 30 seconds",
+      "tags": [
+        "Reston small business receipts",
+        "track receipts Reston",
+        "organize receipts Reston",
+        "Reston bookkeeping tips",
+        "small business expense tracking"
       ],
       "status": "published",
       "templateVersion": "v2"
