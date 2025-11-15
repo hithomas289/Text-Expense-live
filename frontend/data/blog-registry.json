@@ -1,16 +1,16 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T04:33:49.061Z",
-  "totalPosts": 13,
+  "lastUpdated": "2025-11-15T04:53:17.309Z",
+  "totalPosts": 15,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
     "receipt-management": 2,
-    "small-business": 1,
+    "freelance-expenses": 2,
+    "small-business": 2,
     "tax-preparation": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
-    "freelance-expenses": 1,
     "receipt-storage": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
@@ -76,6 +76,48 @@
         "manage receipts easily",
         "receipt organization tips",
         "no-app receipt management"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-new-york-freelancers",
+      "title": "Best Way to Track Expenses in New York for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-new-york-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "NYC freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "NYC freelancer expenses",
+        "track expenses New York",
+        "freelancer tax deductions NYC",
+        "expense tracking Manhattan",
+        "Brooklyn freelancer receipts",
+        "Queens freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "chicago-small-business-receipt-tracking",
+      "title": "How Chicago Small Businesses Can Track Receipts Easily (No More Shoeboxes)",
+      "category": "small-business",
+      "url": "/blog/chicago-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "9",
+      "excerpt": "Chicago owners lose receipts in busy seasons and harsh weather. Text receipt photos to WhatsApp and stay organized in 30 seconds.",
+      "tags": [
+        "Chicago small business",
+        "receipt tracking Chicago",
+        "Chicago bookkeeping",
+        "small business receipts",
+        "organize receipts Chicago",
+        "Chicago business taxes"
       ],
       "status": "published",
       "templateVersion": "v2"
