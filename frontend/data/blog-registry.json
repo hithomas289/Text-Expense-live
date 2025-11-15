@@ -1,9 +1,10 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T04:19:08.295Z",
+  "lastUpdated": "2025-11-15T04:28:51.082Z",
   "totalPosts": 12,
   "categories": {
     "expense-tracking-methods": 1,
+    "fast-expense-tracking": 1,
     "receipt-management": 1,
     "small-business": 1,
     "tax-preparation": 1,
@@ -13,8 +14,7 @@
     "receipt-storage": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
-    "Small Business Tips": 1,
-    "fast-expense-tracking": 1
+    "Small Business Tips": 1
   },
   "posts": [
     {
@@ -40,14 +40,14 @@
     },
     {
       "slug": "fastest-way-to-track-expenses",
-      "title": "Fastest Way to Track Expenses (30 Seconds Per Receipt)",
+      "title": "The Fastest Way to Track Expenses Without Losing Your Mind",
       "category": "fast-expense-tracking",
       "url": "/blog/fastest-way-to-track-expenses",
       "author": "TextExpense Team",
       "publishDate": "2025-11-15",
       "lastModified": "2025-11-15",
-      "readingTime": "6",
-      "excerpt": "Stop wasting hours on expense tracking. 30 seconds per expense, zero typing, instant reports. Try 3 free.",
+      "readingTime": "12",
+      "excerpt": "Stop spending hours on expense tracking. Text your receipt, get Excel report in 30 seconds. No app downloads, no manual entry. Try 3 receipts free.",
       "tags": [
         "fastest expense tracking",
         "quick expense tracking",
