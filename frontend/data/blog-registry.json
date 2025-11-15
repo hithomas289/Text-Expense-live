@@ -1,19 +1,214 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-14T17:21:50.612Z",
-  "totalPosts": 9,
+  "lastUpdated": "2025-11-15T05:10:23.668Z",
+  "totalPosts": 19,
   "categories": {
-    "receipt-management": 1,
-    "small-business": 1,
-    "tax-preparation": 1,
+    "expense-tracking-methods": 1,
+    "fast-expense-tracking": 1,
+    "receipt-management": 2,
+    "freelance-expenses": 2,
+    "small-business": 2,
+    "consulting-expenses": 1,
+    "tax-preparation": 2,
+    "medical-expenses": 1,
     "expense-tracking": 1,
     "business-expenses": 1,
-    "freelance-expenses": 1,
     "receipt-storage": 1,
+    "receipt-retention": 1,
+    "receipt-organization": 1,
     "Small Business Tips": 1,
-    "receipt-retention": 1
+    "sales-expenses": 1
   },
   "posts": [
+    {
+      "slug": "best-way-to-track-expenses",
+      "title": "Best Way to Track Expenses (Without the Spreadsheet Nightmare)",
+      "category": "expense-tracking-methods",
+      "url": "/blog/best-way-to-track-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "6",
+      "excerpt": "Spreadsheets, apps, manual entry - they all fail. Track expenses in 30 seconds each, zero typing. Try 3 free.",
+      "tags": [
+        "best expense tracking",
+        "track expenses easily",
+        "expense tracking method",
+        "best way track expenses",
+        "expense tracking system",
+        "track spending"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "fastest-way-to-track-expenses",
+      "title": "The Fastest Way to Track Expenses Without Losing Your Mind",
+      "category": "fast-expense-tracking",
+      "url": "/blog/fastest-way-to-track-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "12",
+      "excerpt": "Stop spending hours on expense tracking. Text your receipt, get Excel report in 30 seconds. No app downloads, no manual entry. Try 3 receipts free.",
+      "tags": [
+        "fastest expense tracking",
+        "quick expense tracking",
+        "fast expense method",
+        "track expenses fast",
+        "instant expense tracking",
+        "30 second tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "simplest-way-to-manage-receipts",
+      "title": "The Simplest Way to Manage Receipts (Finally)",
+      "category": "receipt-management",
+      "url": "/blog/simplest-way-to-manage-receipts",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "11",
+      "excerpt": "Stop losing receipts in shoeboxes and wallets. Text receipt photos, get organized Excel files. Works through WhatsApp. Try 3 receipts free.",
+      "tags": [
+        "simplest receipt management",
+        "easy receipt organization",
+        "simple receipt system",
+        "manage receipts easily",
+        "receipt organization tips",
+        "no-app receipt management"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-expenses-new-york-freelancers",
+      "title": "Best Way to Track Expenses in New York for Freelancers (Without Getting Buried in Receipts)",
+      "category": "freelance-expenses",
+      "url": "/blog/track-expenses-new-york-freelancers",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "NYC freelancers lose thousands yearly due to poor expense tracking. Capture every receipt through WhatsApp in 30 seconds. Try 3 free.",
+      "tags": [
+        "NYC freelancer expenses",
+        "track expenses New York",
+        "freelancer tax deductions NYC",
+        "expense tracking Manhattan",
+        "Brooklyn freelancer receipts",
+        "Queens freelancer taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "chicago-small-business-receipt-tracking",
+      "title": "How Chicago Small Businesses Can Track Receipts Easily (No More Shoeboxes)",
+      "category": "small-business",
+      "url": "/blog/chicago-small-business-receipt-tracking",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "9",
+      "excerpt": "Chicago owners lose receipts in busy seasons and harsh weather. Text receipt photos to WhatsApp and stay organized in 30 seconds.",
+      "tags": [
+        "Chicago small business",
+        "receipt tracking Chicago",
+        "Chicago bookkeeping",
+        "small business receipts",
+        "organize receipts Chicago",
+        "Chicago business taxes"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "how-consultants-manage-expenses",
+      "title": "How Consultants Manage Expenses (Without Losing Their Weekends)",
+      "category": "consulting-expenses",
+      "url": "/blog/how-consultants-manage-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "10",
+      "excerpt": "Consultants juggle travel, meals, and client expenses. Track every receipt through WhatsApp in 30 seconds — no more weekend admin work.",
+      "tags": [
+        "consultant expense management",
+        "consulting expenses",
+        "travel expenses consultant",
+        "consultant receipt tracking",
+        "billable expenses",
+        "client expenses consulting"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-meal-expenses-for-taxes",
+      "title": "How to Track Meal Expenses for Taxes (Without a Spreadsheet)",
+      "category": "tax-preparation",
+      "url": "/blog/track-meal-expenses-for-taxes",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "9",
+      "excerpt": "Meal deductions are easy to miss. Track every meal receipt in 30 seconds with WhatsApp and stay audit-ready. Try 3 free.",
+      "tags": [
+        "meal expense deductions",
+        "business meal receipts",
+        "track meal expenses",
+        "IRS meal requirements",
+        "tax deductible meals",
+        "meal receipt tracking"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "organize-medical-receipts-insurance-claims",
+      "title": "How to Organize Medical Receipts for Insurance Claims (Without Filing Systems)",
+      "category": "medical-expenses",
+      "url": "/blog/organize-medical-receipts-insurance-claims",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "10",
+      "excerpt": "Medical receipts get lost or damaged. Text them to WhatsApp for instant, safe, searchable storage. Perfect for insurance & FSA/HSA.",
+      "tags": [
+        "medical receipt organization",
+        "insurance claim receipts",
+        "FSA receipts",
+        "HSA documentation",
+        "healthcare expense tracking",
+        "medical expense organization"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "salespeople-track-travel-meal-expenses",
+      "title": "The Easiest Way for Salespeople to Track Travel & Meal Expenses",
+      "category": "sales-expenses",
+      "url": "/blog/salespeople-track-travel-meal-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "10",
+      "excerpt": "Salespeople lose receipts while traveling. Track travel & meal expenses instantly through WhatsApp in 30 seconds. No more reimbursement stress.",
+      "tags": [
+        "sales expense tracking",
+        "salesperson travel expenses",
+        "sales meal receipts",
+        "sales team expenses",
+        "travel receipts sales",
+        "reimbursement tracking sales"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
     {
       "slug": "how-to-organize-receipts",
       "title": "How to Organize Receipts: A Simple System That Actually Works",
@@ -182,6 +377,27 @@
         "tax record retention",
         "receipt storage rules",
         "IRS audit requirements"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "best-way-to-organize-receipts",
+      "title": "Best Way to Organize Receipts (That You'll Actually Use)",
+      "category": "receipt-organization",
+      "url": "/blog/best-way-to-organize-receipts",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-14",
+      "lastModified": "2025-11-15",
+      "readingTime": "6",
+      "excerpt": "Tried filing systems, apps, shoeboxes? There's a simpler way. 30 seconds per receipt, zero setup. Try 3 free.",
+      "tags": [
+        "best way organize receipts",
+        "receipt organization",
+        "organize receipts digitally",
+        "receipt system",
+        "receipt filing",
+        "organize receipts easily"
       ],
       "status": "published",
       "templateVersion": "v2"
