@@ -1,21 +1,21 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T04:59:05.320Z",
-  "totalPosts": 16,
+  "lastUpdated": "2025-11-15T05:03:02.899Z",
+  "totalPosts": 17,
   "categories": {
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
     "receipt-management": 2,
     "freelance-expenses": 2,
     "small-business": 2,
-    "tax-preparation": 1,
+    "consulting-expenses": 1,
+    "tax-preparation": 2,
     "expense-tracking": 1,
     "business-expenses": 1,
     "receipt-storage": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
-    "Small Business Tips": 1,
-    "consulting-expenses": 1
+    "Small Business Tips": 1
   },
   "posts": [
     {
@@ -140,6 +140,27 @@
         "consultant receipt tracking",
         "billable expenses",
         "client expenses consulting"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "track-meal-expenses-for-taxes",
+      "title": "How to Track Meal Expenses for Taxes (Without a Spreadsheet)",
+      "category": "tax-preparation",
+      "url": "/blog/track-meal-expenses-for-taxes",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "9",
+      "excerpt": "Meal deductions are easy to miss. Track every meal receipt in 30 seconds with WhatsApp and stay audit-ready. Try 3 free.",
+      "tags": [
+        "meal expense deductions",
+        "business meal receipts",
+        "track meal expenses",
+        "IRS meal requirements",
+        "tax deductible meals",
+        "meal receipt tracking"
       ],
       "status": "published",
       "templateVersion": "v2"
