@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T04:11:34.916Z",
-  "totalPosts": 10,
+  "lastUpdated": "2025-11-15T04:15:48.964Z",
+  "totalPosts": 11,
   "categories": {
     "receipt-management": 1,
     "small-business": 1,
@@ -11,10 +11,32 @@
     "freelance-expenses": 1,
     "receipt-storage": 1,
     "receipt-retention": 1,
+    "receipt-organization": 1,
     "Small Business Tips": 1,
-    "receipt-organization": 1
+    "expense-tracking-methods": 1
   },
   "posts": [
+    {
+      "slug": "best-way-to-track-expenses",
+      "title": "Best Way to Track Expenses (Without the Spreadsheet Nightmare)",
+      "category": "expense-tracking-methods",
+      "url": "/blog/best-way-to-track-expenses",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-15",
+      "lastModified": "2025-11-15",
+      "readingTime": "6",
+      "excerpt": "Spreadsheets, apps, manual entry - they all fail. Track expenses in 30 seconds each, zero typing. Try 3 free.",
+      "tags": [
+        "best expense tracking",
+        "track expenses easily",
+        "expense tracking method",
+        "best way track expenses",
+        "expense tracking system",
+        "track spending"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
     {
       "slug": "how-to-organize-receipts",
       "title": "How to Organize Receipts: A Simple System That Actually Works",
