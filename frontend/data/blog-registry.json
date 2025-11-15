@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-14T17:21:50.612Z",
-  "totalPosts": 9,
+  "lastUpdated": "2025-11-15T04:11:34.916Z",
+  "totalPosts": 10,
   "categories": {
     "receipt-management": 1,
     "small-business": 1,
@@ -10,8 +10,9 @@
     "business-expenses": 1,
     "freelance-expenses": 1,
     "receipt-storage": 1,
+    "receipt-retention": 1,
     "Small Business Tips": 1,
-    "receipt-retention": 1
+    "receipt-organization": 1
   },
   "posts": [
     {
@@ -182,6 +183,27 @@
         "tax record retention",
         "receipt storage rules",
         "IRS audit requirements"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "best-way-to-organize-receipts",
+      "title": "Best Way to Organize Receipts (That You'll Actually Use)",
+      "category": "receipt-organization",
+      "url": "/blog/best-way-to-organize-receipts",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-14",
+      "lastModified": "2025-11-15",
+      "readingTime": "6",
+      "excerpt": "Tried filing systems, apps, shoeboxes? There's a simpler way. 30 seconds per receipt, zero setup. Try 3 free.",
+      "tags": [
+        "best way organize receipts",
+        "receipt organization",
+        "organize receipts digitally",
+        "receipt system",
+        "receipt filing",
+        "organize receipts easily"
       ],
       "status": "published",
       "templateVersion": "v2"
