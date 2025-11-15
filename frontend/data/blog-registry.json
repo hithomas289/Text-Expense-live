@@ -1,9 +1,10 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-11-15T06:07:44.158Z",
-  "totalPosts": 29,
+  "lastUpdated": "2025-11-15T06:11:39.325Z",
+  "totalPosts": 30,
   "categories": {
     "whatsapp-tracking": 1,
+    "receipt-conversion": 1,
     "expense-tracking-methods": 1,
     "fast-expense-tracking": 1,
     "receipt-management": 2,
@@ -12,7 +13,7 @@
     "consulting-expenses": 1,
     "tax-preparation": 2,
     "medical-expenses": 1,
-    "sales-expenses": 1,
+    "sales-expenses": 2,
     "receipt-storage": 2,
     "expense-reporting": 3,
     "project-expenses": 1,
@@ -23,8 +24,7 @@
     "business-expenses": 1,
     "receipt-retention": 1,
     "receipt-organization": 1,
-    "Small Business Tips": 1,
-    "receipt-conversion": 1
+    "Small Business Tips": 1
   },
   "posts": [
     {
@@ -65,6 +65,27 @@
         "export receipts excel",
         "receipt to spreadsheet",
         "receipt to excel conversion"
+      ],
+      "status": "published",
+      "templateVersion": "v2"
+    },
+    {
+      "slug": "sales-expense-report",
+      "title": "How Salespeople Can Create a Clean Expense Report in Minutes",
+      "category": "sales-expenses",
+      "url": "/blog/sales-expense-report",
+      "author": "TextExpense Team",
+      "publishDate": "2025-11-16",
+      "lastModified": "2025-11-15",
+      "readingTime": "8",
+      "excerpt": "Sales teams lose receipts while traveling. Track receipts via WhatsApp and generate a clean sales expense report instantly. Try 3 free.",
+      "tags": [
+        "sales expense report",
+        "sales team expenses",
+        "sales receipts",
+        "sales reimbursement",
+        "track sales expenses",
+        "sales expense tracking"
       ],
       "status": "published",
       "templateVersion": "v2"
