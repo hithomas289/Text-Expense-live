@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Receipts for Taxes in Chicago | TextExpense</title>
+  <meta name="description" content="Track receipts for taxes in Chicago through WhatsApp. For Chicago's freelancers, small businesses, and contractors — never lose a deductible receipt to snow or rain again.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEMBHFSE8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VEMBHFSE8');
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #25D366;
+      --primary-dark: #128C7E;
+      --dark: #1a1a1a;
+      --gray: #6c757d;
+      --light-gray: #f9fafb;
+      --shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .hero .subtitle {
+      font-size: 24px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    .cta-primary {
+      background: var(--primary);
+      color: white;
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .cta-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .struggles-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .struggles-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .struggles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .struggle-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+      border-left: 4px solid #EF4444;
+    }
+
+    .struggle-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .struggle-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .how-it-works-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .how-it-works-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .step-item {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .step-number {
+      background: var(--primary);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 auto 20px;
+    }
+
+    .step-item h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .step-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .scenarios-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .scenarios-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .scenarios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .scenario-item {
+      background: var(--light-gray);
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .scenario-item h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .scenario-item p {
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    .benefits-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .benefits-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .benefit-item {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .benefit-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .benefit-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .features-section {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .features-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .feature-item {
+      background: var(--light-gray);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .feature-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .feature-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .faq-section {
+      background: var(--light-gray);
+      padding: 80px 20px;
+    }
+
+    .faq-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .faq-item h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .faq-item p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .final-cta-section {
+      background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .final-cta-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .final-cta-section p {
+      font-size: 20px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero .subtitle {
+        font-size: 18px;
+      }
+
+      .struggles-section h2,
+      .how-it-works-section h2,
+      .scenarios-section h2,
+      .benefits-section h2,
+      .features-section h2,
+      .faq-section h2,
+      .final-cta-section h2 {
+        font-size: 28px;
+      }
+
+      .steps-grid,
+      .scenarios-grid,
+      .benefits-grid,
+      .features-grid,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Track Receipts for Taxes in Chicago</h1>
+      <p class="subtitle">For Chicago's freelancers, small businesses, and contractors — track every deductible receipt through WhatsApp.</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Local Pain Section -->
+  <section class="struggles-section">
+    <div class="container">
+      <h2>Why Chicago Businesses Struggle with Receipt Tracking</h2>
+      <div class="struggles-grid">
+        <div class="struggle-item">
+          <h3>❄️ Snow and Rain Destroying Receipts</h3>
+          <p>Chicago winters are brutal. Paper receipts get wet, fade, or disappear before tax season arrives.</p>
+        </div>
+        <div class="struggle-item">
+          <h3>📊 Complex Illinois + City Taxes</h3>
+          <p>Between Illinois state taxes and Chicago city taxes, you need every deduction documented perfectly.</p>
+        </div>
+        <div class="struggle-item">
+          <h3>🚗 Parking, Tolls, and Transit Receipts</h3>
+          <p>Meters, I-Pass tolls, CTA fares — all deductible, all lost in the shuffle of daily business.</p>
+        </div>
+        <div class="struggle-item">
+          <h3>⏰ No Time During Busy Seasons</h3>
+          <p>Summer construction rush, holiday retail peak — when business is booming, receipt organization falls apart.</p>
+        </div>
+        <div class="struggle-item">
+          <h3>📦 Small Businesses Using Physical Receipts</h3>
+          <p>Chicago's small businesses still rely on paper receipts from suppliers, restaurants, and local vendors.</p>
+        </div>
+        <div class="struggle-item">
+          <h3>🏢 Multiple Locations Across Chicagoland</h3>
+          <p>Tracking expenses from the Loop to Naperville to Evanston — all in different shoeboxes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works-section">
+    <div class="container">
+      <h2>How It Works in Chicago</h2>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <h3>Snap</h3>
+          <p>Take a photo of your receipt at the store in Chicago — Jewel-Osco, Home Depot, Mariano's, your favorite coffee shop on Michigan Ave.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <h3>Send</h3>
+          <p>Text it to TextExpense via WhatsApp. Done in 10 seconds, even while waiting for the L train.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <h3>Organized</h3>
+          <p>Your receipt is extracted, categorized, and ready for Illinois tax season. Download your Excel report anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Use Cases Section -->
+  <section class="scenarios-section">
+    <div class="container">
+      <h2>Who Uses This in Chicago</h2>
+      <div class="scenarios-grid">
+        <div class="scenario-item">
+          <h3>🔨 Contractors Tracking Materials</h3>
+          <p>Snap receipts from Menards, Lowe's, and Chicago lumber yards — all your job site expenses tracked instantly.</p>
+        </div>
+        <div class="scenario-item">
+          <h3>💼 Freelancers at 1871 or WeWork</h3>
+          <p>Track coworking fees, coffee shop receipts, and client meeting expenses across Chicago.</p>
+        </div>
+        <div class="scenario-item">
+          <h3>🏪 Small Business Owners</h3>
+          <p>Retail shops, restaurants, service businesses — track supplies, inventory, and vendor invoices.</p>
+        </div>
+        <div class="scenario-item">
+          <h3>📈 Sales Reps in the Loop</h3>
+          <p>Client lunches at River North, parking in the Loop, tolls on I-90 — all deductible business expenses.</p>
+        </div>
+        <div class="scenario-item">
+          <h3>🚀 Consultants and Agencies</h3>
+          <p>Track expenses across client sites, home office deductions, and professional services.</p>
+        </div>
+        <div class="scenario-item">
+          <h3>🛠️ Service Workers</h3>
+          <p>HVAC techs, plumbers, electricians — track parts, mileage, and parking across Chicagoland.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits for Chicago Section -->
+  <section class="benefits-section">
+    <div class="container">
+      <h2>Why Chicago Needs This More Than Anywhere</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3>☔ Weather-Proof Your Receipts</h3>
+          <p>No more faded receipts from snow, rain, or humidity. Digital copies stored forever in the cloud.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>📋 Illinois + Chicago Tax Compliance</h3>
+          <p>Meet IRS and Illinois Department of Revenue requirements with organized, categorized receipts.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>⚡ Handle Busy Seasons</h3>
+          <p>Summer construction, holiday retail, tax season — stay organized when business is at its peak.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>🚙 Track Parking and Tolls</h3>
+          <p>Every I-Pass charge, parking meter, and CTA fare is a deductible expense. Don't leave money on the table.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>🏙️ Multi-Location Tracking</h3>
+          <p>Work in the Loop, live in Lincoln Park, store in Pilsen — track expenses across all of Chicagoland.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>👥 Perfect for Teams</h3>
+          <p>Multiple employees? Everyone texts receipts to the same WhatsApp number. All expenses in one place.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <h2>Built for Chicago Businesses</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3>📸 Instant Receipt Capture</h3>
+          <p>Snap and send via WhatsApp. Works on any phone, no app download required.</p>
+        </div>
+        <div class="feature-item">
+          <h3>🤖 Auto-Extraction</h3>
+          <p>AI reads merchant name, date, amount, and tax automatically. No manual data entry.</p>
+        </div>
+        <div class="feature-item">
+          <h3>📊 Excel Export</h3>
+          <p>Download organized spreadsheets anytime. Perfect for tax prep or QuickBooks import.</p>
+        </div>
+        <div class="feature-item">
+          <h3>🔒 Secure Storage</h3>
+          <p>All receipts stored securely in the cloud. Access from anywhere, never lose a receipt again.</p>
+        </div>
+        <div class="feature-item">
+          <h3>💰 Tax-Ready Categories</h3>
+          <p>Auto-categorize expenses for Illinois tax deductions. Meals, supplies, mileage, and more.</p>
+        </div>
+        <div class="feature-item">
+          <h3>⚡ 30-Second Setup</h3>
+          <p>No account creation, no app store, no training. Just save a WhatsApp number and start texting receipts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>Chicago Business Owners Ask</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Does this work for Illinois state taxes?</h3>
+          <p>Yes. Our receipt categories align with IRS and Illinois Department of Revenue deduction rules. Your receipts are organized exactly how accountants need them.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I track receipts across Chicago and suburbs?</h3>
+          <p>Absolutely. Whether you're in the Loop, Naperville, Evanston, or Oak Park — snap receipts anywhere and they're all organized in one place.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Will this help with both IL and city tax deductions?</h3>
+          <p>Yes. Chicago businesses face Illinois state taxes plus city taxes. Every deductible expense matters, and we help you track them all.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can my team use this?</h3>
+          <p>Yes. Multiple team members can text receipts to the same WhatsApp number. All expenses flow into your account automatically.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is WhatsApp commonly used in Chicago?</h3>
+          <p>WhatsApp has 2+ billion users worldwide and is growing fast in the US. If you have a smartphone, you can use WhatsApp — no special setup needed.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if I lose my phone in a Chicago snowstorm?</h3>
+          <p>All your receipts are safely stored in the cloud, not on your phone. Log in from any device and access your complete receipt history.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta-section">
+    <div class="container">
+      <h2>Chicago Workers Deserve Simple Bookkeeping</h2>
+      <p>Start tracking receipts in seconds. No app download, no training, no hassle.</p>
+      <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 TextExpense. All rights reserved.</p>
+      <p>
+        <a href="/privacy.html">Privacy Policy</a> |
+        <a href="/terms.html">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
