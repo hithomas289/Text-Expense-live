@@ -7,12 +7,12 @@
   <meta name="description" content="Expense Tracking for Small Businesses - Know where every dollar goes without expensive software. Send receipt photos via WhatsApp and get organized Excel reports. Built for small businesses.">
 
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEMBHFSE8"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-VEMBHFSE8');
+    gtag('config', 'G-HMSDHWE3BS');
   </script>
 
   <style>
@@ -635,5 +635,44 @@
     </div>
   </footer>
 
+
+  <!-- WhatsApp Conversion Tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const whatsappLinks = document.querySelectorAll('a[href*="wa.me"]');
+
+      whatsappLinks.forEach(function(link, index) {
+        link.addEventListener('click', function(e) {
+          let buttonText = this.textContent.trim();
+          let buttonLocation = 'unknown';
+
+          // Detect button location based on parent sections
+          if (this.closest('.hero')) {
+            buttonLocation = 'hero';
+          } else if (this.closest('.final-cta-section')) {
+            buttonLocation = 'footer_cta';
+          } else if (this.closest('footer')) {
+            buttonLocation = 'footer';
+          } else if (this.closest('.article-cta')) {
+            buttonLocation = 'article_cta';
+          } else if (this.closest('.scenarios-section')) {
+            buttonLocation = 'scenarios';
+          } else if (this.closest('.benefits-section')) {
+            buttonLocation = 'benefits';
+          }
+
+          // Send GA4 event
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'whatsapp_click', {
+              'button_location': buttonLocation,
+              'button_text': buttonText,
+              'page_url': window.location.href,
+              'page_type': document.querySelector('meta[property="og:type"]')?.getAttribute('content') || 'unknown'
+            });
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

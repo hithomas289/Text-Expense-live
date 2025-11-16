@@ -963,5 +963,44 @@
             <p>&copy; 2025 TextExpense. All rights reserved.</p>
         </div>
     </footer>
+
+  <!-- WhatsApp Conversion Tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const whatsappLinks = document.querySelectorAll('a[href*="wa.me"]');
+
+      whatsappLinks.forEach(function(link, index) {
+        link.addEventListener('click', function(e) {
+          let buttonText = this.textContent.trim();
+          let buttonLocation = 'unknown';
+
+          // Detect button location based on parent sections
+          if (this.closest('.hero')) {
+            buttonLocation = 'hero';
+          } else if (this.closest('.final-cta-section')) {
+            buttonLocation = 'footer_cta';
+          } else if (this.closest('footer')) {
+            buttonLocation = 'footer';
+          } else if (this.closest('.article-cta')) {
+            buttonLocation = 'article_cta';
+          } else if (this.closest('.scenarios-section')) {
+            buttonLocation = 'scenarios';
+          } else if (this.closest('.benefits-section')) {
+            buttonLocation = 'benefits';
+          }
+
+          // Send GA4 event
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'whatsapp_click', {
+              'button_location': buttonLocation,
+              'button_text': buttonText,
+              'page_url': window.location.href,
+              'page_type': document.querySelector('meta[property="og:type"]')?.getAttribute('content') || 'unknown'
+            });
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
