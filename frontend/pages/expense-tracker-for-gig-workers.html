@@ -311,6 +311,26 @@
             color: #ccc;
         }
 
+        .qr-code-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .qr-code-container p {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+
+        .qr-code-container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: white;
+            padding: 10px;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             section {
@@ -469,6 +489,10 @@
             <p>Track expenses across all your platforms. Text receipt photos via WhatsApp, expenses get organized automatically. Driving for Uber, delivering for DoorDash, working TaskRabbit - all costs documented. Every platform, one tracking system.</p>
             <div class="hero-cta">
                 <a href="https://wa.me/17654792054?text=hi" class="cta-button">Track first expense free</a>
+                <div class="qr-code-container">
+                    <p>Or scan to start:</p>
+                    <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+                </div>
             </div>
         </div>
     </section>
@@ -736,6 +760,10 @@
             <h2>Start Tracking</h2>
             <p>Try it with one gig expense. Text a receipt photo via WhatsApp, see how organization works. Completely free, no credit card.</p>
             <a href="https://wa.me/17654792054?text=hi" class="cta-button">Track first expense free</a>
+            <div class="qr-code-container">
+                <p>Or scan to start:</p>
+                <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+            </div>
         </div>
     </section>
 
