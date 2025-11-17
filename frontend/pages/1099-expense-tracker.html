@@ -397,7 +397,28 @@
         }
 
         /* Extra small mobile (iPhone SE, etc.) */
-        @media (max-width: 375px) {
+        
+    .qr-code-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .qr-code-container p {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    .qr-code-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background: white;
+      padding: 10px;
+    }
+
+@media (max-width: 375px) {
             .container {
                 padding: 0 15px;
             }
@@ -458,6 +479,10 @@
                     <li><a href="/#pricing">Pricing</a></li>
                 </ul>
                 <a href="https://wa.me/17654792054?text=hi" class="cta-button">Track First Expense Free</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
             </nav>
         </div>
     </header>
@@ -469,6 +494,10 @@
             <p>Organize Schedule C expenses without accounting software. Text receipt photos via WhatsApp, get Excel reports organized by Schedule C categories. No accounting software to learn, no spreadsheets to maintain. Just documented expenses ready for tax filing.</p>
             <div class="hero-cta">
                 <a href="https://wa.me/17654792054?text=hi" class="cta-button">Track First Expense Free</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
             </div>
         </div>
     </section>
@@ -633,6 +662,10 @@
             <h2>Start Tracking</h2>
             <p>Try it with one expense. Text a receipt photo via WhatsApp, see how Schedule C categorization works. Free, no credit card needed.</p>
             <a href="https://wa.me/17654792054?text=hi" class="cta-button">Track First Expense Free</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
         </div>
     </section>
 

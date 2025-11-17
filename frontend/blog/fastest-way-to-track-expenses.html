@@ -535,7 +535,28 @@
         }
 
         /* Mobile Responsive */
-        @media (max-width: 768px) {
+        
+    .qr-code-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .qr-code-container p {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    .qr-code-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background: white;
+      padding: 10px;
+    }
+
+@media (max-width: 768px) {
             .article-title {
                 font-size: 1.8rem;
             }
@@ -845,6 +866,10 @@ Sometimes you don't need full tracking-you just need to keep the receipt. Warran
             <h3>Try 3 Receipts Completely Free - No Credit Card</h3>
             <p>Text a receipt, get organized expense data in 30 seconds. See how fast it really is.</p>
             <a href="https://wa.me/17654792054?text=hi" class="cta-button">Try 3 Receipts Free</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
         </div>
 
         <!-- Article Footer -->
@@ -906,6 +931,10 @@ Sometimes you don't need full tracking-you just need to keep the receipt. Warran
             <h2>Stop Wasting Time on Expense Tracking</h2>
             <p>30 seconds from receipt photo to organized data in Excel. No apps to learn.</p>
             <a href="https://wa.me/17654792054?text=hi" class="cta-button">Try Your First 3 Receipts Free</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
         </div>
     </section>
 

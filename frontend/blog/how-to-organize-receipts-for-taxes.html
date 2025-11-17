@@ -544,7 +544,28 @@
         }
 
         /* Mobile Responsive */
-        @media (max-width: 768px) {
+        
+    .qr-code-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .qr-code-container p {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    .qr-code-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background: white;
+      padding: 10px;
+    }
+
+@media (max-width: 768px) {
             .article-title {
                 font-size: 1.8rem;
             }
@@ -882,6 +903,10 @@
             <h3>Try 3 Tax Receipts Free - No Credit Card</h3>
             <p>Start organizing your tax receipts today. 30 seconds per receipt. See the system before you commit.</p>
             <a href="https://wa.me/17654792054?text=hi" class="cta-button">Try 3 Receipts Free</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
         </div>
 
         <!-- Article Footer -->
@@ -937,6 +962,10 @@
             <h2>Stop Losing Money to Disorganized Tax Records</h2>
             <p>Text receipts throughout the year. Get every deduction you're entitled to.</p>
             <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Tracking Tax Receipts</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
         </div>
     </section>
 

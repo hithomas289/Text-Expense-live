@@ -535,7 +535,28 @@
         }
 
         /* Mobile Responsive */
-        @media (max-width: 768px) {
+        
+    .qr-code-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .qr-code-container p {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    .qr-code-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background: white;
+      padding: 10px;
+    }
+
+@media (max-width: 768px) {
             .article-title {
                 font-size: 1.8rem;
             }
@@ -809,6 +830,10 @@ With digital storage, why delete? Keep everything and never worry about retentio
             <h3>Try Storing 3 Receipts Free - No Credit Card</h3>
             <p>Store receipts digitally. Never worry about retention periods again.</p>
             <a href="https://wa.me/17654792054?text=hi" class="cta-button">Try Storing 3 Receipts Free</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
         </div>
 
         <!-- Article Footer -->
@@ -870,6 +895,10 @@ With digital storage, why delete? Keep everything and never worry about retentio
             <h2>Stop Worrying About Retention Periods</h2>
             <p>Store receipts digitally. Keep them as long as you want.</p>
             <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Storing Receipts</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
         </div>
     </section>
 

@@ -535,7 +535,28 @@
         }
 
         /* Mobile Responsive */
-        @media (max-width: 768px) {
+        
+    .qr-code-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .qr-code-container p {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    .qr-code-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background: white;
+      padding: 10px;
+    }
+
+@media (max-width: 768px) {
             .article-title {
                 font-size: 1.8rem;
             }
@@ -882,6 +903,10 @@
             <h3>Try 3 Travel Receipts Free</h3>
             <p>Track flights, hotels, meals, taxis instantly. No lost receipts, no end-of-trip stress.</p>
             <a href="https://wa.me/17654792054?text=hi" class="cta-button">Try 3 Receipts Free</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
         </div>
 
         <!-- Article Footer -->
@@ -943,6 +968,10 @@
             <h2>Stop Losing Travel Receipts</h2>
             <p>Track every expense instantly while traveling. Submit reports the day you land.</p>
             <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Tracking Travel Expenses Free</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
         </div>
     </section>
 
