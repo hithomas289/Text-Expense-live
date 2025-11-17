@@ -1032,6 +1032,27 @@
             color: #ccc;
         }
 
+        /* QR Code Container */
+        .qr-code-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .qr-code-container p {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+
+        .qr-code-container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: white;
+            padding: 10px;
+        }
+
         /* Mobile responsive adjustments for footer */
         @media (max-width: 768px) {
             .footer-cta h2 {
@@ -1377,6 +1398,11 @@
                 font-size: 14px;
                 padding: 10px 15px;
             }
+
+            .qr-code-container img {
+                width: 150px;
+                height: 150px;
+            }
         }
 
         /* Extra Small Mobile */
@@ -1534,6 +1560,10 @@
                         📱 Start on WhatsApp - It's Free
                     </a>
                     <p style="color: var(--gray); font-size: 16px;">✓ No app download</p>
+                    <div class="qr-code-container">
+                        <p>Or scan to start:</p>
+                        <img src="/qrcode.png" alt="WhatsApp QR Code">
+                    </div>
                 </div>
 
                 <div class="trust-indicators">
@@ -1991,6 +2021,10 @@
                     <a href="https://wa.me/17654792054?text=hi" class="cta-button">📱 Get Started Now</a>
                     <div class="tax-warning">
                         🚨 Tax season is coming - Don't scramble for receipts again
+                    </div>
+                    <div class="qr-code-container">
+                        <p>Or scan to start:</p>
+                        <img src="/qrcode.png" alt="WhatsApp QR Code">
                     </div>
                 </div>
             </div>
