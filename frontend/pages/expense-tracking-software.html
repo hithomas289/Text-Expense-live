@@ -397,7 +397,28 @@
         }
 
         /* Extra small mobile (iPhone SE, etc.) */
-        @media (max-width: 375px) {
+        
+    .qr-code-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .qr-code-container p {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    .qr-code-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background: white;
+      padding: 10px;
+    }
+
+@media (max-width: 375px) {
             .container {
                 padding: 0 15px;
             }
@@ -458,6 +479,10 @@
                     <li><a href="/#pricing">Pricing</a></li>
                 </ul>
                 <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
             </nav>
         </div>
     </header>
@@ -469,6 +494,10 @@
             <p>Track expenses without downloading software. TextExpense is expense tracking software that works entirely through WhatsApp. No installation, no desktop program, no mobile app required.</p>
             <div class="hero-cta">
                 <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
             </div>
         </div>
     </section>
@@ -621,6 +650,10 @@
             <h2>Try expense tracking software</h2>
             <p>Start using expense tracking software that actually gets used. Text your first receipt via WhatsApp right now - completely free, no download required.</p>
             <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
         </div>
     </section>
 

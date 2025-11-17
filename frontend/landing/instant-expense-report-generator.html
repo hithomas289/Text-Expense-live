@@ -257,7 +257,28 @@
       color: var(--gray);
     }
 
-    @media (max-width: 768px) {
+    
+    .qr-code-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .qr-code-container p {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    .qr-code-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background: white;
+      padding: 10px;
+    }
+
+@media (max-width: 768px) {
       .hero { padding: 80px 20px 60px; }
       .hero h1 { font-size: 32px; }
       section h2 { font-size: 28px; }
@@ -275,6 +296,10 @@
     <h1>Instant Expense Report Generator: Reports Generated Instantly</h1>
     <p class="subtitle">No apps. No spreadsheets. Just send receipts on WhatsApp and get instant organization + clean Excel exports.</p>
     <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
     <p class="supporting">WhatsApp → OCR → Organized → Excel</p>
   </div>
 </section>
@@ -402,6 +427,10 @@
     <h2>Snap. Send. Organized.</h2>
     <p>Start tracking for free today.</p>
     <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
   </div>
 </section>
 
@@ -415,6 +444,10 @@
     </div>
     <div style="margin-top: 20px;">
       <a href="https://wa.me/17654792054?text=hi" class="cta-primary" style="background: var(--primary); color: white; padding: 15px 35px; font-size: 16px; font-weight: 600; border: none; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-block; box-shadow: var(--shadow); transition: all 0.3s ease;">Start Free - Track 3 Receipts</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
     </div>
     <p style="margin-top: 30px; color: var(--gray); font-size: 14px;">&copy; 2025 TextExpense. All rights reserved.</p>
   </div>

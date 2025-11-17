@@ -396,7 +396,28 @@
       font-size: 14px;
     }
 
-    @media (max-width: 768px) {
+    
+    .qr-code-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .qr-code-container p {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    .qr-code-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background: white;
+      padding: 10px;
+    }
+
+@media (max-width: 768px) {
       .hero h1 {
         font-size: 32px;
       }
@@ -430,6 +451,10 @@
       <h1>Track Client Billable Expenses Accurately</h1>
       <p class="subtitle">Never lose money on unbilled client expenses</p>
       <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
     </div>
   </section>
 
@@ -618,6 +643,10 @@
       <h2>Ready to Get Organized?</h2>
       <p>Start tracking receipts via WhatsApp today. First 3 receipts are free.</p>
       <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free Now</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
     </div>
   </section>
 
@@ -630,6 +659,10 @@
       </div>
       <div class="footer-cta">
         <a href="https://wa.me/17654792054?text=hi" class="cta-primary">Start Free - Track 3 Receipts</a>
+      <div class="qr-code-container">
+        <p>Or scan to start:</p>
+        <img src="/qrcode.png" alt="WhatsApp QR Code - Start tracking receipts instantly">
+      </div>
       </div>
       <p>&copy; 2025 TextExpense. All rights reserved.</p>
     </div>
