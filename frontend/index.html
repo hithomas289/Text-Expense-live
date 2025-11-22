@@ -1509,7 +1509,7 @@
         }
 
     </style>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics 4 (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -1517,7 +1517,30 @@
         gtag('js', new Date());
 
         gtag('config', 'G-HMSDHWE3BS');
-     </script>
+    </script>
+
+    <!-- Google Ads Conversion Tracking -->
+    <!-- TODO: Replace AW-XXXXXXXXXX with your actual Google Ads Conversion ID -->
+    <script>
+        gtag('config', 'AW-XXXXXXXXXX');
+
+        // Helper function to delay opening a URL until a gtag event is sent
+        function gtagSendEvent(url) {
+            var callback = function () {
+                if (typeof url === 'string') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-XXXXXXXXXX/YYYYYYYYYYYY',  // TODO: Replace with your Conversion ID/Label
+                'value': 1.0,
+                'currency': 'USD',
+                'event_callback': callback,
+                'event_timeout': 2000
+            });
+            return false;
+        }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -2147,12 +2170,16 @@
             
             whatsappLinks.forEach(function(link, index) {
                 link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent immediate navigation
                     console.log('WhatsApp button clicked:', index);
-                    
+
+                    // Get the destination URL
+                    const destinationUrl = this.href;
+
                     // Get button details
                     let buttonText = this.textContent.trim();
                     let buttonLocation = 'unknown';
-                    
+
                     // Identify which section based on your HTML structure
                     if (this.closest('.hero')) {
                         buttonLocation = 'hero';
@@ -2163,12 +2190,12 @@
                     } else if (this.closest('header')) {
                         buttonLocation = 'header';
                     }
-                    
+
                     console.log('Sending GA4 event - whatsapp_click:', {
                         button_location: buttonLocation,
                         button_text: buttonText
                     });
-                    
+
                     // Send to GA4
                     if (typeof gtag !== 'undefined') {
                         gtag('event', 'whatsapp_click', {
@@ -2176,8 +2203,12 @@
                             'button_text': buttonText,
                             'page_url': window.location.href
                         });
+
+                        // Send Google Ads Conversion Event with delayed navigation
+                        gtagSendEvent(destinationUrl);
                     } else {
-                        console.log('gtag not found');
+                        console.log('gtag not found, navigating immediately');
+                        window.location.href = destinationUrl;
                     }
                 });
             });
