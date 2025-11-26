@@ -2165,18 +2165,26 @@
                         buttonLocation = 'header';
                     }
                     
-                    console.log('Sending GA4 event - whatsapp_click:', {
+                    console.log('Sending events - whatsapp_click:', {
                         button_location: buttonLocation,
                         button_text: buttonText
                     });
                     
-                    // Send to GA4
+                     // Send to GA4 and Google Ads
                     if (typeof gtag !== 'undefined') {
                         gtag('event', 'whatsapp_click', {
                             'button_location': buttonLocation,
                             'button_text': buttonText,
                             'page_url': window.location.href
                         });
+                    // Google Ads conversion (new tracking)
+                        gtag('event', 'conversion', {
+                            'send_to': 'AW-17761120400/7b7LCMabqMcbEJDhlJVC',
+                            'value': 4.99,
+                            'currency': 'USD'
+                        });
+                        
+                        console.log('Sent to both GA4 and Google Ads');
                     } else {
                         console.log('gtag not found');
                     }
