@@ -32,10 +32,22 @@ app.use(helmet({
         "'unsafe-hashes'", // Allow inline event handlers (onclick, etc.)
         "https://www.googletagmanager.com", // Google Analytics
         "https://www.google-analytics.com", // Google Analytics
+        "https://www.googleadservices.com",      // Google Ads
+        "https://googleads.g.doubleclick.net",   // Google Ads
         "https://js.stripe.com", // Stripe checkout
         "https://checkout.stripe.com" // Stripe checkout
       ],
-      "script-src-attr": ["'unsafe-inline'"], // Allow inline event handlers
+      "script-src-attr": ["'unsafe-inline'"],    // Allow inline event handlers
+      "script-src-elem": [
+        "'self'",
+        "'unsafe-inline'",
+        "https://www.googletagmanager.com",
+        "https://www.google-analytics.com",
+        "https://www.googleadservices.com",
+        "https://googleads.g.doubleclick.net",
+        "https://js.stripe.com",
+        "https://checkout.stripe.com"
+      ],
       styleSrc: ["'self'", "'unsafe-inline'"], // Allow inline styles
       imgSrc: ["'self'", "data:", "https:"], // Allow images from anywhere
       connectSrc: [
@@ -45,6 +57,9 @@ app.use(helmet({
         "https://*.google-analytics.com", // Google Analytics wildcard
         "https://analytics.google.com", // Google Analytics
         "https://stats.g.doubleclick.net", // Google Analytics
+        "https://www.google.com",                 // Google Ads
+        "https://www.googleadservices.com",       // Google Ads
+        "https://googleads.g.doubleclick.net",    // Google Ads
         "https://api.stripe.com", // Stripe API
         "https://checkout.stripe.com" // Stripe checkout
       ],
