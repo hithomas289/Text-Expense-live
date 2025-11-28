@@ -1502,7 +1502,7 @@ Click the button below for secure checkout powered by Stripe.`;
           phoneNumber,
           paymentMessage,
           result.checkoutUrl,
-          `Pay ${proPrice}/month`
+          `Pay Now`
         );
 
       } else {
