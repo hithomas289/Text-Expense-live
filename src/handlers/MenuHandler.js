@@ -1390,7 +1390,8 @@ Explore more options from the main menu!`;
       const planName = planNames[planType];
       const price = planPrices[planType];
       const limit = planLimits[planType];
-      const priceFormatted = `${currencySymbol}${(price / 100).toFixed(2)}`;
+      const { formatPrice } = require('../utils/priceFormatter');
+      const priceFormatted = formatPrice(price, currencySymbol || '$');
 
       await this.whatsAppService.sendMessage(phoneNumber,
         `💎 *CREATING PAYMENT LINK...*
@@ -1419,7 +1420,7 @@ Click the button below for secure checkout powered by Stripe.`;
           phoneNumber,
           paymentMessage,
           result.checkoutUrl,
-          `Pay ${priceFormatted}/month`,
+          `Pay Now`,
           headerText
         );
 
