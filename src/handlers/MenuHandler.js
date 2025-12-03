@@ -452,22 +452,30 @@ Go ahead and send your message!`);
       let planInfo;
 
       if (hasLiteUpgrade) {
-        // Check if Lite cycle is still valid
+        // Check if Lite cycle is still valid AND has remaining receipts
         const liteCycleEnd = user.metadata.liteProUpgrade?.liteBillingCycleEnd;
         const isLiteCycleValid = liteCycleEnd && new Date() < new Date(liteCycleEnd);
+        const liteUsed = user.metadata.liteProUpgrade?.liteReceiptsUsed || 0;
+        const liteRemaining = Math.max(0, liteLimit - liteUsed);
 
-        if (isLiteCycleValid) {
-          // Lite receipts still available
-          const liteUsed = user.metadata.liteProUpgrade?.liteReceiptsUsed || 0;
-          const liteRemaining = Math.max(0, liteLimit - liteUsed);
-          const proUsed = Math.max(0, remainingReceipts - liteRemaining);
-          const proRemaining = remainingReceipts - liteRemaining;
+        // Only show Lite breakdown if cycle is valid AND there are remaining receipts
+        if (isLiteCycleValid && liteRemaining > 0) {
+          // Calculate total used in current billing cycle (from planLimits)
+          const effectiveLimit = proLimit + liteRemaining;  // 25 + 6 = 31 (max possible)
+          const totalUsed = effectiveLimit - remainingReceipts;  // How many used so far
+
+          // Determine how many were used from each bucket
+          // Pro receipts are used first, then Lite carryover
+          const proUsed = Math.min(totalUsed, proLimit);  // Max 25 can be used from Pro
+          const liteUsedFromCarryover = Math.max(0, totalUsed - proLimit);  // Any usage beyond 25 comes from Lite
+          const liteActualRemaining = liteRemaining - liteUsedFromCarryover;
+          const proRemaining = proLimit - proUsed;
 
           usageDisplay = `📸 *${remainingReceipts} total remaining*`;
-          planInfo = `💡 Lite carryover: ${liteRemaining}/${liteLimit} remaining
-🚀 Pro receipts: ${proRemaining}/${proLimit} remaining`;
+          planInfo = `💡 Lite carryover: ${liteActualRemaining}/${liteLimit} remaining
+🚀 Pro receipts: ${proUsed}/${proLimit} used`;
         } else {
-          // Lite cycle expired, show only Pro
+          // Lite expired or fully used - show only Pro
           const usedReceipts = Math.max(0, proLimit - remainingReceipts);
           usageDisplay = `📸 *${remainingReceipts} remaining* (${usedReceipts}/${proLimit} used)`;
           planInfo = `🚀 *PRO PLAN:* ${proLimit} receipts/month`;
@@ -2212,9 +2220,27 @@ No active subscription found. Please try upgrading from the main menu.`);
         }
       );
 
+      // Query actual LITE receipts from database (not the stale counter)
+      const { sequelize } = require('../config/database');
+      const liteLimit = parseInt(process.env.LITE_RECEIPT_LIMIT || '6');
+
+      const liteCount = await sequelize.query(`
+        SELECT COUNT(*) as count
+        FROM expenses
+        WHERE "userId" = :userId
+          AND "planType" = 'lite'
+          AND "status" != 'deleted'
+      `, {
+        replacements: { userId: user.id },
+        type: sequelize.QueryTypes.SELECT
+      });
+
+      // Cap at lite limit to ensure it never exceeds 6
+      const actualLiteUsed = Math.min(parseInt(liteCount[0]?.count) || 0, liteLimit);
+
       // Store LITE upgrade info in user metadata
       const liteUpgradeInfo = {
-        liteReceiptsUsed: user.receiptsUsedThisMonth || 0,
+        liteReceiptsUsed: actualLiteUsed,
         liteBillingCycleEnd: user.billingCycleEnd,
         upgradedAt: new Date().toISOString(),
         previousPlanType: 'lite'
@@ -2235,7 +2261,7 @@ No active subscription found. Please try upgrading from the main menu.`);
       const currencySymbol = process.env.CURRENCY_SYMBOL || '₹';
       const proPrice = `${currencySymbol}${(parseInt(process.env.PRO_PLAN_PRICE) / 100).toFixed(2)}`;
       const proLimit = parseInt(process.env.PRO_RECEIPT_LIMIT);
-      const liteLimit = parseInt(process.env.LITE_RECEIPT_LIMIT);
+      // liteLimit already declared above at line 2225
       const liteUsed = liteUpgradeInfo.liteReceiptsUsed;
 
       await this.whatsAppService.sendMessage(phoneNumber,
