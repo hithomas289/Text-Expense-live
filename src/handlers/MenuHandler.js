@@ -437,17 +437,53 @@ Go ahead and send your message!`);
     if (isPro) {
       // PRO user welcome - dynamic receipt limit from env vars
       const proLimit = parseInt(process.env.PRO_RECEIPT_LIMIT) || 25;
-      const remainingReceipts = planLimits.remainingReceipts || 0;
-      const usedReceipts = proLimit - remainingReceipts;
+      const liteLimit = parseInt(process.env.LITE_RECEIPT_LIMIT) || 6;
+      const remainingReceipts = Math.max(0, planLimits.remainingReceipts || 0);
 
       // Get subscription info for status and next billing
       const subscriptionInfo = await this.getSubscriptionInfo(phoneNumber);
 
+      // Check if user upgraded from Lite to Pro
+      const { User } = require('../models/database/indexV2');
+      const user = await User.findByPhoneNumber(phoneNumber);
+      const hasLiteUpgrade = user?.metadata?.liteProUpgrade;
+
+      let usageDisplay;
+      let planInfo;
+
+      if (hasLiteUpgrade) {
+        // Check if Lite cycle is still valid
+        const liteCycleEnd = user.metadata.liteProUpgrade?.liteBillingCycleEnd;
+        const isLiteCycleValid = liteCycleEnd && new Date() < new Date(liteCycleEnd);
+
+        if (isLiteCycleValid) {
+          // Lite receipts still available
+          const liteUsed = user.metadata.liteProUpgrade?.liteReceiptsUsed || 0;
+          const liteRemaining = Math.max(0, liteLimit - liteUsed);
+          const proUsed = Math.max(0, remainingReceipts - liteRemaining);
+          const proRemaining = remainingReceipts - liteRemaining;
+
+          usageDisplay = `📸 *${remainingReceipts} total remaining*`;
+          planInfo = `💡 Lite carryover: ${liteRemaining}/${liteLimit} remaining
+🚀 Pro receipts: ${proRemaining}/${proLimit} remaining`;
+        } else {
+          // Lite cycle expired, show only Pro
+          const usedReceipts = Math.max(0, proLimit - remainingReceipts);
+          usageDisplay = `📸 *${remainingReceipts} remaining* (${usedReceipts}/${proLimit} used)`;
+          planInfo = `🚀 *PRO PLAN:* ${proLimit} receipts/month`;
+        }
+      } else {
+        // Regular Pro user - show only Pro usage
+        const usedReceipts = Math.max(0, proLimit - remainingReceipts);
+        usageDisplay = `📸 *${remainingReceipts} remaining* (${usedReceipts}/${proLimit} used)`;
+        planInfo = `🚀 *PRO PLAN:* ${proLimit} receipts/month`;
+      }
+
       const proWelcomeMessage = `👋 *Welcome back to TextExpense!*
 
-🚀 *PRO PLAN STATUS:*
+${planInfo}
 
-📸 *${remainingReceipts} remaining* (${usedReceipts}/${proLimit} used)
+${usageDisplay}
 
 📅 *Resets on ${subscriptionInfo.nextBilling}*
 
@@ -463,8 +499,8 @@ Go ahead and send your message!`);
     } else if (isLite) {
       // LITE user welcome - dynamic receipt limit from env vars
       const liteLimit = parseInt(process.env.LITE_RECEIPT_LIMIT) || 6;
-      const remainingReceipts = planLimits.remainingReceipts || 0;
-      const usedReceipts = liteLimit - remainingReceipts;
+      const remainingReceipts = Math.max(0, planLimits.remainingReceipts || 0);
+      const usedReceipts = Math.max(0, liteLimit - remainingReceipts);
 
       // Get subscription info for status and next billing
       const subscriptionInfo = await this.getSubscriptionInfo(phoneNumber);
