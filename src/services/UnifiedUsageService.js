@@ -19,9 +19,9 @@ class UnifiedUsageService {
     const monthEnd = new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0, 23, 59, 59);
 
     try {
-      // Get user's plan info
+      // Get user's plan info including billing cycle dates
       const [userInfo] = await sequelize.query(`
-        SELECT "planType", "planUpgradedAt", "createdAt"
+        SELECT "planType", "planUpgradedAt", "createdAt", "billingCycleStart", "billingCycleEnd"
         FROM users
         WHERE id = :userId
       `, {
@@ -79,19 +79,30 @@ class UnifiedUsageService {
           currentPlanTotal: 0  // Always 0 for FREE plan
         };
       } else {
-        // Paid plans (lite/pro) - count THIS MONTH with breakdown by planType
-        console.log(`📅 Paid user (${userInfo.planType}) - counting receipts THIS MONTH with breakdown`);
+        // Paid plans (lite/pro) - count receipts in CURRENT BILLING CYCLE with breakdown by planType
+        // Use billingCycleStart if available (Stripe), otherwise fall back to calendar month
+        let cycleStart = monthStart;
+        let cycleEnd = monthEnd;
+
+        if (userInfo.billingCycleStart) {
+          cycleStart = new Date(userInfo.billingCycleStart);
+          // For current cycle, use "now" as end date (don't wait for cycle to end)
+          cycleEnd = new Date();
+          console.log(`📅 Paid user (${userInfo.planType}) - using BILLING CYCLE: ${cycleStart.toISOString()} to ${cycleEnd.toISOString()}`);
+        } else {
+          console.log(`📅 Paid user (${userInfo.planType}) - using CALENDAR MONTH: ${cycleStart.toISOString()} to ${cycleEnd.toISOString()} (no billingCycleStart set)`);
+        }
 
         // Get breakdown by planType for expenses
         const expensesByPlan = await sequelize.query(`
           SELECT "planType", COUNT(*) as count
           FROM expenses
           WHERE "userId" = :userId
-          AND "createdAt" >= :monthStart
-          AND "createdAt" <= :monthEnd
+          AND "createdAt" >= :cycleStart
+          AND "createdAt" <= :cycleEnd
           GROUP BY "planType"
         `, {
-          replacements: { userId, monthStart, monthEnd },
+          replacements: { userId, cycleStart, cycleEnd },
           type: sequelize.QueryTypes.SELECT
         });
 
@@ -100,12 +111,12 @@ class UnifiedUsageService {
           SELECT "planType", COUNT(*) as count
           FROM saved_receipts
           WHERE "userId" = :userId
-          AND "createdAt" >= :monthStart
-          AND "createdAt" <= :monthEnd
+          AND "createdAt" >= :cycleStart
+          AND "createdAt" <= :cycleEnd
           AND "isActive" = true
           GROUP BY "planType"
         `, {
-          replacements: { userId, monthStart, monthEnd },
+          replacements: { userId, cycleStart, cycleEnd },
           type: sequelize.QueryTypes.SELECT
         });
 
@@ -137,7 +148,7 @@ class UnifiedUsageService {
 
         const grandTotal = totalExpenses + totalSaved;
 
-        console.log(`📊 Usage calculation THIS MONTH: ${totalExpenses} expenses + ${totalSaved} saved = ${grandTotal} total`);
+        console.log(`📊 Usage calculation for cycle: ${totalExpenses} expenses + ${totalSaved} saved = ${grandTotal} total`);
         console.log(`📊 Breakdown by plan:`, JSON.stringify(byPlan));
 
         // For "remaining" calculation, count ONLY current plan's receipts
@@ -158,7 +169,7 @@ class UnifiedUsageService {
           expenses: totalExpenses,
           saved: totalSaved,
           total: grandTotal,
-          monthStart,
+          monthStart: cycleStart,  // Return actual cycle start used
           byPlan,
           currentPlanTotal: totalCurrentPlanUsage  // Includes unknown receipts
         };
