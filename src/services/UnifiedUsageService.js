@@ -340,21 +340,9 @@ class UnifiedUsageService {
         if (now < liteCycleEnd) {
           const liteLimit = parseInt(process.env.LITE_RECEIPT_LIMIT) || 6;
 
-          // CRITICAL FIX: Query actual database for Lite receipt count instead of unreliable metadata counter
-          const currentMonth = new Date();
-          const monthStart = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), 1);
-          const monthEnd = new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0, 23, 59, 59);
-
-          const [liteCountResult] = await sequelize.query(`
-            SELECT
-              (SELECT COUNT(*) FROM expenses WHERE "userId" = :userId AND "planType" = 'lite' AND "createdAt" >= :monthStart AND "createdAt" <= :monthEnd) +
-              (SELECT COUNT(*) FROM saved_receipts WHERE "userId" = :userId AND "planType" = 'lite' AND "createdAt" >= :monthStart AND "createdAt" <= :monthEnd AND "isActive" = true) as count
-          `, {
-            replacements: { userId, monthStart, monthEnd },
-            type: sequelize.QueryTypes.SELECT
-          });
-
-          const liteUsed = parseInt(liteCountResult.count) || 0;
+          // Use metadata liteReceiptsUsed if available (most accurate)
+          // This counter was set at upgrade time and represents actual Lite usage
+          const liteUsed = upgrade.liteReceiptsUsed || 0;
           const liteRemaining = Math.max(0, liteLimit - liteUsed);
 
           console.log(`🔄 Lite → Pro upgrade detected: ${liteRemaining} Lite receipts remaining until ${liteCycleEnd.toISOString()} (${liteUsed}/${liteLimit} used from database)`);
