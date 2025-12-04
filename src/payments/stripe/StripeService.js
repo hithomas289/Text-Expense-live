@@ -79,11 +79,11 @@ class StripeService {
         }
       }
 
-      // Use dynamic currency conversion based on user's phone number and plan type
+      // Get Stripe pricing in USD (all payments are in USD)
       const CurrencyConversionService = require('../../services/CurrencyConversionService');
       const currencyService = new CurrencyConversionService();
       console.log(`🔵 Getting Stripe pricing...`);
-      const stripePricing = currencyService.getStripePricing(phoneNumber, planType);
+      const stripePricing = currencyService.getStripePricing(planType);
       console.log(`🔵 Stripe pricing:`, stripePricing);
 
       const planNames = {
