@@ -178,7 +178,7 @@ class CurrencyConversionService {
   /*
    * Get Stripe-compatible pricing for checkout
    */
-  getStripePricing(phoneNumber, planType = 'lite') {
+  getStripePricing(planType = 'lite') {
     // Get the price directly in USD cents from environment variables
     const priceInCents = planType === 'pro' ? 
       process.env.PRO_PLAN_PRICE : 
@@ -205,12 +205,11 @@ class CurrencyConversionService {
       currency: 'usd',
       amount: usdPriceInCents,
       displayAmount: `$${usdPrice.toFixed(2)}/mo`,
-      country: this.getCountryFromPhone(phoneNumber),
       priceData: {
         currency: 'usd',
         product_data: {
           name: planNames[planType],
-          description: `${planDescriptions[planType]} - ${this.getCountryFromPhone(phoneNumber)}`
+          description: planDescriptions[planType]
         },
         unit_amount: usdPriceInCents, // Already in cents
         recurring: {
