@@ -113,7 +113,7 @@ class MenuHandler {
         nextBilling = `Expires: ${nextBilling}`;
       }
 
-      const currencySymbol = process.env.CURRENCY_SYMBOL;
+      const currencySymbol = process.env.CURRENCY_SYMBOL || '$';
       const price = planPrice === 0 ? 'Free' : `${currencySymbol}${(planPrice / 100).toFixed(2)}/mo`;
 
       return {
