@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags - PLACEHOLDERS -->
+    <title>How a Shoebox Cost Me $1,847 in Tax Deductions | TextExpense</title>
+    <meta name="description" content="I lost $1,847 in tax deductions because I couldn't find my receipts. Here's the math that hurts and what actually worked to fix my broken system.">
+    <meta name="keywords" content="tax deductions, lost receipts, self-employed taxes, freelancer taxes, receipt organization, IRS documentation, business expenses">
+    <meta name="author" content="TextExpense Team">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="How a Shoebox Cost Me $1,847 in Tax Deductions">
+    <meta property="og:description" content="I lost $1,847 in tax deductions because I couldn't find my receipts. The shoebox system is broken—here's what actually works.">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com/blog/shoebox-cost-me-1847-tax-deductions">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2025-12-27T10:00:00Z">
+    <meta property="article:author" content="TextExpense Team">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How a Shoebox Cost Me $1,847 in Tax Deductions">
+    <meta name="twitter:description" content="Lost $1,847 in tax deductions due to missing receipts. Here's the system that fixed it.">
+    <meta name="twitter:image" content="https://textexpense.com/te-logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://textexpense.com/blog/shoebox-cost-me-1847-tax-deductions">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/te-logo.png">
+    <link rel="apple-touch-icon" href="/te-logo.png">
+
+    <!-- Article Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How a Shoebox Cost Me $1,847 in Tax Deductions | TextExpense",
+        "description": "I lost $1,847 in tax deductions because I couldn't find my receipts. Here's the math that hurts and what actually worked to fix my broken system.",
+        "image": "https://textexpense.com/te-logo.png",
+        "author": {
+            "@type": "Person",
+            "name": "TextExpense Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "TextExpense",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://textexpense.com/te-logo.png"
+            }
+        },
+        "datePublished": "2025-12-27T10:00:00Z",
+        "dateModified": "2025-12-27T10:00:00Z",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://textexpense.com/blog/shoebox-cost-me-1847-tax-deductions"
+        }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --secondary: #075E54;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            background: #fff;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .back-to-blog {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-to-blog:hover {
+            text-decoration: underline;
+        }
+
+        /* Article Container */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        /* Article Header */
+        .article-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .breadcrumbs {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        .article-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        /* Featured Image */
+        .featured-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+        }
+
+        /* Article Content */
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+
+        .article-content li {
+            margin-bottom: 10px;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: var(--gray);
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .article-content code {
+            background: var(--light);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .article-content pre {
+            background: var(--dark);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        .article-content pre code {
+            background: none;
+            padding: 0;
+            color: white;
+        }
+
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .article-content a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Call-to-Action Box */
+        .cta-box {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            border: 2px solid var(--primary);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .cta-box p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Article Footer */
+        .article-footer {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid var(--border);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .tag {
+            background: var(--light);
+            color: var(--dark);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .tag:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Share Buttons */
+        .share-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .share-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .share-button {
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .share-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .share-twitter {
+            background: #1DA1F2;
+        }
+
+        .share-linkedin {
+            background: #0077B5;
+        }
+
+        .share-facebook {
+            background: #4267B2;
+        }
+
+        /* Related Posts */
+        .related-posts {
+            margin-top: 60px;
+        }
+
+        .related-posts h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .related-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--dark);
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .related-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .related-card-content {
+            padding: 20px;
+        }
+
+        .related-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .related-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer-cta {
+            background: var(--primary);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        .footer-cta .cta-button {
+            background: white;
+            color: var(--primary);
+        }
+
+        .footer-main {
+            background: var(--dark);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            color: #ccc;
+            margin-top: 30px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 1.8rem;
+            }
+
+            .article-content {
+                font-size: 1rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .article-content h3 {
+                font-size: 1.2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HMSDHWE3BS');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="/te-logo.png" alt="TextExpense Logo" style="width: 36px; height: 36px;">
+                TextExpense
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/#pricing">Pricing</a></li>
+            </ul>
+            <a href="/blog/" class="back-to-blog">← Back to Blog</a>
+        </nav>
+    </header>
+
+    <!-- Article Container -->
+    <article class="article-container">
+        <!-- Article Header -->
+        <header class="article-header">
+            <div class="breadcrumbs">
+                <a href="/">Home</a> / <a href="/blog/">Blog</a> / Tax Deductions
+            </div>
+
+            <h1 class="article-title">The $1,847 I Left on the Table Last Year (And How a Shoebox Cost Me)</h1>
+
+            <div class="article-meta">
+                <div class="meta-item">
+                    <div class="author-avatar">TE</div>
+                    <span>By <strong>TextExpense Team</strong></span>
+                </div>
+                <div class="meta-item">
+                    <span>📅</span>
+                    <span>December 27, 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span>⏱️</span>
+                    <span>7 min read</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Featured Image (Optional) -->
+        
+
+        <!-- Article Content -->
+        <div class="article-content">
+            <p>The envelope from my accountant arrived in May.</p>
+
+<p>I'd been dreading it. Not the tax bill—I'd already paid that. It was the summary. The one that shows exactly how much I could have deducted if I'd actually kept my receipts.</p>
+
+<p><strong>$1,847.</strong></p>
+
+<p>That's what I left on the table. Money I'd already spent on legitimate business expenses—software subscriptions, client lunches, office supplies, that co-working space membership I used for three months. All deductible. All gone.</p>
+
+<p>Not because the IRS rejected them. Because I couldn't find the receipts.</p>
+
+<h2>The Shoebox Problem</h2>
+
+<p>Here's how it started: a shoebox.</p>
+
+<p>Every freelancer knows the shoebox. Maybe yours is a drawer. Or a folder on your desktop called "Receipts 2024" that you opened twice in January and never touched again.</p>
+
+<p>Mine was a Nike box. Every time I bought something for the business, I'd stuff the receipt in there. "I'll organize these later," I told myself. Later never came.</p>
+
+<p>By February, the box was overflowing. By April 14th, the night before my taxes were due, I was sitting on my kitchen floor surrounded by faded paper, squinting at thermal receipts that had turned completely white.</p>
+
+<p>That $127 dinner with a client? Couldn't read it. The $89 software renewal? Found the charge on my bank statement, but no receipt. My accountant was very clear: no documentation, no deduction.</p>
+
+<h2>The Math That Hurts</h2>
+
+<p>Let me break down that $1,847.</p>
+
+<p>I'm in the 24% tax bracket. That means every dollar I couldn't deduct cost me 24 cents in taxes I didn't need to pay.</p>
+
+<p>The receipts I lost added up to roughly $7,700 in legitimate business expenses. Multiply that by 24%, and you get $1,848—let's call it $1,847 after rounding.</p>
+
+<p>That's a plane ticket. A month of rent in some cities. A new laptop.</p>
+
+<p>Gone. Because of a shoebox.</p>
+
+<h2>What Actually Happens to Receipts</h2>
+
+<p>Here's something I didn't know until I started researching: thermal paper receipts fade. It's not a defect—it's chemistry. The coating that makes them print without ink breaks down over time, especially in heat or sunlight.</p>
+
+<p>That shoebox in my closet? It got warm in the summer. By tax season, half my receipts were blank or barely readable.</p>
+
+<p>The IRS doesn't care. "I had the receipt but it faded" isn't documentation. Neither is a bank statement showing a charge with no itemization.</p>
+
+<h2>The Wallet Math</h2>
+
+<p>After that $1,847 wake-up call, I did what any reasonable person would do: I looked for a better system.</p>
+
+<p>I tried Expensify first. Downloaded the app, created an account, spent 45 minutes setting up expense categories and policies. Used it for two weeks. Then forgot about it because opening another app felt like a chore.</p>
+
+<p>I tried a Google Drive folder. "I'll just take photos of every receipt and upload them." I did this exactly seven times before the friction killed the habit.</p>
+
+<p>I tried the Notes app on my phone. Same story.</p>
+
+<p>The pattern was obvious: anything that required extra steps didn't stick. I needed something that fit into what I already do.</p>
+
+<h2>What Actually Worked</h2>
+
+<p>Then I found something different.</p>
+
+<p>No app to download. No account to create. No learning curve.</p>
+
+<p>Just WhatsApp—the app I already check 20+ times a day.</p>
+
+<p>Text a photo of a receipt. Get back an organized Excel report with the date, amount, vendor, and category extracted automatically. Every receipt stored in the cloud, accessible forever.</p>
+
+<p>That's it.</p>
+
+<p>The first time I used it, I was standing in line at Staples. Bought printer ink for my home office—$47, tax-deductible. Snapped a photo, sent it via WhatsApp, put my phone back in my pocket.</p>
+
+<p>Thirty seconds later, my phone buzzed. The receipt was processed. Date, amount, category—all extracted and organized.</p>
+
+<p>I've now done this 200+ times. My tax folder isn't a shoebox anymore. It's a clean spreadsheet with clickable links to every original receipt image.</p>
+
+<h2>The Real Cost of "I'll Do It Later"</h2>
+
+<p>That $1,847 wasn't a one-time loss. It was an annual leak.</p>
+
+<p>Think about it: if you're self-employed or run a small business, you're probably leaving hundreds—maybe thousands—in deductions on the table every year. Not because you're cheating the system, but because the system for keeping receipts is broken.</p>
+
+<p>The average self-employed person misses $500-$2,000 in deductions annually. Over a 10-year freelance career, that's $5,000-$20,000. Over a lifetime? The math gets depressing.</p>
+
+<p>All because receipts are annoying to organize.</p>
+
+<h2>The 30-Second Habit</h2>
+
+<p>Here's what changed for me: I stopped trying to be organized, and started using a system that didn't require organization.</p>
+
+<p>Buy something for business. Take a photo. Send it. Done.</p>
+
+<p>No categorizing. No filing. No "I'll deal with this later." The system handles it.</p>
+
+<p>When tax season comes, I download one Excel file. Every receipt, every amount, every category—all in one place. My accountant actually complimented me. First time that's ever happened.</p>
+
+<h2>What $1,847 Taught Me</h2>
+
+<p>That number on my accountant's summary wasn't just money lost. It was a signal.</p>
+
+<p>It told me that my "system" wasn't a system at all. It was wishful thinking held together by a cardboard box.</p>
+
+<p>The receipts I lose aren't just paper. They're proof of money I've already spent—money I deserve to deduct.</p>
+
+<p>This year, I'm not leaving anything on the table.</p>
+
+<h2>Try It</h2>
+
+<p>If any of this sounds familiar—the shoebox, the faded receipts, the tax-season panic—you don't have to keep doing it the hard way.</p>
+
+<p><strong>TextExpense lets you text receipt photos via WhatsApp and get organized Excel reports back.</strong> No app download. No setup. First 3 receipts are free.</p>
+
+<p>Text your first receipt. See what comes back. Decide for yourself.</p>
+
+<p><a href="https://wa.me/17654792054?text=hi" class="cta-link">Try Your First Receipt Free →</a></p>
+        </div>
+
+        <!-- CTA Box -->
+        <div class="cta-box">
+            <h3>Ready to Get Started?</h3>
+            <p>Try TextExpense free today. Track expenses via WhatsApp.</p>
+            <a href="https://wa.me/17654792054?text=hi" class="cta-button">Try 3 Free</a>
+        </div>
+
+        <!-- Article Footer -->
+        <footer class="article-footer">
+            <!-- Tags -->
+            <div class="tags">
+                tax deductions, lost receipts, freelancer taxes, self-employed, business expenses, receipt tracking, IRS, WhatsApp expenses
+            </div>
+
+            <!-- Share Section -->
+            <div class="share-section">
+                <h3>Share this article</h3>
+                <div class="share-buttons">
+                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftextexpense.com%2Fblog%2Fshoebox-cost-me-1847-tax-deductions&text=I lost $1,847 in tax deductions because of a shoebox. Don't make the same mistake."
+                       class="share-button share-twitter" target="_blank" rel="noopener">
+                        🐦 Share on Twitter
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ftextexpense.com%2Fblog%2Fshoebox-cost-me-1847-tax-deductions"
+                       class="share-button share-linkedin" target="_blank" rel="noopener">
+                        💼 Share on LinkedIn
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftextexpense.com%2Fblog%2Fshoebox-cost-me-1847-tax-deductions"
+                       class="share-button share-facebook" target="_blank" rel="noopener">
+                        📘 Share on Facebook
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Related Posts -->
+        
+    </article>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Start Tracking Receipts Today</h2>
+            <p>Text receipts to WhatsApp. Get organized instantly.</p>
+            <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TextExpense</h3>
+                <p>The simplest way to manage receipts via WhatsApp.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Product</h3>
+                <a href="/">Home</a>
+                <a href="/blog/">Blog</a>
+                <a href="/#pricing">Pricing</a>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms & Conditions</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TextExpense. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

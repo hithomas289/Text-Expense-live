@@ -1,0 +1,51 @@
+{
+  "slug": "dropbox-for-receipts-what-it-means",
+  "category": "product-concept",
+  "status": "published",
+  "templateVersion": "v2",
+
+  "TITLE": "Dropbox for Receipts: What It Means and Why It Matters | TextExpense",
+  "META_DESCRIPTION": "Dropbox fixed file chaos. TextExpense fixes receipt chaos. Simple idea that changes everything—receipts in one place, accessible forever, backed up automatically.",
+  "KEYWORDS": "dropbox for receipts, receipt cloud storage, receipt backup, digital receipt management, receipt organization system",
+
+  "AUTHOR_NAME": "TextExpense Team",
+  "AUTHOR_INITIALS": "TE",
+
+  "CANONICAL_URL": "https://textexpense.com/blog/dropbox-for-receipts-what-it-means",
+  "CANONICAL_URL_ENCODED": "https%3A%2F%2Ftextexpense.com%2Fblog%2Fdropbox-for-receipts-what-it-means",
+
+  "OG_TITLE": "Dropbox for Receipts: What It Means and Why It Matters",
+  "OG_DESCRIPTION": "Dropbox fixed file chaos. TextExpense fixes receipt chaos. One place. Forever. Accessible anywhere.",
+  "OG_IMAGE": "https://textexpense.com/te-logo.png",
+
+  "TWITTER_TITLE": "Dropbox for Receipts: What It Means",
+  "TWITTER_DESCRIPTION": "Simple idea: Receipts in one place, accessible forever, backed up automatically.",
+  "TWITTER_IMAGE": "https://textexpense.com/te-logo.png",
+  "TWITTER_SHARE_TEXT": "TextExpense is Dropbox for receipts. Simple idea. Changes everything.",
+
+  "PUBLISH_DATE_ISO": "2025-12-27T16:00:00Z",
+  "MODIFIED_DATE_ISO": "2025-12-27T16:00:00Z",
+  "PUBLISH_DATE": "December 27, 2025",
+  "publishDate": "2025-12-27",
+
+  "GA_MEASUREMENT_ID": "G-HMSDHWE3BS",
+
+  "CATEGORY": "Product Concept",
+  "ARTICLE_TITLE": "Dropbox for Receipts: What It Means and Why It Matters",
+  "READING_TIME": "5",
+
+  "FEATURED_IMAGE": "",
+
+  "ARTICLE_CONTENT": "<p>You know what Dropbox did for files.</p>\n\n<p>Before Dropbox, your documents lived on one computer. If that computer died, so did your files. Sharing meant email attachments. Collaboration meant \"final_v2_FINAL_revised.doc.\"</p>\n\n<p>Dropbox fixed that. Put a file in the folder, it's everywhere. Accessible from any device. Backed up forever. Shareable with a link.</p>\n\n<p>Simple idea. Changed everything.</p>\n\n<h2>Receipts Have the Same Problem</h2>\n\n<p>Right now, your receipts live in chaos.</p>\n\n<p>Paper ones are in a drawer, a shoebox, your wallet, your car's center console. Digital ones are scattered across your email, your camera roll, maybe a folder you created once and forgot about.</p>\n\n<p>When you need one—for taxes, for a warranty claim, for reimbursement—you dig. Sometimes you find it. Sometimes you don't.</p>\n\n<p>And the paper ones? They're fading. Thermal paper receipts literally disappear over time. That shoebox isn't an archive. It's a graveyard.</p>\n\n<h2>What \"Dropbox for Receipts\" Actually Means</h2>\n\n<p>TextExpense is Dropbox for receipts.</p>\n\n<p>Send us a receipt—photo it, text it via WhatsApp—and it's captured. Extracted. Organized. Stored permanently in the cloud.</p>\n\n<p>Need it later? Search by date, vendor, or amount. Download it. Print it. Share it.</p>\n\n<p>Every receipt in one place. Accessible from anywhere. Backed up forever.</p>\n\n<p>That's it. That's the whole idea.</p>\n\n<h2>Why WhatsApp?</h2>\n\n<p>Dropbox worked because it used something you already had: a folder on your computer.</p>\n\n<p>TextExpense works because it uses something you already have: WhatsApp.</p>\n\n<p>No new app to download. No account to create. No interface to learn.</p>\n\n<p>You already know how to text a photo. That's the entire skill required.</p>\n\n<p>Three billion people use WhatsApp. If you're one of them, you already know how to use TextExpense.</p>\n\n<h2>What You Get Back</h2>\n\n<p>Text us a receipt. Within 30 seconds, we extract the data—date, vendor, amount, category—and store the original image.</p>\n\n<p>Whenever you need a report, request it. You get a clean Excel spreadsheet with every receipt organized, plus clickable links to the original images.</p>\n\n<p>Hand it to your accountant. Attach it to your reimbursement request. Keep it for your records.</p>\n\n<p>Receipt in. Excel out. Done.</p>\n\n<h2>The Math</h2>\n\n<p>Dropbox costs $12/month for personal use.</p>\n\n<p>TextExpense starts at $2.99/month.</p>\n\n<p>For less than a coffee, every receipt you send us is organized forever. No more digging through drawers. No more scrolling through your camera roll. No more \"I know I have it somewhere.\"</p>\n\n<p>Peace of mind, permanently.</p>\n\n<h2>Try it free.</h2>\n\n<p>First 3 receipts on us. No credit card. Just text a receipt and see what comes back.</p>\n\n<p><a href=\"https://wa.me/17654792054?text=hi\" class=\"cta-link\">Start Free →</a></p>",
+
+  "TAGS": "dropbox for receipts, receipt cloud storage, digital receipts, receipt backup, receipt organization, cloud receipt management",
+
+  "CTA_URL": "https://wa.me/17654792054?text=hi",
+  "CTA_TITLE": "Ready to Get Started?",
+  "CTA_DESCRIPTION": "Try TextExpense free today. Track expenses via WhatsApp.",
+
+  "FOOTER_CTA_TITLE": "Start Tracking Receipts Today",
+  "FOOTER_CTA_SUBTITLE": "Join thousands using TextExpense for receipt management.",
+
+  "RELATED_POSTS": ""
+}

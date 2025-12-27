@@ -1,0 +1,51 @@
+{
+  "slug": "never-get-reimbursed-on-time-how-i-fixed-it",
+  "category": "expense-reimbursement",
+  "status": "published",
+  "templateVersion": "v2",
+
+  "TITLE": "Why I Never Get Reimbursed on Time (And How I Fixed It)",
+  "META_DESCRIPTION": "Stop leaving money on the table. The 15-second fix that gets you 100% reimbursed every month without the Sunday night scramble.",
+  "KEYWORDS": "expense reimbursement, employee expense reports, expense tracking, reimbursement tips, expense report deadline, receipt management",
+
+  "AUTHOR_NAME": "TextExpense Team",
+  "AUTHOR_INITIALS": "TE",
+
+  "CANONICAL_URL": "https://textexpense.com/blog/never-get-reimbursed-on-time-how-i-fixed-it",
+  "CANONICAL_URL_ENCODED": "https%3A%2F%2Ftextexpense.com%2Fblog%2Fnever-get-reimbursed-on-time-how-i-fixed-it",
+
+  "OG_TITLE": "Why I Never Get Reimbursed on Time (And How I Fixed It)",
+  "OG_DESCRIPTION": "Last quarter I left $340 on the table. My money. Gone. Because of receipts. Here's how I fixed it.",
+  "OG_IMAGE": "https://textexpense.com/te-logo.png",
+
+  "TWITTER_TITLE": "Why I Never Get Reimbursed on Time",
+  "TWITTER_DESCRIPTION": "Stop the Sunday night expense report scramble. Get 100% reimbursed every month.",
+  "TWITTER_IMAGE": "https://textexpense.com/te-logo.png",
+  "TWITTER_SHARE_TEXT": "Stop leaving money on the table. Here's how to get fully reimbursed every month.",
+
+  "PUBLISH_DATE_ISO": "2025-12-27T17:00:00Z",
+  "MODIFIED_DATE_ISO": "2025-12-27T17:00:00Z",
+  "PUBLISH_DATE": "December 27, 2025",
+  "publishDate": "2025-12-27",
+
+  "GA_MEASUREMENT_ID": "G-HMSDHWE3BS",
+
+  "CATEGORY": "Expense Reimbursement",
+  "ARTICLE_TITLE": "Why I Never Get Reimbursed on Time (And How I Fixed It)",
+  "READING_TIME": "6",
+
+  "FEATURED_IMAGE": "",
+
+  "ARTICLE_CONTENT": "<p>Friday, 5:47 PM. The email arrives.</p>\n\n<p>\"Reminder: Expense reports due by end of day.\"</p>\n\n<p>I've been ignoring this email for two weeks.</p>\n\n<p>Not because I don't want my money back. Because finding the receipts feels impossible.</p>\n\n<h2>The Reimbursement Game</h2>\n\n<p>Here's how it goes at my company:</p>\n\n<p>You pay for something with your own money—a client lunch, an Uber to the airport, supplies for a project. You're supposed to save the receipt, log it in the expense system, and submit for reimbursement.</p>\n\n<p>Simple in theory.</p>\n\n<p>In reality: the receipt goes in your pocket, then your wallet, then a pile on your desk, then... somewhere. The expense system requires seventeen fields and a photo upload that never seems to work on mobile. And by the time the deadline hits, you're reconstructing your spending from bank statements and memory.</p>\n\n<p>Last quarter I left $340 on the table. Expenses I paid for, couldn't prove, didn't get back.</p>\n\n<p>That's my money. Gone. Because of receipts.</p>\n\n<h2>The Sunday Night Scramble</h2>\n\n<p>You know the scramble.</p>\n\n<p>Expense deadline is Monday. It's Sunday night. You're digging through your camera roll looking for that photo you maybe took of the dinner receipt three weeks ago.</p>\n\n<p>Was it before or after the sunset photo? Scroll. Scroll. Scroll.</p>\n\n<p>There it is—blurry, barely readable, timestamp doesn't match the date you remember.</p>\n\n<p>Now multiply that by fifteen expenses across a month.</p>\n\n<p>This is how I spend my Sundays. Unpaid admin work so I can get paid back for money I already spent.</p>\n\n<h2>What Changed</h2>\n\n<p>I started texting receipts the moment I get them.</p>\n\n<p>Client dinner? Before I sign the check, I photograph the receipt and text it to TextExpense. Done. Never think about it again.</p>\n\n<p>Uber receipt in my email? Forward it. Done.</p>\n\n<p>Office supplies? Snap it in the parking lot before I drive away.</p>\n\n<p>Each one takes maybe fifteen seconds. No logging into a system. No categorizing. No uploading. Just text and forget.</p>\n\n<h2>When the Deadline Hits</h2>\n\n<p>Now when the expense report email arrives, I don't panic.</p>\n\n<p>I download my TextExpense report—one Excel file with every receipt from the month, organized by date, with the amounts already extracted.</p>\n\n<p>I copy the data into my company's system. Attach the receipt images. Submit.</p>\n\n<p>Twenty minutes instead of three hours. Everything documented. Nothing missing.</p>\n\n<p>Last month I got reimbursed for 100% of my expenses. First time ever.</p>\n\n<h2>The Money You're Leaving Behind</h2>\n\n<p>Think about your last few expense reports.</p>\n\n<p>How many receipts did you lose? How many did you just... not submit because finding them felt like too much work?</p>\n\n<p>$50 here. $80 there. A dinner you paid for that you'll never see again.</p>\n\n<p>That's your money. You earned it. You spent it on behalf of your company. You deserve it back.</p>\n\n<p>But no receipt, no reimbursement. That's the rule.</p>\n\n<h2>The 15-Second Fix</h2>\n\n<p>Every receipt. The moment you get it. Photograph and text.</p>\n\n<p>That's the whole system.</p>\n\n<p>TextExpense handles the rest—extracts the data, stores the image, organizes everything into reports you can download whenever you need them.</p>\n\n<p>When expense report day comes, you're not scrambling. You're just submitting.</p>\n\n<h2>Stop leaving your money on the table.</h2>\n\n<p>3 free receipts to try. Text your next client lunch receipt and see how it works.</p>\n\n<p><a href=\"https://wa.me/17654792054?text=hi\" class=\"cta-link\">Try It Free →</a></p>",
+
+  "TAGS": "expense reimbursement, employee expenses, expense reports, corporate expenses, receipt tracking, reimbursement tips, expense management",
+
+  "CTA_URL": "https://wa.me/17654792054?text=hi",
+  "CTA_TITLE": "Ready to Get Started?",
+  "CTA_DESCRIPTION": "Try TextExpense free today. Track expenses via WhatsApp.",
+
+  "FOOTER_CTA_TITLE": "Start Tracking Receipts Today",
+  "FOOTER_CTA_SUBTITLE": "Join thousands using TextExpense for receipt management.",
+
+  "RELATED_POSTS": ""
+}

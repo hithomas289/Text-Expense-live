@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags - PLACEHOLDERS -->
+    <title>I Got Audited by the IRS. Here's What Actually Happened.</title>
+    <meta name="description" content="Real IRS audit experience: what they asked for, what saved me, and the $847 I lost because of one missing receipt. Learn from my mistakes.">
+    <meta name="keywords" content="IRS audit, tax audit experience, IRS audit process, receipt documentation, Schedule C audit, self-employed audit, tax compliance">
+    <meta name="author" content="TextExpense Team">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="I Got Audited by the IRS. Here's What Actually Happened.">
+    <meta property="og:description" content="The letter arrived. Two hours later, I learned the $847 lesson about documentation. Real audit experience.">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
+    <meta property="og:url" content="https://textexpense.com/blog/i-got-audited-irs-what-actually-happened">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2025-12-27T14:00:00Z">
+    <meta property="article:author" content="TextExpense Team">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="I Got Audited by the IRS. Here's What Actually Happened.">
+    <meta name="twitter:description" content="Real IRS audit experience. What they wanted, what saved me, what cost me $847.">
+    <meta name="twitter:image" content="https://textexpense.com/te-logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://textexpense.com/blog/i-got-audited-irs-what-actually-happened">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/te-logo.png">
+    <link rel="apple-touch-icon" href="/te-logo.png">
+
+    <!-- Article Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "I Got Audited by the IRS. Here's What Actually Happened.",
+        "description": "Real IRS audit experience: what they asked for, what saved me, and the $847 I lost because of one missing receipt. Learn from my mistakes.",
+        "image": "https://textexpense.com/te-logo.png",
+        "author": {
+            "@type": "Person",
+            "name": "TextExpense Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "TextExpense",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://textexpense.com/te-logo.png"
+            }
+        },
+        "datePublished": "2025-12-27T14:00:00Z",
+        "dateModified": "2025-12-27T14:00:00Z",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://textexpense.com/blog/i-got-audited-irs-what-actually-happened"
+        }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --secondary: #075E54;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #e0e0e0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            background: #fff;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .back-to-blog {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-to-blog:hover {
+            text-decoration: underline;
+        }
+
+        /* Article Container */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        /* Article Header */
+        .article-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .breadcrumbs {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        .article-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        /* Featured Image */
+        .featured-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+        }
+
+        /* Article Content */
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+
+        .article-content li {
+            margin-bottom: 10px;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: var(--gray);
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .article-content code {
+            background: var(--light);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .article-content pre {
+            background: var(--dark);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        .article-content pre code {
+            background: none;
+            padding: 0;
+            color: white;
+        }
+
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .article-content a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Call-to-Action Box */
+        .cta-box {
+            background: linear-gradient(135deg, #f8fffe 0%, #f0fdf4 100%);
+            border: 2px solid var(--primary);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .cta-box p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Article Footer */
+        .article-footer {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid var(--border);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .tag {
+            background: var(--light);
+            color: var(--dark);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .tag:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Share Buttons */
+        .share-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .share-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .share-button {
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .share-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .share-twitter {
+            background: #1DA1F2;
+        }
+
+        .share-linkedin {
+            background: #0077B5;
+        }
+
+        .share-facebook {
+            background: #4267B2;
+        }
+
+        /* Related Posts */
+        .related-posts {
+            margin-top: 60px;
+        }
+
+        .related-posts h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .related-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--dark);
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .related-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .related-card-content {
+            padding: 20px;
+        }
+
+        .related-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .related-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer-cta {
+            background: var(--primary);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        .footer-cta .cta-button {
+            background: white;
+            color: var(--primary);
+        }
+
+        .footer-main {
+            background: var(--dark);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            color: #ccc;
+            margin-top: 30px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 1.8rem;
+            }
+
+            .article-content {
+                font-size: 1rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .article-content h3 {
+                font-size: 1.2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMSDHWE3BS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HMSDHWE3BS');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="/te-logo.png" alt="TextExpense Logo" style="width: 36px; height: 36px;">
+                TextExpense
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/#pricing">Pricing</a></li>
+            </ul>
+            <a href="/blog/" class="back-to-blog">← Back to Blog</a>
+        </nav>
+    </header>
+
+    <!-- Article Container -->
+    <article class="article-container">
+        <!-- Article Header -->
+        <header class="article-header">
+            <div class="breadcrumbs">
+                <a href="/">Home</a> / <a href="/blog/">Blog</a> / Tax Compliance
+            </div>
+
+            <h1 class="article-title">I Got Audited. Here's What Actually Happened.</h1>
+
+            <div class="article-meta">
+                <div class="meta-item">
+                    <div class="author-avatar">TE</div>
+                    <span>By <strong>TextExpense Team</strong></span>
+                </div>
+                <div class="meta-item">
+                    <span>📅</span>
+                    <span>December 27, 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span>⏱️</span>
+                    <span>8 min read</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Featured Image (Optional) -->
+        
+
+        <!-- Article Content -->
+        <div class="article-content">
+            <p>The letter was thin. Plain white envelope. IRS return address.</p>
+
+<p>My hands went cold before I even opened it.</p>
+
+<p>"We are examining your federal income tax return for the year shown above."</p>
+
+<p>Three weeks later, I was sitting across from an IRS agent in a government building, a cardboard box of receipts on the table between us.</p>
+
+<p>Here's what I learned.</p>
+
+<h2>It Wasn't What I Expected</h2>
+
+<p>I'd imagined audits as accusatory. Aggressive. Some version of a cop drama where they shine a light in your face and demand answers.</p>
+
+<p>It wasn't like that.</p>
+
+<p>The IRS conducts audits either by mail or through an in-person interview to review your records. Mine was in-person—what they call a "field audit."</p>
+
+<p>The agent was... normal. Polite, even. She had a checklist. She worked through it methodically. No drama.</p>
+
+<p>For most agents, a calm, respectful, businesslike demeanor works better—along with thorough preparation.</p>
+
+<p>The whole thing took about two hours.</p>
+
+<h2>What They Actually Wanted</h2>
+
+<p>The letter had been specific: they wanted documentation for my Schedule C business expenses. If your return is chosen for audit, the IRS will be on the hunt to make sure you have the documentation to fully substantiate your write-offs.</p>
+
+<p>That meant receipts.</p>
+
+<p>Not "I remember buying it." Not bank statements showing a charge. Actual receipts showing what I bought, when, and from whom.</p>
+
+<p>The IRS expects you to have all your receipts, records and invoices regardless of what business you're in.</p>
+
+<p>She went line by line through my deductions. Home office. Travel. Meals with clients. Software subscriptions. Phone bill.</p>
+
+<p>For each one: "Can I see the receipt?"</p>
+
+<h2>What Saved Me</h2>
+
+<p>I'd been paranoid about this exact scenario for years. So when I started freelancing, I built a system: every receipt got photographed and organized the moment I got it.</p>
+
+<p>When the agent asked for my client dinner receipts, I handed her a folder with twelve of them, chronologically ordered, each one showing the restaurant, the date, the amount, and a note on the back about who I met with.</p>
+
+<p>She flipped through them in about ninety seconds. "These are good."</p>
+
+<p>When she asked about my home office, I had photos of the space and a floor plan showing the square footage.</p>
+
+<p>When she asked about mileage, I had a log.</p>
+
+<p>Most of the audit was her checking boxes on her form while I handed her folders.</p>
+
+<h2>What Almost Killed Me</h2>
+
+<p>There was one category where I didn't have complete records: professional development.</p>
+
+<p>I'd attended a conference. I remembered paying for it. I'd deducted the registration fee. But I couldn't find the receipt—just an email confirmation that didn't show the amount.</p>
+
+<p>The agent flagged it. Without proper documentation, she couldn't allow the deduction.</p>
+
+<p>$847. Gone.</p>
+
+<p>Not because I didn't pay it. Not because it wasn't legitimate. Because I couldn't prove it.</p>
+
+<h2>The Math</h2>
+
+<p>The IRS has audited significantly less than 1% of all individual returns in recent years. So most people never go through this.</p>
+
+<p>But if you file a Schedule C to report profit or loss from a business, your odds of drawing additional IRS scrutiny go up.</p>
+
+<p>And here's what nobody tells you: audits will cost you valuable time and money. The amount of time it took us to pull receipts and format them into Excel spreadsheets was a burden.</p>
+
+<p>Even when you're innocent, an audit is a tax on your time.</p>
+
+<p>Mine cost me:</p>
+<ul>
+<li>8 hours of preparation</li>
+<li>A half-day off work for the interview</li>
+<li>$847 in disallowed deductions I couldn't document</li>
+</ul>
+
+<p>If I hadn't been organized? It would have been much worse.</p>
+
+<h2>What I'd Tell You</h2>
+
+<p>The audit didn't happen because I did something wrong. Sometimes returns are selected based solely on a statistical formula. I was just unlucky.</p>
+
+<p>But here's the thing: being organized turned a potentially devastating experience into a minor inconvenience.</p>
+
+<p>If you record your business' expenses and income appropriately and file your tax returns on time and correctly, your tax audit experience shouldn't be painful.</p>
+
+<p>The receipts I had? No problem. The one I didn't? $847 problem.</p>
+
+<h2>The System That Would Have Saved That $847</h2>
+
+<p>After the audit, I rebuilt my system. The old way—photographing receipts and dumping them in a Google Drive folder—had gaps. Things got lost. Conference registrations slipped through.</p>
+
+<p>Now I text every receipt to TextExpense the moment I get it. Business dinner? Snap and send before I leave the restaurant. Conference registration email? Forward it immediately.</p>
+
+<p>Everything gets extracted, categorized, and stored with the original image attached.</p>
+
+<p>If I get audited again, I'll hand over one Excel file with clickable links to every receipt. Five minutes of preparation instead of eight hours.</p>
+
+<h2>The One Thing to Remember</h2>
+
+<p>The IRS doesn't care about your intentions. They care about documentation.</p>
+
+<p>You can be completely honest, totally legitimate, and still lose deductions because you can't prove what you spent.</p>
+
+<p>Every missing receipt is money you might have to give back.</p>
+
+<h2>Don't learn this lesson the hard way.</h2>
+
+<p>TextExpense gives you 3 free receipts to try. Text a photo, get it organized, build the habit now—before the letter arrives.</p>
+
+<p><a href="https://wa.me/17654792054?text=hi" class="cta-link">Try It Free →</a></p>
+        </div>
+
+        <!-- CTA Box -->
+        <div class="cta-box">
+            <h3>Ready to Get Started?</h3>
+            <p>Try TextExpense free today. Track expenses via WhatsApp.</p>
+            <a href="https://wa.me/17654792054?text=hi" class="cta-button">Try 3 Free</a>
+        </div>
+
+        <!-- Article Footer -->
+        <footer class="article-footer">
+            <!-- Tags -->
+            <div class="tags">
+                IRS audit, tax audit experience, receipt documentation, Schedule C audit, business expense documentation, tax compliance, audit preparation
+            </div>
+
+            <!-- Share Section -->
+            <div class="share-section">
+                <h3>Share this article</h3>
+                <div class="share-buttons">
+                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftextexpense.com%2Fblog%2Fi-got-audited-irs-what-actually-happened&text=I got audited by the IRS. Here's exactly what happened and what I learned."
+                       class="share-button share-twitter" target="_blank" rel="noopener">
+                        🐦 Share on Twitter
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ftextexpense.com%2Fblog%2Fi-got-audited-irs-what-actually-happened"
+                       class="share-button share-linkedin" target="_blank" rel="noopener">
+                        💼 Share on LinkedIn
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftextexpense.com%2Fblog%2Fi-got-audited-irs-what-actually-happened"
+                       class="share-button share-facebook" target="_blank" rel="noopener">
+                        📘 Share on Facebook
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Related Posts -->
+        
+    </article>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Start Tracking Receipts Today</h2>
+            <p>Text receipts to WhatsApp. Get organized instantly.</p>
+            <a href="https://wa.me/17654792054?text=hi" class="cta-button">Start Free on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TextExpense</h3>
+                <p>The simplest way to manage receipts via WhatsApp.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Product</h3>
+                <a href="/">Home</a>
+                <a href="/blog/">Blog</a>
+                <a href="/#pricing">Pricing</a>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms & Conditions</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TextExpense. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
