@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Bellevue",
       "excerpt": "Bellevue contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-painters-new-orleans\">Expense Tracking for Painters in New Orleans</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-sunnyvale\">Expense Tracking for Painters in Sunnyvale</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-austin\">Expense Tracking for Painters in Austin</a></li>\n    </ul>"
 }

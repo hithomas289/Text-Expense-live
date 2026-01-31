@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Santa Clara",
       "excerpt": "Santa Clara contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-new-york\">Expense Tracking for Plumbers in New York</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-los-angeles\">Expense Tracking for Plumbers in Los Angeles</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-plano\">Expense Tracking for Plumbers in Plano</a></li>\n    </ul>"
 }

@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Durham",
       "excerpt": "Durham contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-san-jose\">Expense Tracking for Landscapers in San Jose</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-orlando\">Expense Tracking for Landscapers in Orlando</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-philadelphia\">Expense Tracking for Landscapers in Philadelphia</a></li>\n    </ul>"
 }

@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Arlington",
       "excerpt": "Arlington contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-electricians-plano\">Expense Tracking for Electricians in Plano</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-los-angeles\">Expense Tracking for Electricians in Los Angeles</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-austin\">Expense Tracking for Electricians in Austin</a></li>\n    </ul>"
 }

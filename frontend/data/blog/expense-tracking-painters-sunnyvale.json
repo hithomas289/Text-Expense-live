@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Sunnyvale",
       "excerpt": "Sunnyvale contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-painters-denver\">Expense Tracking for Painters in Denver</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-austin\">Expense Tracking for Painters in Austin</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-columbus\">Expense Tracking for Painters in Columbus</a></li>\n    </ul>"
 }

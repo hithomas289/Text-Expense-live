@@ -3,43 +3,32 @@
   "category": "expense-tracking",
   "status": "published",
   "templateVersion": "v2",
-
   "TITLE": "Free Expense Tracker Template (Generated Automatically) | TextExpense Blog",
   "META_DESCRIPTION": "Download a free expense tracker template or create one automatically by texting receipts to WhatsApp. No spreadsheets needed.",
   "KEYWORDS": "free expense tracker template, expense tracker excel free, free expense sheet, simple expense tracker",
-
   "CANONICAL_URL": "https://textexpense.com/blog/free-expense-tracker-template",
   "CANONICAL_URL_ENCODED": "https%3A%2F%2Ftextexpense.com%2Fblog%2Ffree-expense-tracker-template",
-
   "OG_TITLE": "Free Expense Tracker Template (Generated Automatically)",
   "OG_DESCRIPTION": "Create a free expense tracker automatically by texting receipts to WhatsApp. No spreadsheets needed.",
-
   "TWITTER_TITLE": "Free Expense Tracker Template (Generated Automatically)",
   "TWITTER_DESCRIPTION": "Free expense tracker template generated automatically. Text receipts to WhatsApp, no spreadsheets needed.",
   "TWITTER_SHARE_TEXT": "Stop filling out expense tracker templates manually. Get an automatic free expense tracker via WhatsApp.",
-
   "PUBLISH_DATE_ISO": "2025-11-16T03:00:00Z",
   "MODIFIED_DATE_ISO": "2025-11-16T03:00:00Z",
   "PUBLISH_DATE": "November 16, 2025",
   "publishDate": "2025-11-16",
-
   "CATEGORY": "Expense Tracking",
   "ARTICLE_TITLE": "Free Expense Tracker Template (Generated Automatically)",
   "READING_TIME": "6",
-
   "ARTICLE_CONTENT": "<p class=\"lead\">Everyone loves a free template.<br>\nNobody loves filling one out manually.</p>\n\n<p>Traditional expense tracker templates require:</p>\n\n<ul>\n  <li>Typing every expense</li>\n  <li>Adding categories</li>\n  <li>Updating totals</li>\n  <li>Pasting receipt images</li>\n  <li>Formatting cells</li>\n</ul>\n\n<p>It's too much work — so people quit within a week.</p>\n\n<p>Here's the better way.</p>\n\n<h2>What Most People Want</h2>\n\n<p>A simple, clean, ready-to-use expense tracker that:</p>\n\n<ul>\n  <li>Works instantly</li>\n  <li>Needs zero data entry</li>\n  <li>Stores receipts</li>\n  <li>Exports cleanly</li>\n  <li>Supports taxes &amp; reimbursements</li>\n  <li>Doesn't require a new app</li>\n</ul>\n\n<p>That's exactly what automatic WhatsApp-based expense logging gives you.</p>\n\n<h2>How It Works</h2>\n\n<ol>\n  <li>Photograph your receipt</li>\n  <li>Send to WhatsApp</li>\n  <li>Select category</li>\n</ol>\n\n<p>The system instantly builds your <strong>Free Expense Tracker Template</strong>, which includes:</p>\n\n<ul>\n  <li>Date</li>\n  <li>Merchant</li>\n  <li>Amount</li>\n  <li>Category</li>\n  <li>Taxes</li>\n  <li>Notes</li>\n  <li>Receipt image link</li>\n  <li>Monthly totals</li>\n  <li>Yearly totals</li>\n</ul>\n\n<h2>Why This Is Better Than Manual Templates</h2>\n\n<p><strong>✓ 10× faster</strong></p>\n<p>30 seconds vs. hours of typing.</p>\n\n<p><strong>✓ More accurate</strong></p>\n<p>No manual error.</p>\n\n<p><strong>✓ Always complete</strong></p>\n<p>You capture receipts immediately.</p>\n\n<p><strong>✓ Zero setup</strong></p>\n<p>No spreadsheet knowledge required.</p>\n\n<p><strong>✓ Works on the go</strong></p>\n<p>Store receipts from anywhere.</p>\n\n<h2>Final Word</h2>\n\n<p>Forget complicated spreadsheets.</p>\n\n<p>Get a simple, automatic, free expense tracker you'll actually use.</p>\n\n<p><strong>Snap → Text → Free Expense Tracker Built.</strong></p>",
-
   "TAGS": "free expense tracker template, expense tracker excel free, free expense sheet, simple expense tracker, automatic expense tracker",
-
   "CTA_TEXT": "Try 3 Receipts Free",
   "CTA_TITLE": "Try Your Free Expense Tracker",
   "CTA_DESCRIPTION": "Text 3 receipts and see your automatic expense tracker template instantly.",
-
   "FOOTER_CTA_TITLE": "Get Your Free Expense Tracker Template",
   "FOOTER_CTA_SUBTITLE": "Automatic expense tracking via WhatsApp. Zero data entry, instant reports.",
   "FOOTER_CTA_DESCRIPTION": "Automatic expense tracking via WhatsApp. Zero data entry, instant reports.",
   "FOOTER_CTA_TEXT": "Start Your Free Expense Tracker",
-
   "relatedPosts": [
     {
       "slug": "fastest-way-to-track-expenses",
@@ -56,5 +45,6 @@
       "title": "How to Track Business Expenses (The Simple Way)",
       "excerpt": "Business expenses eating up your time? Track them in 30 seconds. No spreadsheets needed."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/how-to-track-expenses\">How to Track Expenses (Without Spreadsheets or Stress)</a></li>\n        <li><a href=\"/blog/tried-5-expense-tracking-apps-comparison\">I Tried 5 Expense Tracking Apps So You Don't Have To</a></li>\n    </ul>"
 }

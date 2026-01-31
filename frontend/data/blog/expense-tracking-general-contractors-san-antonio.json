@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in San Antonio",
       "excerpt": "San Antonio contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-general-contractors-houston\">Expense Tracking for General Contractors in Houston</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-bellevue\">Expense Tracking for General Contractors in Bellevue</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-arlington\">Expense Tracking for General Contractors in Arlington</a></li>\n    </ul>"
 }

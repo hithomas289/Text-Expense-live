@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Bellevue",
       "excerpt": "Bellevue contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-phoenix\">Expense Tracking for Plumbers in Phoenix</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-durham\">Expense Tracking for Plumbers in Durham</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-plano\">Expense Tracking for Plumbers in Plano</a></li>\n    </ul>"
 }

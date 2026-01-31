@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Austin",
       "excerpt": "Austin contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-san-diego\">Expense Tracking for HVAC Professionals in San Diego</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-pittsburgh\">Expense Tracking for HVAC Professionals in Pittsburgh</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-los-angeles\">Expense Tracking for HVAC Professionals in Los Angeles</a></li>\n    </ul>"
 }

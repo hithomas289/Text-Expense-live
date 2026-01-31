@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Tampa",
       "excerpt": "Tampa contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-general-contractors-st-louis\">Expense Tracking for General Contractors in St. Louis</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-san-antonio\">Expense Tracking for General Contractors in San Antonio</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-orlando\">Expense Tracking for General Contractors in Orlando</a></li>\n    </ul>"
 }

@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in San Diego",
       "excerpt": "San Diego contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-irvine\">Expense Tracking for Plumbers in Irvine</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-orlando\">Expense Tracking for Plumbers in Orlando</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-jacksonville\">Expense Tracking for Plumbers in Jacksonville</a></li>\n    </ul>"
 }

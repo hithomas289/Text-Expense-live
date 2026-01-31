@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Washington DC",
       "excerpt": "Washington DC contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-durham\">Expense Tracking for Landscapers in Durham</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-sacramento\">Expense Tracking for Landscapers in Sacramento</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-chicago\">Expense Tracking for Landscapers in Chicago</a></li>\n    </ul>"
 }

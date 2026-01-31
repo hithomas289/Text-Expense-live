@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Cincinnati",
       "excerpt": "Cincinnati contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-general-contractors-boulder\">Expense Tracking for General Contractors in Boulder</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-denver\">Expense Tracking for General Contractors in Denver</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-new-york\">Expense Tracking for General Contractors in New York</a></li>\n    </ul>"
 }

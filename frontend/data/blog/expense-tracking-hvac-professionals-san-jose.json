@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in San Jose",
       "excerpt": "San Jose contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-plano\">Expense Tracking for HVAC Professionals in Plano</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-boston\">Expense Tracking for HVAC Professionals in Boston</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-sunnyvale\">Expense Tracking for HVAC Professionals in Sunnyvale</a></li>\n    </ul>"
 }

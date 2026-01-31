@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Orlando",
       "excerpt": "Orlando contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-san-jose\">Expense Tracking for Plumbers in San Jose</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-sacramento\">Expense Tracking for Plumbers in Sacramento</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-boston\">Expense Tracking for Plumbers in Boston</a></li>\n    </ul>"
 }

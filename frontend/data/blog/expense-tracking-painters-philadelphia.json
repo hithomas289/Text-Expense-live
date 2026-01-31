@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Philadelphia",
       "excerpt": "Philadelphia contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-painters-minneapolis\">Expense Tracking for Painters in Minneapolis</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-indianapolis\">Expense Tracking for Painters in Indianapolis</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-chicago\">Expense Tracking for Painters in Chicago</a></li>\n    </ul>"
 }

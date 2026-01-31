@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Indianapolis",
       "excerpt": "Indianapolis contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-dallas\">Expense Tracking for Plumbers in Dallas</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-st-louis\">Expense Tracking for Plumbers in St. Louis</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-san-jose\">Expense Tracking for Plumbers in San Jose</a></li>\n    </ul>"
 }

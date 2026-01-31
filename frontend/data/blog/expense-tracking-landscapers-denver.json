@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Denver",
       "excerpt": "Denver contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-orlando\">Expense Tracking for Landscapers in Orlando</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-miami\">Expense Tracking for Landscapers in Miami</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-jacksonville\">Expense Tracking for Landscapers in Jacksonville</a></li>\n    </ul>"
 }

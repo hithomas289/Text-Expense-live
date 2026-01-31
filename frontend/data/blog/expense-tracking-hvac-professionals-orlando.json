@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Orlando",
       "excerpt": "Orlando contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-miami\">Expense Tracking for HVAC Professionals in Miami</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-new-orleans\">Expense Tracking for HVAC Professionals in New Orleans</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-santa-clara\">Expense Tracking for HVAC Professionals in Santa Clara</a></li>\n    </ul>"
 }

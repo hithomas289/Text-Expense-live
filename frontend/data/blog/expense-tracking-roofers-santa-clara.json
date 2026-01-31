@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Santa Clara",
       "excerpt": "Santa Clara contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-roofers-kansas-city\">Expense Tracking for Roofers in Kansas City</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-san-antonio\">Expense Tracking for Roofers in San Antonio</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-houston\">Expense Tracking for Roofers in Houston</a></li>\n    </ul>"
 }

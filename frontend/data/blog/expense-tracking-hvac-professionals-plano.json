@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Plano",
       "excerpt": "Plano contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-boston\">Expense Tracking for HVAC Professionals in Boston</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-new-orleans\">Expense Tracking for HVAC Professionals in New Orleans</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-detroit\">Expense Tracking for HVAC Professionals in Detroit</a></li>\n    </ul>"
 }

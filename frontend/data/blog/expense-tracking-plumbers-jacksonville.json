@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Jacksonville",
       "excerpt": "Jacksonville contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-santa-clara\">Expense Tracking for Plumbers in Santa Clara</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-durham\">Expense Tracking for Plumbers in Durham</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-arlington\">Expense Tracking for Plumbers in Arlington</a></li>\n    </ul>"
 }

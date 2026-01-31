@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Boulder",
       "excerpt": "Boulder contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-electricians-kansas-city\">Expense Tracking for Electricians in Kansas City</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-houston\">Expense Tracking for Electricians in Houston</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-new-york\">Expense Tracking for Electricians in New York</a></li>\n    </ul>"
 }

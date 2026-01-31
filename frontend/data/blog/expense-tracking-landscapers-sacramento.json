@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Sacramento",
       "excerpt": "Sacramento contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-durham\">Expense Tracking for Landscapers in Durham</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-columbus\">Expense Tracking for Landscapers in Columbus</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-austin\">Expense Tracking for Landscapers in Austin</a></li>\n    </ul>"
 }

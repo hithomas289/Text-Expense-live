@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Santa Clara",
       "excerpt": "Santa Clara contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-san-francisco\">Expense Tracking for HVAC Professionals in San Francisco</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-boston\">Expense Tracking for HVAC Professionals in Boston</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-boulder\">Expense Tracking for HVAC Professionals in Boulder</a></li>\n    </ul>"
 }

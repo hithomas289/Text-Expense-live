@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Columbus",
       "excerpt": "Columbus contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-pittsburgh\">Expense Tracking for HVAC Professionals in Pittsburgh</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-chicago\">Expense Tracking for HVAC Professionals in Chicago</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-raleigh\">Expense Tracking for HVAC Professionals in Raleigh</a></li>\n    </ul>"
 }

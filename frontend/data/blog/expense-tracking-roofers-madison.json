@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Madison",
       "excerpt": "Madison contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-roofers-durham\">Expense Tracking for Roofers in Durham</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-philadelphia\">Expense Tracking for Roofers in Philadelphia</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-st-louis\">Expense Tracking for Roofers in St. Louis</a></li>\n    </ul>"
 }

@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Minneapolis",
       "excerpt": "Minneapolis contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-roofers-salt-lake-city\">Expense Tracking for Roofers in Salt Lake City</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-detroit\">Expense Tracking for Roofers in Detroit</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-atlanta\">Expense Tracking for Roofers in Atlanta</a></li>\n    </ul>"
 }

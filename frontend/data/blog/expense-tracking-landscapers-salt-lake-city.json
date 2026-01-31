@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Salt Lake City",
       "excerpt": "Salt Lake City contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-dallas\">Expense Tracking for Landscapers in Dallas</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-washington-dc\">Expense Tracking for Landscapers in Washington DC</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-anaheim\">Expense Tracking for Landscapers in Anaheim</a></li>\n    </ul>"
 }

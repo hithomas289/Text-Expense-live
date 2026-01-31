@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Indianapolis",
       "excerpt": "Indianapolis contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-electricians-miami\">Expense Tracking for Electricians in Miami</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-kansas-city\">Expense Tracking for Electricians in Kansas City</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-durham\">Expense Tracking for Electricians in Durham</a></li>\n    </ul>"
 }

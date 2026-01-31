@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Reston",
       "excerpt": "Reston contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-electricians-orlando\">Expense Tracking for Electricians in Orlando</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-dallas\">Expense Tracking for Electricians in Dallas</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-santa-clara\">Expense Tracking for Electricians in Santa Clara</a></li>\n    </ul>"
 }

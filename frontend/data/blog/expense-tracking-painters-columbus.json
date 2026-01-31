@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Columbus",
       "excerpt": "Columbus contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-painters-philadelphia\">Expense Tracking for Painters in Philadelphia</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-cincinnati\">Expense Tracking for Painters in Cincinnati</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-washington-dc\">Expense Tracking for Painters in Washington DC</a></li>\n    </ul>"
 }

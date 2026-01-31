@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Anaheim",
       "excerpt": "Anaheim contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-general-contractors-salt-lake-city\">Expense Tracking for General Contractors in Salt Lake City</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-new-orleans\">Expense Tracking for General Contractors in New Orleans</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-los-angeles\">Expense Tracking for General Contractors in Los Angeles</a></li>\n    </ul>"
 }

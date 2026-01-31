@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in San Diego",
       "excerpt": "San Diego contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-roofers-new-orleans\">Expense Tracking for Roofers in New Orleans</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-jacksonville\">Expense Tracking for Roofers in Jacksonville</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-san-francisco\">Expense Tracking for Roofers in San Francisco</a></li>\n    </ul>"
 }

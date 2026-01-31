@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in San Diego",
       "excerpt": "San Diego contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-denver\">Expense Tracking for HVAC Professionals in Denver</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-new-orleans\">Expense Tracking for HVAC Professionals in New Orleans</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-raleigh\">Expense Tracking for HVAC Professionals in Raleigh</a></li>\n    </ul>"
 }

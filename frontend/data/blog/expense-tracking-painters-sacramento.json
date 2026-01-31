@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Sacramento",
       "excerpt": "Sacramento contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-painters-houston\">Expense Tracking for Painters in Houston</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-cincinnati\">Expense Tracking for Painters in Cincinnati</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-sunnyvale\">Expense Tracking for Painters in Sunnyvale</a></li>\n    </ul>"
 }

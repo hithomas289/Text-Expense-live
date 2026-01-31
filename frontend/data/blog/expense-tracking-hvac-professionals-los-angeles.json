@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Los Angeles",
       "excerpt": "Los Angeles contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-boulder\">Expense Tracking for HVAC Professionals in Boulder</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-indianapolis\">Expense Tracking for HVAC Professionals in Indianapolis</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-jacksonville\">Expense Tracking for HVAC Professionals in Jacksonville</a></li>\n    </ul>"
 }

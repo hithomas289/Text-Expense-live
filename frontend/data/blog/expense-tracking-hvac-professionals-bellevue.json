@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Bellevue",
       "excerpt": "Bellevue contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-salt-lake-city\">Expense Tracking for HVAC Professionals in Salt Lake City</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-pittsburgh\">Expense Tracking for HVAC Professionals in Pittsburgh</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-arlington\">Expense Tracking for HVAC Professionals in Arlington</a></li>\n    </ul>"
 }

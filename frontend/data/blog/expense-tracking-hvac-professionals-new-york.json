@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in New York",
       "excerpt": "New York contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-arlington\">Expense Tracking for HVAC Professionals in Arlington</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-columbus\">Expense Tracking for HVAC Professionals in Columbus</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-dallas\">Expense Tracking for HVAC Professionals in Dallas</a></li>\n    </ul>"
 }

@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Baltimore",
       "excerpt": "Baltimore contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-sacramento\">Expense Tracking for HVAC Professionals in Sacramento</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-arlington\">Expense Tracking for HVAC Professionals in Arlington</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-kansas-city\">Expense Tracking for HVAC Professionals in Kansas City</a></li>\n    </ul>"
 }

@@ -3,43 +3,32 @@
   "category": "expense-reporting",
   "status": "published",
   "templateVersion": "v2",
-
   "TITLE": "Monthly Expense Report Template (Automatically Generated) | TextExpense Blog",
   "META_DESCRIPTION": "Stop building monthly expense reports manually. Track receipts through WhatsApp and download a clean monthly report instantly.",
   "KEYWORDS": "monthly expense report, expense report template, monthly expense excel, monthly receipts tracking",
-
   "CANONICAL_URL": "https://textexpense.com/blog/monthly-expense-report-template",
   "CANONICAL_URL_ENCODED": "https%3A%2F%2Ftextexpense.com%2Fblog%2Fmonthly-expense-report-template",
-
   "OG_TITLE": "Monthly Expense Report Template (Automatically Generated)",
   "OG_DESCRIPTION": "Stop building monthly expense reports manually. Track via WhatsApp and download clean monthly reports instantly.",
-
   "TWITTER_TITLE": "Monthly Expense Report Template (Automatically Generated)",
   "TWITTER_DESCRIPTION": "Stop building monthly expense reports manually. Track receipts via WhatsApp and export instantly.",
   "TWITTER_SHARE_TEXT": "Stop building monthly expense reports from scratch. Track via WhatsApp and download formatted reports instantly.",
-
   "PUBLISH_DATE_ISO": "2025-11-16T03:00:00Z",
   "MODIFIED_DATE_ISO": "2025-11-16T03:00:00Z",
   "PUBLISH_DATE": "November 16, 2025",
   "publishDate": "2025-11-16",
-
   "CATEGORY": "Expense Reporting",
   "ARTICLE_TITLE": "Monthly Expense Report Template (Automatically Generated)",
   "READING_TIME": "7",
-
   "ARTICLE_CONTENT": "<p class=\"lead\">Every month, you need to review your spending:</p>\n\n<ul>\n  <li>Personal budgeting</li>\n  <li>Freelancer tax tracking</li>\n  <li>Business bookkeeping</li>\n  <li>Reimbursements</li>\n  <li>Client billing</li>\n</ul>\n\n<p>But monthly expense reports take too long to create manually.</p>\n\n<p>You have to <strong>gather receipts → enter everything into Excel → attach images → create totals</strong>.</p>\n\n<p>There's an easier way.</p>\n\n<h2>Why Monthly Expense Reports Are Painful</h2>\n\n<ul>\n  <li><strong>Receipts get lost</strong> — Especially from the beginning of the month</li>\n  <li><strong>Data entry takes forever</strong> — Typing 30-50 expenses manually</li>\n  <li><strong>Spreadsheets need formatting</strong> — Getting columns, totals, and categories right</li>\n  <li><strong>You forget expenses from earlier in the month</strong> — Memory fades after 2-3 weeks</li>\n  <li><strong>Reports end up inconsistent</strong> — Different format each month</li>\n</ul>\n\n<h2>The Automatic Monthly Expense Report Template</h2>\n\n<p>Here's the faster workflow:</p>\n\n<ol>\n  <li>Snap a photo of your receipt</li>\n  <li>Send it to WhatsApp</li>\n  <li>Choose category</li>\n</ol>\n\n<p>The system creates your <strong>Monthly Expense Report</strong> automatically.</p>\n\n<h3>Your report includes:</h3>\n\n<ul>\n  <li>All expenses for the month</li>\n  <li>Merchant names</li>\n  <li>Dates</li>\n  <li>Amounts</li>\n  <li>Categories</li>\n  <li>Notes</li>\n  <li>Totals</li>\n  <li>Receipt image links</li>\n</ul>\n\n<p>Fully formatted and ready for:</p>\n\n<ul>\n  <li>HR</li>\n  <li>Your accountant</li>\n  <li>Your manager</li>\n  <li>Your tax filing</li>\n  <li>Your budgeting app</li>\n</ul>\n\n<h2>Why This Beats Manual Templates</h2>\n\n<p><strong>✓ No data entry</strong></p>\n<p>Everything is captured automatically.</p>\n\n<p><strong>✓ Always complete</strong></p>\n<p>No missing expenses.</p>\n\n<p><strong>✓ Real-time updates</strong></p>\n<p>Your template builds throughout the month.</p>\n\n<p><strong>✓ Export-ready</strong></p>\n<p>One tap → Excel or PDF.</p>\n\n<h2>Final Word</h2>\n\n<p>Stop building monthly reports from scratch.</p>\n\n<p>Let WhatsApp do the collection, and let Excel handle the reporting.</p>\n\n<p><strong>Snap → Text → Monthly Report Done.</strong></p>",
-
   "TAGS": "monthly expense report, expense report template, monthly expense excel, monthly receipts tracking, automatic expense report",
-
   "CTA_TEXT": "Try 3 Receipts Free",
   "CTA_TITLE": "Try Your First Monthly Report Free",
   "CTA_DESCRIPTION": "Track expenses via WhatsApp. Download your monthly expense report instantly.",
-
   "FOOTER_CTA_TITLE": "Generate Your Monthly Expense Report Automatically",
   "FOOTER_CTA_SUBTITLE": "Track receipts via WhatsApp all month. Download formatted reports instantly.",
   "FOOTER_CTA_DESCRIPTION": "Track receipts via WhatsApp all month. Download formatted reports instantly.",
   "FOOTER_CTA_TEXT": "Start Building Your Monthly Report Free",
-
   "relatedPosts": [
     {
       "slug": "prepare-expense-report-fast",
@@ -56,5 +45,6 @@
       "title": "How to Export Expenses to Excel Automatically",
       "excerpt": "One-tap Excel export with all expenses, receipts, and totals. No manual spreadsheet building."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/prepare-expense-report-in-excel\">How to Prepare an Expense Report in Excel (Without Manual Typing)</a></li>\n        <li><a href=\"/blog/export-expenses-to-excel-automatically\">How to Export Expenses to Excel Automatically</a></li>\n        <li><a href=\"/blog/prepare-expense-report-fast\">How to Prepare an Expense Report in Minutes</a></li>\n    </ul>"
 }

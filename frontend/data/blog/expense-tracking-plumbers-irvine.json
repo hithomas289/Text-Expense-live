@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Irvine",
       "excerpt": "Irvine contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-charlotte\">Expense Tracking for Plumbers in Charlotte</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-indianapolis\">Expense Tracking for Plumbers in Indianapolis</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-salt-lake-city\">Expense Tracking for Plumbers in Salt Lake City</a></li>\n    </ul>"
 }

@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Chicago",
       "excerpt": "Chicago contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-baltimore\">Expense Tracking for Plumbers in Baltimore</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-orlando\">Expense Tracking for Plumbers in Orlando</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-st-louis\">Expense Tracking for Plumbers in St. Louis</a></li>\n    </ul>"
 }

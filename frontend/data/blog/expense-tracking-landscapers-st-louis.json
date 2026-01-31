@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in St. Louis",
       "excerpt": "St. Louis contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-san-antonio\">Expense Tracking for Landscapers in San Antonio</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-san-francisco\">Expense Tracking for Landscapers in San Francisco</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-baltimore\">Expense Tracking for Landscapers in Baltimore</a></li>\n    </ul>"
 }

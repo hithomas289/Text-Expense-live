@@ -22,13 +22,13 @@
     <meta name="author" content="TextExpense">
     <meta property="og:title" content="TextExpense - Never Lose a Receipt Again">
     <meta property="og:description" content="Manage receipts via WhatsApp. Get organized Excel files with clickable links to every original receipt. Perfect for tax deductions and business expenses.">
-    <meta property="og:image" content="https://hithomas289.github.io/textexpense/te-logo.png">
+    <meta property="og:image" content="https://textexpense.com/te-logo.png">
     <meta property="og:url" content="https://textexpense.com">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="TextExpense - Never Lose a Receipt Again">
     <meta name="twitter:description" content="Manage receipts via WhatsApp. Get organized Excel files with clickable links to every original receipt.">
-    <meta name="twitter:image" content="https://hithomas289.github.io/textexpense/te-logo.png">
+    <meta name="twitter:image" content="https://textexpense.com/te-logo.png">
 
     <!-- Adding structured data for SEO -->
     <script type="application/ld+json">
@@ -48,7 +48,65 @@
         }
     }
     </script>
-    
+
+    <!-- FAQPage structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How does Text Expense work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Simply text your receipt photo to our WhatsApp number and we'll instantly turn it into an organized Excel report. Send any receipt photo, PDF, or document (up to 20MB), our AI extracts all details in under 30 seconds, choose a category, and download organized spreadsheets with all your expenses and direct links to original receipts. No app downloads, no account setup, no learning curve."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What if I need the receipt later?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We keep the original photo forever. Download it anytime by generating reports for returns, warranty claims, or proof of purchase."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What file formats do you support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We support all common document formats: Photos (JPG, JPEG, PNG, WebP), Documents (PDF, DOCX, TIFF), and files up to 20MB. Our AI works best with clear, well-lit photos on flat surfaces."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How accurate is your receipt processing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our AI achieves 95%+ accuracy and allows you to edit details including currency. We extract merchant name and location, date and invoice number, subtotal, tax, tips, and total amount, individual line items, and currency detection. If confidence is below 85%, we'll ask you to retake the photo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are your pricing plans?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Lite Plan: Affordable monthly plan with receipt processing and short-term history - Perfect for light use. Pro Plan: Premium plan with generous receipt limit and extended history with priority processing. All plans include unlimited Excel report downloads, receipt image storage, and category organization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is my data secure and private?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. All receipts are encrypted and stored securely on enterprise-grade AWS servers. We are GDPR compliant, never share your data with third parties, and use official WhatsApp Business API with end-to-end encryption. Receipt download links expire after 7 days for security."
+                }
+            }
+        ]
+    }
+    </script>
+
     <style>
         * {
             margin: 0;

@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Boulder",
       "excerpt": "Boulder contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-new-york\">Expense Tracking for Landscapers in New York</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-los-angeles\">Expense Tracking for Landscapers in Los Angeles</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-santa-clara\">Expense Tracking for Landscapers in Santa Clara</a></li>\n    </ul>"
 }

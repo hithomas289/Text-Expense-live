@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Boston",
       "excerpt": "Boston contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-houston\">Expense Tracking for HVAC Professionals in Houston</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-sunnyvale\">Expense Tracking for HVAC Professionals in Sunnyvale</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-san-jose\">Expense Tracking for HVAC Professionals in San Jose</a></li>\n    </ul>"
 }

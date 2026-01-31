@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Anaheim",
       "excerpt": "Anaheim contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-portland\">Expense Tracking for HVAC Professionals in Portland</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-chicago\">Expense Tracking for HVAC Professionals in Chicago</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-reston\">Expense Tracking for HVAC Professionals in Reston</a></li>\n    </ul>"
 }

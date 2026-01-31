@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Kansas City",
       "excerpt": "Kansas City contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-santa-clara\">Expense Tracking for Plumbers in Santa Clara</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-indianapolis\">Expense Tracking for Plumbers in Indianapolis</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-cincinnati\">Expense Tracking for Plumbers in Cincinnati</a></li>\n    </ul>"
 }

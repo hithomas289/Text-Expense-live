@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Plano",
       "excerpt": "Plano contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-los-angeles\">Expense Tracking for Landscapers in Los Angeles</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-bellevue\">Expense Tracking for Landscapers in Bellevue</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-san-antonio\">Expense Tracking for Landscapers in San Antonio</a></li>\n    </ul>"
 }

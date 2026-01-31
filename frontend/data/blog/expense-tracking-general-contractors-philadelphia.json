@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Philadelphia",
       "excerpt": "Philadelphia contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-general-contractors-detroit\">Expense Tracking for General Contractors in Detroit</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-sacramento\">Expense Tracking for General Contractors in Sacramento</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-indianapolis\">Expense Tracking for General Contractors in Indianapolis</a></li>\n    </ul>"
 }

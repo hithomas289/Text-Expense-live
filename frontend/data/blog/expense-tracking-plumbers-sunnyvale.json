@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Sunnyvale",
       "excerpt": "Sunnyvale contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-plano\">Expense Tracking for Plumbers in Plano</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-raleigh\">Expense Tracking for Plumbers in Raleigh</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-new-york\">Expense Tracking for Plumbers in New York</a></li>\n    </ul>"
 }

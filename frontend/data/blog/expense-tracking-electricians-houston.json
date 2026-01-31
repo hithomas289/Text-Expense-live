@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Houston",
       "excerpt": "Houston contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-electricians-baltimore\">Expense Tracking for Electricians in Baltimore</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-san-antonio\">Expense Tracking for Electricians in San Antonio</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-sacramento\">Expense Tracking for Electricians in Sacramento</a></li>\n    </ul>"
 }

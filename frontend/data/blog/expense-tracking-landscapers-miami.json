@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Miami",
       "excerpt": "Miami contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-nashville\">Expense Tracking for Landscapers in Nashville</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-orlando\">Expense Tracking for Landscapers in Orlando</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-baltimore\">Expense Tracking for Landscapers in Baltimore</a></li>\n    </ul>"
 }

@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Los Angeles",
       "excerpt": "Los Angeles contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-general-contractors-tampa\">Expense Tracking for General Contractors in Tampa</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-houston\">Expense Tracking for General Contractors in Houston</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-miami\">Expense Tracking for General Contractors in Miami</a></li>\n    </ul>"
 }

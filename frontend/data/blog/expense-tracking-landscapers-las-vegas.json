@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Las Vegas",
       "excerpt": "Las Vegas contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-los-angeles\">Expense Tracking for Landscapers in Los Angeles</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-dallas\">Expense Tracking for Landscapers in Dallas</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-baltimore\">Expense Tracking for Landscapers in Baltimore</a></li>\n    </ul>"
 }

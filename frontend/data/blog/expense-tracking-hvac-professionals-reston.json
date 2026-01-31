@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Reston",
       "excerpt": "Reston contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-boulder\">Expense Tracking for HVAC Professionals in Boulder</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-austin\">Expense Tracking for HVAC Professionals in Austin</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-madison\">Expense Tracking for HVAC Professionals in Madison</a></li>\n    </ul>"
 }

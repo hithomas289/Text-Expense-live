@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Sacramento",
       "excerpt": "Sacramento contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-jacksonville\">Expense Tracking for Plumbers in Jacksonville</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-arlington\">Expense Tracking for Plumbers in Arlington</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-chicago\">Expense Tracking for Plumbers in Chicago</a></li>\n    </ul>"
 }

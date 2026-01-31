@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Nashville",
       "excerpt": "Nashville contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-roofers-st-louis\">Expense Tracking for Roofers in St. Louis</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-los-angeles\">Expense Tracking for Roofers in Los Angeles</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-portland\">Expense Tracking for Roofers in Portland</a></li>\n    </ul>"
 }

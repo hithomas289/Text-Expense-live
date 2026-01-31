@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Irvine",
       "excerpt": "Irvine contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-roofers-phoenix\">Expense Tracking for Roofers in Phoenix</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-pittsburgh\">Expense Tracking for Roofers in Pittsburgh</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-new-york\">Expense Tracking for Roofers in New York</a></li>\n    </ul>"
 }

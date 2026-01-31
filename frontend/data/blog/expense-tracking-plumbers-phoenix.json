@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Phoenix",
       "excerpt": "Phoenix contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-minneapolis\">Expense Tracking for Plumbers in Minneapolis</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-las-vegas\">Expense Tracking for Plumbers in Las Vegas</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-tampa\">Expense Tracking for Plumbers in Tampa</a></li>\n    </ul>"
 }

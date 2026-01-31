@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Durham",
       "excerpt": "Durham contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-roofers-san-jose\">Expense Tracking for Roofers in San Jose</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-philadelphia\">Expense Tracking for Roofers in Philadelphia</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-charlotte\">Expense Tracking for Roofers in Charlotte</a></li>\n    </ul>"
 }

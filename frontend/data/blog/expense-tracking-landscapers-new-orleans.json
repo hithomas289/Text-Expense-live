@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in New Orleans",
       "excerpt": "New Orleans contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-san-jose\">Expense Tracking for Landscapers in San Jose</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-new-york\">Expense Tracking for Landscapers in New York</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-minneapolis\">Expense Tracking for Landscapers in Minneapolis</a></li>\n    </ul>"
 }

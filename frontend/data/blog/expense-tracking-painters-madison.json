@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Madison",
       "excerpt": "Madison contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-painters-miami\">Expense Tracking for Painters in Miami</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-las-vegas\">Expense Tracking for Painters in Las Vegas</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-baltimore\">Expense Tracking for Painters in Baltimore</a></li>\n    </ul>"
 }

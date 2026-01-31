@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Reston",
       "excerpt": "Reston contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-denver\">Expense Tracking for Landscapers in Denver</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-austin\">Expense Tracking for Landscapers in Austin</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-nashville\">Expense Tracking for Landscapers in Nashville</a></li>\n    </ul>"
 }

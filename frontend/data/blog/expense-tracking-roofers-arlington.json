@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Arlington",
       "excerpt": "Arlington contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-roofers-seattle\">Expense Tracking for Roofers in Seattle</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-austin\">Expense Tracking for Roofers in Austin</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-detroit\">Expense Tracking for Roofers in Detroit</a></li>\n    </ul>"
 }

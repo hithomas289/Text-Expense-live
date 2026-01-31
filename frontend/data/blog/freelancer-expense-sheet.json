@@ -3,42 +3,32 @@
   "category": "freelance-expenses",
   "status": "published",
   "templateVersion": "v2",
-
   "TITLE": "The Ultimate Freelancer Expense Sheet (No Spreadsheet Needed) | TextExpense Blog",
   "META_DESCRIPTION": "Freelancers need clean expense sheets for taxes. Capture receipts through WhatsApp and export a complete freelancer expense sheet anytime.",
   "KEYWORDS": "freelancer expense sheet, freelance expenses, track freelancer expenses, 1099 expense sheet",
-
   "CANONICAL_URL": "https://textexpense.com/blog/freelancer-expense-sheet",
   "CANONICAL_URL_ENCODED": "https%3A%2F%2Ftextexpense.com%2Fblog%2Ffreelancer-expense-sheet",
-
   "OG_TITLE": "The Ultimate Freelancer Expense Sheet (No Spreadsheet Needed)",
   "OG_DESCRIPTION": "Track freelance expenses through WhatsApp and export a complete expense sheet for taxes anytime.",
-
   "TWITTER_TITLE": "The Ultimate Freelancer Expense Sheet (No Spreadsheet Needed)",
   "TWITTER_DESCRIPTION": "Freelancers: capture receipts via WhatsApp and export complete expense sheets for taxes.",
   "TWITTER_SHARE_TEXT": "Stop building freelancer expense sheets manually. Track receipts via WhatsApp and export complete sheets for taxes.",
-
   "PUBLISH_DATE_ISO": "2025-11-16T03:00:00Z",
   "MODIFIED_DATE_ISO": "2025-11-16T03:00:00Z",
   "PUBLISH_DATE": "November 16, 2025",
   "publishDate": "2025-11-16",
-
   "CATEGORY": "Freelance Expenses",
   "ARTICLE_TITLE": "The Ultimate Freelancer Expense Sheet (No Spreadsheet Needed)",
   "READING_TIME": "7",
   "ARTICLE_CONTENT": "<p class=\"lead\">Freelancers juggle countless expenses:</p>\n\n<ul>\n  <li>Meals</li>\n  <li>Software subscriptions</li>\n  <li>Transportation</li>\n  <li>Equipment</li>\n  <li>Office supplies</li>\n  <li>Courses</li>\n  <li>Marketing costs</li>\n</ul>\n\n<p>All of these are <strong>tax-deductible</strong> — but only if tracked properly.</p>\n\n<p>Building a freelancer expense sheet manually is exhausting.</p>\n\n<h2>Why Freelancers Hate Expense Sheets</h2>\n\n<ul>\n  <li><strong>Receipts everywhere</strong> — No central place to store things</li>\n  <li><strong>End-of-year panic</strong> — Forgetting deductible expenses</li>\n  <li><strong>Spreadsheets take too much time</strong> — Hard to stay consistent</li>\n</ul>\n\n<h2>The 30-Second Freelancer System</h2>\n\n<ol>\n  <li>Take a photo of each receipt</li>\n  <li>Text it to WhatsApp</li>\n  <li>Select category (Meals, Travel, Software, etc.)</li>\n</ol>\n\n<p>The system extracts all info and builds your:</p>\n\n<h3>Freelancer Expense Sheet (Excel or PDF)</h3>\n\n<p>It includes:</p>\n\n<ul>\n  <li>Date</li>\n  <li>Merchant</li>\n  <li>Amount</li>\n  <li>Category</li>\n  <li>Notes</li>\n  <li>Receipt image link</li>\n  <li>Monthly totals</li>\n  <li>Yearly totals</li>\n</ul>\n\n<p>Everything you need for <strong>taxes or quarterly payments</strong>.</p>\n\n<h2>Why This Method Is Perfect for Freelancers</h2>\n\n<ul>\n  <li>No spreadsheets to maintain</li>\n  <li>No apps to learn</li>\n  <li>No manual data entry</li>\n  <li>You track expenses in real time</li>\n  <li>Deductions are maximized</li>\n  <li>Tax time becomes stress-free</li>\n</ul>\n\n<h2>Final Word</h2>\n\n<p>Don't let receipts and spreadsheets slow down your freelance work.</p>\n\n<p><strong>Snap → Text → Freelancer Expense Sheet Ready.</strong></p>",
-
   "TAGS": "freelancer expense sheet, freelance expenses, track freelancer expenses, 1099 expense sheet, freelance tax deductions",
-
   "CTA_TEXT": "Try 3 Receipts Free",
   "CTA_TITLE": "Try 3 Freelance Receipts Free",
   "CTA_DESCRIPTION": "Track freelance expenses instantly. Export complete expense sheets for taxes.",
-
   "FOOTER_CTA_TITLE": "Build Your Freelancer Expense Sheet Automatically",
   "FOOTER_CTA_SUBTITLE": "Track receipts via WhatsApp. Export complete expense sheets for taxes anytime.",
   "FOOTER_CTA_DESCRIPTION": "Track receipts via WhatsApp. Export complete expense sheets for taxes anytime.",
   "FOOTER_CTA_TEXT": "Start Tracking Freelance Expenses Free",
-
   "relatedPosts": [
     {
       "slug": "how-consultants-manage-expenses",
@@ -55,5 +45,6 @@
       "title": "How to Prepare an Expense Report in Minutes",
       "excerpt": "Create expense reports in minutes instead of hours. No more weekend spreadsheet work."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/track-expenses-columbus-freelancers\">Best Way to Track Expenses in Columbus for Freelancers (Without Getting Buried in Receipts)</a></li>\n        <li><a href=\"/blog/track-expenses-philadelphia-freelancers\">Best Way to Track Expenses in Philadelphia for Freelancers (Without Getting Buried in Receipts)</a></li>\n        <li><a href=\"/blog/track-expenses-seattle-freelancers\">Best Way to Track Expenses in Seattle for Freelancers (Without Getting Buried in Receipts)</a></li>\n    </ul>"
 }

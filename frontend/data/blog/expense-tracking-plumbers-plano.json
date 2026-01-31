@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Plano",
       "excerpt": "Plano contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-miami\">Expense Tracking for Plumbers in Miami</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-minneapolis\">Expense Tracking for Plumbers in Minneapolis</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-portland\">Expense Tracking for Plumbers in Portland</a></li>\n    </ul>"
 }

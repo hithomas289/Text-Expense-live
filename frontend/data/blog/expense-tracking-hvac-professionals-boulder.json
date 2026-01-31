@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Boulder",
       "excerpt": "Boulder contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-atlanta\">Expense Tracking for HVAC Professionals in Atlanta</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-san-antonio\">Expense Tracking for HVAC Professionals in San Antonio</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-durham\">Expense Tracking for HVAC Professionals in Durham</a></li>\n    </ul>"
 }

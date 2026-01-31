@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Charlotte",
       "excerpt": "Charlotte contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-electricians-new-york\">Expense Tracking for Electricians in New York</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-st-louis\">Expense Tracking for Electricians in St. Louis</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-sacramento\">Expense Tracking for Electricians in Sacramento</a></li>\n    </ul>"
 }

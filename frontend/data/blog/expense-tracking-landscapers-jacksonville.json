@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Jacksonville",
       "excerpt": "Jacksonville contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-arlington\">Expense Tracking for Landscapers in Arlington</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-reston\">Expense Tracking for Landscapers in Reston</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-miami\">Expense Tracking for Landscapers in Miami</a></li>\n    </ul>"
 }

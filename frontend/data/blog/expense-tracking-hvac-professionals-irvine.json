@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Irvine",
       "excerpt": "Irvine contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-san-antonio\">Expense Tracking for HVAC Professionals in San Antonio</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-jacksonville\">Expense Tracking for HVAC Professionals in Jacksonville</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-madison\">Expense Tracking for HVAC Professionals in Madison</a></li>\n    </ul>"
 }

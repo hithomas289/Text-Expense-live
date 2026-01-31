@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Charlotte",
       "excerpt": "Charlotte contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-houston\">Expense Tracking for Landscapers in Houston</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-portland\">Expense Tracking for Landscapers in Portland</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-reston\">Expense Tracking for Landscapers in Reston</a></li>\n    </ul>"
 }

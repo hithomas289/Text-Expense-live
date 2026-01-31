@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Columbus",
       "excerpt": "Columbus contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-general-contractors-chicago\">Expense Tracking for General Contractors in Chicago</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-anaheim\">Expense Tracking for General Contractors in Anaheim</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-bellevue\">Expense Tracking for General Contractors in Bellevue</a></li>\n    </ul>"
 }

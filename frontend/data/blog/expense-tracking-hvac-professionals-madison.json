@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Madison",
       "excerpt": "Madison contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-orlando\">Expense Tracking for HVAC Professionals in Orlando</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-kansas-city\">Expense Tracking for HVAC Professionals in Kansas City</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-dallas\">Expense Tracking for HVAC Professionals in Dallas</a></li>\n    </ul>"
 }

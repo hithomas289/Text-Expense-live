@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Madison",
       "excerpt": "Madison contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-san-antonio\">Expense Tracking for Plumbers in San Antonio</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-detroit\">Expense Tracking for Plumbers in Detroit</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-nashville\">Expense Tracking for Plumbers in Nashville</a></li>\n    </ul>"
 }

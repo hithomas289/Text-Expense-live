@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Sunnyvale",
       "excerpt": "Sunnyvale contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-new-york\">Expense Tracking for HVAC Professionals in New York</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-san-diego\">Expense Tracking for HVAC Professionals in San Diego</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-denver\">Expense Tracking for HVAC Professionals in Denver</a></li>\n    </ul>"
 }

@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in St. Louis",
       "excerpt": "St. Louis contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-roofers-boston\">Expense Tracking for Roofers in Boston</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-pittsburgh\">Expense Tracking for Roofers in Pittsburgh</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-reston\">Expense Tracking for Roofers in Reston</a></li>\n    </ul>"
 }

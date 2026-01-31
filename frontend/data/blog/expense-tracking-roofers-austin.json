@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Austin",
       "excerpt": "Austin contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-roofers-nashville\">Expense Tracking for Roofers in Nashville</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-charlotte\">Expense Tracking for Roofers in Charlotte</a></li>\n        <li><a href=\"/blog/expense-tracking-roofers-tampa\">Expense Tracking for Roofers in Tampa</a></li>\n    </ul>"
 }

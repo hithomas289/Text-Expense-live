@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Salt Lake City",
       "excerpt": "Salt Lake City contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-painters-atlanta\">Expense Tracking for Painters in Atlanta</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-dallas\">Expense Tracking for Painters in Dallas</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-nashville\">Expense Tracking for Painters in Nashville</a></li>\n    </ul>"
 }

@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Detroit",
       "excerpt": "Detroit contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-houston\">Expense Tracking for Plumbers in Houston</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-indianapolis\">Expense Tracking for Plumbers in Indianapolis</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-washington-dc\">Expense Tracking for Plumbers in Washington DC</a></li>\n    </ul>"
 }

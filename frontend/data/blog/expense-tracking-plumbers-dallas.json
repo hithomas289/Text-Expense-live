@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Dallas",
       "excerpt": "Dallas contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-durham\">Expense Tracking for Plumbers in Durham</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-chicago\">Expense Tracking for Plumbers in Chicago</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-sunnyvale\">Expense Tracking for Plumbers in Sunnyvale</a></li>\n    </ul>"
 }

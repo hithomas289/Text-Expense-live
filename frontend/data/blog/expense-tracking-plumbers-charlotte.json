@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Charlotte",
       "excerpt": "Charlotte contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-plumbers-los-angeles\">Expense Tracking for Plumbers in Los Angeles</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-las-vegas\">Expense Tracking for Plumbers in Las Vegas</a></li>\n        <li><a href=\"/blog/expense-tracking-plumbers-san-jose\">Expense Tracking for Plumbers in San Jose</a></li>\n    </ul>"
 }

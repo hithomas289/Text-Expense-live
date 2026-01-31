@@ -3,49 +3,35 @@
   "category": "tax-compliance",
   "status": "published",
   "templateVersion": "v2",
-
   "TITLE": "I Got Audited by the IRS. Here's What Actually Happened.",
   "META_DESCRIPTION": "Real IRS audit experience: what they asked for, what saved me, and the $847 I lost because of one missing receipt. Learn from my mistakes.",
   "KEYWORDS": "IRS audit, tax audit experience, IRS audit process, receipt documentation, Schedule C audit, self-employed audit, tax compliance",
-
   "AUTHOR_NAME": "TextExpense Team",
   "AUTHOR_INITIALS": "TE",
-
   "CANONICAL_URL": "https://textexpense.com/blog/i-got-audited-irs-what-actually-happened",
   "CANONICAL_URL_ENCODED": "https%3A%2F%2Ftextexpense.com%2Fblog%2Fi-got-audited-irs-what-actually-happened",
-
   "OG_TITLE": "I Got Audited by the IRS. Here's What Actually Happened.",
   "OG_DESCRIPTION": "The letter arrived. Two hours later, I learned the $847 lesson about documentation. Real audit experience.",
   "OG_IMAGE": "https://textexpense.com/te-logo.png",
-
   "TWITTER_TITLE": "I Got Audited by the IRS. Here's What Actually Happened.",
   "TWITTER_DESCRIPTION": "Real IRS audit experience. What they wanted, what saved me, what cost me $847.",
   "TWITTER_IMAGE": "https://textexpense.com/te-logo.png",
   "TWITTER_SHARE_TEXT": "I got audited by the IRS. Here's exactly what happened and what I learned.",
-
   "PUBLISH_DATE_ISO": "2025-12-27T14:00:00Z",
   "MODIFIED_DATE_ISO": "2025-12-27T14:00:00Z",
   "PUBLISH_DATE": "December 27, 2025",
   "publishDate": "2025-12-27",
-
   "GA_MEASUREMENT_ID": "G-HMSDHWE3BS",
-
   "CATEGORY": "Tax Compliance",
   "ARTICLE_TITLE": "I Got Audited. Here's What Actually Happened.",
   "READING_TIME": "8",
-
   "FEATURED_IMAGE": "",
-
   "ARTICLE_CONTENT": "<p>The letter was thin. Plain white envelope. IRS return address.</p>\n\n<p>My hands went cold before I even opened it.</p>\n\n<p>\"We are examining your federal income tax return for the year shown above.\"</p>\n\n<p>Three weeks later, I was sitting across from an IRS agent in a government building, a cardboard box of receipts on the table between us.</p>\n\n<p>Here's what I learned.</p>\n\n<h2>It Wasn't What I Expected</h2>\n\n<p>I'd imagined audits as accusatory. Aggressive. Some version of a cop drama where they shine a light in your face and demand answers.</p>\n\n<p>It wasn't like that.</p>\n\n<p>The IRS conducts audits either by mail or through an in-person interview to review your records. Mine was in-person—what they call a \"field audit.\"</p>\n\n<p>The agent was... normal. Polite, even. She had a checklist. She worked through it methodically. No drama.</p>\n\n<p>For most agents, a calm, respectful, businesslike demeanor works better—along with thorough preparation.</p>\n\n<p>The whole thing took about two hours.</p>\n\n<h2>What They Actually Wanted</h2>\n\n<p>The letter had been specific: they wanted documentation for my Schedule C business expenses. If your return is chosen for audit, the IRS will be on the hunt to make sure you have the documentation to fully substantiate your write-offs.</p>\n\n<p>That meant receipts.</p>\n\n<p>Not \"I remember buying it.\" Not bank statements showing a charge. Actual receipts showing what I bought, when, and from whom.</p>\n\n<p>The IRS expects you to have all your receipts, records and invoices regardless of what business you're in.</p>\n\n<p>She went line by line through my deductions. Home office. Travel. Meals with clients. Software subscriptions. Phone bill.</p>\n\n<p>For each one: \"Can I see the receipt?\"</p>\n\n<h2>What Saved Me</h2>\n\n<p>I'd been paranoid about this exact scenario for years. So when I started freelancing, I built a system: every receipt got photographed and organized the moment I got it.</p>\n\n<p>When the agent asked for my client dinner receipts, I handed her a folder with twelve of them, chronologically ordered, each one showing the restaurant, the date, the amount, and a note on the back about who I met with.</p>\n\n<p>She flipped through them in about ninety seconds. \"These are good.\"</p>\n\n<p>When she asked about my home office, I had photos of the space and a floor plan showing the square footage.</p>\n\n<p>When she asked about mileage, I had a log.</p>\n\n<p>Most of the audit was her checking boxes on her form while I handed her folders.</p>\n\n<h2>What Almost Killed Me</h2>\n\n<p>There was one category where I didn't have complete records: professional development.</p>\n\n<p>I'd attended a conference. I remembered paying for it. I'd deducted the registration fee. But I couldn't find the receipt—just an email confirmation that didn't show the amount.</p>\n\n<p>The agent flagged it. Without proper documentation, she couldn't allow the deduction.</p>\n\n<p>$847. Gone.</p>\n\n<p>Not because I didn't pay it. Not because it wasn't legitimate. Because I couldn't prove it.</p>\n\n<h2>The Math</h2>\n\n<p>The IRS has audited significantly less than 1% of all individual returns in recent years. So most people never go through this.</p>\n\n<p>But if you file a Schedule C to report profit or loss from a business, your odds of drawing additional IRS scrutiny go up.</p>\n\n<p>And here's what nobody tells you: audits will cost you valuable time and money. The amount of time it took us to pull receipts and format them into Excel spreadsheets was a burden.</p>\n\n<p>Even when you're innocent, an audit is a tax on your time.</p>\n\n<p>Mine cost me:</p>\n<ul>\n<li>8 hours of preparation</li>\n<li>A half-day off work for the interview</li>\n<li>$847 in disallowed deductions I couldn't document</li>\n</ul>\n\n<p>If I hadn't been organized? It would have been much worse.</p>\n\n<h2>What I'd Tell You</h2>\n\n<p>The audit didn't happen because I did something wrong. Sometimes returns are selected based solely on a statistical formula. I was just unlucky.</p>\n\n<p>But here's the thing: being organized turned a potentially devastating experience into a minor inconvenience.</p>\n\n<p>If you record your business' expenses and income appropriately and file your tax returns on time and correctly, your tax audit experience shouldn't be painful.</p>\n\n<p>The receipts I had? No problem. The one I didn't? $847 problem.</p>\n\n<h2>The System That Would Have Saved That $847</h2>\n\n<p>After the audit, I rebuilt my system. The old way—photographing receipts and dumping them in a Google Drive folder—had gaps. Things got lost. Conference registrations slipped through.</p>\n\n<p>Now I text every receipt to TextExpense the moment I get it. Business dinner? Snap and send before I leave the restaurant. Conference registration email? Forward it immediately.</p>\n\n<p>Everything gets extracted, categorized, and stored with the original image attached.</p>\n\n<p>If I get audited again, I'll hand over one Excel file with clickable links to every receipt. Five minutes of preparation instead of eight hours.</p>\n\n<h2>The One Thing to Remember</h2>\n\n<p>The IRS doesn't care about your intentions. They care about documentation.</p>\n\n<p>You can be completely honest, totally legitimate, and still lose deductions because you can't prove what you spent.</p>\n\n<p>Every missing receipt is money you might have to give back.</p>\n\n<h2>Don't learn this lesson the hard way.</h2>\n\n<p>TextExpense gives you 3 free receipts to try. Text a photo, get it organized, build the habit now—before the letter arrives.</p>\n\n<p><a href=\"https://wa.me/17654792054?text=hi\" class=\"cta-link\">Try It Free →</a></p>",
-
   "TAGS": "IRS audit, tax audit experience, receipt documentation, Schedule C audit, business expense documentation, tax compliance, audit preparation",
-
   "CTA_URL": "https://wa.me/17654792054?text=hi",
   "CTA_TITLE": "Ready to Get Started?",
   "CTA_DESCRIPTION": "Try TextExpense free today. Track expenses via WhatsApp.",
-
   "FOOTER_CTA_TITLE": "Start Tracking Receipts Today",
   "FOOTER_CTA_SUBTITLE": "Join thousands using TextExpense for receipt management.",
-
-  "RELATED_POSTS": ""
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/shoebox-cost-me-1847-tax-deductions\">The $1,847 I Left on the Table Last Year (And How a Shoebox Cost Me)</a></li>\n        <li><a href=\"/blog/tried-5-expense-tracking-apps-comparison\">I Tried 5 Expense Tracking Apps So You Don't Have To</a></li>\n        <li><a href=\"/blog/30-second-tax-prep-habit-saves-12-hours\">The 30-Second Tax Prep Habit That Saved Me 12 Hours in April</a></li>\n    </ul>"
 }

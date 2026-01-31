@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in San Diego",
       "excerpt": "San Diego contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-painters-new-york\">Expense Tracking for Painters in New York</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-houston\">Expense Tracking for Painters in Houston</a></li>\n        <li><a href=\"/blog/expense-tracking-painters-kansas-city\">Expense Tracking for Painters in Kansas City</a></li>\n    </ul>"
 }

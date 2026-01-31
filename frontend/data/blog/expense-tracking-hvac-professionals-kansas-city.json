@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Kansas City",
       "excerpt": "Kansas City contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-philadelphia\">Expense Tracking for HVAC Professionals in Philadelphia</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-indianapolis\">Expense Tracking for HVAC Professionals in Indianapolis</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-phoenix\">Expense Tracking for HVAC Professionals in Phoenix</a></li>\n    </ul>"
 }

@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Las Vegas",
       "excerpt": "Las Vegas contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-electricians-san-antonio\">Expense Tracking for Electricians in San Antonio</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-cincinnati\">Expense Tracking for Electricians in Cincinnati</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-portland\">Expense Tracking for Electricians in Portland</a></li>\n    </ul>"
 }

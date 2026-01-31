@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Miami",
       "excerpt": "Miami contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-electricians-denver\">Expense Tracking for Electricians in Denver</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-st-louis\">Expense Tracking for Electricians in St. Louis</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-kansas-city\">Expense Tracking for Electricians in Kansas City</a></li>\n    </ul>"
 }

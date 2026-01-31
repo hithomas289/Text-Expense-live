@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Dallas",
       "excerpt": "Dallas contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-electricians-kansas-city\">Expense Tracking for Electricians in Kansas City</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-columbus\">Expense Tracking for Electricians in Columbus</a></li>\n        <li><a href=\"/blog/expense-tracking-electricians-boulder\">Expense Tracking for Electricians in Boulder</a></li>\n    </ul>"
 }

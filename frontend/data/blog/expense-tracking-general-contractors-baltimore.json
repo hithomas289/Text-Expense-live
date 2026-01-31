@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Baltimore",
       "excerpt": "Baltimore contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-general-contractors-durham\">Expense Tracking for General Contractors in Durham</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-madison\">Expense Tracking for General Contractors in Madison</a></li>\n        <li><a href=\"/blog/expense-tracking-general-contractors-seattle\">Expense Tracking for General Contractors in Seattle</a></li>\n    </ul>"
 }

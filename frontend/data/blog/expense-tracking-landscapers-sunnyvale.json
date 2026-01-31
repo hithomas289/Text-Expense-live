@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Sunnyvale",
       "excerpt": "Sunnyvale contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-landscapers-atlanta\">Expense Tracking for Landscapers in Atlanta</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-new-york\">Expense Tracking for Landscapers in New York</a></li>\n        <li><a href=\"/blog/expense-tracking-landscapers-tampa\">Expense Tracking for Landscapers in Tampa</a></li>\n    </ul>"
 }

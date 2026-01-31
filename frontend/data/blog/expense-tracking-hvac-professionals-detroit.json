@@ -45,5 +45,6 @@
       "title": "Expense Tracking for Contractors in Detroit",
       "excerpt": "Detroit contractors: track project expenses in 30 seconds via WhatsApp."
     }
-  ]
+  ],
+  "RELATED_POSTS": "<ul class=\"related-posts-list\">\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-sacramento\">Expense Tracking for HVAC Professionals in Sacramento</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-san-antonio\">Expense Tracking for HVAC Professionals in San Antonio</a></li>\n        <li><a href=\"/blog/expense-tracking-hvac-professionals-miami\">Expense Tracking for HVAC Professionals in Miami</a></li>\n    </ul>"
 }
