@@ -87,41 +87,40 @@ before declaring the end-of-session update done.
 
 ### ▶ Thread: `codebase-documentation` — Anshin-style understanding docs from the multi-agent audit
 
-**Status:** paused (audit complete + committed; awaiting push decision)
+**Status:** done — audit + docs shipped to live prod; only follow-up decisions remain (see open questions)
 **Last touched:** 2026-05-25
-**Branch:** `main` (local-only — committed, **NOT pushed**)
-**Last commit:** `a48ab91 docs: add codebase understanding docs from multi-agent audit`
+**Branch:** `main` (**pushed** — in sync with origin)
+**Last commit:** `48c81f8 chore: wire resume-protocol router for the repo` (docs themselves landed in `a48ab91`)
 
 **Where it lives:**
 - Docs: `docs/PROJECT.md`, `docs/architecture.md`, `codebase-map.yaml`, `docs/tech-debt-register.md`, `docs/ops-runbook.md`
 - Memory: `~/.claude/.../memory/textexpense-codebase-docs.md` (summary + reality check)
 
 **What's done:**
-- Full read-only audit (5 domain agents) + adversarial verification (4 agents cross-checked vs source, Railway, prod DB). Docs written and 3 verifier-caught errors fixed (D3 enum was inverted, S5 mis-cited, index.js throw reason). Committed locally as `a48ab91`.
+- Full read-only audit (5 domain agents) + adversarial verification (4 agents vs source, Railway, prod DB); 3 verifier-caught errors fixed. Committed (`a48ab91`), resume-protocol wired (`48c81f8`), **pushed to `main` and deployed** to the live `awake-renewal` service (textexpense.com → HTTP 200, deploy SUCCESS).
+- **Infra finding (now in ops-runbook):** live app = service **`awake-renewal`** (custom domain `textexpense.com`, deploys from `hithomas289/Text-Expense-live`). The service named `TextExpense` is a stale fork (`Divya0600/TextExpense`) with a FAILED deploy — not live. Push needs gh account `hithomas289` (`gh auth switch -u hithomas289 && gh auth setup-git`).
 
 **What's next:**
-- Decide whether to push `a48ab91` to `main` (triggers a Railway build — see push-policy warning; prior deploy "d" failed). If yes: `git push origin main` then watch the deploy. If no: leave local.
+- Nothing on this thread — it's shipped. Next real work is the security fix (see open questions); scaffold a new thread when picked up.
 
 **Sanity checks before resuming:**
 ```
 git branch --show-current
 # expected: main
 
-git log --oneline -1 a48ab91
-# expected: a48ab91 docs: add codebase understanding docs from multi-agent audit
-# (this thread's work; the resume-protocol wiring commit sits on top of it)
+git rev-list --count origin/main..main
+# expected: 0 (in sync — already pushed)
+
+curl -s -o /dev/null -w "%{http_code}\n" https://textexpense.com/
+# expected: 200 (live prod = awake-renewal service)
 
 git status -s
 # expected: only "?? docs/growth-strategy-2026-03-15.md" (pre-existing, intentionally uncommitted)
-
-git rev-list --count origin/main..main
-# expected: >=1 (local main ahead of remote — docs commit not pushed)
 ```
 
 **Open questions / decisions owed by user:**
-- **Push the docs commit to `main`?** (deploy-triggering — default is to hold per push policy)
-- **Security fix (S1/S2/S3 in `docs/tech-debt-register.md`):** open unauthenticated debug endpoints + receipt-download IDOR + no WhatsApp webhook signature. This is the only act-now item regardless of traffic. Touching it needs an explicit **"touch core code"** go-ahead (it's `server.js`/`src/`). Not started.
-- **Failed deploy:** investigate what commit "d" (Divya) contained and why its deploy failed? Prod currently runs an earlier deploy. Not started.
+- **Security fix (S1/S2/S3 in `docs/tech-debt-register.md`):** open unauthenticated debug endpoints + receipt-download IDOR + no WhatsApp webhook signature. Only act-now item regardless of traffic. Needs explicit **"touch core code"** go-ahead (`server.js`/`src/`). Not started.
+- **Stale `TextExpense` service:** delete it (Divya fork, failed deploy, not live) or keep? Confirm before removing.
 
 ---
 

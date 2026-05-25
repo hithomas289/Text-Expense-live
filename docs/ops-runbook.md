@@ -8,9 +8,13 @@ First stop for any "how do I…" question.
 ## Environment
 
 - **Railway project:** `triumphant-victory`
-- **Services:** `TextExpense` (app), `Postgres` (DB)
-- **GitHub:** `hithomas289/Text-Expense-live`
+- **Services (corrected 2026-05-25):**
+  - **`awake-renewal`** = the LIVE production app. Owns the custom domain **`textexpense.com` / `www.textexpense.com`**, deploys from **`hithomas289/Text-Expense-live`** `main`. A push to that repo deploys here. ✅ verified healthy (HTTP 200).
+  - `TextExpense` = **stale/secondary** service. Only the Railway subdomain `textexpense-production.up.railway.app`, deploys from a **different fork `Divya0600/TextExpense`**, latest deploy FAILED (commit "d"). Not the live site — ignore unless investigating the fork.
+  - `Postgres` = DB (shared).
+- **GitHub:** `hithomas289/Text-Expense-live` (the live repo → `awake-renewal`)
 - **Git branch:** `main` (project override — NOT `dev`)
+- **Git identity / push:** active gh account must be `hithomas289` (personal), not `ashish-dhanlap` (work). If push 403s: `gh auth switch -u hithomas289 && gh auth setup-git`.
 - **Target market:** US freelancers/gig workers
 
 ## Production DB Access
