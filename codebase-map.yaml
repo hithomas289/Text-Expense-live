@@ -1,0 +1,290 @@
+# TextExpense — Codebase Map
+# File-by-file index of src/ + server.js. Generated from a 5-agent audit, 2026-05-25.
+# Companion to docs/PROJECT.md, docs/architecture.md, docs/tech-debt-register.md.
+#
+# status legend:
+#   live    = on the active execution path
+#   dead    = no callers / never instantiated / orphaned (safe-to-remove candidates, confirm first)
+#   partial = mostly live but contains large dead/vestigial sections
+#   legacy  = superseded by a V2/V3 sibling but still referenced somewhere
+
+entry:
+  server.js:
+    status: live
+    loc: ~1112
+    purpose: Express bootstrap — middleware, route mounting, static + report serving, lifecycle, interval jobs.
+    notes: Mounts WebhookController, PaymentController, ~15 debug/admin routes. Several debug endpoints are UNAUTHENTICATED and some are commented-out stubs. Hardcoded personal phone +919603216152 in debug routes.
+
+controllers:
+  src/controllers/WebhookController.js:
+    status: live
+    loc: ~348
+    purpose: WhatsApp webhook endpoint — GET verify, POST handle, dedup, multi-image guard, hand off to router.
+    state: in-memory processedMessages (5min TTL) + imageUploads (5s window) — per-process, lost on restart/multi-instance.
+  src/controllers/MessageRouterV3.js:
+    status: live
+    loc: ~802
+    purpose: Central router — classify message, parseCommand, dispatch to handlers, state-machine dispatch.
+    notes: No V1/V2 present (name implies prior versions). resetTimeout/startTimeoutMonitoring are dead no-op stubs.
+
+handlers:
+  src/handlers/DocumentProcessingHandler.js:
+    status: live
+    loc: ~1153
+    purpose: Receipt upload → limit/conflict check → Process-vs-Save → OCR/AI → compress → S3 → dup check → category. Core pipeline orchestrator.
+  src/handlers/ConfirmationHandler.js:
+    status: live
+    loc: ~660
+    purpose: Display extracted receipt, confirm/edit/retake, persist expense to expenses table (saveExpense) + increment usage.
+  src/handlers/EditDetailsHandler.js:
+    status: live
+    loc: ~567
+    purpose: Field-by-field receipt editing (merchant/date/amount/tax/category/currency).
+    notes: Currency change only swaps the symbol; conversion rates are hardcoded dead data.
+  src/handlers/SaveReceiptHandler.js:
+    status: live
+    loc: ~1000
+    purpose: Vault save flow — category → description → S3 → saved_receipts table.
+    bugs: references undefined handlePostSaveVaultChoice (router calls it) and undefined totalLimit var → runtime errors on some paths.
+  src/handlers/MenuHandler.js:
+    status: live
+    loc: ~2579
+    purpose: God-object — menus, subscriptions, reports, summaries, share, upgrade/cancel/downgrade. Largest file.
+
+services_messaging:
+  src/services/WhatsAppService.js:
+    status: live
+    loc: ~856
+    purpose: WhatsApp Cloud API client — send text/image/doc/interactive, download media, parse webhooks, map button/list IDs to text.
+  src/services/MediaService.js:
+    status: live
+    loc: ~462
+    purpose: Download WhatsApp media to disk, validate, post-OCR compress, S3 upload w/ retry, scheduled cleanup.
+
+services_ai_ocr:
+  src/services/OCRService.js:
+    status: partial
+    loc: ~874
+    purpose: Text from images/PDFs (Google Vision → Tesseract → mock) + orchestrates AI call.
+    notes: Large block of dead regex-extractors (parseReceiptText, extractMerchant/Total/Items…) bypassed by the live "Vision text → AI does everything" path.
+  src/services/AIService.js:
+    status: live
+    loc: ~674
+    purpose: OCR text → structured receipt JSON via OpenAI gpt-4o-mini, regex fallback.
+    notes: buildLegacyPrompt + extractRestaurantReceipt are dead. Does NOT trim OCR text before send (token cost leak).
+  src/services/AIService_new.js:
+    status: dead
+    loc: ~349
+    purpose: Older alternate AIService. Zero references. Has the token-trimmer the live one lacks.
+  src/services/ImageCompressionService.js:
+    status: live
+    loc: ~155
+    purpose: Sharp-based resize + JPEG compress after OCR.
+  src/services/CategoryHandler.js:
+    status: live
+    loc: ~426
+    purpose: WhatsApp category-selection UX (menu, validation, custom, edit).
+    notes: Constructor arg order differs across call sites — verify before changing.
+
+services_storage:
+  src/services/S3Service.js:
+    status: live
+    loc: ~484
+    purpose: Validate + upload receipts to S3, presigned/proxy download URLs, lifecycle policy.
+    notes: aws-sdk v2 (maintenance mode). Hardcoded prod Railway URL fallback in generateProxyUrl.
+
+services_session:
+  src/services/DatabaseSessionManager.js:
+    status: live
+    loc: ~659
+    purpose: The live session manager — DB-backed state in transactions w/ LOCK.UPDATE; runs 10-min cleanup interval.
+    bugs: passes {transaction} to User.getOrCreate (1-arg, dropped); cleanup24HourOldReceipts calls non-existent updateUserState; send30MinuteExpiry writes non-existent userState column → expiry reset silently fails.
+  src/services/SessionLockManager.js:
+    status: live
+    loc: ~71
+    purpose: In-process advisory mutex per phone. Force-releases on 10s timeout (defeats lock under contention). Per-process only — no multi-replica safety.
+  src/services/SessionManager.js:
+    status: dead
+    loc: ~475
+    purpose: In-memory Map-based session store. Never instantiated. References removed SubscriptionV2.
+  src/models/UserSession.js:
+    status: dead
+    loc: ~197
+    purpose: In-memory session class used only by dead SessionManager. Has stale EXPENSE_CATEGORIES.
+
+services_usage:
+  src/services/UnifiedUsageService.js:
+    status: live
+    loc: ~663
+    purpose: Authoritative quota engine — counts actual expense + saved_receipt rows vs env-var limits. canProcessReceipt is the real gate (fail-closed).
+  src/services/SafeUsageWrapper.js:
+    status: partial
+    loc: ~264
+    purpose: Atomic check+increment tx wrapper. ONLY validateCanProcess is used; processExpenseWithUsage/saveReceiptWithUsage (its raison d'être) are dead → the TOCTOU race they'd fix is live.
+  src/services/UsageSyncMonitor.js:
+    status: dead
+    loc: ~286
+    purpose: Drift auditor + alerting. Never scheduled, never required. sendSyncAlert is a console.log stub.
+
+services_money_locale:
+  src/services/CurrencyService.js:
+    status: live
+    loc: ~189
+    purpose: Per-user currency resolution + display formatting (no FX). Default fallback INR (US-market mismatch).
+  src/services/CurrencyConversionService.js:
+    status: partial
+    loc: ~311
+    purpose: Stripe checkout pricing. Live getStripePricing hardcodes USD; the INR base + static exchangeRates + convertPrice machinery is vestigial/dead.
+  src/services/CountryService.js:
+    status: dead
+    loc: ~182
+    purpose: Country/currency inference from phone + receipt text. No callers found.
+  src/services/PhoneNumberService.js:
+    status: live
+    loc: ~180
+    purpose: libphonenumber-js wrapper — E.164 parsing + 12-country currency map. Default fallback INR.
+
+services_reporting:
+  src/services/ExcelReportService.js:
+    status: live
+    loc: ~1900
+    purpose: The live report generator — multi-sheet xlsx with S3 image hyperlinks.
+    notes: Duplicated S3-key resolution blocks; repeated new S3Service() in loops; noisy debug logging.
+  src/services/CSVReportService.js:
+    status: dead
+    loc: ~287
+    purpose: CSV report generator. No callers — Excel is the only live format.
+  src/services/ShareService.js:
+    status: live
+    loc: ~80
+    purpose: WhatsApp referral/share flow. Hardcodes wa.me/17654792054, ignores WHATSAPP_BOT_NUMBER env.
+  src/services/FileCleanupManager.js:
+    status: live
+    loc: ~300
+    purpose: 4h janitor for uploads/ + per-file scheduled cleanup.
+    bugs: isFileOrphaned uses invalid Mongo-style $or/$like in Sequelize where for ExpenseV2/SavedReceipt → orphan detection silently no-ops; relies on 24h time sweep.
+
+payments:
+  src/payments/PaymentController.js:
+    status: live
+    loc: ~1052
+    purpose: Stripe HTTP surface — checkout, pricing, webhook dispatcher + all event handlers, portal.
+    bugs: invoice.paid hardcodes planType:'pro'; handlePaymentFailed can log 'free' into an ENUM lacking it; no idempotency/replay protection; swallows per-event errors then 200s (lost activations).
+  src/payments/stripe/StripeService.js:
+    status: live
+    loc: ~332
+    purpose: Stripe SDK wrapper — checkout (validates lite/pro, cancels old sub on switch, 3DS), webhook verify, portal, cancel.
+
+models:
+  src/models/database/index.js:
+    status: dead
+    loc: ~256
+    purpose: Legacy association map. NEVER required; fails to even parse on require (syntax error "Unexpected token '.'") — also has a missing-model-arg hasMany (line 14) and an orphan .belongsTo (line 81). Dead + un-loadable.
+  src/models/database/indexV2.js:
+    status: live
+    loc: ~256
+    purpose: Authoritative association map + helpers. Still re-exports legacy Expense.
+  src/models/database/User.js:
+    status: live
+    loc: ~588
+    purpose: users table — plan/billing/usage/referral fields + plan logic (upgradeToPlan, incrementReceiptUsage, getOrCreate).
+    bugs: getOrCreate takes 1 arg but callers pass {transaction}; cancelSubscription nulls stripeCustomerId (loses webhook reconciliation).
+  src/models/database/Session.js:
+    status: live
+    loc: ~237
+    purpose: sessions table — 13 USER_STATES, currentReceipt JSONB, exports EXPENSE_CATEGORIES/SAVE_RECEIPT_CATEGORIES.
+  src/models/database/ExpenseV2.js:
+    status: live
+    loc: ~356
+    purpose: CURRENT expense model. Table 'expenses'. status ENUM(draft) only, expenseDate STRING(50), metadata JSONB.
+  src/models/database/Expense.js:
+    status: legacy
+    loc: ~368
+    purpose: Legacy expense model. SAME 'expenses' table, conflicting ENUM(draft/confirmed/deleted) + expenseDate DATEONLY. Used by ConfirmationHandler/MenuHandler.
+  src/models/database/SavedReceipt.js:
+    status: live
+    loc: ~235
+    purpose: saved_receipts (vault). INTEGER PK (inconsistent), paranoid soft-delete AND a parallel isActive flag.
+  src/models/database/GeneratedReport.js:
+    status: live
+    loc: ~162
+    purpose: generated_reports — 7-day expiry. cleanupExpiredReports hard-deletes rows but leaks S3 files (TODO never done).
+  src/models/database/DocumentUpload.js:
+    status: partial
+    loc: ~203
+    purpose: Per-document pipeline status tracking. Live flow keeps state in the session instead — status columns underused.
+  src/models/database/UsageLimitV2.js:
+    status: live
+    loc: ~299
+    purpose: usage_limits table — written by live upload path (counters), but NOT read for quota decisions.
+  src/models/database/UsageTracking.js:
+    status: dead
+    loc: ~148
+    purpose: Older counter table. Superseded by UsageLimitV2. Only association wiring in dead index.js.
+  src/models/database/PlanConfig.js:
+    status: partial
+    loc: ~343
+    purpose: plan_configs — stores prices/limits but every getter overrides with env vars (display-cache only). enterprise tier never used.
+  src/models/database/SubscriptionHistory.js:
+    status: live
+    loc: ~119
+    purpose: Append-only audit log. ENUM lacks 'free' → logging a free-plan event throws.
+  src/models/database/SubscriptionV2.js:
+    status: dead
+    loc: ~163
+    purpose: subscriptions table. Only read by dead SessionManager. App stores plan on users table → can diverge.
+  src/models/database/Referral.js:
+    status: dead
+    loc: ~129
+    purpose: referrals table. Schema only — no flow creates/completes referrals; quota check ignores bonus uploads entirely.
+
+jobs:
+  src/jobs/CleanupPaymentFlags.js:
+    status: live
+    loc: ~106
+    purpose: Every 15min, clear stuck sessions.metadata->>'paymentInProgress' (>60min). The only live billing-domain job.
+
+config_utils:
+  src/config/config.js:
+    status: live
+    loc: ~89
+    purpose: Central env-driven config. validateConfig() only warns (never throws) — app boots even with missing WhatsApp vars.
+  src/config/database.js:
+    status: live
+    loc: ~138
+    purpose: Single Sequelize instance + initializeDatabase (sync create-only + boot migration).
+    bugs: pool acquire mapped to 2000ms (too low → ConnectionAcquireTimeoutError under load); SSL rejectUnauthorized:false.
+  src/config/commands.js:
+    status: live
+    loc: ~216
+    purpose: MESSAGE_COMMANDS enum + NUMERIC_TO_COMMAND_MAPPING (per-state numeric→command).
+  src/config/mockData.js:
+    status: live
+    loc: ~176
+    purpose: Sample receipts + mock OCR/AI responses for TESTING_MODE.
+  src/migrations/migrate-expensedate.js:
+    status: live
+    loc: ~46
+    purpose: Boot-time idempotent migration — ALTERs expenses.expenseDate DATE→VARCHAR(50). Fail-soft.
+  src/utils/fileUtils.js:
+    status: live
+    loc: ~186
+    purpose: File helpers; sanitizeForJsonb strips null bytes for Postgres JSONB.
+  src/utils/priceFormatter.js:
+    status: live
+    loc: ~40
+    purpose: Cents→$X.XX. The real USD-aligned formatter (unlike CurrencyService's INR default).
+
+dead_or_orphaned_summary:
+  # Safe-to-remove candidates (CONFIRM with grep + user before deleting — core code rule):
+  - src/services/AIService_new.js
+  - src/services/SessionManager.js
+  - src/models/UserSession.js
+  - src/services/UsageSyncMonitor.js
+  - src/models/database/UsageTracking.js
+  - src/services/CSVReportService.js
+  - src/services/CountryService.js
+  - src/models/database/index.js   # also throws on require
+  - src/models/database/SubscriptionV2.js
+  - src/models/database/Referral.js   # schema only, never wired
+  - "src/services/MenuHandler.js"     # orphan duplicate of handlers/MenuHandler.js (~193 LOC)
